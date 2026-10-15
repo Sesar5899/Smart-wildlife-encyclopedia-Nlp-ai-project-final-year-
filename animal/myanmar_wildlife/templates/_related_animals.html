@@ -1,0 +1,21 @@
+{% if related_animals %}
+<section class="container relationship-section relationship-catalog-section">
+  <div class="relationship-heading">
+    <div>
+      <span>မှတ်တမ်းများ၏ ဆက်နွယ်မှု</span>
+      <h2>ဤနေရာတွင် တွေ့ရှိရသော တိရစ္ဆာန်များ</h2>
+      <p>မျိုးစိတ်မှတ်တမ်းတွင် ဤနေရာကို တိတိကျကျ ဖော်ပြထားသော တိရစ္ဆာန်များ</p>
+    </div>
+    <strong>{{ related_animals|length|mm_number }} မျိုး</strong>
+  </div>
+  <div class="relationship-animal-grid">
+    {% for animal in related_animals %}
+    <a class="relationship-animal-card" href="{{ url_for('animal_detail', animal_id=animal.id) }}">
+      {% if animal.image_url %}<img src="{{ animal.image_url }}" alt="" loading="lazy">{% else %}<span class="relationship-animal-mark" aria-hidden="true">◌</span>{% endif %}
+      <span><strong>{{ animal.name_my }}</strong><small>{{ animal.name_en }}{% if animal.scientific_name %} · <em>{{ animal.scientific_name }}</em>{% endif %}</small></span>
+      <b aria-hidden="true">→</b>
+    </a>
+    {% endfor %}
+  </div>
+</section>
+{% endif %}

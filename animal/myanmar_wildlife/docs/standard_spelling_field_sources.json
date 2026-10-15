@@ -1,0 +1,47 @@
+{
+  "schemaVersion": 1,
+  "items": [
+    {
+      "id": "standard-spelling-field-list",
+      "title": "Which fields contain the selected non-standard Burmese spellings?",
+      "assumptions": [
+        "The check is limited to the 58 IDs and the exact spelling-pattern group identified in the earlier audit.",
+        "Internal portal snapshots, provenance JSON, URLs, and image fields are excluded."
+      ],
+      "queries": [
+        {
+          "id": "requested-animal-field-scan",
+          "source": {
+            "label": "Wildlife animal database",
+            "files": [{"label": "wildlife.db"}],
+            "filters": [
+              "Table: animals",
+              "Requested animal IDs: 58",
+              "Published Burmese-facing text fields only",
+              "Database opened in read-only mode"
+            ],
+            "caveats": [
+              "The result identifies fields containing the selected patterns; it does not edit or automatically correct any value."
+            ],
+            "evidenceFlow": [
+              {
+                "kind": "validation",
+                "title": "Pattern and field check",
+                "detail": "Each requested animal record was scanned for the selected ဥ်/ဉ်, ဦး/ဦး, and အဆောက်အဦး/အဆောက်အဦ spelling patterns, with matching field names retained."
+              }
+            ]
+          },
+          "sourceRoles": [
+            {"kind": "file", "label": "wildlife.db", "role": "Current animal names and published Burmese-facing field values used for the read-only scan."}
+          ],
+          "columns": ["requested_ids", "matching_ids", "animal_field_hits"],
+          "rows": [{"requested_ids": 58, "matching_ids": 58, "animal_field_hits": 122}],
+          "methods": [{
+            "language": "python",
+            "code": "Open wildlife.db with SQLite mode=ro; for each requested ID, scan published Burmese-facing fields for the selected spelling patterns and retain matching field names."
+          }]
+        }
+      ]
+    }
+  ]
+}

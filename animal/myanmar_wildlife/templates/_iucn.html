@@ -1,0 +1,56 @@
+{# One badge and one legend for both IUCN scales.
+
+   The code stays the headline because that is what the source data prints and
+   what a returning member scans for; the Burmese name and the description ride
+   along in the tooltip, and on roomier surfaces beside it. #}
+
+{% macro iucn_badge(value, scale='species', prefix='', classes='badge badge-status', term=false) %}
+{%- if value %}
+{%- set category = iucn_category(value, scale) %}
+<span class="{{ classes }} status-{{ (category.code if category else value)|lower }}{{ ' has-iucn-term' if term and category }}"
+      {%- if category %} title="{{ category.name_en }} — {{ category.name_mm }}။ {{ category.description_mm }}"{% endif %}>
+  {%- if prefix %}<i class="iucn-badge-prefix">{{ prefix }}</i>{% endif %}
+  <b class="iucn-badge-code">{{ value }}</b>
+  {%- if term and category %}<span class="iucn-badge-term">{{ category.name_mm }}</span>{% endif %}
+</span>
+{%- endif %}
+{% endmacro %}
+
+{% macro iucn_legend_panel(scale='species') %}
+{%- set is_ecosystem = scale == 'ecosystem' %}
+<details class="iucn-legend">
+  <summary>
+    <span class="iucn-legend-mark" aria-hidden="true">?</span>
+    <span>
+      <strong>IUCN အဆင့်များ ဆိုသည်မှာ</strong>
+      <small>{{ 'ဂေဟစနစ်များအတွက် Red List of Ecosystems — ပြိုကွဲပျက်သုဉ်းနိုင်ခြေကို တိုင်းတာသည်။'
+                if is_ecosystem else
+                'မျိုးစိတ်များအတွက် Red List of Threatened Species — မျိုးသုဉ်းနိုင်ခြေကို တိုင်းတာသည်။' }}</small>
+    </span>
+  </summary>
+  <div class="iucn-legend-body">
+    <p class="iucn-legend-note">
+      <b>CR</b>၊ <b>EN</b>၊ <b>VU</b> သုံးခုကို <b>ခြိမ်းခြောက်ခံနေရသော</b> အဆင့်များဟု ခေါ်သည်။
+      <b>NT</b> သည် ၎င်းတို့နှင့် နီးကပ်သော်လည်း မပါဝင်ပါ။
+    </p>
+    <dl class="iucn-legend-grid">
+      {% for category in iucn_legend(scale) %}
+      <div class="iucn-legend-row">
+        <dt><span class="status-pill status-{{ category.code|lower }}">{{ category.code }}</span></dt>
+        <dd>
+          <strong>{{ category.name_mm }}</strong>
+          <small>{{ category.name_en }}</small>
+          <p>{{ category.description_mm }}</p>
+        </dd>
+      </div>
+      {% endfor %}
+    </dl>
+    {% if is_ecosystem %}
+    <p class="iucn-legend-note">
+      <b>CR (CR-CO)</b> ကဲ့သို့ ကွင်းစကွင်းပိတ်ပါလျှင်၊ ရှေ့ကုဒ်သည် အဆင့်ဖြစ်ပြီး
+      ကွင်းအတွင်းမှာ မသေချာမှုအတိုင်းအတာ (အနိမ့်ဆုံး–အမြင့်ဆုံး) ဖြစ်သည်။
+    </p>
+    {% endif %}
+  </div>
+</details>
+{% endmacro %}

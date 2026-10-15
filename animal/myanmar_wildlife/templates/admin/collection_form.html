@@ -1,0 +1,29 @@
+{% extends "base.html" %}
+{% block title %}{{ config.singular }} — Content Studio{% endblock %}
+{% block content %}
+<div class="admin-shell admin-editor-shell">
+  <div class="container admin-editor-head"><div><a href="{{ url_for('admin.dashboard', section=kind) }}">← Content Studio</a><h1>{{ config.singular }} {{ 'အသစ် ထည့်ရန်' if is_new else 'ကို ပြင်ရန်' }}</h1><p>အချက်အလက်၊ ဓာတ်ပုံနှင့် source URL များကို တစ်နေရာတည်းတွင် စီမံပါ။</p></div>{% if not is_new %}<a class="btn btn-outline-sm" href="{{ url_for(config.detail_endpoint, slug=record.slug) }}">Live page ကြည့်ရန် ↗</a>{% endif %}</div>
+  <form class="container admin-editor" method="post" enctype="multipart/form-data">
+    <input type="hidden" name="csrf_token" value="{{ csrf_token }}">
+    <div class="admin-editor-main">
+      <section class="admin-form-card"><div class="admin-form-heading"><span>01</span><div><h2>{{ config.singular }} အချက်အလက်</h2><p>စာမျက်နှာနှင့် AI knowledge တွင် အသုံးပြုမည့် content</p></div></div><div class="admin-form-grid">
+        <label class="admin-field-wide"><span>URL slug *</span><input name="slug" required pattern="[^/]+" value="{{ record.slug or '' }}" placeholder="English_name_or_stable_id"></label>
+        {% for field, label, input_type in config.fields %}<label class="{{ 'admin-field-wide' if input_type == 'textarea' }}"><span>{{ label }}{% if field in ('name','name_mm') %} *{% endif %}</span>{% if input_type == 'textarea' %}<textarea name="{{ field }}" rows="{{ 5 if 'description' in field else 3 }}">{{ record[field] or '' }}</textarea>{% else %}<input type="{{ input_type }}" name="{{ field }}" value="{{ record[field] or '' }}">{% endif %}</label>{% endfor %}
+      </div></section>
+      <section class="admin-form-card"><div class="admin-form-heading"><span>02</span><div><h2>ရင်းမြစ် URL များ</h2><p>အမည်နှင့် URL ကို အများကြီး ထည့်နိုင်သည်။</p></div></div><div class="admin-source-editor" id="sourceEditor">
+        {% for source in record.sources or [] %}<div class="admin-source-row"><label><span>ရင်းမြစ်အမည်</span><input name="source_label" value="{{ source.label or '' }}" placeholder="ဥပမာ — Forest Department"></label><label class="admin-source-url"><span>Source URL</span><input type="url" name="source_url_item" value="{{ source.url }}" placeholder="https://..."></label><button type="button" class="admin-source-remove" aria-label="ရင်းမြစ် ဖယ်ရှားရန်">×</button></div>{% else %}<div class="admin-source-row"><label><span>ရင်းမြစ်အမည်</span><input name="source_label" placeholder="ဥပမာ — Forest Department"></label><label class="admin-source-url"><span>Source URL</span><input type="url" name="source_url_item" placeholder="https://..."></label><button type="button" class="admin-source-remove" aria-label="ရင်းမြစ် ဖယ်ရှားရန်">×</button></div>{% endfor %}
+      </div><button type="button" class="admin-add-source" id="addSourceButton">+ နောက်ထပ် source URL ထည့်ရန်</button></section>
+    </div>
+    <aside class="admin-editor-side"><section class="admin-form-card admin-photo-card"><div class="admin-side-title"><span>PHOTO GALLERY</span><h2>ဓာတ်ပုံများ</h2><p>Gallery အတွက် ပုံများကို တစ်ပြိုင်နက် အများကြီး ရွေးနိုင်သည်။</p></div><div class="admin-photo-gallery-preview">{% for image in record.image_urls or [] %}<img src="{{ image }}" alt="">{% else %}<div class="admin-photo-preview"><span>ဓာတ်ပုံ မရှိသေးပါ</span></div>{% endfor %}</div><label class="admin-upload"><input type="file" name="photos" multiple accept="image/jpeg,image/png,image/webp"><strong>ဓာတ်ပုံများ ရွေးရန်</strong><span>JPEG, PNG, WebP</span></label>{% if record.image_urls %}<label class="admin-check"><input type="checkbox" name="remove_photos" value="1"> လက်ရှိဓာတ်ပုံများ ဖယ်ရှားရန်</label>{% endif %}</section><section class="admin-publish-card"><span class="admin-live-dot"></span><div><strong>အသင့်ထုတ်ဝေမည်</strong><p>Save လုပ်ပြီးသည်နှင့် public catalog နှင့် AI knowledge တွင် update ဖြစ်မည်။</p></div><button class="btn btn-primary" type="submit">{{ 'ထုတ်ဝေရန်' if is_new else 'ပြင်ဆင်ချက် သိမ်းရန်' }}</button></section></aside>
+  </form>
+</div>
+{% endblock %}
+{% block scripts %}
+<script src="{{ url_for('static', filename='js/admin-photo-preview.js') }}"></script>
+<script>
+const sourceEditor = document.getElementById('sourceEditor');
+function bindSourceRemove(button) { button.addEventListener('click', () => { const rows = sourceEditor.querySelectorAll('.admin-source-row'); if (rows.length > 1) button.closest('.admin-source-row').remove(); else button.closest('.admin-source-row').querySelectorAll('input').forEach(input => input.value = ''); }); }
+sourceEditor.querySelectorAll('.admin-source-remove').forEach(bindSourceRemove);
+document.getElementById('addSourceButton').addEventListener('click', () => { const row = document.createElement('div'); row.className = 'admin-source-row'; row.innerHTML = '<label><span>ရင်းမြစ်အမည်</span><input name="source_label" placeholder="ဥပမာ — Research paper"></label><label class="admin-source-url"><span>Source URL</span><input type="url" name="source_url_item" placeholder="https://..."></label><button type="button" class="admin-source-remove" aria-label="ရင်းမြစ် ဖယ်ရှားရန်">×</button>'; sourceEditor.appendChild(row); bindSourceRemove(row.querySelector('button')); row.querySelector('input').focus(); });
+</script>
+{% endblock %}

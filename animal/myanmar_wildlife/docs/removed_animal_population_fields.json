@@ -1,0 +1,1508 @@
+[
+  {
+    "id": 1,
+    "name_my": "ရခိုင်တောင်လိပ်",
+    "name_en": "Arakan Forest Turtle",
+    "scientific_name": "Heosemys depressa",
+    "field": "wild_population_my",
+    "old_value": "အကောင်ရေ ၁,၀၀၀ ဝန်းကျင် ခန့်",
+    "old_field_sources": [],
+    "category": "reviewed_incorrect_or_misleading",
+    "reason": "Portal reports the population as unknown; no support for about 1,000.",
+    "evidence_url": "https://www.myanmarbiodiversity.org/species/Heosemys_depressa_Arakan_Forest_Turtle"
+  },
+  {
+    "id": 3,
+    "name_my": "လိပ်မောင်း",
+    "name_en": "Asian Giant Tortoise",
+    "scientific_name": "Manouria emys",
+    "field": "myanmar_population",
+    "old_value": "မသိရသေးပါ။",
+    "old_field_sources": [
+      "https://www.myanmarbiodiversity.org/species/Manouria_emys_Asian_Giant_Tortoise"
+    ],
+    "category": "unknown_only",
+    "reason": "No usable population count or trend is stated.",
+    "evidence_url": ""
+  },
+  {
+    "id": 3,
+    "name_my": "လိပ်မောင်း",
+    "name_en": "Asian Giant Tortoise",
+    "scientific_name": "Manouria emys",
+    "field": "global_population",
+    "old_value": "မသိရသေးပါ။",
+    "old_field_sources": [
+      "https://www.myanmarbiodiversity.org/species/Manouria_emys_Asian_Giant_Tortoise"
+    ],
+    "category": "unknown_only",
+    "reason": "No usable population count or trend is stated.",
+    "evidence_url": ""
+  },
+  {
+    "id": 9,
+    "name_my": "လိပ်ကြက်တူရွေး",
+    "name_en": "Big-headed Turtle",
+    "scientific_name": "Playsternon megacephalum",
+    "field": "myanmar_population",
+    "old_value": "မသိရသေးပါ။",
+    "old_field_sources": [
+      "https://www.myanmarbiodiversity.org/species/Playsternon_megacephalum_Big_headed_Turtle"
+    ],
+    "category": "unknown_only",
+    "reason": "No usable population count or trend is stated.",
+    "evidence_url": ""
+  },
+  {
+    "id": 9,
+    "name_my": "လိပ်ကြက်တူရွေး",
+    "name_en": "Big-headed Turtle",
+    "scientific_name": "Playsternon megacephalum",
+    "field": "global_population",
+    "old_value": "မသိရသေးပါ။",
+    "old_field_sources": [
+      "https://www.myanmarbiodiversity.org/species/Playsternon_megacephalum_Big_headed_Turtle"
+    ],
+    "category": "unknown_only",
+    "reason": "No usable population count or trend is stated.",
+    "evidence_url": ""
+  },
+  {
+    "id": 10,
+    "name_my": "လိပ်မဲကြီး",
+    "name_en": "Black Marsh Turtle",
+    "scientific_name": "Siebenrockiella crassicollis",
+    "field": "myanmar_population",
+    "old_value": "မသိရသေးပါ။",
+    "old_field_sources": [
+      "https://www.myanmarbiodiversity.org/species/Siebenrockiella_crassicollis_Black_Marsh_Turtle"
+    ],
+    "category": "unknown_only",
+    "reason": "No usable population count or trend is stated.",
+    "evidence_url": ""
+  },
+  {
+    "id": 10,
+    "name_my": "လိပ်မဲကြီး",
+    "name_en": "Black Marsh Turtle",
+    "scientific_name": "Siebenrockiella crassicollis",
+    "field": "global_population",
+    "old_value": "မသိရသေးပါ။",
+    "old_field_sources": [
+      "https://www.myanmarbiodiversity.org/species/Siebenrockiella_crassicollis_Black_Marsh_Turtle"
+    ],
+    "category": "unknown_only",
+    "reason": "No usable population count or trend is stated.",
+    "evidence_url": ""
+  },
+  {
+    "id": 12,
+    "name_my": "ငှက်ကုလား/တုံးကလား",
+    "name_en": "Black-necked Stork",
+    "scientific_name": "Ephippiorhynchus asiaticus",
+    "field": "myanmar_population",
+    "old_value": "မြန်မာနိုင်ငံအတွက် တိကျသော နိုင်ငံအဆင့် ခန့်မှန်းချက် (national population estimate) မရရှိသေးပါ",
+    "old_field_sources": [],
+    "category": "unknown_only",
+    "reason": "No usable population count or trend is stated.",
+    "evidence_url": ""
+  },
+  {
+    "id": 13,
+    "name_my": "ဆောက်လိပ်",
+    "name_en": "Burmese Eyed Turtle",
+    "scientific_name": "Morenia ocellata",
+    "field": "myanmar_population",
+    "old_value": "မသိရသေးပါ။",
+    "old_field_sources": [
+      "https://www.myanmarbiodiversity.org/species/Morenia_ocellata_Burmese_Eyed_Turtle"
+    ],
+    "category": "unknown_only",
+    "reason": "No usable population count or trend is stated.",
+    "evidence_url": ""
+  },
+  {
+    "id": 13,
+    "name_my": "ဆောက်လိပ်",
+    "name_en": "Burmese Eyed Turtle",
+    "scientific_name": "Morenia ocellata",
+    "field": "global_population",
+    "old_value": "မသိရသေးပါ။",
+    "old_field_sources": [
+      "https://www.myanmarbiodiversity.org/species/Morenia_ocellata_Burmese_Eyed_Turtle"
+    ],
+    "category": "unknown_only",
+    "reason": "No usable population count or trend is stated.",
+    "evidence_url": ""
+  },
+  {
+    "id": 14,
+    "name_my": "စင်းချောလိပ်",
+    "name_en": "Burmese Flapshell Turtle",
+    "scientific_name": "Lissemys scutata",
+    "field": "myanmar_population",
+    "old_value": "မသိရသေးပါ။",
+    "old_field_sources": [
+      "https://www.myanmarbiodiversity.org/species/Lissemys_scutata_Burmese_Flapshell_Turtle"
+    ],
+    "category": "unknown_only",
+    "reason": "No usable population count or trend is stated.",
+    "evidence_url": ""
+  },
+  {
+    "id": 14,
+    "name_my": "စင်းချောလိပ်",
+    "name_en": "Burmese Flapshell Turtle",
+    "scientific_name": "Lissemys scutata",
+    "field": "global_population",
+    "old_value": "မသိရသေးပါ။",
+    "old_field_sources": [
+      "https://www.myanmarbiodiversity.org/species/Lissemys_scutata_Burmese_Flapshell_Turtle"
+    ],
+    "category": "unknown_only",
+    "reason": "No usable population count or trend is stated.",
+    "evidence_url": ""
+  },
+  {
+    "id": 16,
+    "name_my": "စင်းကျားလိပ်",
+    "name_en": "Burmese Narrow-headed Softshell Turtle",
+    "scientific_name": "Chitra vandijki",
+    "field": "myanmar_population",
+    "old_value": "မသိရသေးပါ။",
+    "old_field_sources": [
+      "https://www.myanmarbiodiversity.org/species/Chitra_vandijki_Burmese_Narrow_headed_Softshell_Turtle"
+    ],
+    "category": "unknown_only",
+    "reason": "No usable population count or trend is stated.",
+    "evidence_url": ""
+  },
+  {
+    "id": 16,
+    "name_my": "စင်းကျားလိပ်",
+    "name_en": "Burmese Narrow-headed Softshell Turtle",
+    "scientific_name": "Chitra vandijki",
+    "field": "global_population",
+    "old_value": "မသိရသေးပါ။",
+    "old_field_sources": [
+      "https://www.myanmarbiodiversity.org/species/Chitra_vandijki_Burmese_Narrow_headed_Softshell_Turtle"
+    ],
+    "category": "unknown_only",
+    "reason": "No usable population count or trend is stated.",
+    "evidence_url": ""
+  },
+  {
+    "id": 17,
+    "name_my": "လေးကွက်လိပ်",
+    "name_en": "Burmese Peacock Softshell Turtle",
+    "scientific_name": "Nilssonia formosa",
+    "field": "myanmar_population",
+    "old_value": "မသိရသေးပါ။",
+    "old_field_sources": [
+      "https://www.myanmarbiodiversity.org/species/Nilssonia_formosa_Burmese_Peacock_Softshell_Turtle"
+    ],
+    "category": "unknown_only",
+    "reason": "No usable population count or trend is stated.",
+    "evidence_url": ""
+  },
+  {
+    "id": 17,
+    "name_my": "လေးကွက်လိပ်",
+    "name_en": "Burmese Peacock Softshell Turtle",
+    "scientific_name": "Nilssonia formosa",
+    "field": "global_population",
+    "old_value": "မသိရသေးပါ။",
+    "old_field_sources": [
+      "https://www.myanmarbiodiversity.org/species/Nilssonia_formosa_Burmese_Peacock_Softshell_Turtle"
+    ],
+    "category": "unknown_only",
+    "reason": "No usable population count or trend is stated.",
+    "evidence_url": ""
+  },
+  {
+    "id": 18,
+    "name_my": "တိုက်လိပ်",
+    "name_en": "Burmese Roofed Turtle",
+    "scientific_name": "Batagur trivittata",
+    "field": "myanmar_population",
+    "old_value": "< ၁၀",
+    "old_field_sources": [
+      "https://www.myanmarbiodiversity.org/species/Batagur_trivittata_Burmese_Roofed_Turtle"
+    ],
+    "category": "reviewed_incorrect_or_misleading",
+    "reason": "Fewer than ten refers to wild adult females, not all Myanmar individuals.",
+    "evidence_url": "https://www.wcs.org/our-work/species/giant-river-turtles"
+  },
+  {
+    "id": 18,
+    "name_my": "တိုက်လိပ်",
+    "name_en": "Burmese Roofed Turtle",
+    "scientific_name": "Batagur trivittata",
+    "field": "global_population",
+    "old_value": "၁၀",
+    "old_field_sources": [
+      "https://www.myanmarbiodiversity.org/species/Batagur_trivittata_Burmese_Roofed_Turtle"
+    ],
+    "category": "reviewed_incorrect_or_misleading",
+    "reason": "Ten cannot be the global total when over 1,000 are under protection.",
+    "evidence_url": "https://www.moi.gov.mm/moi%3Aeng/news/14553"
+  },
+  {
+    "id": 18,
+    "name_my": "တိုက်လိပ်",
+    "name_en": "Burmese Roofed Turtle",
+    "scientific_name": "Batagur trivittata",
+    "field": "wild_population_my",
+    "old_value": "ဤမျိုးစိတ်များ၏ မျိုးဆက်သက်တမ်းမှာ (၂၅) နှစ်ဖြစ်သည်။ အကောင်ရေပမာဏသည် တောရိုင်းထဲတွင် ၁၀ ကောင် ရှိပြီး အရွယ်ရောက်ခါနီး အကောင်ရေ ၉၀၀ ခန့် ခြံလှောင်မွေးထားသည်။ ချင်းတွင်းမြစ်တစ်လျှောက်တွင် အသိုက်ဖွဲ့သော အမ ၁၀ ကောင်အောက်ရှိကြောင်း သိရပြီး မျိုးရိုးဗီဇလေ့လာချက်များအရ အထီး ၃ ကောင်သာ မျိုးပွားကြောင်း အကြံပြုထားသည်။ ယင်းမျိုးစိတ်များ၏ ရှင်သန်မှုအား ၂၀၀၄ ခုနှစ်တွင် ဒုဌဝတီမြစ် (ဧရာဝတီမြစ်လက်တက်) တွင် မှတ်တမ်းတင်ထားသော်လည်း နောက်ဆက်တွဲ စစ်တမ်းကောက်ယူမှုများတွင် ဆက်လက်ရှင်သန်သည့် အရိပ်အယောင်များ မတွေ့ခဲ့ရသည့်နောက်ပိုင်းတွင် သက်ဆိုင်ရာ မြစ်၏ အပိုင်းများကို ဆည်မြောင်းများ တည်ဆောက်ထားပြီဖြစ်သည်။ ထို့အပြင် မန္တလေးမြို့တွင် အရွယ်ရောက်ပြီးသူအချို့ကို ခြံလှောင်ထိန်းသိမ်းထားသည်။ ယင်းမှာ တိရစ္ဆာန်ပေါင်း ဒါဇင် မှ ထောင်နှင့်ချီ၍ အသိုက်အအုံ အစုအဝေးဖြင့် မှတ်တမ်းတင်ရှိထားသော ၁၉၀၀ နှင့် ၁၉၃၅ ခုနှစ်များမှ နောက်ဆုံးရရှိသော အချက်အလက်များနှင့် နှိုင်းယှဉ်ပါက ကြီးမားသော လျော့ကျမှုကို ဖော်ပြနေပါသည်။ မျိုးစိတ်များ၏ ‌တွေ့ရှိရသည့် အဝန်းအဝဝိုင်းသည် ၉ စတုရန်းကီလိုမီတာ ရှိပြီး ၎င်း၏ နေရာယူကျက်စားသည့် အဝန်းအဝိုင်းသည် ၎င်း၏နေထိုင်ရာများတွင် ၈၀ စတုရန်းကီလိုမီတာ ရှိသည်။\n",
+    "old_field_sources": [
+      "https://www.myanmarbiodiversity.org/species/Batagur_trivittata_Burmese_Roofed_Turtle"
+    ],
+    "category": "reviewed_incorrect_or_misleading",
+    "reason": "Undated current-sounding wild and captive totals conflate historical counts.",
+    "evidence_url": "https://www.wcs.org/our-work/species/giant-river-turtles"
+  },
+  {
+    "id": 20,
+    "name_my": "ကြယ်လိပ်",
+    "name_en": "Burmese Star Tortoise",
+    "scientific_name": "Geochelone platynota",
+    "field": "myanmar_population",
+    "old_value": "၂,၁၀၀",
+    "old_field_sources": [
+      "https://www.myanmarbiodiversity.org/species/Geochelone_platynota_Burmese_Star_Tortoise"
+    ],
+    "category": "reviewed_incorrect_or_misleading",
+    "reason": "2,100 is a historic release figure, not an undated current Myanmar total.",
+    "evidence_url": "https://programs.wcs.org/onehealth/Wild-Places/Southeast-Asia.aspx"
+  },
+  {
+    "id": 20,
+    "name_my": "ကြယ်လိပ်",
+    "name_en": "Burmese Star Tortoise",
+    "scientific_name": "Geochelone platynota",
+    "field": "global_population",
+    "old_value": "မသိရသေးပါ။",
+    "old_field_sources": [
+      "https://www.myanmarbiodiversity.org/species/Geochelone_platynota_Burmese_Star_Tortoise"
+    ],
+    "category": "unknown_only",
+    "reason": "No usable population count or trend is stated.",
+    "evidence_url": ""
+  },
+  {
+    "id": 21,
+    "name_my": "အင်းကျား",
+    "name_en": "Clouded Leopard",
+    "scientific_name": "Neofelis nebulosa",
+    "field": "population_trend",
+    "old_value": "မသိရသေးပါ",
+    "old_field_sources": [
+      "https://www.myanmarbiodiversity.org/species/Neofelis_nebulosa_Clouded_Leopard"
+    ],
+    "category": "unknown_only",
+    "reason": "No usable population count or trend is stated.",
+    "evidence_url": ""
+  },
+  {
+    "id": 21,
+    "name_my": "အင်းကျား",
+    "name_en": "Clouded Leopard",
+    "scientific_name": "Neofelis nebulosa",
+    "field": "myanmar_population",
+    "old_value": "မသိရသေးပါ။",
+    "old_field_sources": [
+      "https://www.myanmarbiodiversity.org/species/Neofelis_nebulosa_Clouded_Leopard"
+    ],
+    "category": "unknown_only",
+    "reason": "No usable population count or trend is stated.",
+    "evidence_url": ""
+  },
+  {
+    "id": 24,
+    "name_my": "ရွှေသမင်",
+    "name_en": "Eld's Deer",
+    "scientific_name": "Rucervus eldii",
+    "field": "myanmar_population",
+    "old_value": "မသိရသေးပါ။",
+    "old_field_sources": [
+      "https://www.myanmarbiodiversity.org/species/Rucervus_eldii_Elds_Deer"
+    ],
+    "category": "unknown_only",
+    "reason": "No usable population count or trend is stated.",
+    "evidence_url": ""
+  },
+  {
+    "id": 24,
+    "name_my": "ရွှေသမင်",
+    "name_en": "Eld's Deer",
+    "scientific_name": "Rucervus eldii",
+    "field": "global_population",
+    "old_value": "မသိရသေးပါ။",
+    "old_field_sources": [
+      "https://www.myanmarbiodiversity.org/species/Rucervus_eldii_Elds_Deer"
+    ],
+    "category": "unknown_only",
+    "reason": "No usable population count or trend is stated.",
+    "evidence_url": ""
+  },
+  {
+    "id": 25,
+    "name_my": "ကြောင်ဘ,ကြောင်တံငါ",
+    "name_en": "Fishing Cat",
+    "scientific_name": "Prionailurus viverrinus",
+    "field": "myanmar_population",
+    "old_value": "မသိရသေးပါ။",
+    "old_field_sources": [
+      "https://www.myanmarbiodiversity.org/species/Prionailurus_viverrinus_Fishing_Cat"
+    ],
+    "category": "unknown_only",
+    "reason": "No usable population count or trend is stated.",
+    "evidence_url": ""
+  },
+  {
+    "id": 25,
+    "name_my": "ကြောင်ဘ,ကြောင်တံငါ",
+    "name_en": "Fishing Cat",
+    "scientific_name": "Prionailurus viverrinus",
+    "field": "global_population",
+    "old_value": "မသိရသေးပါ။",
+    "old_field_sources": [
+      "https://www.myanmarbiodiversity.org/species/Prionailurus_viverrinus_Fishing_Cat"
+    ],
+    "category": "unknown_only",
+    "reason": "No usable population count or trend is stated.",
+    "evidence_url": ""
+  },
+  {
+    "id": 26,
+    "name_my": "သင်ပေါင်းလိပ်",
+    "name_en": "Giant Asian Pond Turtle",
+    "scientific_name": "Heosemys grandis",
+    "field": "myanmar_population",
+    "old_value": "မသိရသေးပါ။",
+    "old_field_sources": [
+      "https://www.myanmarbiodiversity.org/species/Heosemys_grandis_Giant_Asian_Pond_Turtle"
+    ],
+    "category": "unknown_only",
+    "reason": "No usable population count or trend is stated.",
+    "evidence_url": ""
+  },
+  {
+    "id": 26,
+    "name_my": "သင်ပေါင်းလိပ်",
+    "name_en": "Giant Asian Pond Turtle",
+    "scientific_name": "Heosemys grandis",
+    "field": "global_population",
+    "old_value": "မသိရသေးပါ။",
+    "old_field_sources": [
+      "https://www.myanmarbiodiversity.org/species/Heosemys_grandis_Giant_Asian_Pond_Turtle"
+    ],
+    "category": "unknown_only",
+    "reason": "No usable population count or trend is stated.",
+    "evidence_url": ""
+  },
+  {
+    "id": 27,
+    "name_my": "ငှက်ကြီးဒုံးစပ်",
+    "name_en": "Greater Adjutant",
+    "scientific_name": "Leptoptilos dubius",
+    "field": "population_trend",
+    "old_value": "ကျဆင်းနေသည်။",
+    "old_field_sources": [
+      "https://www.myanmarbiodiversity.org/species/Leptoptilos_dubius_Greater_Adjutant"
+    ],
+    "category": "reviewed_incorrect_or_misleading",
+    "reason": "BirdLife's 2023 reassessment reports an increasing global trend.",
+    "evidence_url": "https://forums.birdlife.org/2023-2-graeter-adjutant-leptoptilus-dubius/"
+  },
+  {
+    "id": 27,
+    "name_my": "ငှက်ကြီးဒုံးစပ်",
+    "name_en": "Greater Adjutant",
+    "scientific_name": "Leptoptilos dubius",
+    "field": "global_population",
+    "old_value": "၈၀၀ - ၁,၂၀၀",
+    "old_field_sources": [
+      "https://www.myanmarbiodiversity.org/species/Leptoptilos_dubius_Greater_Adjutant"
+    ],
+    "category": "reviewed_incorrect_or_misleading",
+    "reason": "800–1,200 is an old mature-individual estimate, not current global total.",
+    "evidence_url": "https://www.akp.gov.kh/index.php/post/detail/338695"
+  },
+  {
+    "id": 27,
+    "name_my": "ငှက်ကြီးဒုံးစပ်",
+    "name_en": "Greater Adjutant",
+    "scientific_name": "Leptoptilos dubius",
+    "field": "wild_population_my",
+    "old_value": "ငှက်ကြီးဒုံးစပ် L. dubius အတွက် မျိုးဆက်သက်တမ်းသည် ၁၅ နှစ်ဖြစ်သည်။ အကောင်ရေလမ်းကြောင်းသည် ကျဆင်းနေပြီး မြန်မာနိုင်ငံရှိ စုစုပေါင်းအကောင်ရေနှင့်ပတ်သက်သည့် သတင်းအချက်အလက် အကန့်အသတ်ရှိသည်။ ဤမျိုးစိတ်များ၏အကောင်ရေသည် ခန့်မှန်းခြေအားဖြင့် ၅၀ အောက်သာရှိသည်ဟု ခန့်မှန်းကြသည်။ မျိုးစိတ်များ၏ တွေ့ရသည့် အဝန်းအဝိုင်းအကျယ်သည် ၁၂ စတုရန်းကီလိုမီတာ ရှိပြီး ၎င်း၏ နေရာယူကျက်စားသည့် အဝန်းအဝိုင်းသည် ၎င်းရှိနိုင်သည့်နေရာများတွင် ၁၇၂၄၈ စတုရန်းကီလိုမီတာ ရှိသည်။ ",
+    "old_field_sources": [
+      "https://www.myanmarbiodiversity.org/species/Leptoptilos_dubius_Greater_Adjutant"
+    ],
+    "category": "reviewed_incorrect_or_misleading",
+    "reason": "Paragraph embeds the contradicted declining global trend.",
+    "evidence_url": "https://forums.birdlife.org/2023-2-graeter-adjutant-leptoptilus-dubius/"
+  },
+  {
+    "id": 28,
+    "name_my": "လင်းဆွဲ",
+    "name_en": "Greater short-nosed fruit bat",
+    "scientific_name": "Cynopterus sphinx",
+    "field": "global_population",
+    "old_value": "မသိရသေးပါ။",
+    "old_field_sources": [
+      "https://www.myanmarbiodiversity.org/species/Cynopterus_sphinx_Greater_short_nosed_fruit_bat"
+    ],
+    "category": "unknown_only",
+    "reason": "No usable population count or trend is stated.",
+    "evidence_url": ""
+  },
+  {
+    "id": 30,
+    "name_my": "ပြင်သာလိပ်",
+    "name_en": "Green Turtle",
+    "scientific_name": "Chelonia mydas",
+    "field": "myanmar_population",
+    "old_value": "မသိရသေးပါ။",
+    "old_field_sources": [
+      "https://www.myanmarbiodiversity.org/species/Chelonia_mydas_Green_Turtle"
+    ],
+    "category": "unknown_only",
+    "reason": "No usable population count or trend is stated.",
+    "evidence_url": ""
+  },
+  {
+    "id": 30,
+    "name_my": "ပြင်သာလိပ်",
+    "name_en": "Green Turtle",
+    "scientific_name": "Chelonia mydas",
+    "field": "global_population",
+    "old_value": "မသိရသေးပါ။",
+    "old_field_sources": [
+      "https://www.myanmarbiodiversity.org/species/Chelonia_mydas_Green_Turtle"
+    ],
+    "category": "unknown_only",
+    "reason": "No usable population count or trend is stated.",
+    "evidence_url": ""
+  },
+  {
+    "id": 32,
+    "name_my": "လိပ်ကြက်တူ‌ရွေး",
+    "name_en": "Hawksbill Turtle",
+    "scientific_name": "Eretmochelys imbricata",
+    "field": "myanmar_population",
+    "old_value": "မသိရသေးပါ။",
+    "old_field_sources": [
+      "https://www.myanmarbiodiversity.org/species/Eretmochelys_imbricata_Hawksbill_Turtle"
+    ],
+    "category": "unknown_only",
+    "reason": "No usable population count or trend is stated.",
+    "evidence_url": ""
+  },
+  {
+    "id": 32,
+    "name_my": "လိပ်ကြက်တူ‌ရွေး",
+    "name_en": "Hawksbill Turtle",
+    "scientific_name": "Eretmochelys imbricata",
+    "field": "global_population",
+    "old_value": "မသိရသေးပါ။",
+    "old_field_sources": [
+      "https://www.myanmarbiodiversity.org/species/Eretmochelys_imbricata_Hawksbill_Turtle"
+    ],
+    "category": "unknown_only",
+    "reason": "No usable population count or trend is stated.",
+    "evidence_url": ""
+  },
+  {
+    "id": 33,
+    "name_my": "အောက်ချင်းမြီးရှည်",
+    "name_en": "Helmeted Hornbill",
+    "scientific_name": "Rhinoplax vigil",
+    "field": "myanmar_population",
+    "old_value": "မသိရသေးပါ။",
+    "old_field_sources": [],
+    "category": "unknown_only",
+    "reason": "No usable population count or trend is stated.",
+    "evidence_url": ""
+  },
+  {
+    "id": 33,
+    "name_my": "အောက်ချင်းမြီးရှည်",
+    "name_en": "Helmeted Hornbill",
+    "scientific_name": "Rhinoplax vigil",
+    "field": "global_population",
+    "old_value": "မသိရသေးပါ။",
+    "old_field_sources": [
+      "https://www.myanmarbiodiversity.org/species/Rhinoplax_vigil_Helmeted_Hornbill"
+    ],
+    "category": "unknown_only",
+    "reason": "No usable population count or trend is stated.",
+    "evidence_url": ""
+  },
+  {
+    "id": 34,
+    "name_my": "လိပ်တက်",
+    "name_en": "Impressed Tortoise",
+    "scientific_name": "Manouria impressa",
+    "field": "myanmar_population",
+    "old_value": "မသိရသေးပါ။",
+    "old_field_sources": [
+      "https://www.myanmarbiodiversity.org/species/Manouria_impressa_Impressed_Tortoise"
+    ],
+    "category": "unknown_only",
+    "reason": "No usable population count or trend is stated.",
+    "evidence_url": ""
+  },
+  {
+    "id": 34,
+    "name_my": "လိပ်တက်",
+    "name_en": "Impressed Tortoise",
+    "scientific_name": "Manouria impressa",
+    "field": "global_population",
+    "old_value": "မသိရသေးပါ။",
+    "old_field_sources": [
+      "https://www.myanmarbiodiversity.org/species/Manouria_impressa_Impressed_Tortoise"
+    ],
+    "category": "unknown_only",
+    "reason": "No usable population count or trend is stated.",
+    "evidence_url": ""
+  },
+  {
+    "id": 35,
+    "name_my": "ပျောက်စင်းချောလိပ်",
+    "name_en": "Indian Flapshell Turtle",
+    "scientific_name": "Lissemys punctata",
+    "field": "myanmar_population",
+    "old_value": "မသိရသေးပါ။",
+    "old_field_sources": [
+      "https://www.myanmarbiodiversity.org/species/Lissemys_punctata_Indian_Flapshell_Turtle"
+    ],
+    "category": "unknown_only",
+    "reason": "No usable population count or trend is stated.",
+    "evidence_url": ""
+  },
+  {
+    "id": 35,
+    "name_my": "ပျောက်စင်းချောလိပ်",
+    "name_en": "Indian Flapshell Turtle",
+    "scientific_name": "Lissemys punctata",
+    "field": "global_population",
+    "old_value": "မသိရသေးပါ။",
+    "old_field_sources": [
+      "https://www.myanmarbiodiversity.org/species/Lissemys_punctata_Indian_Flapshell_Turtle"
+    ],
+    "category": "unknown_only",
+    "reason": "No usable population count or trend is stated.",
+    "evidence_url": ""
+  },
+  {
+    "id": 37,
+    "name_my": "တောကြောင်",
+    "name_en": "Jungle Cat",
+    "scientific_name": "Felis chaus",
+    "field": "population_trend",
+    "old_value": "မသိရသေးပါ",
+    "old_field_sources": [
+      "https://www.myanmarbiodiversity.org/species/Felis_chaus_Jungle_Cat"
+    ],
+    "category": "unknown_only",
+    "reason": "No usable population count or trend is stated.",
+    "evidence_url": ""
+  },
+  {
+    "id": 37,
+    "name_my": "တောကြောင်",
+    "name_en": "Jungle Cat",
+    "scientific_name": "Felis chaus",
+    "field": "myanmar_population",
+    "old_value": "မသိရသေးပါ။",
+    "old_field_sources": [
+      "https://www.myanmarbiodiversity.org/species/Felis_chaus_Jungle_Cat"
+    ],
+    "category": "unknown_only",
+    "reason": "No usable population count or trend is stated.",
+    "evidence_url": ""
+  },
+  {
+    "id": 37,
+    "name_my": "တောကြောင်",
+    "name_en": "Jungle Cat",
+    "scientific_name": "Felis chaus",
+    "field": "global_population",
+    "old_value": "မသိရသေးပါ။",
+    "old_field_sources": [
+      "https://www.myanmarbiodiversity.org/species/Felis_chaus_Jungle_Cat"
+    ],
+    "category": "unknown_only",
+    "reason": "No usable population count or trend is stated.",
+    "evidence_url": ""
+  },
+  {
+    "id": 39,
+    "name_my": "ဝက်နှာခေါင်းလင်းနို့",
+    "name_en": "Kitti's Hog-nosed Bat",
+    "scientific_name": "Craseonycteris thonglongyai",
+    "field": "global_population",
+    "old_value": "မသိရသေးပါ။",
+    "old_field_sources": [
+      "https://www.myanmarbiodiversity.org/species/Craseonycteris_thonglongyai_Kittis_Hog_nosed_Bat"
+    ],
+    "category": "unknown_only",
+    "reason": "No usable population count or trend is stated.",
+    "evidence_url": ""
+  },
+  {
+    "id": 41,
+    "name_my": "လိပ်စောင်းလျား",
+    "name_en": "Leatherback Turtle",
+    "scientific_name": "Dermochelys coriacea",
+    "field": "myanmar_population",
+    "old_value": "မသိရသေးပါ။",
+    "old_field_sources": [
+      "https://www.myanmarbiodiversity.org/species/Dermochelys_coriacea_Leatherback_Turtle"
+    ],
+    "category": "unknown_only",
+    "reason": "No usable population count or trend is stated.",
+    "evidence_url": ""
+  },
+  {
+    "id": 41,
+    "name_my": "လိပ်စောင်းလျား",
+    "name_en": "Leatherback Turtle",
+    "scientific_name": "Dermochelys coriacea",
+    "field": "global_population",
+    "old_value": "မသိရသေးပါ။",
+    "old_field_sources": [
+      "https://www.myanmarbiodiversity.org/species/Dermochelys_coriacea_Leatherback_Turtle"
+    ],
+    "category": "unknown_only",
+    "reason": "No usable population count or trend is stated.",
+    "evidence_url": ""
+  },
+  {
+    "id": 42,
+    "name_my": "ကျားသစ်",
+    "name_en": "Leopard",
+    "scientific_name": "Panthera pardus",
+    "field": "global_population",
+    "old_value": "ကျားသစ်သည် ကမ္ဘာအနှံ့ဖြန့်ကျက်နေသော်လည်း အချို့ဒေသများတွင် အလွန်ရှားပါးလာပြီး တိကျသော ကမ္ဘာလုံးဆိုင်ရာ အကောင်ရေကို မသတ်မှတ်နိုင်သေးသော မျိုးစိတ်ဖြစ်သည်။တိကျသောစာရင်း မရှိ (ထောင်ဂဏန်းမှ သောင်းဂဏန်းအထိ ခန့်မှန်း)",
+    "old_field_sources": [],
+    "category": "unknown_only",
+    "reason": "No usable population count or trend is stated.",
+    "evidence_url": ""
+  },
+  {
+    "id": 43,
+    "name_my": "သစ်ကြောင်",
+    "name_en": "Leopard Cat",
+    "scientific_name": "Prionailurus bengalensis",
+    "field": "myanmar_population",
+    "old_value": "မသိရသေးပါ။",
+    "old_field_sources": [
+      "https://www.myanmarbiodiversity.org/species/Prionailurus_bengalensis_Leopard_Cat"
+    ],
+    "category": "unknown_only",
+    "reason": "No usable population count or trend is stated.",
+    "evidence_url": ""
+  },
+  {
+    "id": 43,
+    "name_my": "သစ်ကြောင်",
+    "name_en": "Leopard Cat",
+    "scientific_name": "Prionailurus bengalensis",
+    "field": "global_population",
+    "old_value": "မသိရသေးပါ။",
+    "old_field_sources": [
+      "https://www.myanmarbiodiversity.org/species/Prionailurus_bengalensis_Leopard_Cat"
+    ],
+    "category": "unknown_only",
+    "reason": "No usable population count or trend is stated.",
+    "evidence_url": ""
+  },
+  {
+    "id": 44,
+    "name_my": "လင်းဆွဲ",
+    "name_en": "Lesser Short-nosed Fruit Bat",
+    "scientific_name": "Cynopterus brachyotis",
+    "field": "global_population",
+    "old_value": "မသိရသေးပါ။",
+    "old_field_sources": [
+      "https://www.myanmarbiodiversity.org/species/Cynopterus_brachyotis_Lesser_Short_nosed_Fruit_Bat"
+    ],
+    "category": "unknown_only",
+    "reason": "No usable population count or trend is stated.",
+    "evidence_url": ""
+  },
+  {
+    "id": 45,
+    "name_my": "လိပ်ခွေး",
+    "name_en": "Loggerhead Turtle",
+    "scientific_name": "Caretta caretta",
+    "field": "myanmar_population",
+    "old_value": "မသိရသေးပါ။",
+    "old_field_sources": [
+      "https://www.myanmarbiodiversity.org/species/Caretta_caretta_Loggerhead_Turtle"
+    ],
+    "category": "unknown_only",
+    "reason": "No usable population count or trend is stated.",
+    "evidence_url": ""
+  },
+  {
+    "id": 45,
+    "name_my": "လိပ်ခွေး",
+    "name_en": "Loggerhead Turtle",
+    "scientific_name": "Caretta caretta",
+    "field": "global_population",
+    "old_value": "မသိရသေးပါ။",
+    "old_field_sources": [
+      "https://www.myanmarbiodiversity.org/species/Caretta_caretta_Loggerhead_Turtle"
+    ],
+    "category": "unknown_only",
+    "reason": "No usable population count or trend is stated.",
+    "evidence_url": ""
+  },
+  {
+    "id": 46,
+    "name_my": "ခေါင်းကျားလိပ်",
+    "name_en": "Malayan Snail-eating Turtle",
+    "scientific_name": "Malayemys subtrijuga",
+    "field": "myanmar_population",
+    "old_value": "မသိရသေးပါ။",
+    "old_field_sources": [
+      "https://www.myanmarbiodiversity.org/species/Malayemys_subtrijuga_Malayan_Snail_eating_Turtle"
+    ],
+    "category": "unknown_only",
+    "reason": "No usable population count or trend is stated.",
+    "evidence_url": ""
+  },
+  {
+    "id": 46,
+    "name_my": "ခေါင်းကျားလိပ်",
+    "name_en": "Malayan Snail-eating Turtle",
+    "scientific_name": "Malayemys subtrijuga",
+    "field": "global_population",
+    "old_value": "မသိရသေးပါ။",
+    "old_field_sources": [
+      "https://www.myanmarbiodiversity.org/species/Malayemys_subtrijuga_Malayan_Snail_eating_Turtle"
+    ],
+    "category": "unknown_only",
+    "reason": "No usable population count or trend is stated.",
+    "evidence_url": ""
+  },
+  {
+    "id": 48,
+    "name_my": "မလေးဝက်ဝံ",
+    "name_en": "Malayan Sun Bear",
+    "scientific_name": "Helarctos malayanus",
+    "field": "myanmar_population",
+    "old_value": "မသိရသေးပါ။",
+    "old_field_sources": [
+      "https://www.myanmarbiodiversity.org/species/Helarctos_malayanus_Malayan_Sun_Bear"
+    ],
+    "category": "unknown_only",
+    "reason": "No usable population count or trend is stated.",
+    "evidence_url": ""
+  },
+  {
+    "id": 48,
+    "name_my": "မလေးဝက်ဝံ",
+    "name_en": "Malayan Sun Bear",
+    "scientific_name": "Helarctos malayanus",
+    "field": "global_population",
+    "old_value": "မသိရသေးပါ။",
+    "old_field_sources": [
+      "https://www.myanmarbiodiversity.org/species/Helarctos_malayanus_Malayan_Sun_Bear"
+    ],
+    "category": "unknown_only",
+    "reason": "No usable population count or trend is stated.",
+    "evidence_url": ""
+  },
+  {
+    "id": 53,
+    "name_my": "လိပ်ပု",
+    "name_en": "Myanmar Brown Leaf Turtle",
+    "scientific_name": "Cyclemys fusca",
+    "field": "myanmar_population",
+    "old_value": "မသိရသေးပါ။",
+    "old_field_sources": [
+      "https://www.myanmarbiodiversity.org/species/Cyclemys_fusca_Myanmar_Brown_Leaf_Turtle"
+    ],
+    "category": "unknown_only",
+    "reason": "No usable population count or trend is stated.",
+    "evidence_url": ""
+  },
+  {
+    "id": 53,
+    "name_my": "လိပ်ပု",
+    "name_en": "Myanmar Brown Leaf Turtle",
+    "scientific_name": "Cyclemys fusca",
+    "field": "global_population",
+    "old_value": "မသိရသေးပါ။",
+    "old_field_sources": [
+      "https://www.myanmarbiodiversity.org/species/Cyclemys_fusca_Myanmar_Brown_Leaf_Turtle"
+    ],
+    "category": "unknown_only",
+    "reason": "No usable population count or trend is stated.",
+    "evidence_url": ""
+  },
+  {
+    "id": 55,
+    "name_my": "ရေံလိပ်",
+    "name_en": "Northern River Terrapin",
+    "scientific_name": "Batagur baska",
+    "field": "myanmar_population",
+    "old_value": "မသိရသေးပါ။",
+    "old_field_sources": [
+      "https://www.myanmarbiodiversity.org/species/Batagur_baska_Northern_River_Terrapin"
+    ],
+    "category": "unknown_only",
+    "reason": "No usable population count or trend is stated.",
+    "evidence_url": ""
+  },
+  {
+    "id": 56,
+    "name_my": "လိပ်ပု",
+    "name_en": "Oldham's Leaf Turtle",
+    "scientific_name": "Cyclemys oldhamii",
+    "field": "myanmar_population",
+    "old_value": "မသိရသေးပါ။",
+    "old_field_sources": [
+      "https://www.myanmarbiodiversity.org/species/Cyclemys_oldhamii_Oldhams_Leaf_Turtle"
+    ],
+    "category": "unknown_only",
+    "reason": "No usable population count or trend is stated.",
+    "evidence_url": ""
+  },
+  {
+    "id": 56,
+    "name_my": "လိပ်ပု",
+    "name_en": "Oldham's Leaf Turtle",
+    "scientific_name": "Cyclemys oldhamii",
+    "field": "global_population",
+    "old_value": "မသိရသေးပါ။",
+    "old_field_sources": [
+      "https://www.myanmarbiodiversity.org/species/Cyclemys_oldhamii_Oldhams_Leaf_Turtle"
+    ],
+    "category": "unknown_only",
+    "reason": "No usable population count or trend is stated.",
+    "evidence_url": ""
+  },
+  {
+    "id": 57,
+    "name_my": "လိပ်လှောင်း",
+    "name_en": "Olive Ridley Turtle",
+    "scientific_name": "Lepidochelys olivacea",
+    "field": "myanmar_population",
+    "old_value": "မသိရသေးပါ။",
+    "old_field_sources": [
+      "https://www.myanmarbiodiversity.org/species/Lepidochelys_olivacea_Olive_Ridley_Turtle"
+    ],
+    "category": "unknown_only",
+    "reason": "No usable population count or trend is stated.",
+    "evidence_url": ""
+  },
+  {
+    "id": 57,
+    "name_my": "လိပ်လှောင်း",
+    "name_en": "Olive Ridley Turtle",
+    "scientific_name": "Lepidochelys olivacea",
+    "field": "global_population",
+    "old_value": "မသိရသေးပါ။",
+    "old_field_sources": [
+      "https://www.myanmarbiodiversity.org/species/Lepidochelys_olivacea_Olive_Ridley_Turtle"
+    ],
+    "category": "unknown_only",
+    "reason": "No usable population count or trend is stated.",
+    "evidence_url": ""
+  },
+  {
+    "id": 61,
+    "name_my": "အောက်ချင်းလည်ပင်းနီ",
+    "name_en": "Rufous-necked Hornbill",
+    "scientific_name": "Aceros nipalensis",
+    "field": "myanmar_population",
+    "old_value": "မသိရသေးပါ။",
+    "old_field_sources": [],
+    "category": "unknown_only",
+    "reason": "No usable population count or trend is stated.",
+    "evidence_url": ""
+  },
+  {
+    "id": 61,
+    "name_my": "အောက်ချင်းလည်ပင်းနီ",
+    "name_en": "Rufous-necked Hornbill",
+    "scientific_name": "Aceros nipalensis",
+    "field": "global_population",
+    "old_value": "မသိရသေးပါ။",
+    "old_field_sources": [],
+    "category": "unknown_only",
+    "reason": "No usable population count or trend is stated.",
+    "evidence_url": ""
+  },
+  {
+    "id": 62,
+    "name_my": "မိကျောင်း",
+    "name_en": "Salt-water Crocodile",
+    "scientific_name": "Crocodylus porosus",
+    "field": "myanmar_population",
+    "old_value": "မသိရသေးပါ။",
+    "old_field_sources": [
+      "https://www.myanmarbiodiversity.org/species/Crocodylus_porosus_Salt_water_Crocodile"
+    ],
+    "category": "unknown_only",
+    "reason": "No usable population count or trend is stated.",
+    "evidence_url": ""
+  },
+  {
+    "id": 64,
+    "name_my": "လင်းနို့",
+    "name_en": "Shield-faced Roundleaf Bat",
+    "scientific_name": "Hipposideros lylei",
+    "field": "myanmar_population",
+    "old_value": "မသိရသေးပါ။",
+    "old_field_sources": [
+      "https://www.myanmarbiodiversity.org/species/Hipposideros_lylei_Shield_faced_Roundleaf_Bat"
+    ],
+    "category": "unknown_only",
+    "reason": "No usable population count or trend is stated.",
+    "evidence_url": ""
+  },
+  {
+    "id": 64,
+    "name_my": "လင်းနို့",
+    "name_en": "Shield-faced Roundleaf Bat",
+    "scientific_name": "Hipposideros lylei",
+    "field": "global_population",
+    "old_value": "မသိရသေးပါ။",
+    "old_field_sources": [
+      "https://www.myanmarbiodiversity.org/species/Hipposideros_lylei_Shield_faced_Roundleaf_Bat"
+    ],
+    "category": "unknown_only",
+    "reason": "No usable population count or trend is stated.",
+    "evidence_url": ""
+  },
+  {
+    "id": 68,
+    "name_my": "နေကြာပန်းလိပ်",
+    "name_en": "Spiny Turtle",
+    "scientific_name": "Heosemys spinosa",
+    "field": "myanmar_population",
+    "old_value": "မသိရသေးပါ။",
+    "old_field_sources": [
+      "https://www.myanmarbiodiversity.org/species/Heosemys_spinosa_Spiny_Turtle"
+    ],
+    "category": "unknown_only",
+    "reason": "No usable population count or trend is stated.",
+    "evidence_url": ""
+  },
+  {
+    "id": 68,
+    "name_my": "နေကြာပန်းလိပ်",
+    "name_en": "Spiny Turtle",
+    "scientific_name": "Heosemys spinosa",
+    "field": "global_population",
+    "old_value": "မသိရသေးပါ။",
+    "old_field_sources": [
+      "https://www.myanmarbiodiversity.org/species/Heosemys_spinosa_Spiny_Turtle"
+    ],
+    "category": "unknown_only",
+    "reason": "No usable population count or trend is stated.",
+    "evidence_url": ""
+  },
+  {
+    "id": 68,
+    "name_my": "နေကြာပန်းလိပ်",
+    "name_en": "Spiny Turtle",
+    "scientific_name": "Heosemys spinosa",
+    "field": "wild_population_my",
+    "old_value": "မြန်မာနိုင်ငံမှာ အလွန်ရှားသည်။ အကောင်ရေ ၂၅၀ အောက် ကျန်ရှိနိုင်ဖွယ်ရှိသည်။ လွန်ခဲ့သည့်နှစ်ပေါင်း ၅၀ အတွင်း နေထိုင်ရာ စားကျက်များ (ရွက်အုပ်ပိတ် သစ်တော) လျှျှမြန်စွာ ဆုံးရှုံးခြင်းကြောင့် အကောင်ရေ သိသိသာသာ ကျဆင်းလာသည်။ မျိုးစိတ်များ၏ တွေ့ရှိရသည့် အဝန်းအဝိုင်းသည် ၁၉၂ စတုရန်းကီလိုမီတာ ရှိပြီး ၎င်း၏ နေရာယူကျက်စားသည့် အဝန်းအဝိုင်းသည် ၎င်းနေထိုင်ရာများတွင် ၂၃၄၇၄.၀၇၄ စတုရန်းကီလိုမီတာ ရှိသည်။\n",
+    "old_field_sources": [
+      "https://www.myanmarbiodiversity.org/species/Heosemys_spinosa_Spiny_Turtle"
+    ],
+    "category": "reviewed_incorrect_or_misleading",
+    "reason": "No species-specific support found for fewer than 250 in Myanmar.",
+    "evidence_url": "https://iucn-tftsg.org/wp-content/uploads/crm.10.checklist.atlas_.v10.2025.pdf"
+  },
+  {
+    "id": 72,
+    "name_my": "လင်းနို့",
+    "name_en": "Tail-less Leaf-nosed Bat",
+    "scientific_name": "Coelops frithii",
+    "field": "population_trend",
+    "old_value": "မသိရသေးပါ",
+    "old_field_sources": [
+      "https://www.myanmarbiodiversity.org/species/Coelops_frithii_Tail_less_Leaf_nosed_Bat"
+    ],
+    "category": "unknown_only",
+    "reason": "No usable population count or trend is stated.",
+    "evidence_url": ""
+  },
+  {
+    "id": 72,
+    "name_my": "လင်းနို့",
+    "name_en": "Tail-less Leaf-nosed Bat",
+    "scientific_name": "Coelops frithii",
+    "field": "myanmar_population",
+    "old_value": "မသိရသေးပါ။",
+    "old_field_sources": [
+      "https://www.myanmarbiodiversity.org/species/Coelops_frithii_Tail_less_Leaf_nosed_Bat"
+    ],
+    "category": "unknown_only",
+    "reason": "No usable population count or trend is stated.",
+    "evidence_url": ""
+  },
+  {
+    "id": 72,
+    "name_my": "လင်းနို့",
+    "name_en": "Tail-less Leaf-nosed Bat",
+    "scientific_name": "Coelops frithii",
+    "field": "global_population",
+    "old_value": "မသိရသေးပါ။",
+    "old_field_sources": [
+      "https://www.myanmarbiodiversity.org/species/Coelops_frithii_Tail_less_Leaf_nosed_Bat"
+    ],
+    "category": "unknown_only",
+    "reason": "No usable population count or trend is stated.",
+    "evidence_url": ""
+  },
+  {
+    "id": 78,
+    "name_my": "အောက်ချင်းခေါင်းဖြူ",
+    "name_en": "White-crowned Hornbill",
+    "scientific_name": "Berenicornis comatus",
+    "field": "myanmar_population",
+    "old_value": "မသိရသေးပါ။",
+    "old_field_sources": [],
+    "category": "unknown_only",
+    "reason": "No usable population count or trend is stated.",
+    "evidence_url": ""
+  },
+  {
+    "id": 78,
+    "name_my": "အောက်ချင်းခေါင်းဖြူ",
+    "name_en": "White-crowned Hornbill",
+    "scientific_name": "Berenicornis comatus",
+    "field": "global_population",
+    "old_value": "မသိရသေးပါ။",
+    "old_field_sources": [
+      "https://www.myanmarbiodiversity.org/species/Berenicornis_comatus_White_crowned_Hornbill"
+    ],
+    "category": "unknown_only",
+    "reason": "No usable population count or trend is stated.",
+    "evidence_url": ""
+  },
+  {
+    "id": 80,
+    "name_my": "လိပ်ဝါ",
+    "name_en": "Yellow Elongated Tortoise",
+    "scientific_name": "Indotestudo elongata",
+    "field": "myanmar_population",
+    "old_value": "မသိရသေးပါ။",
+    "old_field_sources": [
+      "https://www.myanmarbiodiversity.org/species/Indotestudo_elongata_Yellow_Elongated_Tortoise"
+    ],
+    "category": "unknown_only",
+    "reason": "No usable population count or trend is stated.",
+    "evidence_url": ""
+  },
+  {
+    "id": 80,
+    "name_my": "လိပ်ဝါ",
+    "name_en": "Yellow Elongated Tortoise",
+    "scientific_name": "Indotestudo elongata",
+    "field": "global_population",
+    "old_value": "မသိရသေးပါ။",
+    "old_field_sources": [
+      "https://www.myanmarbiodiversity.org/species/Indotestudo_elongata_Yellow_Elongated_Tortoise"
+    ],
+    "category": "unknown_only",
+    "reason": "No usable population count or trend is stated.",
+    "evidence_url": ""
+  },
+  {
+    "id": 81,
+    "name_my": "စာဝါကြား",
+    "name_en": "Yellow-breasted Bunting",
+    "scientific_name": "Emberiza aureola",
+    "field": "global_population",
+    "old_value": "မသိရသေးပါ။",
+    "old_field_sources": [
+      "https://www.myanmarbiodiversity.org/species/Emberiza_aureola_Yellow_breasted_Bunting"
+    ],
+    "category": "unknown_only",
+    "reason": "No usable population count or trend is stated.",
+    "evidence_url": ""
+  },
+  {
+    "id": 131,
+    "name_my": "ဧရာဝတီလင်းပိုင်",
+    "name_en": "Irrawaddy Dolphin",
+    "scientific_name": "Orcaella brevirostris",
+    "field": "wild_population_my",
+    "old_value": "ကမ္ဘာလုံးဆိုင်ရာ တောရိုင်းအကောင်ရေ (Global Wild Population)\r\n- ဧရာဝတီလင်းပိုင်၏ ကမ္ဘာလုံးဆိုင်ရာ စုစုပေါင်းအကောင်ရေကို တိတိကျကျ မသိရှိရသေးပါ။\r\n- ၎င်းတို့သည် နိုင်ငံအလိုက် သီးခြားနေထိုင်သော အုပ်စုငယ်များ (subpopulations) အဖြစ် ကွဲပြားနေကြသည်။\r\n- မြစ်အတွင်းနေထိုင်သော အုပ်စုများမှာ အထူးသဖြင့် အကောင်ရေ နည်းပါးပြီး အန္တရာယ်မြင့်မားသည်။\r\nခန့်မှန်းချက်များအရ —\r\n- ကမ္ဘာတစ်ဝန်းတွင် အနည်းဆုံး ထောင်ဂဏန်းအနည်းငယ်သာ ရှိနိုင်သည်ဟု ခန့်မှန်းထားသည်။\r\n- အချို့ဒေသများတွင် အကောင်ရေမှာ ရာဂဏန်းအောက် သာ ရှိသည်။\r\nမြန်မာနိုင်ငံရှိ တောရိုင်းအကောင်ရေ\r\nမြန်မာနိုင်ငံ၏ ဧရာဝတီမြစ်အုပ်စု (Ayeyarwady River population) သည် အလွန်အရေးကြီးသော သီးခြားမျိုးပွားအုပ်စုတစ်ခု ဖြစ်သည်။\r\n- နောက်ဆုံးစောင့်ကြည့်လေ့လာချက်များအရ ဧရာဝတီမြစ်အတွင်းရှိ လင်းပိုင်အရေအတွက်မှာ ခန့်မှန်းအားဖြင့် ၆၀ ကောင်ခန့် (၅၀–၇၀ ကောင်အတွင်း) ရှိသည်ဟု မှတ်တမ်းများတွင် ဖော်ပြထားသည်။\r\n- အဓိကတွေ့ရှိရာနေရာမှာ—\r\n  - မန္တလေးအနီး မင်းကွန်း–ကျောက်မြောင်းဒေသ\r\n  - ဧရာဝတီမြစ်အထက်ပိုင်း ကာကွယ်ရေးဧရိယာ\r\nဖြစ်သည်။\r\nကမ္ဘာ့အခြားဒေသများရှိ အကောင်ရေ \r\nမြန်မာ ဧရာဝတီမြစ်\t~၆၀ ကောင်ခန့်\r\nအိန္ဒိယ Chilika Lake\t~၁၅၀–၂၀၀ ကောင်ခန့်\r\nမလေးရှား၊ ဘင်္ဂလားဒေ့ရှ်၊ ထိုင်း စသည့်ဒေသများ\tဒေသအလိုက် ကွဲပြား\r\nကမ္ဘာလုံးဆိုင်ရာ\tတိကျသောစုစုပေါင်းမရှိ",
+    "old_field_sources": [],
+    "category": "reviewed_incorrect_or_misleading",
+    "reason": "Global 'a few thousand' conflicts with over 6,000 in Bangladesh alone; regional counts lack dates.",
+    "evidence_url": "https://www.wcs.org/our-work/species/coastal-dolphins"
+  },
+  {
+    "id": 132,
+    "name_my": "အင်ဒိုပစိဖိတ် လင်းပိုင်ဝက်(ကျောဆူးမဲ့)",
+    "name_en": "Indo-Pacific Finless Porpoise",
+    "scientific_name": "Neophocaena phocaenoides",
+    "field": "population_trend",
+    "old_value": "အကောင်ရေကို တိကျစွာ ခန့်မှန်းရန် ခက်ခဲပြီး ကမ္ဘာလုံးဆိုင်ရာ အရေအတွက်အတွက် ပြည့်စုံသော စာရင်းမရှိသေးပါ။",
+    "old_field_sources": [],
+    "category": "unknown_only",
+    "reason": "No usable population count or trend is stated.",
+    "evidence_url": ""
+  },
+  {
+    "id": 132,
+    "name_my": "အင်ဒိုပစိဖိတ် လင်းပိုင်ဝက်(ကျောဆူးမဲ့)",
+    "name_en": "Indo-Pacific Finless Porpoise",
+    "scientific_name": "Neophocaena phocaenoides",
+    "field": "myanmar_population",
+    "old_value": "တိကျသော အကောင်ရေစာရင်း မရရှိသေးပါ။",
+    "old_field_sources": [],
+    "category": "unknown_only",
+    "reason": "No usable population count or trend is stated.",
+    "evidence_url": ""
+  },
+  {
+    "id": 132,
+    "name_my": "အင်ဒိုပစိဖိတ် လင်းပိုင်ဝက်(ကျောဆူးမဲ့)",
+    "name_en": "Indo-Pacific Finless Porpoise",
+    "scientific_name": "Neophocaena phocaenoides",
+    "field": "global_population",
+    "old_value": "အတိအကျ မသိရှိရသေးပါ။",
+    "old_field_sources": [],
+    "category": "unknown_only",
+    "reason": "No usable population count or trend is stated.",
+    "evidence_url": ""
+  },
+  {
+    "id": 132,
+    "name_my": "အင်ဒိုပစိဖိတ် လင်းပိုင်ဝက်(ကျောဆူးမဲ့)",
+    "name_en": "Indo-Pacific Finless Porpoise",
+    "scientific_name": "Neophocaena phocaenoides",
+    "field": "wild_population_my",
+    "old_value": "မြန်မာနိုင်ငံအတွင်း Neophocaena phocaenoides ၏ တိကျသော အကောင်ရေစာရင်း မရရှိသေးပါ။\r\nကမ်းရိုးတန်း၊ မြစ်ဝနှင့် ရေတိမ်ပိုင်းဒေသများတွင် တွေ့ရှိနိုင်သော်လည်း စနစ်တကျ လေ့လာမှုများ နည်းပါးသည်။\r\nကမ္ဘာလုံးဆိုင်ရာ စုစုပေါင်း အကောင်ရေကို တိကျစွာ မသိရှိရသေးပါ။\r\nဒေသအလိုက် လူဦးရေများ ကွာခြားပြီး အချို့နေရာများတွင် ကျဆင်းနေသည်ဟု သတ်မှတ်ထားသည်။",
+    "old_field_sources": [],
+    "category": "unknown_only",
+    "reason": "No usable population count or trend is stated.",
+    "evidence_url": ""
+  },
+  {
+    "id": 134,
+    "name_my": "လင်းပိုင် (နှုတ်သီးရှည်)",
+    "name_en": "Long-beaked Common Dolphin",
+    "scientific_name": "Delphinus capensis",
+    "field": "wild_population_my",
+    "old_value": "ကမ္ဘာလုံးဆိုင်ရာ တောရိုင်းအကောင်ရေ (Global Wild Population)\r\n- Long-beaked Common Dolphin (Delphinus capensis) ၏ ကမ္ဘာလုံးဆိုင်ရာ စုစုပေါင်းအကောင်ရေကို တိတိကျကျ မသိရှိရသေးပါ။\r\n- ၎င်းတို့သည် ကမ္ဘာ့သမုဒ္ဒရာများအတွင်း နေရာအနှံ့ ဖြန့်ကျက်နေထိုင်သောကြောင့် တစ်ကမ္ဘာလုံးအဆင့် ခန့်မှန်းရန် ခက်ခဲသည်။\r\n- ဒေသအလိုက် စစ်တမ်းများမှသာ အကောင်ရေကို ခန့်မှန်းနိုင်သည်။\r\nခန့်မှန်းထားသော အကောင်ရေများ (ဒေသအလိုက်)\r\nကယ်လီဖိုးနီးယားကမ်းရိုးတန်း (USA/Mexico)\tထောင်ဂဏန်းမှ သောင်းဂဏန်းအထိ\r\nတောင်အာဖရိက ကမ်းရိုးတန်း\tထောင်ဂဏန်းများ\r\nပစိဖိတ်နှင့် အတ္တလန္တိတ် သမုဒ္ဒရာအချို့ဒေသများ\tဒေသအလိုက် ကွဲပြား\r\nကမ္ဘာလုံးဆိုင်ရာ စုစုပေါင်း\tတိကျသော ခန့်မှန်းချက် မရှိသေး\r\nမြန်မာနိုင်ငံရှိ အကောင်ရေ\r\n- မြန်မာနိုင်ငံကမ်းရိုးတန်းတွင် Delphinus capensis ၏ သီးခြားအကောင်ရေစာရင်း မရှိသေးပါ။\r\n- မြန်မာ့ကမ်းရိုးတန်းနှင့် ဘင်္ဂလားပင်လယ်အော်အတွင်း လင်းပိုင်မျိုးစိတ်များ တွေ့ရှိနိုင်သော်လည်း Long-beaked Common Dolphin ၏ ဖြန့်ကျက်မှုနှင့် အသေးစိတ် လေ့လာမှုများ နည်းပါးသည်။\r\nကမ္ဘာအနှံ့ဖြန့်ကျက်နေသောကြောင့် အကောင်ရေများပြားသော်လည်း ဒေသအလိုက် ထိန်းသိမ်းစောင့်ကြည့်ရန် လိုအပ်သော လင်းပိုင်မျိုးစိတ်ဖြစ်သည်။\r\n\r\n",
+    "old_field_sources": [],
+    "category": "reviewed_incorrect_or_misleading",
+    "reason": "Ocean-wide figures mix common-dolphin forms; taxon boundaries are disputed.",
+    "evidence_url": "https://marinemammalscience.org/science-and-publications/list-marine-mammal-species-subspecies/"
+  },
+  {
+    "id": 184,
+    "name_my": "ဆတ်",
+    "name_en": "Sambar",
+    "scientific_name": "Rusa unicolor",
+    "field": "myanmar_population",
+    "old_value": "တိကျသောစာရင်းမရှိ (ထောင်ဂဏန်းအထိ ရှိနိုင်)",
+    "old_field_sources": [],
+    "category": "unknown_only",
+    "reason": "No usable population count or trend is stated.",
+    "evidence_url": ""
+  },
+  {
+    "id": 184,
+    "name_my": "ဆတ်",
+    "name_en": "Sambar",
+    "scientific_name": "Rusa unicolor",
+    "field": "global_population",
+    "old_value": "တိကျသော စုစုပေါင်းမသိရှိရသေး",
+    "old_field_sources": [],
+    "category": "unknown_only",
+    "reason": "No usable population count or trend is stated.",
+    "evidence_url": ""
+  },
+  {
+    "id": 207,
+    "name_my": "ကြောင်ကတိုး/ကြောင်နံ့သာ",
+    "name_en": "Small Indian civet",
+    "scientific_name": "Viverricula indica",
+    "field": "myanmar_population",
+    "old_value": "နိုင်ငံလုံးဆိုင်ရာ အရေအတွက်ခန့်မှန်းချက်မရှိပါ။",
+    "old_field_sources": [],
+    "category": "unknown_only",
+    "reason": "No usable population count or trend is stated.",
+    "evidence_url": ""
+  },
+  {
+    "id": 207,
+    "name_my": "ကြောင်ကတိုး/ကြောင်နံ့သာ",
+    "name_en": "Small Indian civet",
+    "scientific_name": "Viverricula indica",
+    "field": "global_population",
+    "old_value": "စုစုပေါင်းကိန်းဂဏန်းမရှိသော်လည်း နိုင်ငံအများအပြားမှာ ပျံ့နှံ့ပြီး ကျန်းမာသောအုပ်စုများရှိပါတယ်။",
+    "old_field_sources": [],
+    "category": "unknown_only",
+    "reason": "No usable population count or trend is stated.",
+    "evidence_url": ""
+  },
+  {
+    "id": 207,
+    "name_my": "ကြောင်ကတိုး/ကြောင်နံ့သာ",
+    "name_en": "Small Indian civet",
+    "scientific_name": "Viverricula indica",
+    "field": "wild_population_my",
+    "old_value": "Small Indian civet (Viverricula indica) အတွက် မြန်မာနိုင်ငံအတွင်းဖြစ်စေ၊ ကမ္ဘာတစ်ဝန်းဖြစ်စေ စုစုပေါင်းတောရိုင်းအကောင်ရေ အတိအကျ မရှိသေးပါ။ IUCN ကလည်း mature individuals ဘယ်လောက်ရှိတယ်ဆိုတာ မသတ်မှတ်ထားပါဘူး။မြန်မာနိုင်ငံမှာ ကျယ်ပြန့်စွာရှိနေဆဲဖြစ်သော်လည်း ဘယ်နှကောင်ရှိသလဲဆိုတာ မသိရသေးပါ။ ကမ္ဘာ့အခြေအနေ တည်ငြိမ်သော်လည်း ဒေသအလိုက် ဖမ်းဆီးသတ်ဖြတ်မှု၊ လမ်းတိုက်မှု၊ အိမ်မွေးခွေးနှင့် လူ–တိရစ္ဆာန်ပဋိပက္ခတို့ကြောင့် အုပ်စုငယ်များ လျော့နည်းနိုင်ပါတယ်။",
+    "old_field_sources": [],
+    "category": "unknown_only",
+    "reason": "No usable population count or trend is stated.",
+    "evidence_url": ""
+  },
+  {
+    "id": 208,
+    "name_my": "စပါးကြီးမြွေ",
+    "name_en": "Reticulated Python",
+    "scientific_name": "Malayopython reticulatus",
+    "field": "population_trend",
+    "old_value": "အကောင်ရေ အပြောင်းအလဲကို အတည်ပြုရန် အချက်အလက် မလုံလောက်သေးပါ။",
+    "old_field_sources": [],
+    "category": "unknown_only",
+    "reason": "No usable population count or trend is stated.",
+    "evidence_url": ""
+  },
+  {
+    "id": 208,
+    "name_my": "စပါးကြီးမြွေ",
+    "name_en": "Reticulated Python",
+    "scientific_name": "Malayopython reticulatus",
+    "field": "myanmar_population",
+    "old_value": "မြန်မာနိုင်ငံအတွင်း အကောင်ရေ အတိအကျကို မသိရသေးပါ။",
+    "old_field_sources": [],
+    "category": "unknown_only",
+    "reason": "No usable population count or trend is stated.",
+    "evidence_url": ""
+  },
+  {
+    "id": 208,
+    "name_my": "စပါးကြီးမြွေ",
+    "name_en": "Reticulated Python",
+    "scientific_name": "Malayopython reticulatus",
+    "field": "global_population",
+    "old_value": "ကမ္ဘာလုံးဆိုင်ရာ အကောင်ရေ အတိအကျကို မသိရသေးပါ။",
+    "old_field_sources": [],
+    "category": "unknown_only",
+    "reason": "No usable population count or trend is stated.",
+    "evidence_url": ""
+  },
+  {
+    "id": 208,
+    "name_my": "စပါးကြီးမြွေ",
+    "name_en": "Reticulated Python",
+    "scientific_name": "Malayopython reticulatus",
+    "field": "wild_population_my",
+    "old_value": "မြန်မာနိုင်ငံရှိ တောရိုင်းအကောင်ရေကို တိကျစွာ မတွက်ချက်ရသေးပါ။",
+    "old_field_sources": [],
+    "category": "unknown_only",
+    "reason": "No usable population count or trend is stated.",
+    "evidence_url": ""
+  },
+  {
+    "id": 209,
+    "name_my": "ငန်းတော်ကြားမြွေ",
+    "name_en": "Banded Krait",
+    "scientific_name": "Bungarus fasciatus",
+    "field": "population_trend",
+    "old_value": "အကောင်ရေ အပြောင်းအလဲကို အတည်ပြုရန် အချက်အလက် မလုံလောက်သေးပါ။",
+    "old_field_sources": [],
+    "category": "unknown_only",
+    "reason": "No usable population count or trend is stated.",
+    "evidence_url": ""
+  },
+  {
+    "id": 209,
+    "name_my": "ငန်းတော်ကြားမြွေ",
+    "name_en": "Banded Krait",
+    "scientific_name": "Bungarus fasciatus",
+    "field": "myanmar_population",
+    "old_value": "မြန်မာနိုင်ငံအတွင်း အကောင်ရေ အတိအကျကို မသိရသေးပါ။",
+    "old_field_sources": [],
+    "category": "unknown_only",
+    "reason": "No usable population count or trend is stated.",
+    "evidence_url": ""
+  },
+  {
+    "id": 209,
+    "name_my": "ငန်းတော်ကြားမြွေ",
+    "name_en": "Banded Krait",
+    "scientific_name": "Bungarus fasciatus",
+    "field": "global_population",
+    "old_value": "ကမ္ဘာလုံးဆိုင်ရာ အကောင်ရေ အတိအကျကို မသိရသေးပါ။",
+    "old_field_sources": [],
+    "category": "unknown_only",
+    "reason": "No usable population count or trend is stated.",
+    "evidence_url": ""
+  },
+  {
+    "id": 209,
+    "name_my": "ငန်းတော်ကြားမြွေ",
+    "name_en": "Banded Krait",
+    "scientific_name": "Bungarus fasciatus",
+    "field": "wild_population_my",
+    "old_value": "မြန်မာနိုင်ငံရှိ တောရိုင်းအကောင်ရေကို တိကျစွာ မတွက်ချက်ရသေးပါ။",
+    "old_field_sources": [],
+    "category": "unknown_only",
+    "reason": "No usable population count or trend is stated.",
+    "evidence_url": ""
+  },
+  {
+    "id": 210,
+    "name_my": "မြွေပွေး",
+    "name_en": "Eastern Russell's Viper",
+    "scientific_name": "Daboia siamensis",
+    "field": "population_trend",
+    "old_value": "အကောင်ရေ အပြောင်းအလဲကို အတည်ပြုရန် အချက်အလက် မလုံလောက်သေးပါ။",
+    "old_field_sources": [],
+    "category": "unknown_only",
+    "reason": "No usable population count or trend is stated.",
+    "evidence_url": ""
+  },
+  {
+    "id": 210,
+    "name_my": "မြွေပွေး",
+    "name_en": "Eastern Russell's Viper",
+    "scientific_name": "Daboia siamensis",
+    "field": "myanmar_population",
+    "old_value": "မြန်မာနိုင်ငံအတွင်း အကောင်ရေ အတိအကျကို မသိရသေးပါ။",
+    "old_field_sources": [],
+    "category": "unknown_only",
+    "reason": "No usable population count or trend is stated.",
+    "evidence_url": ""
+  },
+  {
+    "id": 210,
+    "name_my": "မြွေပွေး",
+    "name_en": "Eastern Russell's Viper",
+    "scientific_name": "Daboia siamensis",
+    "field": "global_population",
+    "old_value": "ကမ္ဘာလုံးဆိုင်ရာ အကောင်ရေ အတိအကျကို မသိရသေးပါ။",
+    "old_field_sources": [],
+    "category": "unknown_only",
+    "reason": "No usable population count or trend is stated.",
+    "evidence_url": ""
+  },
+  {
+    "id": 210,
+    "name_my": "မြွေပွေး",
+    "name_en": "Eastern Russell's Viper",
+    "scientific_name": "Daboia siamensis",
+    "field": "wild_population_my",
+    "old_value": "မြန်မာနိုင်ငံရှိ တောရိုင်းအကောင်ရေကို တိကျစွာ မတွက်ချက်ရသေးပါ။",
+    "old_field_sources": [],
+    "category": "unknown_only",
+    "reason": "No usable population count or trend is stated.",
+    "evidence_url": ""
+  },
+  {
+    "id": 211,
+    "name_my": "မြွေဟောက်",
+    "name_en": "Monocled Cobra",
+    "scientific_name": "Naja kaouthia",
+    "field": "population_trend",
+    "old_value": "အကောင်ရေ အပြောင်းအလဲကို အတည်ပြုရန် အချက်အလက် မလုံလောက်သေးပါ။",
+    "old_field_sources": [],
+    "category": "unknown_only",
+    "reason": "No usable population count or trend is stated.",
+    "evidence_url": ""
+  },
+  {
+    "id": 211,
+    "name_my": "မြွေဟောက်",
+    "name_en": "Monocled Cobra",
+    "scientific_name": "Naja kaouthia",
+    "field": "myanmar_population",
+    "old_value": "မြန်မာနိုင်ငံအတွင်း အကောင်ရေ အတိအကျကို မသိရသေးပါ။",
+    "old_field_sources": [],
+    "category": "unknown_only",
+    "reason": "No usable population count or trend is stated.",
+    "evidence_url": ""
+  },
+  {
+    "id": 211,
+    "name_my": "မြွေဟောက်",
+    "name_en": "Monocled Cobra",
+    "scientific_name": "Naja kaouthia",
+    "field": "global_population",
+    "old_value": "ကမ္ဘာလုံးဆိုင်ရာ အကောင်ရေ အတိအကျကို မသိရသေးပါ။",
+    "old_field_sources": [],
+    "category": "unknown_only",
+    "reason": "No usable population count or trend is stated.",
+    "evidence_url": ""
+  },
+  {
+    "id": 211,
+    "name_my": "မြွေဟောက်",
+    "name_en": "Monocled Cobra",
+    "scientific_name": "Naja kaouthia",
+    "field": "wild_population_my",
+    "old_value": "မြန်မာနိုင်ငံရှိ တောရိုင်းအကောင်ရေကို တိကျစွာ မတွက်ချက်ရသေးပါ။",
+    "old_field_sources": [],
+    "category": "unknown_only",
+    "reason": "No usable population count or trend is stated.",
+    "evidence_url": ""
+  },
+  {
+    "id": 212,
+    "name_my": "ဖွတ်",
+    "name_en": "Asian Water Monitor",
+    "scientific_name": "Varanus salvator",
+    "field": "population_trend",
+    "old_value": "အကောင်ရေ အပြောင်းအလဲကို အတည်ပြုရန် အချက်အလက် မလုံလောက်သေးပါ။",
+    "old_field_sources": [],
+    "category": "unknown_only",
+    "reason": "No usable population count or trend is stated.",
+    "evidence_url": ""
+  },
+  {
+    "id": 212,
+    "name_my": "ဖွတ်",
+    "name_en": "Asian Water Monitor",
+    "scientific_name": "Varanus salvator",
+    "field": "myanmar_population",
+    "old_value": "မြန်မာနိုင်ငံအတွင်း အကောင်ရေ အတိအကျကို မသိရသေးပါ။",
+    "old_field_sources": [],
+    "category": "unknown_only",
+    "reason": "No usable population count or trend is stated.",
+    "evidence_url": ""
+  },
+  {
+    "id": 212,
+    "name_my": "ဖွတ်",
+    "name_en": "Asian Water Monitor",
+    "scientific_name": "Varanus salvator",
+    "field": "global_population",
+    "old_value": "ကမ္ဘာလုံးဆိုင်ရာ အကောင်ရေ အတိအကျကို မသိရသေးပါ။",
+    "old_field_sources": [],
+    "category": "unknown_only",
+    "reason": "No usable population count or trend is stated.",
+    "evidence_url": ""
+  },
+  {
+    "id": 212,
+    "name_my": "ဖွတ်",
+    "name_en": "Asian Water Monitor",
+    "scientific_name": "Varanus salvator",
+    "field": "wild_population_my",
+    "old_value": "မြန်မာနိုင်ငံရှိ တောရိုင်းအကောင်ရေကို တိကျစွာ မတွက်ချက်ရသေးပါ။",
+    "old_field_sources": [],
+    "category": "unknown_only",
+    "reason": "No usable population count or trend is stated.",
+    "evidence_url": ""
+  }
+]

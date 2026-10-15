@@ -1,0 +1,161 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="2500" height="1840" viewBox="0 0 2500 1840">
+<text x="1250" y="54" font-family="Georgia" font-size="38" font-weight="bold" fill="#17212B" text-anchor="middle">Smart Wildlife Encyclopedia — Logical Database Diagram</text>
+<rect x="70" y="205" width="500" height="242" fill="#FFFFFF" stroke="#54697A" stroke-width="2"/>
+<rect x="70" y="205" width="500" height="47" fill="#346789" stroke="#346789" stroke-width="1"/>
+<text x="84" y="215" font-family="Segoe UI" font-size="24" font-weight="bold" fill="#FFFFFF">categories</text>
+<text x="84" y="259" font-family="Segoe UI" font-size="22" font-weight="normal" fill="#17212B">PK  id  INTEGER</text>
+<polyline points="70,291 570,291" fill="none" stroke="#C7CFD5" stroke-width="1"/>
+<text x="84" y="298" font-family="Segoe UI" font-size="22" font-weight="normal" fill="#17212B">name_my  TEXT  NN</text>
+<polyline points="70,330 570,330" fill="none" stroke="#C7CFD5" stroke-width="1"/>
+<text x="84" y="337" font-family="Segoe UI" font-size="22" font-weight="normal" fill="#17212B">name_en  TEXT  NN</text>
+<polyline points="70,369 570,369" fill="none" stroke="#C7CFD5" stroke-width="1"/>
+<text x="84" y="376" font-family="Segoe UI" font-size="22" font-weight="normal" fill="#17212B">description_my  TEXT</text>
+<polyline points="70,408 570,408" fill="none" stroke="#C7CFD5" stroke-width="1"/>
+<text x="84" y="415" font-family="Segoe UI" font-size="22" font-weight="normal" fill="#17212B">icon  TEXT</text>
+<rect x="70" y="615" width="500" height="164" fill="#FFFFFF" stroke="#54697A" stroke-width="2"/>
+<rect x="70" y="615" width="500" height="47" fill="#346789" stroke="#346789" stroke-width="1"/>
+<text x="84" y="625" font-family="Segoe UI" font-size="24" font-weight="bold" fill="#FFFFFF">animal_aliases</text>
+<text x="84" y="669" font-family="Segoe UI" font-size="22" font-weight="normal" fill="#17212B">PK  id  INTEGER</text>
+<polyline points="70,701 570,701" fill="none" stroke="#C7CFD5" stroke-width="1"/>
+<text x="84" y="708" font-family="Segoe UI" font-size="22" font-weight="normal" fill="#17212B">FK  animal_id  INTEGER  NN</text>
+<polyline points="70,740 570,740" fill="none" stroke="#C7CFD5" stroke-width="1"/>
+<text x="84" y="747" font-family="Segoe UI" font-size="22" font-weight="normal" fill="#17212B">alias_my  TEXT  NN</text>
+<rect x="70" y="1050" width="500" height="242" fill="#FFFFFF" stroke="#54697A" stroke-width="2"/>
+<rect x="70" y="1050" width="500" height="47" fill="#346789" stroke="#346789" stroke-width="1"/>
+<text x="84" y="1060" font-family="Segoe UI" font-size="24" font-weight="bold" fill="#FFFFFF">animals_fts (FTS5)</text>
+<text x="84" y="1104" font-family="Segoe UI" font-size="22" font-weight="normal" fill="#17212B">rowid → animals.id</text>
+<polyline points="70,1136 570,1136" fill="none" stroke="#C7CFD5" stroke-width="1"/>
+<text x="84" y="1143" font-family="Segoe UI" font-size="22" font-weight="normal" fill="#17212B">name_my</text>
+<polyline points="70,1175 570,1175" fill="none" stroke="#C7CFD5" stroke-width="1"/>
+<text x="84" y="1182" font-family="Segoe UI" font-size="22" font-weight="normal" fill="#17212B">name_en</text>
+<polyline points="70,1214 570,1214" fill="none" stroke="#C7CFD5" stroke-width="1"/>
+<text x="84" y="1221" font-family="Segoe UI" font-size="22" font-weight="normal" fill="#17212B">scientific_name</text>
+<polyline points="70,1253 570,1253" fill="none" stroke="#C7CFD5" stroke-width="1"/>
+<text x="84" y="1260" font-family="Segoe UI" font-size="22" font-weight="normal" fill="#17212B">description_my</text>
+<rect x="690" y="275" width="650" height="467" fill="#FFFFFF" stroke="#54697A" stroke-width="2"/>
+<rect x="690" y="275" width="650" height="47" fill="#346789" stroke="#346789" stroke-width="1"/>
+<text x="704" y="285" font-family="Segoe UI" font-size="24" font-weight="bold" fill="#FFFFFF">animals</text>
+<text x="704" y="329" font-family="Segoe UI" font-size="22" font-weight="normal" fill="#17212B">PK  id  INTEGER</text>
+<polyline points="690,364 1340,364" fill="none" stroke="#C7CFD5" stroke-width="1"/>
+<text x="704" y="371" font-family="Segoe UI" font-size="22" font-weight="normal" fill="#17212B">FK  category_id  INTEGER (nullable)</text>
+<polyline points="690,406 1340,406" fill="none" stroke="#C7CFD5" stroke-width="1"/>
+<text x="704" y="413" font-family="Segoe UI" font-size="22" font-weight="normal" fill="#17212B">name_my / name_en  TEXT  NN</text>
+<polyline points="690,448 1340,448" fill="none" stroke="#C7CFD5" stroke-width="1"/>
+<text x="704" y="455" font-family="Segoe UI" font-size="22" font-weight="normal" fill="#17212B">scientific_name / taxon_rank</text>
+<polyline points="690,490 1340,490" fill="none" stroke="#C7CFD5" stroke-width="1"/>
+<text x="704" y="497" font-family="Segoe UI" font-size="22" font-weight="normal" fill="#17212B">habitat / description / diet</text>
+<polyline points="690,532 1340,532" fill="none" stroke="#C7CFD5" stroke-width="1"/>
+<text x="704" y="539" font-family="Segoe UI" font-size="22" font-weight="normal" fill="#17212B">IUCN / population fields</text>
+<polyline points="690,574 1340,574" fill="none" stroke="#C7CFD5" stroke-width="1"/>
+<text x="704" y="581" font-family="Segoe UI" font-size="22" font-weight="normal" fill="#17212B">legal protection fields</text>
+<polyline points="690,616 1340,616" fill="none" stroke="#C7CFD5" stroke-width="1"/>
+<text x="704" y="623" font-family="Segoe UI" font-size="22" font-weight="normal" fill="#17212B">cover / male / female photos</text>
+<polyline points="690,658 1340,658" fill="none" stroke="#C7CFD5" stroke-width="1"/>
+<text x="704" y="665" font-family="Segoe UI" font-size="22" font-weight="normal" fill="#17212B">source IDs, URLs and names</text>
+<polyline points="690,700 1340,700" fill="none" stroke="#C7CFD5" stroke-width="1"/>
+<text x="704" y="707" font-family="Segoe UI" font-size="22" font-weight="normal" fill="#17212B">portal_data / crawled_at</text>
+<rect x="1450" y="205" width="450" height="281" fill="#FFFFFF" stroke="#54697A" stroke-width="2"/>
+<rect x="1450" y="205" width="450" height="47" fill="#346789" stroke="#346789" stroke-width="1"/>
+<text x="1464" y="215" font-family="Segoe UI" font-size="24" font-weight="bold" fill="#FFFFFF">users</text>
+<text x="1464" y="259" font-family="Segoe UI" font-size="22" font-weight="normal" fill="#17212B">PK  id  INTEGER</text>
+<polyline points="1450,291 1900,291" fill="none" stroke="#C7CFD5" stroke-width="1"/>
+<text x="1464" y="298" font-family="Segoe UI" font-size="22" font-weight="normal" fill="#17212B">name  TEXT  NN</text>
+<polyline points="1450,330 1900,330" fill="none" stroke="#C7CFD5" stroke-width="1"/>
+<text x="1464" y="337" font-family="Segoe UI" font-size="22" font-weight="normal" fill="#17212B">email  TEXT  NN  UNIQUE</text>
+<polyline points="1450,369 1900,369" fill="none" stroke="#C7CFD5" stroke-width="1"/>
+<text x="1464" y="376" font-family="Segoe UI" font-size="22" font-weight="normal" fill="#17212B">password_hash  TEXT  NN</text>
+<polyline points="1450,408 1900,408" fill="none" stroke="#C7CFD5" stroke-width="1"/>
+<text x="1464" y="415" font-family="Segoe UI" font-size="22" font-weight="normal" fill="#17212B">created_at  TEXT  NN</text>
+<polyline points="1450,447 1900,447" fill="none" stroke="#C7CFD5" stroke-width="1"/>
+<text x="1464" y="454" font-family="Segoe UI" font-size="22" font-weight="normal" fill="#17212B">is_admin  INTEGER  NN</text>
+<rect x="1990" y="205" width="450" height="320" fill="#FFFFFF" stroke="#54697A" stroke-width="2"/>
+<rect x="1990" y="205" width="450" height="47" fill="#346789" stroke="#346789" stroke-width="1"/>
+<text x="2004" y="215" font-family="Segoe UI" font-size="24" font-weight="bold" fill="#FFFFFF">chat_messages</text>
+<text x="2004" y="259" font-family="Segoe UI" font-size="22" font-weight="normal" fill="#17212B">PK  id  INTEGER</text>
+<polyline points="1990,291 2440,291" fill="none" stroke="#C7CFD5" stroke-width="1"/>
+<text x="2004" y="298" font-family="Segoe UI" font-size="22" font-weight="normal" fill="#17212B">FK  user_id  INTEGER  NN</text>
+<polyline points="1990,330 2440,330" fill="none" stroke="#C7CFD5" stroke-width="1"/>
+<text x="2004" y="337" font-family="Segoe UI" font-size="22" font-weight="normal" fill="#17212B">animal_key  TEXT  NN</text>
+<polyline points="1990,369 2440,369" fill="none" stroke="#C7CFD5" stroke-width="1"/>
+<text x="2004" y="376" font-family="Segoe UI" font-size="22" font-weight="normal" fill="#17212B">role  TEXT  NN</text>
+<polyline points="1990,408 2440,408" fill="none" stroke="#C7CFD5" stroke-width="1"/>
+<text x="2004" y="415" font-family="Segoe UI" font-size="22" font-weight="normal" fill="#17212B">content  TEXT  NN</text>
+<polyline points="1990,447 2440,447" fill="none" stroke="#C7CFD5" stroke-width="1"/>
+<text x="2004" y="454" font-family="Segoe UI" font-size="22" font-weight="normal" fill="#17212B">created_at  TEXT  NN</text>
+<polyline points="1990,486 2440,486" fill="none" stroke="#C7CFD5" stroke-width="1"/>
+<text x="2004" y="493" font-family="Segoe UI" font-size="22" font-weight="normal" fill="#17212B">sources  TEXT</text>
+<rect x="1450" y="800" width="450" height="242" fill="#FFFFFF" stroke="#54697A" stroke-width="2"/>
+<rect x="1450" y="800" width="450" height="47" fill="#346789" stroke="#346789" stroke-width="1"/>
+<text x="1464" y="810" font-family="Segoe UI" font-size="24" font-weight="bold" fill="#FFFFFF">embedding_vectors</text>
+<text x="1464" y="854" font-family="Segoe UI" font-size="22" font-weight="normal" fill="#17212B">PK  model  TEXT</text>
+<polyline points="1450,886 1900,886" fill="none" stroke="#C7CFD5" stroke-width="1"/>
+<text x="1464" y="893" font-family="Segoe UI" font-size="22" font-weight="normal" fill="#17212B">PK  text_hash  TEXT</text>
+<polyline points="1450,925 1900,925" fill="none" stroke="#C7CFD5" stroke-width="1"/>
+<text x="1464" y="932" font-family="Segoe UI" font-size="22" font-weight="normal" fill="#17212B">dims  INTEGER  NN</text>
+<polyline points="1450,964 1900,964" fill="none" stroke="#C7CFD5" stroke-width="1"/>
+<text x="1464" y="971" font-family="Segoe UI" font-size="22" font-weight="normal" fill="#17212B">vector  BLOB  NN</text>
+<polyline points="1450,1003 1900,1003" fill="none" stroke="#C7CFD5" stroke-width="1"/>
+<text x="1464" y="1010" font-family="Segoe UI" font-size="22" font-weight="normal" fill="#17212B">created_at  TEXT  NN</text>
+<rect x="1990" y="790" width="450" height="320" fill="#FFFFFF" stroke="#54697A" stroke-width="2"/>
+<rect x="1990" y="790" width="450" height="47" fill="#346789" stroke="#346789" stroke-width="1"/>
+<text x="2004" y="800" font-family="Segoe UI" font-size="24" font-weight="bold" fill="#FFFFFF">embedding_passages</text>
+<text x="2004" y="844" font-family="Segoe UI" font-size="22" font-weight="normal" fill="#17212B">PK/FK  model  TEXT</text>
+<polyline points="1990,876 2440,876" fill="none" stroke="#C7CFD5" stroke-width="1"/>
+<text x="2004" y="883" font-family="Segoe UI" font-size="22" font-weight="normal" fill="#17212B">PK  content_kind  TEXT</text>
+<polyline points="1990,915 2440,915" fill="none" stroke="#C7CFD5" stroke-width="1"/>
+<text x="2004" y="922" font-family="Segoe UI" font-size="22" font-weight="normal" fill="#17212B">PK  record_key  TEXT</text>
+<polyline points="1990,954 2440,954" fill="none" stroke="#C7CFD5" stroke-width="1"/>
+<text x="2004" y="961" font-family="Segoe UI" font-size="22" font-weight="normal" fill="#17212B">PK  position  INTEGER</text>
+<polyline points="1990,993 2440,993" fill="none" stroke="#C7CFD5" stroke-width="1"/>
+<text x="2004" y="1000" font-family="Segoe UI" font-size="22" font-weight="normal" fill="#17212B">passage_label  TEXT  NN</text>
+<polyline points="1990,1032 2440,1032" fill="none" stroke="#C7CFD5" stroke-width="1"/>
+<text x="2004" y="1039" font-family="Segoe UI" font-size="22" font-weight="normal" fill="#17212B">FK  text_hash  TEXT  NN</text>
+<polyline points="1990,1071 2440,1071" fill="none" stroke="#C7CFD5" stroke-width="1"/>
+<text x="2004" y="1078" font-family="Segoe UI" font-size="22" font-weight="normal" fill="#17212B">updated_at  TEXT  NN</text>
+<rect x="1450" y="1310" width="450" height="242" fill="#FFFFFF" stroke="#54697A" stroke-width="2"/>
+<rect x="1450" y="1310" width="450" height="47" fill="#346789" stroke="#346789" stroke-width="1"/>
+<text x="1464" y="1320" font-family="Segoe UI" font-size="24" font-weight="bold" fill="#FFFFFF">embedding_queries</text>
+<text x="1464" y="1364" font-family="Segoe UI" font-size="22" font-weight="normal" fill="#17212B">PK  model  TEXT</text>
+<polyline points="1450,1396 1900,1396" fill="none" stroke="#C7CFD5" stroke-width="1"/>
+<text x="1464" y="1403" font-family="Segoe UI" font-size="22" font-weight="normal" fill="#17212B">PK  text_hash  TEXT</text>
+<polyline points="1450,1435 1900,1435" fill="none" stroke="#C7CFD5" stroke-width="1"/>
+<text x="1464" y="1442" font-family="Segoe UI" font-size="22" font-weight="normal" fill="#17212B">dims  INTEGER  NN</text>
+<polyline points="1450,1474 1900,1474" fill="none" stroke="#C7CFD5" stroke-width="1"/>
+<text x="1464" y="1481" font-family="Segoe UI" font-size="22" font-weight="normal" fill="#17212B">vector  BLOB  NN</text>
+<polyline points="1450,1513 1900,1513" fill="none" stroke="#C7CFD5" stroke-width="1"/>
+<text x="1464" y="1520" font-family="Segoe UI" font-size="22" font-weight="normal" fill="#17212B">created_at  TEXT  NN</text>
+<rect x="1990" y="1300" width="450" height="255" rx="15" fill="#F5FAFD" stroke="#6D8DA3" stroke-width="2"/>
+<text x="2215" y="1322" font-family="Segoe UI" font-size="24" font-weight="bold" fill="#17212B" text-anchor="middle">Local JSON Catalogs</text>
+<text x="2015" y="1367" font-family="Segoe UI" font-size="19" font-weight="normal" fill="#17212B">ecosystems.json</text>
+<text x="2015" y="1395" font-family="Segoe UI" font-size="19" font-weight="normal" fill="#17212B">protected_areas.json</text>
+<text x="2015" y="1423" font-family="Segoe UI" font-size="19" font-weight="normal" fill="#17212B">Import snapshots with stable slugs</text>
+<text x="2015" y="1451" font-family="Segoe UI" font-size="19" font-weight="normal" fill="#17212B">Runtime rows: catalog_records</text>
+<text x="2015" y="1479" font-family="Segoe UI" font-size="19" font-weight="normal" fill="#17212B">and catalog_state</text>
+<text x="2015" y="1507" font-family="Segoe UI" font-size="19" font-weight="normal" fill="#17212B">Passages use slug as record_key</text>
+<polyline points="570,342 690,342" fill="none" stroke="#17212B" stroke-width="3"/>
+<polygon points="690.0,342.0 672.0,350.0 672.0,334.0" fill="#17212B"/>
+<text x="618" y="311" font-family="Georgia" font-size="20" font-weight="normal" fill="#17212B">1 : N</text>
+<polyline points="690,593 570,682" fill="none" stroke="#17212B" stroke-width="3"/>
+<polygon points="570.0,682.0 579.7,664.9 589.2,677.7" fill="#17212B"/>
+<text x="606" y="614" font-family="Georgia" font-size="20" font-weight="normal" fill="#17212B">1 : N</text>
+<polyline points="570,1160 690,715" fill="none" stroke="#17212B" stroke-width="3"/>
+<polygon points="690.0,715.0 693.0,734.5 677.6,730.3" fill="#17212B"/>
+<text x="582" y="951" font-family="Georgia" font-size="20" font-weight="normal" fill="#17212B">derived index</text>
+<polyline points="1900,340 1990,340" fill="none" stroke="#17212B" stroke-width="3"/>
+<polygon points="1990.0,340.0 1972.0,348.0 1972.0,332.0" fill="#17212B"/>
+<text x="1914" y="309" font-family="Georgia" font-size="20" font-weight="normal" fill="#17212B">1 : N</text>
+<polyline points="1900,899 1990,899" fill="none" stroke="#17212B" stroke-width="3"/>
+<polygon points="1990.0,899.0 1972.0,907.0 1972.0,891.0" fill="#17212B"/>
+<text x="1914" y="868" font-family="Georgia" font-size="20" font-weight="normal" fill="#17212B">1 : N</text>
+<polyline points="1340,590 1835,590 1990,520" fill="none" stroke="#626F78" stroke-width="3" stroke-dasharray="13 11"/>
+<polygon points="1990.0,520.0 1976.9,534.7 1970.3,520.1" fill="#626F78"/>
+<text x="1534" y="559" font-family="Georgia" font-size="20" font-weight="normal" fill="#626F78">logical animal_key</text>
+<polyline points="1340,690 1950,690 1950,850 1990,850" fill="none" stroke="#626F78" stroke-width="3" stroke-dasharray="13 11"/>
+<polygon points="1990.0,850.0 1972.0,858.0 1972.0,842.0" fill="#626F78"/>
+<text x="1590" y="659" font-family="Georgia" font-size="20" font-weight="normal" fill="#626F78">logical record key</text>
+<polyline points="2215,1300 2215,1110" fill="none" stroke="#626F78" stroke-width="3" stroke-dasharray="13 11"/>
+<polygon points="2215.0,1110.0 2223.0,1128.0 2207.0,1128.0" fill="#626F78"/>
+<text x="2234" y="1193" font-family="Georgia" font-size="20" font-weight="normal" fill="#626F78">slug key</text>
+<text x="1250" y="1748" font-family="Segoe UI" font-size="19" font-weight="normal" fill="#17212B" text-anchor="middle">PK = Primary Key   FK = Foreign Key   NN = Not Null   ·   Dashed arrows = application-level associations</text>
+<text x="1250" y="1782" font-family="Segoe UI" font-size="19" font-weight="normal" fill="#17212B" text-anchor="middle">Arrows terminate at table borders. Local JSON files are import snapshots; catalog records are stored in SQLite.</text>
+</svg>

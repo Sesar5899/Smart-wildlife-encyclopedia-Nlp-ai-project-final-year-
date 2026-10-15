@@ -1,0 +1,47 @@
+{% extends "base.html" %}
+{% from "_iucn.html" import iucn_badge, iucn_legend_panel %}
+{% block title %}{{ current_category.name_my }} - မြန်မာ့တောရိုင်းတိရစ္ဆာန် စွယ်စုံကျမ်း{% endblock %}
+
+{% block content %}
+<div class="container">
+    <div class="category-header">
+        <nav class="breadcrumb" style="padding-top: 0;">
+            <a href="{{ url_for('home') }}">တိရစ္ဆာန်များ</a>
+            <span class="breadcrumb-sep">›</span>
+            <span class="breadcrumb-current">{{ current_category.name_my }}</span>
+        </nav>
+        <h1>{{ current_category.name_my }}</h1>
+        <p>{{ current_category.description_my or '' }}</p>
+    </div>
+
+    <div class="category-pills" style="margin-bottom: var(--spacing-xxl);">
+        <a href="{{ url_for('home') }}#animals" class="pill">အားလုံး</a>
+        {% for cat in categories %}
+        <a href="{{ url_for('category_page', category_id=cat.id) }}" class="pill {{ 'active' if cat.id == current_category.id }}">
+            {{ cat.name_my }}
+            <span class="count">{{ cat.animal_count|mm_number }}</span>
+        </a>
+        {% endfor %}
+    </div>
+
+    <div class="catalog-results-head animal-results-head">
+        <h2>တိရစ္ဆာန် မှတ်တမ်းများ</h2>
+        <span>{{ animal_total|mm_number }} ခု ရှိသည်</span>
+    </div>
+
+    {% if animals %}
+    {{ iucn_legend_panel() }}
+    <div class="animals-grid">
+        {% for animal in animals %}
+        {% include "_animal_card.html" %}
+        {% endfor %}
+    </div>
+    {% else %}
+    <div class="empty-state">
+        <div class="icon">🔍</div>
+        <h3>ကိုက်ညီသော တိရစ္ဆာန် မတွေ့ပါ</h3>
+        <p>ဤအမျိုးအစားတွင် တိရစ္ဆာန်မှတ်တမ်း မရှိသေးပါ။</p>
+    </div>
+    {% endif %}
+</div>
+{% endblock %}

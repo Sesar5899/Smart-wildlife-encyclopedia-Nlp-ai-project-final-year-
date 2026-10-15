@@ -1,0 +1,800 @@
+{% extends "base.html" %}
+{% from "_iucn.html" import iucn_badge, iucn_legend_panel %}
+{% block title %}{{ animal.name_my }} — AI ပြောဆိုခန်း{% endblock %}
+{% block body_class %}chat-app-page{% endblock %}
+
+{% block content %}
+<div class="chat-app">
+    <div class="chat-rail-scrim" id="railScrim" hidden></div>
+
+    <aside class="chat-rail" id="chatRail" aria-label="သင့် ပြောဆိုခန်း မှတ်တမ်း">
+        <header class="chat-rail-head">
+            <div>
+                <span class="chat-rail-kicker">သင့်မှတ်တမ်း</span>
+                <h2>ပြောဆိုခန်းများ</h2>
+            </div>
+            <span class="chat-rail-count" id="threadCount">{{ recent_threads|length|mm_number }}</span>
+        </header>
+
+        <a href="{{ url_for('home') }}" class="chat-rail-new">
+            <span aria-hidden="true">＋</span>
+            <span>အခြား တိရစ္ဆာန် ရွေးရန်</span>
+        </a>
+
+        <div class="chat-rail-list" id="recentThreadList">
+            {% for thread in recent_threads %}
+            <div class="chat-thread-item {% if thread.animal_id == animal.id %}active{% endif %}"
+                 data-animal-id="{{ thread.animal_id }}">
+                <a href="{{ url_for('animal_chat', animal_id=thread.animal_id) }}" class="chat-thread-link">
+                    <span class="chat-thread-photo">
+                        {% if thread.image_url %}<img src="{{ thread.image_url }}" alt="">{% else %}🐾{% endif %}
+                    </span>
+                    <span class="chat-thread-copy">
+                        <strong>{{ thread.name_my }}</strong>
+                        <span>{{ thread.last_message }}</span>
+                    </span>
+                    <span class="chat-thread-count">{{ thread.message_count|mm_number }}</span>
+                </a>
+                <button type="button" class="chat-thread-delete"
+                        data-animal-id="{{ thread.animal_id }}"
+                        data-animal-name="{{ thread.name_my }}"
+                        aria-label="{{ thread.name_my }} မှတ်တမ်းကို ဖျက်ရန်" title="မှတ်တမ်း ဖျက်ရန်">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+                        <path d="M3 6h18M8 6V4h8v2M6 6l1 14h10l1-14"></path>
+                    </svg>
+                </button>
+            </div>
+            {% endfor %}
+            <div class="chat-thread-empty" id="threadEmptyState" {% if recent_threads %}hidden{% endif %}>
+                ပထမဆုံး မေးခွန်းမေးပြီးနောက် သင့်ပြောဆိုခန်းများကို ဤနေရာတွင် ပြန်ဖွင့်နိုင်ပါမည်။
+            </div>
+        </div>
+    </aside>
+
+    <section class="chat-stage" aria-label="{{ animal.name_my }} AI ပြောဆိုခန်း">
+        <header class="chat-stage-head">
+            <button type="button" class="chat-rail-toggle" id="railToggle"
+                    aria-controls="chatRail" aria-expanded="false" aria-label="မှတ်တမ်း စာရင်း ဖွင့်ရန်">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+                    <path d="M4 6h16M4 12h16M4 18h16"></path>
+                </svg>
+            </button>
+
+            <div class="chat-stage-subject">
+                <span class="chat-stage-photo">
+                    {% if animal.image_url %}<img src="{{ animal.image_url }}" alt="{{ animal.name_en }}">{% else %}🐾{% endif %}
+                </span>
+                <div class="chat-stage-copy">
+                    <h1>{{ animal.name_my }}</h1>
+                    <p>
+                        <span>{{ animal.name_en }}</span>
+                        {% if animal.scientific_name %}<em>{{ animal.scientific_name }}</em>{% endif %}
+                        {{ iucn_badge(animal.conservation_status, prefix='မြန်မာ') }}
+                    </p>
+                </div>
+            </div>
+
+            <div class="chat-stage-actions">
+                <span class="chat-save-state {% if chat_history %}saved{% else %}empty{% endif %}" id="chatSaveState" role="status">
+                    <span class="chat-save-dot"></span>
+                    <span id="chatSaveText">{% if chat_history %}မှတ်တမ်း သိမ်းထားသည်{% else %}စကားစမြည် အသစ်{% endif %}</span>
+                </span>
+                <a href="{{ url_for('animal_detail', animal_id=animal.id) }}" class="chat-stage-link">အချက်အလက်</a>
+                <button type="button" class="chat-delete-btn" id="clearHistoryBtn" {% if not chat_history %}disabled{% endif %}>
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+                        <path d="M3 6h18M8 6V4h8v2M6 6l1 14h10l1-14M10 11v6M14 11v6"></path>
+                    </svg>
+                    <span>မှတ်တမ်း ဖျက်ရန်</span>
+                </button>
+            </div>
+        </header>
+
+        <div class="chat-messages" id="chatMessages" role="log" aria-live="polite" aria-label="စကားစမြည် မှတ်တမ်း"></div>
+
+        <div class="chat-composer">
+            {% if suggestions %}
+            <div class="chat-suggestion-strip" id="suggestionStrip" aria-label="အဆိုပြု မေးခွန်းများ">
+                {% for question in suggestions %}
+                <button type="button" class="chat-tip" data-question="{{ question }}">{{ question }}</button>
+                {% endfor %}
+            </div>
+            {% endif %}
+            <form class="chat-input-form" id="chatForm">
+                <label for="chatInput" class="sr-only">{{ animal.name_my }} အကြောင်း မေးရန်</label>
+                <textarea class="chat-input" id="chatInput" rows="1" maxlength="4000"
+                          placeholder="{{ animal.name_my }} အကြောင်း သိချင်တာကို မေးပါ..."></textarea>
+                <button type="submit" class="chat-send-btn" id="sendBtn" aria-label="မေးခွန်း ပို့ရန်">
+                    <span>ပို့ရန်</span>
+                    <span aria-hidden="true">↑</span>
+                </button>
+            </form>
+            <div class="chat-composer-meta">
+                <span>ဖြေကြားပြီးသည့် စကားစမြည်များကို အလိုအလျောက် သိမ်းထားပါမည်။</span>
+                <span>Enter — ပို့ရန် · Shift + Enter — စာကြောင်းသစ်</span>
+            </div>
+        </div>
+    </section>
+</div>
+{% endblock %}
+
+{% block scripts %}
+<script>
+const ANIMAL_ID = {{ animal.id|tojson }};
+const ANIMAL_NAME = {{ animal.name_my|tojson }};
+const ANIMAL_IMAGE = {{ animal.image_url|tojson }};
+const LOCAL_RECORD_SOURCE = {
+    group: 'answer',
+    label: 'Project species record',
+    detail: 'လက်ရှိတိရစ္ဆာန်၏ local data မှတ်တမ်း',
+    url: `/animal/${ANIMAL_ID}`,
+    external: false
+};
+const USER_INITIAL = {{ current_user.name[:1]|upper|tojson }};
+const INITIAL_HISTORY = {{ chat_history|tojson }};
+const SUGGESTIONS = {{ suggestions|tojson }};
+const NO_INFORMATION_MARKERS = {{ no_information_markers|tojson }};
+const NO_INFORMATION_MAX_LENGTH = {{ no_information_max_length|tojson }};
+
+const chatMessages = document.getElementById('chatMessages');
+const chatInput = document.getElementById('chatInput');
+const chatForm = document.getElementById('chatForm');
+const sendBtn = document.getElementById('sendBtn');
+const clearHistoryBtn = document.getElementById('clearHistoryBtn');
+const chatSaveState = document.getElementById('chatSaveState');
+const chatSaveText = document.getElementById('chatSaveText');
+const threadList = document.getElementById('recentThreadList');
+const threadEmptyState = document.getElementById('threadEmptyState');
+const threadCount = document.getElementById('threadCount');
+const suggestionStrip = document.getElementById('suggestionStrip');
+const chatRail = document.getElementById('chatRail');
+const railToggle = document.getElementById('railToggle');
+const railScrim = document.getElementById('railScrim');
+let isGenerating = false;
+let storedMessageCount = INITIAL_HISTORY.length;
+
+chatInput.addEventListener('input', function() {
+    this.style.height = 'auto';
+    this.style.height = Math.min(this.scrollHeight, 168) + 'px';
+});
+
+chatInput.addEventListener('keydown', function(event) {
+    if (event.key === 'Enter' && !event.shiftKey) {
+        event.preventDefault();
+        chatForm.requestSubmit();
+    }
+});
+
+chatForm.addEventListener('submit', sendMessage);
+clearHistoryBtn.addEventListener('click', () => deleteThread(ANIMAL_ID, ANIMAL_NAME));
+document.querySelectorAll('.chat-tip').forEach(button => {
+    button.addEventListener('click', () => askQuestion(button.dataset.question));
+});
+
+// -- the history rail --------------------------------------------------
+
+function setRail(open) {
+    chatRail.classList.toggle('open', open);
+    railScrim.hidden = !open;
+    railToggle.setAttribute('aria-expanded', String(open));
+}
+
+// The full prompt wraps to two clipped lines on a phone, so the composer
+// asks for the same thing in fewer words there.
+const NARROW = window.matchMedia('(max-width: 640px)');
+const FULL_PLACEHOLDER = chatInput.placeholder;
+function syncPlaceholder() {
+    chatInput.placeholder = NARROW.matches ? 'မေးခွန်း ရေးပါ...' : FULL_PLACEHOLDER;
+}
+NARROW.addEventListener('change', syncPlaceholder);
+syncPlaceholder();
+
+railToggle.addEventListener('click', () => setRail(!chatRail.classList.contains('open')));
+railScrim.addEventListener('click', () => setRail(false));
+document.addEventListener('keydown', event => {
+    if (event.key === 'Escape' && chatRail.classList.contains('open')) setRail(false);
+});
+
+// One listener on the list, so rows added after load delete just like the
+// rows rendered by the server.
+threadList.addEventListener('click', event => {
+    const button = event.target.closest('.chat-thread-delete');
+    if (!button) return;
+    event.preventDefault();
+    deleteThread(Number(button.dataset.animalId), button.dataset.animalName);
+});
+
+function threadRow(animalId) {
+    return threadList.querySelector(`.chat-thread-item[data-animal-id="${animalId}"]`);
+}
+
+function refreshThreadCount() {
+    const rows = threadList.querySelectorAll('.chat-thread-item').length;
+    threadCount.textContent = new Intl.NumberFormat('my-MM').format(rows);
+    threadEmptyState.hidden = rows > 0;
+}
+
+async function deleteThread(animalId, animalName) {
+    if (isGenerating) return;
+    const isCurrent = animalId === ANIMAL_ID;
+    if (isCurrent && storedMessageCount === 0) return;
+    if (!window.confirm(`${animalName} ပြောဆိုခန်း မှတ်တမ်းအားလုံးကို ဖျက်မည်လား? ဤလုပ်ဆောင်ချက်ကို ပြန်ဖျက်၍ မရပါ။`)) return;
+
+    const row = threadRow(animalId);
+    if (row) row.classList.add('deleting');
+    if (isCurrent) {
+        clearHistoryBtn.disabled = true;
+        setSaveState('working', 'မှတ်တမ်း ဖျက်နေသည်...');
+    }
+
+    try {
+        const response = await fetch(`/api/animal/${animalId}/chat/history`, { method: 'DELETE' });
+        if (!response.ok) throw new Error('delete failed');
+        if (row) row.remove();
+        refreshThreadCount();
+        if (isCurrent) {
+            storedMessageCount = 0;
+            renderWelcome();
+            setSaveState('empty', 'စကားစမြည် အသစ်');
+        }
+    } catch (error) {
+        if (row) row.classList.remove('deleting');
+        if (isCurrent) {
+            clearHistoryBtn.disabled = false;
+            setSaveState('error', 'မှတ်တမ်းကို မဖျက်နိုင်ပါ');
+        }
+    }
+}
+
+// -- composing ---------------------------------------------------------
+
+function setSaveState(state, text) {
+    chatSaveState.className = `chat-save-state ${state}`;
+    chatSaveText.textContent = text;
+}
+
+function syncSuggestionStrip() {
+    // The welcome screen already offers these questions; showing them twice
+    // just crowds the composer.
+    if (!suggestionStrip) return;
+    suggestionStrip.hidden = !chatMessages.querySelector('.chat-message');
+}
+
+function askQuestion(question) {
+    if (isGenerating) return;
+    chatInput.value = question;
+    chatInput.dispatchEvent(new Event('input'));
+    chatForm.requestSubmit();
+}
+
+function renderWelcome() {
+    chatMessages.textContent = '';
+    const welcome = document.createElement('div');
+    welcome.className = 'chat-welcome';
+
+    const mark = document.createElement('div');
+    mark.className = 'chat-welcome-mark';
+    mark.textContent = '🌿';
+
+    const title = document.createElement('h2');
+    title.textContent = `${ANIMAL_NAME} အကြောင်း သိချင်တာ မေးပါ`;
+
+    const copy = document.createElement('p');
+    copy.textContent = 'မူရင်းမျိုးစိတ်မှတ်တမ်းပေါ် အခြေခံပြီး မြန်မာဘာသာဖြင့် ရှင်းလင်းစွာ ဖြေကြားပေးပါမည်။';
+
+    welcome.append(mark, title, copy);
+    if (SUGGESTIONS.length) {
+        const actions = document.createElement('div');
+        actions.className = 'chat-welcome-actions';
+        SUGGESTIONS.slice(0, 3).forEach(question => {
+            const button = document.createElement('button');
+            button.type = 'button';
+            button.textContent = question;
+            button.addEventListener('click', () => askQuestion(question));
+            actions.appendChild(button);
+        });
+        welcome.appendChild(actions);
+    }
+    chatMessages.appendChild(welcome);
+    syncSuggestionStrip();
+}
+
+function renderInitialHistory() {
+    if (!INITIAL_HISTORY.length) {
+        renderWelcome();
+        return;
+    }
+    chatMessages.textContent = '';
+    INITIAL_HISTORY.forEach(message => {
+        addMessage(message.role, message.content, {
+            timestamp: message.created_at,
+            stored: true,
+            scroll: false,
+            // An answer this project's record did not produce was saved with
+            // the pages that did, so a reopened thread still credits them.
+            sources: Array.isArray(message.sources) && message.sources.length
+                ? message.sources
+                : (message.model_knowledge ? [LOCAL_RECORD_SOURCE] : message.sources),
+            redirect: message.redirect
+        });
+    });
+    chatMessages.scrollTop = chatMessages.scrollHeight;
+    syncSuggestionStrip();
+}
+
+async function sendMessage(event) {
+    event.preventDefault();
+    const message = chatInput.value.trim();
+    if (!message || isGenerating) return false;
+
+    isGenerating = true;
+    sendBtn.disabled = true;
+    clearHistoryBtn.disabled = true;
+    setSaveState('working', 'ဖြေဆိုနေသည်...');
+    chatInput.value = '';
+    chatInput.style.height = 'auto';
+    setRail(false);
+
+    const userMessageEl = addMessage('user', message, { timestamp: new Date().toISOString() });
+    const typingId = addTypingIndicator();
+
+    try {
+        const response = await fetch(`/api/animal/${ANIMAL_ID}/chat`, {
+            method: 'POST',
+            headers: { 'Content-Type': 'application/json' },
+            body: JSON.stringify({ message })
+        });
+
+        if (!response.ok) {
+            removeTypingIndicator(typingId);
+            let detail = 'ချိတ်ဆက်မှု အမှားဖြစ်နေသည်။ AI ဝန်ဆောင်မှုကို စစ်ဆေးပါ။';
+            try {
+                const error = await response.json();
+                detail = error.error || detail;
+            } catch (parseError) {}
+            if (response.status === 401) detail = 'အကောင့်မှ ထွက်သွားပါပြီ။ ပြန်ဝင်ပါ။';
+            markMessageUnsaved(userMessageEl);
+            addMessage('assistant', detail, { error: true });
+            setSaveState('error', 'ဤမေးခွန်းကို မသိမ်းရသေးပါ');
+            return false;
+        }
+
+        const reader = response.body.getReader();
+        const decoder = new TextDecoder();
+        let assistantMessage = '';
+        let assistantEl = null;
+        // An answer from outside this project names its own sources, and says
+        // so on its first chunk so the panel is right from the start.
+        let answerSources = null;
+        let buffer = '';
+        let streamError = false;
+        let saved = false;
+
+        while (true) {
+            const { done, value } = await reader.read();
+            buffer += decoder.decode(value || new Uint8Array(), { stream: !done });
+            const lines = buffer.split('\n');
+            buffer = done ? '' : lines.pop();
+
+            for (const line of lines.filter(item => item.trim())) {
+                try {
+                    const data = JSON.parse(line);
+                    if (data.error) {
+                        removeTypingIndicator(typingId);
+                        addMessage('assistant', data.error, { error: true });
+                        markMessageUnsaved(userMessageEl);
+                        setSaveState('error', 'စကားစမြည်ကို မသိမ်းနိုင်ပါ');
+                        streamError = true;
+                        break;
+                    }
+                    if (data.external && Array.isArray(data.sources)) {
+                        answerSources = data.sources;
+                    }
+                    if (data.content) {
+                        removeTypingIndicator(typingId);
+                        assistantMessage += data.content;
+                        if (!assistantEl) {
+                            assistantEl = addMessage('assistant', assistantMessage, {
+                                sources: answerSources
+                            });
+                        } else {
+                            updateMessageContent(assistantEl, assistantMessage);
+                        }
+                    }
+                    if (data.done) {
+                        saved = Boolean(data.saved);
+                        if (assistantEl && data.saved_at) {
+                            updateMessageMeta(assistantEl, data.saved_at, saved);
+                            updateMessageMeta(userMessageEl, data.saved_at, saved);
+                        }
+                        if (assistantEl && (data.redirect || data.out_of_scope || data.no_information)) {
+                            assistantEl.querySelector('.chat-bubble')
+                                .classList.toggle(
+                                    'chat-bubble-notice',
+                                    Boolean(data.redirect || data.out_of_scope || data.no_information)
+                                );
+                            dropSourcePanel(assistantEl);
+                            dropModelOrigin(assistantEl);
+                        } else if (assistantEl && Array.isArray(data.sources)) {
+                            replaceSourcePanel(assistantEl, data.sources || []);
+                        }
+                        if (data.redirect && assistantEl) {
+                            addRedirectButton(assistantEl, data.redirect);
+                        }
+                        if (data.images && data.images.length && assistantEl) {
+                            addPhotos(assistantEl, data.images);
+                        }
+                    }
+                } catch (parseError) {}
+            }
+            if (done || streamError) break;
+        }
+
+        removeTypingIndicator(typingId);
+        if (!assistantMessage && !streamError) {
+            markMessageUnsaved(userMessageEl);
+            addMessage('assistant', 'ဖြေကြားချက် ရရှိမလာပါ။', { error: true });
+            setSaveState('error', 'စကားစမြည်ကို မသိမ်းနိုင်ပါ');
+        } else if (saved) {
+            storedMessageCount += 2;
+            updateRecentThread(assistantMessage);
+            setSaveState('saved', 'အလိုအလျောက် သိမ်းပြီး');
+        } else if (!streamError) {
+            markMessageUnsaved(userMessageEl);
+            setSaveState('error', 'စကားစမြည်ကို မသိမ်းနိုင်ပါ');
+        }
+    } catch (error) {
+        removeTypingIndicator(typingId);
+        markMessageUnsaved(userMessageEl);
+        addMessage('assistant', 'ချိတ်ဆက်မှု အမှားဖြစ်နေသည်။ AI ဝန်ဆောင်မှုကို စစ်ဆေးပါ။', { error: true });
+        setSaveState('error', 'ဤမေးခွန်းကို မသိမ်းရသေးပါ');
+    } finally {
+        isGenerating = false;
+        sendBtn.disabled = false;
+        clearHistoryBtn.disabled = storedMessageCount === 0;
+        chatInput.focus();
+    }
+    return false;
+}
+
+// -- messages ----------------------------------------------------------
+
+function addMessage(role, content, options = {}) {
+    const welcome = chatMessages.querySelector('.chat-welcome');
+    if (welcome) welcome.remove();
+
+    const row = document.createElement('article');
+    row.className = `chat-message ${role}${options.error ? ' chat-message-error' : ''}`;
+
+    const avatar = document.createElement('div');
+    avatar.className = 'chat-avatar';
+    avatar.textContent = role === 'user' ? USER_INITIAL : '🌿';
+
+    const messageContent = document.createElement('div');
+    messageContent.className = 'chat-message-content';
+    const bubble = document.createElement('div');
+    bubble.className = 'chat-bubble';
+    bubble.innerHTML = formatResponse(content);
+    messageContent.appendChild(bubble);
+
+    if (role === 'assistant' && options.redirect) {
+        bubble.classList.add('chat-bubble-notice');
+    }
+
+    if (role === 'assistant' && !options.error && !options.redirect && !isNoInformationResponse(content)) {
+        const sources = Array.isArray(options.sources) ? options.sources : [];
+        if (sources.length) messageContent.appendChild(buildSourcePanel(sources));
+    }
+
+    const meta = buildMessageMeta(role, content, options.timestamp, options.stored);
+    messageContent.appendChild(meta);
+    row.append(avatar, messageContent);
+    if (role === 'assistant' && options.redirect) {
+        addRedirectButton(row, options.redirect);
+    }
+    chatMessages.appendChild(row);
+    syncSuggestionStrip();
+    if (options.scroll !== false) chatMessages.scrollTop = chatMessages.scrollHeight;
+    return row;
+}
+
+function buildSourcePanel(sources) {
+    const panel = document.createElement('section');
+    panel.className = 'chat-answer-sources';
+    panel.setAttribute('aria-label', 'ဖြေကြားချက် ရင်းမြစ်များ');
+
+    const heading = document.createElement('div');
+    heading.className = 'chat-answer-sources-head';
+    const title = document.createElement('strong');
+    title.textContent = 'ရင်းမြစ်များ';
+    const note = document.createElement('span');
+    note.textContent = 'AI မဖန်တီးထားသော link များ';
+    heading.append(title, note);
+    panel.appendChild(heading);
+
+    const groups = [
+        { name: 'answer', label: 'ဤအဖြေအတွက် အသုံးပြုထားသော ရင်းမြစ်', open: true },
+        { name: 'further', label: 'ပြင်ပတွင် ဆက်လက်လေ့လာရန်', open: false }
+    ];
+
+    groups.forEach(group => {
+        const items = sources.filter(source => source.group === group.name);
+        if (!items.length) return;
+
+        const details = document.createElement('details');
+        details.className = `chat-source-group chat-source-group-${group.name}`;
+        details.open = group.open;
+        const summary = document.createElement('summary');
+        summary.textContent = group.label;
+        const links = document.createElement('div');
+        links.className = 'chat-answer-source-links';
+
+        items.forEach(source => {
+            const link = document.createElement('a');
+            link.href = source.url;
+            if (source.external) {
+                link.target = '_blank';
+                link.rel = 'noopener noreferrer';
+            }
+            const copy = document.createElement('span');
+            const label = document.createElement('strong');
+            label.textContent = source.label;
+            const detail = document.createElement('small');
+            detail.textContent = source.detail;
+            copy.append(label, detail);
+            const arrow = document.createElement('span');
+            arrow.className = 'chat-source-arrow';
+            arrow.setAttribute('aria-hidden', 'true');
+            arrow.textContent = source.external ? '↗' : '→';
+            link.append(copy, arrow);
+            links.appendChild(link);
+        });
+
+        details.append(summary, links);
+        panel.appendChild(details);
+    });
+    return panel;
+}
+
+function replaceSourcePanel(messageEl, sources) {
+    const content = messageEl.querySelector('.chat-message-content');
+    const existing = messageEl.querySelector('.chat-answer-sources');
+    if (existing) existing.remove();
+    if (!sources.length) return;
+    content.insertBefore(buildSourcePanel(sources), messageEl.querySelector('.chat-message-meta'));
+}
+
+function dropSourcePanel(messageEl) {
+    // Redirects and no-information notices cite no record, so they carry no
+    // source panel. The same rule is used by copied and restored messages.
+    const panel = messageEl.querySelector('.chat-answer-sources');
+    if (panel) panel.remove();
+}
+
+function isNoInformationResponse(content) {
+    // Mirrors is_no_information_response() on the server: the notice counts
+    // only when it is the whole reply, so a reply that drew a table for the
+    // part the record could answer keeps the source panel it earned.
+    const raw = content || '';
+    const normalized = raw.toLocaleLowerCase().replace(/\s+/g, ' ').trim();
+    const flagged = NO_INFORMATION_MARKERS.some(marker =>
+        normalized.includes(marker.toLocaleLowerCase())
+    );
+    if (!flagged) return false;
+    if (/^\s*(\||[-*+]\s|#{1,6}\s)/m.test(raw)) return false;
+    return normalized.length <= NO_INFORMATION_MAX_LENGTH;
+}
+
+function messageSources(messageEl) {
+    if (!messageEl) return [];
+    return [...messageEl.querySelectorAll('.chat-answer-source-links a')].map(link => ({
+        label: link.querySelector('strong')?.textContent || link.href,
+        url: link.href,
+        group: link.closest('.chat-source-group-answer') ? 'answer' : 'further'
+    }));
+}
+
+function responseWithSources(content, messageEl) {
+    const sources = messageSources(messageEl);
+    if (!sources.length) return content;
+    const lines = [content, '', 'ရင်းမြစ်များ:'];
+    sources.forEach(source => {
+        const group = source.group === 'answer' ? 'အဖြေရင်းမြစ်' : 'ဆက်လက်လေ့လာရန်';
+        const absoluteUrl = new URL(source.url, location.origin).href;
+        lines.push(`- ${group} — ${source.label}: ${absoluteUrl}`);
+    });
+    return lines.join('\n');
+}
+
+function buildMessageMeta(role, content, timestamp, stored) {
+    const meta = document.createElement('div');
+    meta.className = 'chat-message-meta';
+    const label = document.createElement('span');
+    label.className = 'chat-message-time';
+    label.textContent = `${role === 'user' ? 'သင်' : ANIMAL_NAME + ' AI'} · ${formatTimestamp(timestamp || new Date().toISOString())}${stored ? ' · သိမ်းထားသည်' : ''}`;
+    meta.appendChild(label);
+
+    if (role === 'assistant') {
+        const copy = document.createElement('button');
+        copy.type = 'button';
+        copy.className = 'chat-copy-btn';
+        copy.textContent = 'ကူးယူ';
+        copy.addEventListener('click', async () => {
+            try {
+                await navigator.clipboard.writeText(
+                    responseWithSources(content, copy.closest('.chat-message'))
+                );
+                copy.textContent = 'ကူးပြီး';
+                setTimeout(() => { copy.textContent = 'ကူးယူ'; }, 1400);
+            } catch (error) {
+                copy.textContent = 'မရပါ';
+            }
+        });
+        meta.appendChild(copy);
+    }
+    return meta;
+}
+
+function updateMessageContent(messageEl, content) {
+    messageEl.querySelector('.chat-bubble').innerHTML = formatResponse(content);
+    const copy = messageEl.querySelector('.chat-copy-btn');
+    if (copy) {
+        const replacement = copy.cloneNode(true);
+        replacement.addEventListener('click', () => navigator.clipboard.writeText(
+            responseWithSources(content, replacement.closest('.chat-message'))
+        ));
+        copy.replaceWith(replacement);
+    }
+    chatMessages.scrollTop = chatMessages.scrollHeight;
+}
+
+function updateMessageMeta(messageEl, timestamp, stored) {
+    const role = messageEl.classList.contains('user') ? 'user' : 'assistant';
+    const time = messageEl.querySelector('.chat-message-time');
+    if (time) time.textContent = `${role === 'user' ? 'သင်' : ANIMAL_NAME + ' AI'} · ${formatTimestamp(timestamp)}${stored ? ' · သိမ်းထားသည်' : ''}`;
+}
+
+function markMessageUnsaved(messageEl) {
+    messageEl.classList.add('chat-message-unsaved');
+    const time = messageEl.querySelector('.chat-message-time');
+    if (time) time.textContent += ' · မသိမ်းရသေး';
+}
+
+function updateRecentThread(lastMessage) {
+    let item = threadRow(ANIMAL_ID);
+    if (!item) {
+        item = document.createElement('div');
+        item.className = 'chat-thread-item active';
+        item.dataset.animalId = String(ANIMAL_ID);
+
+        const link = document.createElement('a');
+        link.className = 'chat-thread-link';
+        link.href = location.pathname;
+
+        const photo = document.createElement('span');
+        photo.className = 'chat-thread-photo';
+        if (ANIMAL_IMAGE) {
+            const image = document.createElement('img');
+            image.src = ANIMAL_IMAGE;
+            image.alt = '';
+            photo.appendChild(image);
+        } else {
+            photo.textContent = '🐾';
+        }
+
+        const copy = document.createElement('span');
+        copy.className = 'chat-thread-copy';
+        const name = document.createElement('strong');
+        name.textContent = ANIMAL_NAME;
+        const preview = document.createElement('span');
+        copy.append(name, preview);
+
+        const count = document.createElement('span');
+        count.className = 'chat-thread-count';
+        link.append(photo, copy, count);
+
+        const remove = document.createElement('button');
+        remove.type = 'button';
+        remove.className = 'chat-thread-delete';
+        remove.dataset.animalId = String(ANIMAL_ID);
+        remove.dataset.animalName = ANIMAL_NAME;
+        remove.title = 'မှတ်တမ်း ဖျက်ရန်';
+        remove.setAttribute('aria-label', `${ANIMAL_NAME} မှတ်တမ်းကို ဖျက်ရန်`);
+        remove.innerHTML = '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M3 6h18M8 6V4h8v2M6 6l1 14h10l1-14"></path></svg>';
+
+        item.append(link, remove);
+    }
+
+    item.querySelector('.chat-thread-copy span').textContent = markdownToText(lastMessage).slice(0, 90);
+    item.querySelector('.chat-thread-count').textContent = new Intl.NumberFormat('my-MM').format(storedMessageCount);
+    threadList.prepend(item);
+    refreshThreadCount();
+}
+
+function addPhotos(messageEl, images) {
+    // Built as nodes with .src set as a property: the URLs come from the
+    // record, and the server has already restricted them to /static files.
+    const gallery = document.createElement('div');
+    gallery.className = 'chat-photos';
+    images.forEach(item => {
+        const figure = document.createElement('figure');
+        figure.className = 'chat-photo';
+        const img = document.createElement('img');
+        img.src = item.url;
+        img.alt = item.caption || '';
+        img.loading = 'lazy';
+        img.decoding = 'async';
+        const caption = document.createElement('figcaption');
+        caption.textContent = item.caption || '';
+        figure.append(img, caption);
+        gallery.appendChild(figure);
+    });
+    messageEl.querySelector('.chat-bubble').appendChild(gallery);
+}
+
+function addRedirectButton(messageEl, redirect) {
+    if (!redirect || !redirect.url || !redirect.name) return;
+    const bubble = messageEl.querySelector('.chat-bubble');
+    if (!bubble || bubble.querySelector('.chat-redirect-button')) return;
+
+    const link = document.createElement('a');
+    link.className = 'chat-redirect-button';
+    link.href = redirect.url;
+
+    const copy = document.createElement('span');
+    copy.className = 'chat-redirect-copy';
+    const kicker = document.createElement('small');
+    kicker.textContent = redirect.label || '';
+    const name = document.createElement('strong');
+    name.textContent = redirect.name;
+    copy.append(kicker, name);
+
+    const arrow = document.createElement('span');
+    arrow.className = 'chat-redirect-arrow';
+    arrow.textContent = '→';
+
+    link.append(copy, arrow);
+    bubble.appendChild(link);
+}
+
+function formatResponse(text) {
+    // Replies are Markdown: renderMarkdown escapes the text before it builds
+    // any markup, so a table can be drawn without trusting the model's output.
+    return renderMarkdown(text);
+}
+
+function formatTimestamp(value) {
+    const date = value ? new Date(value) : new Date();
+    if (Number.isNaN(date.getTime())) return 'ယခု';
+    return new Intl.DateTimeFormat('my-MM', {
+        month: 'short', day: 'numeric', hour: 'numeric', minute: '2-digit'
+    }).format(date);
+}
+
+function addTypingIndicator() {
+    const id = `typing-${Date.now()}`;
+    const row = document.createElement('article');
+    row.className = 'chat-message assistant';
+    row.id = id;
+    row.innerHTML = '<div class="chat-avatar">🌿</div><div class="chat-message-content"><div class="chat-bubble"><div class="typing-indicator"><span></span><span></span><span></span></div></div><div class="chat-message-meta"><span>မှတ်တမ်းကို စစ်ဆေးပြီး ဖြေဆိုနေသည်...</span></div></div>';
+    chatMessages.appendChild(row);
+    chatMessages.scrollTop = chatMessages.scrollHeight;
+    return id;
+}
+
+function removeTypingIndicator(id) {
+    const element = document.getElementById(id);
+    if (element) element.remove();
+}
+
+renderInitialHistory();
+refreshThreadCount();
+
+const openingQuestion = new URLSearchParams(location.search).get('q');
+if (openingQuestion) {
+    history.replaceState(null, '', location.pathname);
+    askQuestion(openingQuestion);
+} else {
+    chatInput.focus();
+}
+</script>
+{% endblock %}

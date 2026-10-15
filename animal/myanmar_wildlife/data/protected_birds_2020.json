@@ -1,0 +1,76 @@
+{
+  "list_name_my": "အမိန့်ကြော်ငြာစာအမှတ် (၆၉၀/၂၀၂၀) — ကာကွယ်ထားသည့် ငှက်များ",
+  "list_name_en": "Notification No. 690/2020 — Protected Birds",
+  "legal_basis_my": "ဇီဝမျိုးစုံမျိုးကွဲနှင့် သဘာဝထိန်းသိမ်းရေးနယ်မြေများ ကာကွယ်စောင့်ရှောက်ခြင်းဆိုင်ရာ ဥပဒေ (၂၀၁၈) — အမိန့်ကြော်ငြာစာအမှတ် ၆၉၀/၂၀၂၀",
+  "legal_basis_en": "Conservation of Biodiversity and Protected Areas Law (2018), Notification No. 690/2020",
+  "levels": {
+    "totally": {
+      "my": "အပြည့်အဝ ကာကွယ်ထားသော မျိုးစိတ်",
+      "en": "Totally protected",
+      "heading_my": "လုံးဝကာကွယ်ထားသည့် ငှက်များ"
+    },
+    "normally": {
+      "my": "သာမန် ကာကွယ်ထားသော မျိုးစိတ်",
+      "en": "Normally protected",
+      "heading_my": "သာမန်ကာကွယ်ထားသည့် ငှက်များ"
+    },
+    "seasonally": {
+      "my": "ရာသီအလိုက် ကာကွယ်ထားသော မျိုးစိတ်",
+      "en": "Seasonally protected",
+      "heading_my": "ရာသီအလိုက် ကာကွယ်ထားသည့် ငှက်များ"
+    }
+  },
+  "count": 48,
+  "entries": [
+    {"no": 1, "level": "totally", "name_my": "ဒေါင်းမင်း / ရေဒေါင်း", "name_en": "Green Peafowl", "scientific_raw": "Pavo muticus", "taxa": [{"name": "Pavo muticus", "rank": "species"}]},
+    {"no": 2, "level": "totally", "name_my": "ဒေါင်း / ဥဒေါင်း", "name_en": "Indian Peafowl", "scientific_raw": "Pavo cristatus", "taxa": [{"name": "Pavo cristatus", "rank": "species"}]},
+    {"no": 3, "level": "totally", "name_my": "ဘဲခေါင်းပန်းရောင်", "name_en": "Pink-headed Duck", "scientific_raw": "Rhodonessa caryophyllacea", "taxa": [{"name": "Rhodonessa caryophyllacea", "rank": "species"}]},
+    {"no": 4, "level": "totally", "name_my": "ဟင်းသာ", "name_en": "Ruddy Shelduck", "scientific_raw": "Tadorna ferruginea", "taxa": [{"name": "Tadorna ferruginea", "rank": "species"}]},
+    {"no": 5, "level": "totally", "name_my": "အောင်လောင်ငှက်", "name_en": "Great Hornbill", "scientific_raw": "Buceros bicornis", "taxa": [{"name": "Buceros bicornis", "rank": "species"}]},
+    {"no": 6, "level": "totally", "name_my": "အောက်ချင်းငှက်", "name_en": "Oriental Pied Hornbill", "scientific_raw": "Anthracoceros albirostris", "taxa": [{"name": "Anthracoceros albirostris", "rank": "species"}]},
+    {"no": 7, "level": "totally", "name_my": "နီကိုဘာခို", "name_en": "Nicobar Pigeon", "scientific_raw": "Caloenas nicobarica", "taxa": [{"name": "Caloenas nicobarica", "rank": "species"}]},
+    {"no": 8, "level": "totally", "name_my": "ကြိုးကြာခေါင်းနီ", "name_en": "Sarus Crane", "scientific_raw": "Antigone antigone", "taxa": [{"name": "Antigone antigone", "rank": "species"}]},
+    {"no": 9, "level": "totally", "name_my": "ကြိုးကြာခေါင်းမဲ", "name_en": "Black-necked Crane", "scientific_raw": "Grus nigricollis", "taxa": [{"name": "Grus nigricollis", "rank": "species"}]},
+    {"no": 10, "level": "totally", "name_my": "ငှက်ကြီးဝန်လို", "name_en": "Spot-billed Pelican", "scientific_raw": "Pelecanus philippensis", "taxa": [{"name": "Pelecanus philippensis", "rank": "species"}]},
+    {"no": 11, "level": "totally", "name_my": "ငှက်မင်းသား (ကျောပြာ)", "name_en": "Asian Fairy-bluebird", "scientific_raw": "Irena puella", "taxa": [{"name": "Irena puella", "rank": "species"}]},
+    {"no": 12, "level": "totally", "name_my": "စွန်မျိုးများ", "name_en": "Kites and Eagles", "scientific_raw": "Accipitridae", "taxa": [{"name": "Accipitridae", "rank": "family"}]},
+    {"no": 13, "level": "totally", "name_my": "လင်းယုန်မျိုးများ", "name_en": "Eagles", "scientific_raw": "Aquila spp. / Accipitridae", "taxa": [{"name": "Aquila", "rank": "genus"}, {"name": "Accipitridae", "rank": "family"}]},
+    {"no": 14, "level": "totally", "name_my": "လင်းတမျိုးများ", "name_en": "Old World Vultures", "scientific_raw": "Accipitridae (subfamily Aegypiinae)", "taxa": [{"name": "Aegypiinae", "rank": "subfamily"}]},
+    {"no": 15, "level": "totally", "name_my": "သိန်းမျိုးများ", "name_en": "Falcons", "scientific_raw": "Falco spp. / Falconidae", "taxa": [{"name": "Falconidae", "rank": "family"}, {"name": "Falco", "rank": "genus"}]},
+    {"no": 16, "level": "totally", "name_my": "ဇီးကွက် / သောင်ပြင်ငှက်မျိုးများ", "name_en": "Owls", "scientific_raw": "Strigiformes (Order)", "taxa": [{"name": "Strigiformes", "rank": "order"}]},
+    {"no": 17, "level": "totally", "name_my": "ခရုစုတ်ငှက်မျိုးများ", "name_en": "Storks and Asian Openbill", "scientific_raw": "Ciconiidae / Anastomus oscitans", "taxa": [{"name": "Ciconiidae", "rank": "family"}, {"name": "Anastomus oscitans", "rank": "species"}]},
+    {"no": 18, "level": "totally", "name_my": "ရေကြက် / ရေကြက်မနက်", "name_en": "Rails and Waterhens", "scientific_raw": "Rallidae (Family)", "taxa": [{"name": "Rallidae", "rank": "family"}]},
+    {"no": 19, "level": "totally", "name_my": "မြေစုတ်ငှက်မျိုးများ", "name_en": "Pittas", "scientific_raw": "Pittidae (Family)", "taxa": [{"name": "Pittidae", "rank": "family"}]},
+    {"no": 20, "level": "totally", "name_my": "ယင်ဖမ်းငှက်မျိုးများ", "name_en": "Old World Flycatchers", "scientific_raw": "Muscicapidae (Family)", "taxa": [{"name": "Muscicapidae", "rank": "family"}]},
+    {"no": 21, "level": "totally", "name_my": "စာဗျို့ / စာခေါင်းကွက်", "name_en": "Larks", "scientific_raw": "Alaudidae (Family)", "taxa": [{"name": "Alaudidae", "rank": "family"}]},
+    {"no": 22, "level": "totally", "name_my": "ပင်လယ်ငှက်", "name_en": "Gulls and Terns", "scientific_raw": "Laridae (Family)", "source_note": "စာရင်းမူရင်းတွင် မြန်မာအမည် အပြည့်အစုံ မဖတ်ရသေးပါ — “ပင်လယ်ငှက် / ဇ…”", "taxa": [{"name": "Laridae", "rank": "family"}]},
+
+    {"no": 1, "level": "normally", "name_my": "ငှက်ခါး", "name_en": "Indian Roller", "scientific_raw": "Coracias benghalensis", "taxa": [{"name": "Coracias benghalensis", "rank": "species"}]},
+    {"no": 2, "level": "normally", "name_my": "ဖိုးခေါင်ငှက် / ဘိုတဲ", "name_en": "Asian Barbets", "scientific_raw": "Megalaimidae (Family)", "taxa": [{"name": "Megalaimidae", "rank": "family"}]},
+    {"no": 3, "level": "normally", "name_my": "ဗျိုင်းမျိုးများ", "name_en": "Egrets and Herons", "scientific_raw": "Ardeidae (Family)", "taxa": [{"name": "Ardeidae", "rank": "family"}]},
+    {"no": 4, "level": "normally", "name_my": "ငှက်ဆတ် / သစ်တောက်ငှက်", "name_en": "Woodpeckers", "scientific_raw": "Picidae (Family)", "taxa": [{"name": "Picidae", "rank": "family"}]},
+    {"no": 5, "level": "normally", "name_my": "ငှက်မင်းသားမျိုးများ", "name_en": "Minivets", "scientific_raw": "Pericrocotus spp. / Campephagidae", "taxa": [{"name": "Pericrocotus", "rank": "genus"}, {"name": "Campephagidae", "rank": "family"}]},
+    {"no": 6, "level": "normally", "name_my": "ဆက်ရက်မျိုးများ", "name_en": "Mynas and Starlings", "scientific_raw": "Sturnidae (Family)", "taxa": [{"name": "Sturnidae", "rank": "family"}]},
+    {"no": 7, "level": "normally", "name_my": "တစ်ငှက်မျိုးများ", "name_en": "Tits", "scientific_raw": "Paridae (Family)", "taxa": [{"name": "Paridae", "rank": "family"}]},
+    {"no": 8, "level": "normally", "name_my": "ဝတ်ရည်စုပ်ငှက်မျိုးများ", "name_en": "Sunbirds", "scientific_raw": "Nectariniidae (Family)", "taxa": [{"name": "Nectariniidae", "rank": "family"}]},
+    {"no": 9, "level": "normally", "name_my": "ခြုံတိုးငှက်မျိုးများ", "name_en": "Babblers", "scientific_raw": "Timaliidae (Family)", "taxa": [{"name": "Timaliidae", "rank": "family"}]},
+    {"no": 10, "level": "normally", "name_my": "စာဘုန်းကြီး / စာခေါင်းမဲ", "name_en": "Munias and Finches", "scientific_raw": "Estrildidae / Fringillidae", "taxa": [{"name": "Estrildidae", "rank": "family"}, {"name": "Fringillidae", "rank": "family"}]},
+    {"no": 11, "level": "normally", "name_my": "ငှက်ဆန်းမျိုးများ", "name_en": "Drongos", "scientific_raw": "Dicruridae (Family)", "taxa": [{"name": "Dicruridae", "rank": "family"}]},
+    {"no": 12, "level": "normally", "name_my": "ငှက်ခါမျိုးများ", "name_en": "Partridges", "scientific_raw": "Phasianidae (Family)", "taxa": [{"name": "Phasianidae", "rank": "family"}]},
+    {"no": 13, "level": "normally", "name_my": "တောကြက်မျိုးများ", "name_en": "Red Junglefowl", "scientific_raw": "Gallus gallus", "taxa": [{"name": "Gallus gallus", "rank": "species"}]},
+
+    {"no": 1, "level": "seasonally", "name_my": "တစီးမှုတ်", "name_en": "Blue-throated Barbet", "scientific_raw": "Psilopogon asiaticus", "taxa": [{"name": "Psilopogon asiaticus", "rank": "species"}]},
+    {"no": 2, "level": "seasonally", "name_my": "ဥဩ / ဥဩမျိုးများ", "name_en": "True Cuckoos", "scientific_raw": "Cuculus spp. / Cuculidae", "taxa": [{"name": "Cuculus", "rank": "genus"}, {"name": "Cuculidae", "rank": "family"}]},
+    {"no": 3, "level": "seasonally", "name_my": "တောင်ပေါ်ဥဩ", "name_en": "Asian Emerald Cuckoo", "scientific_raw": "Chrysococcyx maculatus", "taxa": [{"name": "Chrysococcyx maculatus", "rank": "species"}]},
+    {"no": 4, "level": "seasonally", "name_my": "ယောက်ဖခွေးခေါ်ငှက်", "name_en": "Indian Cuckoo", "scientific_raw": "Cuculus micropterus", "taxa": [{"name": "Cuculus micropterus", "rank": "species"}]},
+    {"no": 5, "level": "seasonally", "name_my": "မိုးဆွေငှက်", "name_en": "Plaintive Cuckoo", "scientific_raw": "Cacomantis merulinus", "taxa": [{"name": "Cacomantis merulinus", "rank": "species"}]},
+    {"no": 6, "level": "seasonally", "name_my": "ဘိုတဲငှက်", "name_en": "Coppersmith Barbet", "scientific_raw": "Psilopogon haemacephalus", "taxa": [{"name": "Psilopogon haemacephalus", "rank": "species"}]},
+    {"no": 7, "level": "seasonally", "name_my": "မြေဝှေ့ငှက် / ငှက်ပျင်း", "name_en": "Nightjars", "scientific_raw": "Caprimulgidae (Family)", "taxa": [{"name": "Caprimulgidae", "rank": "family"}]},
+    {"no": 8, "level": "seasonally", "name_my": "ချိုးမျိုးများ", "name_en": "Doves and Pigeons", "scientific_raw": "Columbidae (Family)", "taxa": [{"name": "Columbidae", "rank": "family"}]},
+    {"no": 9, "level": "seasonally", "name_my": "တင်းဂျီးငှက်", "name_en": "Coucals", "scientific_raw": "Centropus spp.", "taxa": [{"name": "Centropus", "rank": "genus"}]},
+    {"no": 10, "level": "seasonally", "name_my": "ငှက်စိမ်း", "name_en": "Leafbirds", "scientific_raw": "Chloropseidae (Family)", "taxa": [{"name": "Chloropseidae", "rank": "family"}]},
+    {"no": 11, "level": "seasonally", "name_my": "ငှက်ဘီလူး", "name_en": "Shrikes", "scientific_raw": "Laniidae (Family)", "taxa": [{"name": "Laniidae", "rank": "family"}]},
+    {"no": 12, "level": "seasonally", "name_my": "အောင်စာငှက်", "name_en": "Dollarbird", "scientific_raw": "Eurystomus orientalis", "taxa": [{"name": "Eurystomus orientalis", "rank": "species"}]},
+    {"no": 13, "level": "seasonally", "name_my": "မြေလူးငှက်မျိုးများ", "name_en": "Thrushes", "scientific_raw": "Turdidae (Family)", "taxa": [{"name": "Turdidae", "rank": "family"}]}
+  ]
+}

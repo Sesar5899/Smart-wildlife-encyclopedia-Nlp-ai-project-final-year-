@@ -1,0 +1,119 @@
+{% extends "base.html" %}
+{% block title %}ကာကွယ်ထိန်းသိမ်းနယ်မြေများ - Myanmar Wildlife{% endblock %}
+
+{% block content %}
+<header class="catalog-hero protected-hero">
+  <div class="container catalog-hero-inner">
+    <div>
+      <span class="catalog-eyebrow">မြန်မာ့ ထိန်းသိမ်းရေးကွန်ရက်</span>
+      <h1>ကာကွယ်ထိန်းသိမ်းနယ်မြေများ</h1>
+      <p>အမျိုးသားဥယျာဉ်များ၊ တောရိုင်းတိရစ္ဆာန်ဘေးမဲ့တောများနှင့် အရေးပါသော သဘာဝထိန်းသိမ်းရေးနယ်မြေများကို လေ့လာပါ။</p>
+    </div>
+    <div class="catalog-total" aria-label="စုစုပေါင်း ထိန်းသိမ်းနယ်မြေ {{ catalog_total }} ခု">
+      <strong>{{ catalog_total|mm_number }}</strong>
+      <span>နယ်မြေ</span>
+    </div>
+  </div>
+</header>
+
+<div class="container catalog-page">
+  <nav class="breadcrumb catalog-breadcrumb" aria-label="Breadcrumb">
+    <a href="{{ url_for('home') }}">ပင်မ</a>
+    <span class="breadcrumb-sep">›</span>
+    <span class="breadcrumb-current">ကာကွယ်ထိန်းသိမ်းနယ်မြေများ</span>
+  </nav>
+
+  <form class="catalog-filters protected-filters" method="get" action="{{ url_for('protected_areas') }}" data-catalog-auto-filter>
+    <div class="catalog-search-field catalog-name-search-field">
+      <label for="protectedAreaSearchInput">အမည် သို့မဟုတ် သိထားသည့်စကားလုံး</label>
+      <input id="protectedAreaSearchInput" name="q" value="{{ query }}" placeholder="ဥပမာ — အမျိုးသားဥယျာဉ်၊ ဘေးမဲ့တော" autocomplete="off" role="combobox" aria-autocomplete="list" aria-controls="protectedAreaSearchSuggestions" aria-expanded="false" data-auto-filter-query>
+      <div class="search-suggestions catalog-name-search-suggestions" id="protectedAreaSearchSuggestions" role="listbox"></div>
+    </div>
+    <label>
+      <span>ဘယ်လိုထိန်းသိမ်းနယ်မြေမျိုးလဲ?</span>
+      <select name="designation" data-auto-filter-field="designation">
+        <option value="">နယ်မြေအမျိုးအစားအားလုံး</option>
+        {% for value, label in designations %}<option value="{{ value }}" {{ 'selected' if value == selected_designation }}>{{ label }}</option>{% endfor %}
+      </select>
+    </label>
+    <label>
+      <span>လက်ရှိသတ်မှတ်မှု အခြေအနေကဘာလဲ?</span>
+      <select name="status" data-auto-filter-field="status">
+        <option value="">အခြေအနေအားလုံး</option>
+        {% for value, label in statuses %}<option value="{{ value }}" {{ 'selected' if value == selected_status }}>{{ label }}</option>{% endfor %}
+      </select>
+    </label>
+    <label>
+      <span>ဘယ်တိုင်း/ပြည်နယ်မှာ ရှာချင်ပါသလဲ?</span>
+      <select name="region" data-auto-filter-field="region">
+        <option value="">ဒေသအားလုံး</option>
+        {% for value, label in regions %}<option value="{{ value }}" {{ 'selected' if value == selected_region }}>{{ label }}</option>{% endfor %}
+      </select>
+    </label>
+    <button class="btn btn-primary catalog-filter-button" type="submit">ရလဒ်များ ကြည့်ရန်</button>
+    {% if query or selected_designation or selected_status or selected_region %}
+    <div class="active-filter-row" aria-label="ရွေးထားသော စစ်ထုတ်မှုများ">
+      <span>ရွေးထားသည်</span>
+      {% if query %}<button type="submit" name="clear_filter" value="q">“{{ query }}” <b aria-hidden="true">×</b></button>{% endif %}
+      {% for value, label in designations %}{% if value == selected_designation %}<button type="submit" name="clear_filter" value="designation">{{ label }} <b aria-hidden="true">×</b></button>{% endif %}{% endfor %}
+      {% for value, label in statuses %}{% if value == selected_status %}<button type="submit" name="clear_filter" value="status">{{ label }} <b aria-hidden="true">×</b></button>{% endif %}{% endfor %}
+      {% for value, label in regions %}{% if value == selected_region %}<button type="submit" name="clear_filter" value="region">{{ label }} <b aria-hidden="true">×</b></button>{% endif %}{% endfor %}
+      <a href="{{ url_for('protected_areas') }}">အားလုံးရှင်းရန်</a>
+    </div>
+    {% endif %}
+    <script type="application/json" data-auto-filter-profiles>{{ filter_profiles|tojson }}</script>
+  </form>
+
+  <div class="catalog-results-head">
+    <h2>ထိန်းသိမ်းနယ်မြေ မှတ်တမ်းများ</h2>
+    <span>{{ total|mm_number }} ခု တွေ့ရှိသည်</span>
+  </div>
+
+  {% if protected_areas %}
+  <div class="catalog-grid protected-grid">
+    {% for area in protected_areas %}
+    <a href="{{ url_for('protected_area_detail', slug=area.slug) }}" class="catalog-card protected-card">
+      <div class="protected-card-mark {{ 'catalog-card-photo' if area.image_url }}">
+        {% if area.image_url %}
+        <img src="{{ area.image_url }}" alt="{{ area.name_mm or area.name }}" loading="lazy" decoding="async">
+        {% else %}
+        <span aria-hidden="true">◇</span>
+        <small>မူရင်းဓာတ်ပုံ မရှိသေးပါ</small>
+        {% endif %}
+      </div>
+      <div class="catalog-card-body">
+        <div class="catalog-card-badges">
+          {% if area.status or area.status_mm %}<span class="area-status-pill">{{ area.status_mm or area.status }}</span>{% endif %}
+          {% if area.established_year %}<span class="code-pill">{{ area.established_year }}</span>{% endif %}
+        </div>
+        <h3>{{ area.name_mm or area.name }}</h3>
+        {# Always rendered, so a record without a separate English name still
+           reserves the line and its card matches the rest of the row. #}
+        <p class="catalog-english-name">{{ area.name if area.name_mm }}</p>
+        <p class="protected-designation">{{ area.designation_mm or area.designation or 'အမျိုးအစား မဖော်ပြထားပါ' }}</p>
+        <div class="catalog-card-meta">
+          <span>{{ area.in_state_region_mm or area.in_state_region or 'ဒေသ မဖော်ပြထားပါ' }}</span>
+          <span class="catalog-arrow" aria-hidden="true">→</span>
+        </div>
+      </div>
+    </a>
+    {% endfor %}
+  </div>
+  {% else %}
+  <div class="empty-state catalog-empty">
+    <div class="icon">⌕</div>
+    <h3>ကိုက်ညီသော ထိန်းသိမ်းနယ်မြေ မတွေ့ပါ</h3>
+    <p>ရှာဖွေမှု သို့မဟုတ် စစ်ထုတ်မှုကို ပြောင်းပြီး ထပ်မံကြည့်ပါ။</p>
+    <a href="{{ url_for('protected_areas') }}" class="btn btn-secondary">စစ်ထုတ်မှု ရှင်းရန်</a>
+  </div>
+  {% endif %}
+
+  {% if total_pages > 1 %}
+  <nav class="catalog-pagination" aria-label="စာမျက်နှာများ">
+    {% if page > 1 %}<a href="{{ url_for('protected_areas', q=query, designation=selected_designation, status=selected_status, region=selected_region, page=page-1) }}">← ရှေ့စာမျက်နှာ</a>{% else %}<span></span>{% endif %}
+    <strong>{{ page|mm_number }} / {{ total_pages|mm_number }}</strong>
+    {% if page < total_pages %}<a href="{{ url_for('protected_areas', q=query, designation=selected_designation, status=selected_status, region=selected_region, page=page+1) }}">နောက်စာမျက်နှာ →</a>{% else %}<span></span>{% endif %}
+  </nav>
+  {% endif %}
+</div>
+{% endblock %}

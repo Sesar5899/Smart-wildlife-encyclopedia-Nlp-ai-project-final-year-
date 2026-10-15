@@ -1,0 +1,473 @@
+{
+  "list_name_my": "ကာကွယ်ထားသည့် တောရိုင်းတိရစ္ဆာန်များစာရင်း (၂၀၂၀) — အပြည့်အဝ ကာကွယ်ထားသော နို့တိုက်သတ္တဝါများ",
+  "list_name_en": "Protected Wildlife List (2020) — Totally Protected Mammals",
+  "protection_level_my": "အပြည့်အဝ ကာကွယ်ထားသော မျိုးစိတ်",
+  "protection_level_en": "Totally protected",
+  "legal_basis_my": "ဇီဝမျိုးစုံမျိုးကွဲနှင့် သဘာဝထိန်းသိမ်းရေးနယ်မြေများ ကာကွယ်စောင့်ရှောက်ခြင်းဆိုင်ရာ ဥပဒေ (၂၀၁၈) — အမိန့်ကြော်ငြာစာအမှတ် ၆၉၀/၂၀၂၀",
+  "legal_basis_en": "Conservation of Biodiversity and Protected Areas Law (2018), Notification No. 690/2020",
+  "count": 77,
+  "species": [
+    {
+      "no": 1,
+      "name_my": "ပသျှူး/မလေးသင်းခွေချပ်",
+      "name_en": "Malayan Pangolin / Sunda Pangolin",
+      "scientific_name": "Manis javanica"
+    },
+    {
+      "no": 2,
+      "name_my": "တရုတ်သင်းခွေချပ်",
+      "name_en": "Chinese Pangolin",
+      "scientific_name": "Manis pentadactyla"
+    },
+    {
+      "no": 3,
+      "name_my": "မျောက်လောင်းပျံ",
+      "name_en": "Sunda Flying Lemur / Malayan Flying Lemur",
+      "scientific_name": "Galeopterus variegatus"
+    },
+    {
+      "no": 4,
+      "name_my": "မျောက်လေပွေ / မျောက်မောင်းမ",
+      "name_en": "Bengal Slow Loris",
+      "scientific_name": "Nycticebus bengalensis"
+    },
+    {
+      "no": 5,
+      "name_my": "မျောက်လေပွေ / မျောက်မောင်းမ",
+      "name_en": "Sunda Slow Loris",
+      "scientific_name": "Nycticebus coucang"
+    },
+    {
+      "no": 6,
+      "name_my": "မြန်မာ နှာလန်မျောက်",
+      "name_en": "Myanmar Snub-nosed Monkey",
+      "scientific_name": "Rhinopithecus strykeri"
+    },
+    {
+      "no": 7,
+      "name_my": "မျောက်လွှဲကျော် (မျက်ခုံးဖြူ)",
+      "name_en": "Western Hoolock Gibbon",
+      "scientific_name": "Hoolock hoolock"
+    },
+    {
+      "no": 8,
+      "name_my": "မျောက်လွှဲကျော် (မျက်ခုံးဖြူ)",
+      "name_en": "Eastern Hoolock Gibbon",
+      "scientific_name": "Hoolock leuconedys"
+    },
+    {
+      "no": 9,
+      "name_my": "မျောက်လွှဲကျော် (မျက်ခုံးဖြူ)",
+      "name_en": "Skywalker Hoolock Gibbon",
+      "scientific_name": "Hoolock tianxing"
+    },
+    {
+      "no": 10,
+      "name_my": "မျောက်လွှဲကျော် (လက်ဖြူ)",
+      "name_en": "Lar Gibbon / White-handed Gibbon",
+      "scientific_name": "Hylobates lar"
+    },
+    {
+      "no": 11,
+      "name_my": "မျောက်လွှဲကျော် (ဦးစွန်းမဲ)",
+      "name_en": "Crowned Gibbon / Pileated Gibbon",
+      "scientific_name": "Hylobates pileatus"
+    },
+    {
+      "no": 12,
+      "name_my": "မျောက်ငုတ် / မျောက်တို",
+      "name_en": "Stump-tailed Macaque",
+      "scientific_name": "Macaca arctoides"
+    },
+    {
+      "no": 13,
+      "name_my": "မျောက်မြှောက်",
+      "name_en": "Northern Pig-tailed Macaque",
+      "scientific_name": "Macaca leonina"
+    },
+    {
+      "no": 14,
+      "name_my": "မျောက်တောက်ထွေး",
+      "name_en": "Assam Macaque",
+      "scientific_name": "Macaca assamensis"
+    },
+    {
+      "no": 15,
+      "name_my": "မျောက်ညို / မျောက်မျက်ကွင်းဖြူ",
+      "name_en": "Indochinese Gray Langur",
+      "scientific_name": "Trachypithecus crepusculus"
+    },
+    {
+      "no": 16,
+      "name_my": "မျောက်ညို / မျောက်မျက်ကွင်းဖြူ",
+      "name_en": "Dusky Langur / Spectacled Leaf Monkey",
+      "scientific_name": "Trachypithecus obscurus"
+    },
+    {
+      "no": 17,
+      "name_my": "မျောက်ညို / မျောက်မျက်ကွင်းဖြူ",
+      "name_en": "Shortridge's Langur",
+      "scientific_name": "Trachypithecus shortridgei"
+    },
+    {
+      "no": 18,
+      "name_my": "မျောက်ညို / မျောက်မျက်ကွင်းဖြူ",
+      "name_en": "Banded Langur",
+      "scientific_name": "Presbytis femoralis"
+    },
+    {
+      "no": 19,
+      "name_my": "တောခွေး",
+      "name_en": "Dhole / Asiatic Wild Dog",
+      "scientific_name": "Cuon alpinus"
+    },
+    {
+      "no": 20,
+      "name_my": "ပန်ဒါနီ",
+      "name_en": "Red Panda",
+      "scientific_name": "Ailurus fulgens"
+    },
+    {
+      "no": 21,
+      "name_my": "ဝက်ဝံ (ဝက်ဝံမဲ)",
+      "name_en": "Asiatic Black Bear",
+      "scientific_name": "Ursus thibetanus"
+    },
+    {
+      "no": 22,
+      "name_my": "ဝက်ဝံ (ခွေးဝက်ဝံ/ဝက်ဝံခွေး)",
+      "name_en": "Sun Bear",
+      "scientific_name": "Helarctos malayanus"
+    },
+    {
+      "no": 23,
+      "name_my": "ကျား",
+      "name_en": "Tiger",
+      "scientific_name": "Panthera tigris"
+    },
+    {
+      "no": 24,
+      "name_my": "ကျားသစ်",
+      "name_en": "Leopard",
+      "scientific_name": "Panthera pardus"
+    },
+    {
+      "no": 25,
+      "name_my": "သစ်တက်ကျား",
+      "name_en": "Clouded Leopard",
+      "scientific_name": "Neofelis nebulosa"
+    },
+    {
+      "no": 26,
+      "name_my": "သစ်တက်ကျား",
+      "name_en": "Sunda Clouded Leopard",
+      "scientific_name": "Neofelis diardi"
+    },
+    {
+      "no": 27,
+      "name_my": "ကျားသင်းစုတ်",
+      "name_en": "Marbled Cat",
+      "scientific_name": "Pardofelis marmorata"
+    },
+    {
+      "no": 28,
+      "name_my": "ကျားကြောင်",
+      "name_en": "Asian Golden Cat",
+      "scientific_name": "Catopuma temminckii"
+    },
+    {
+      "no": 29,
+      "name_my": "ကျားသလင်း / ကျားပါးစပ်",
+      "name_en": "Fishing Cat",
+      "scientific_name": "Prionailurus viverrinus"
+    },
+    {
+      "no": 30,
+      "name_my": "ကျားနက်/ တောကြောင်",
+      "name_en": "Jungle Cat",
+      "scientific_name": "Felis chaus"
+    },
+    {
+      "no": 31,
+      "name_my": "ကျားကြောင်စုတ်",
+      "name_en": "Leopard Cat",
+      "scientific_name": "Prionailurus bengalensis"
+    },
+    {
+      "no": 32,
+      "name_my": "ဖျံ (ဖျံနားတို)",
+      "name_en": "Asian Small-clawed Otter",
+      "scientific_name": "Aonyx cinereus"
+    },
+    {
+      "no": 33,
+      "name_my": "ဖျံ (ဖျံချော)",
+      "name_en": "Smooth-coated Otter",
+      "scientific_name": "Lutrogale perspicillata"
+    },
+    {
+      "no": 34,
+      "name_my": "ဖျံ (ဖျံကြမ်း)",
+      "name_en": "Eurasian Otter",
+      "scientific_name": "Lutra lutra"
+    },
+    {
+      "no": 35,
+      "name_my": "ဖျံ (ဖျံနှာမွှေး)",
+      "name_en": "Hairy-nosed Otter",
+      "scientific_name": "Lutra sumatrana"
+    },
+    {
+      "no": 36,
+      "name_my": "ခွေးတိုက်",
+      "name_en": "Binturong / Bearcat",
+      "scientific_name": "Arctictis binturong"
+    },
+    {
+      "no": 37,
+      "name_my": "ကြောင်ကတိုး (အမွှေးစုတ်)",
+      "name_en": "Spotted Linsang",
+      "scientific_name": "Prionodon pardicolor"
+    },
+    {
+      "no": 38,
+      "name_my": "ကြောင်ကတိုး (အမွှေးစုတ်)",
+      "name_en": "Banded Linsang",
+      "scientific_name": "Prionodon linsang"
+    },
+    {
+      "no": 39,
+      "name_my": "ဆင်",
+      "name_en": "Asian Elephant",
+      "scientific_name": "Elephas maximus"
+    },
+    {
+      "no": 40,
+      "name_my": "ကြံ့ (ကြံ့နှစ်ချို)",
+      "name_en": "Sumatran Rhinoceros",
+      "scientific_name": "Dicerorhinus sumatrensis"
+    },
+    {
+      "no": 41,
+      "name_my": "ကြံ့ (ကြံ့တစ်ချို)",
+      "name_en": "Javan Rhinoceros",
+      "scientific_name": "Rhinoceros sondaicus"
+    },
+    {
+      "no": 42,
+      "name_my": "ကြံ့သူတော်",
+      "name_en": "Malayan Tapir",
+      "scientific_name": "Tapirus indicus"
+    },
+    {
+      "no": 43,
+      "name_my": "စိုင်",
+      "name_en": "Banteng",
+      "scientific_name": "Bos javanicus"
+    },
+    {
+      "no": 44,
+      "name_my": "ပြောင်",
+      "name_en": "Gaur",
+      "scientific_name": "Bos gaurus"
+    },
+    {
+      "no": 45,
+      "name_my": "သမင်း",
+      "name_en": "Eld's Deer / Brow-antlered Deer",
+      "scientific_name": "Rucervus eldii"
+    },
+    {
+      "no": 46,
+      "name_my": "ကျဝတ် / တောအိတ်",
+      "name_en": "Fea's Muntjac",
+      "scientific_name": "Muntiacus feae"
+    },
+    {
+      "no": 47,
+      "name_my": "ဂျီရွက်",
+      "name_en": "Leaf Muntjac",
+      "scientific_name": "Muntiacus putaoensis"
+    },
+    {
+      "no": 48,
+      "name_my": "ဂျီနက် / ဂျီမဲ",
+      "name_en": "Gongshan Muntjac",
+      "scientific_name": "Muntiacus gongshanensis"
+    },
+    {
+      "no": 49,
+      "name_my": "တောင်ဆိတ်",
+      "name_en": "Mainland Serow",
+      "scientific_name": "Capricornis sumatraensis"
+    },
+    {
+      "no": 50,
+      "name_my": "တောဆိတ်",
+      "name_en": "Red Goral",
+      "scientific_name": "Naemorhedus baileyi"
+    },
+    {
+      "no": 51,
+      "name_my": "တောဆိတ်",
+      "name_en": "Chinese Goral",
+      "scientific_name": "Naemorhedus griseus"
+    },
+    {
+      "no": 52,
+      "name_my": "တာကင်း / တောင်ဆိတ်ကြီး",
+      "name_en": "Takin",
+      "scientific_name": "Budorcas taxicolor"
+    },
+    {
+      "no": 53,
+      "name_my": "ပင်လယ်ဝက် / ပင်လယ်ဝက်ဝံ",
+      "name_en": "Dugong",
+      "scientific_name": "Dugong dugon"
+    },
+    {
+      "no": 54,
+      "name_my": "မြစ်ဝေလငါး (ခါးကုန်း)",
+      "name_en": "Humpback Whale",
+      "scientific_name": "Megaptera novaeangliae"
+    },
+    {
+      "no": 55,
+      "name_my": "မြစ်ဝေလငါး (ပြာ)",
+      "name_en": "Blue Whale",
+      "scientific_name": "Balaenoptera musculus"
+    },
+    {
+      "no": 56,
+      "name_my": "မြစ်ဝေလငါး (ဆူးတောင်ပါ)",
+      "name_en": "Fin Whale",
+      "scientific_name": "Balaenoptera physalus"
+    },
+    {
+      "no": 57,
+      "name_my": "မြစ်ဝေလငါး (ဆီ)",
+      "name_en": "Sei Whale",
+      "scientific_name": "Balaenoptera borealis"
+    },
+    {
+      "no": 58,
+      "name_my": "မြစ်ဝေလငါး (ဘရိုက်ဒ်)",
+      "name_en": "Bryde's Whale",
+      "scientific_name": "Balaenoptera edeni"
+    },
+    {
+      "no": 59,
+      "name_my": "မြစ်ဝေလငါး (အိုမူရာ)",
+      "name_en": "Omura's Whale",
+      "scientific_name": "Balaenoptera omurai"
+    },
+    {
+      "no": 60,
+      "name_my": "မြစ်ဝေလငါး (မင်ခ်)",
+      "name_en": "Common Minke Whale",
+      "scientific_name": "Balaenoptera acutorostrata"
+    },
+    {
+      "no": 61,
+      "name_my": "မြစ်ဝေလငါး (စကာ)",
+      "name_en": "Sperm Whale",
+      "scientific_name": "Physeter macrocephalus"
+    },
+    {
+      "no": 62,
+      "name_my": "မြစ်ဝေလငါး (စကာသေး)",
+      "name_en": "Dwarf Sperm Whale",
+      "scientific_name": "Kogia sima"
+    },
+    {
+      "no": 63,
+      "name_my": "မြစ်ဝေလငါး (စကာသေး)",
+      "name_en": "Pygmy Sperm Whale",
+      "scientific_name": "Kogia breviceps"
+    },
+    {
+      "no": 64,
+      "name_my": "မြစ်ဝေလငါး (နှုတ်သီးပါ)",
+      "name_en": "Blainville's Beaked Whale",
+      "scientific_name": "Mesoplodon densirostris"
+    },
+    {
+      "no": 65,
+      "name_my": "မြစ်ဝေလငါး (နှုတ်သီးပါ)",
+      "name_en": "Ginkgo-toothed Beaked Whale",
+      "scientific_name": "Mesoplodon ginkgodens"
+    },
+    {
+      "no": 66,
+      "name_my": "မြစ်ဝေလငါး (နှုတ်သီးပါ)",
+      "name_en": "Cuvier's Beaked Whale",
+      "scientific_name": "Ziphius cavirostris"
+    },
+    {
+      "no": 67,
+      "name_my": "မြစ်ဝေလငါး (ကျောက်ခါး)",
+      "name_en": "False Killer Whale",
+      "scientific_name": "Pseudorca crassidens"
+    },
+    {
+      "no": 68,
+      "name_my": "မြစ်ဝေလငါး (ဦးခေါင်းတို)",
+      "name_en": "Pygmy Killer Whale",
+      "scientific_name": "Feresa attenuata"
+    },
+    {
+      "no": 69,
+      "name_my": "မြစ်ဝေလငါး (ရွှေရောင်)",
+      "name_en": "Melon-headed Whale",
+      "scientific_name": "Peponocephala electra"
+    },
+    {
+      "no": 70,
+      "name_my": "မြစ်ဝေလငါး (ရှော့ဖင်)",
+      "name_en": "Short-finned Pilot Whale",
+      "scientific_name": "Globicephala macrorhynchus"
+    },
+    {
+      "no": 71,
+      "name_my": "ဧရာဝတီလင်းပိုင်",
+      "name_en": "Irrawaddy Dolphin",
+      "scientific_name": "Orcaella brevirostris"
+    },
+    {
+      "no": 72,
+      "name_my": "လင်းပိုင် (ကြောဆူးတောင်မဲ့)",
+      "name_en": "Indo-Pacific Finless Porpoise",
+      "scientific_name": "Neophocaena phocaenoides"
+    },
+    {
+      "no": 73,
+      "name_my": "လင်းပိုင် (နှာသီးရှည်)",
+      "name_en": "Indo-Pacific Bottlenose Dolphin",
+      "scientific_name": "Tursiops aduncus"
+    },
+    {
+      "no": 74,
+      "name_my": "လင်းပိုင် (နှုတ်သီးရှည်)",
+      "name_en": "Long-beaked Common Dolphin",
+      "scientific_name": "Delphinus capensis"
+    },
+    {
+      "no": 75,
+      "name_my": "လင်းပိုင် (ပန်းရောင်)",
+      "name_en": "Indo-Pacific Humpback Dolphin",
+      "scientific_name": "Sousa chinensis"
+    },
+    {
+      "no": 76,
+      "name_my": "လင်းပိုင် (ခါးပြောက်)",
+      "name_en": "Pantropical Spotted Dolphin",
+      "scientific_name": "Stenella attenuata"
+    },
+    {
+      "no": 77,
+      "name_my": "လင်းပိုင် (လှည့်ပတ်)",
+      "name_en": "Spinner Dolphin",
+      "scientific_name": "Stenella longirostris"
+    }
+  ]
+}

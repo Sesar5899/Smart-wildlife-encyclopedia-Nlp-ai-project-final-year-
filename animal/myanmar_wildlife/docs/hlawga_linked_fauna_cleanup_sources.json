@@ -1,0 +1,83 @@
+{
+  "schemaVersion": 1,
+  "items": [
+    {
+      "id": "hlawga-linked-fauna-cleanup",
+      "title": "Does Hlawga's visible fauna field contain only explicitly linked animal records?",
+      "assumptions": [
+        "An animal is retained only when its stored protected-area relationship explicitly names Hlawga Wildlife Park or လှော်ကား ဥယျာဥ်.",
+        "Generic fauna labels and species identifiers without that explicit animal-to-Hlawga relationship are removed from the visible fauna fields."
+      ],
+      "queries": [
+        {
+          "id": "hlawga-animal-relationship-check",
+          "source": {
+            "label": "Wildlife catalog and animal relationships",
+            "files": [
+              {"label": "data/protected_areas.json"},
+              {"label": "wildlife.db"}
+            ],
+            "filters": [
+              "Protected-area slug: hlawga_wildlife_park_protected",
+              "Animal relationship fields: protected_areas_my and portal_data.in_protected_area",
+              "Visible fauna fields: species_fauna, species_fauna_mm, other_fauna, other_fauna_mm"
+            ],
+            "caveats": [
+              "The cleanup follows stored explicit relationships and does not infer additional species from descriptive text.",
+              "The source record and application database were both updated."
+            ],
+            "evidenceFlow": [
+              {
+                "kind": "validation",
+                "title": "Explicit relationship match",
+                "detail": "Two animal records explicitly name Hlawga: Jungle Cat (ID 37) and Rhesus Macaque (ID 59)."
+              },
+              {
+                "kind": "validation",
+                "title": "Visible-field alignment",
+                "detail": "The source and database now contain the same two linked identifiers and Burmese names; other fauna fields are empty."
+              },
+              {
+                "kind": "validation",
+                "title": "Database integrity",
+                "detail": "All 39 protected-area catalog records remain present and SQLite integrity_check returned ok."
+              }
+            ]
+          },
+          "sourceRoles": [
+            {
+              "kind": "file",
+              "label": "data/protected_areas.json",
+              "role": "Canonical Hlawga fauna fields after cleanup."
+            },
+            {
+              "kind": "file",
+              "label": "wildlife.db",
+              "role": "Animal relationship fields and synchronized application catalog record."
+            }
+          ],
+          "columns": [
+            "linked_animals",
+            "visible_burmese_names",
+            "source_identifiers_before",
+            "source_identifiers_after",
+            "other_fauna_fields_cleared",
+            "database_matches_source",
+            "database_integrity"
+          ],
+          "rows": [
+            {
+              "linked_animals": 2,
+              "visible_burmese_names": "မျောက်စပ်, တောကြောင်",
+              "source_identifiers_before": 5,
+              "source_identifiers_after": 2,
+              "other_fauna_fields_cleared": 2,
+              "database_matches_source": true,
+              "database_integrity": "ok"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

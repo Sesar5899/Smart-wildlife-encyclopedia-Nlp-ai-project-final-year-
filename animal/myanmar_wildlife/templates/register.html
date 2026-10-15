@@ -1,0 +1,44 @@
+{% extends "base.html" %}
+{% block title %}စာရင်းသွင်းရန် - Myanmar Wildlife{% endblock %}
+
+{% block content %}
+<div class="auth-page">
+    <div class="auth-card">
+        <div class="auth-header">
+            <div class="auth-icon">
+                <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                    <path d="M16 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"></path>
+                    <circle cx="8.5" cy="7" r="4"></circle>
+                    <line x1="20" y1="8" x2="20" y2="14"></line>
+                    <line x1="23" y1="11" x2="17" y2="11"></line>
+                </svg>
+            </div>
+            <h1>စာရင်းသွင်းရန်</h1>
+            <p>အခမဲ့ အကောင့်ဖွင့်ပြီး တိရစ္ဆာန် အားလုံးကို လေ့လာပါ</p>
+        </div>
+        <form method="POST" class="auth-form">
+            <div class="form-group">
+                <label for="name">အမည်</label>
+                <input type="text" id="name" name="name" required placeholder="သင့်အမည်" value="{{ name|default('') }}">
+            </div>
+            <div class="form-group">
+                <label for="email">အီးမေးလ်</label>
+                <input type="email" id="email" name="email" required placeholder="your@email.com" value="{{ email|default('') }}">
+            </div>
+            <div class="form-group">
+                <label for="password">စကားဝှက်</label>
+                <input type="password" id="password" name="password" required placeholder="အက္ခရာ ၆ လုံးအနည်းဆုံး">
+            </div>
+            <div class="form-group">
+                <label for="confirm_password">စကားဝှက် အတည်ပြုရန်</label>
+                <input type="password" id="confirm_password" name="confirm_password" required placeholder="စကားဝှက် ထပ်မံထည့်ပါ">
+            </div>
+            <button type="submit" class="btn btn-auth">စာရင်းသွင်းရန်</button>
+        </form>
+        <div class="auth-footer">
+            အကောင့် ရှိပြီးသားလား?
+            <a href="{{ url_for('login') }}">ဝင်ရန်</a>
+        </div>
+    </div>
+</div>
+{% endblock %}

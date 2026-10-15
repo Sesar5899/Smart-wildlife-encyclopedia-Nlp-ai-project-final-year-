@@ -1,0 +1,76 @@
+{
+  "schemaVersion": 1,
+  "items": [
+    {
+      "id": "protected-area-burmese-text-followup",
+      "title": "Are there other Burmese spelling or repetition issues in protected-area data?",
+      "assumptions": [
+        "The already-known တိရိစ္ဆာန် issue was explicitly excluded from the result.",
+        "Confirmed findings are limited to high-confidence spelling, code-point, and repeated-text issues.",
+        "Ambiguous proper names, translations, and duplicate species labels are reported separately for editorial review."
+      ],
+      "queries": [
+        {
+          "id": "protected-area-mm-field-scan-excluding-known-issue",
+          "source": {
+            "label": "Wildlife protected-area source data",
+            "files": [{"label": "data/protected_areas.json"}],
+            "filters": [
+              "39 protected-area records",
+              "21 fields ending in _mm",
+              "529 non-empty Burmese cells",
+              "Excluded text: တိရိစ္ဆာန်",
+              "Read-only scan"
+            ],
+            "caveats": [
+              "Automated patterns were manually reviewed, but the scan cannot prove that every free-text Burmese sentence is linguistically perfect.",
+              "The non-standard ဥ်/ဉ် group is counted separately from high-confidence visible typos.",
+              "No protected-area record was modified."
+            ],
+            "evidenceFlow": [
+              {
+                "kind": "validation",
+                "title": "Spelling and code-point checks",
+                "detail": "The review checked curated high-confidence Burmese spellings, look-alike Myanmar digit and letter code points, and internal spelling consistency."
+              },
+              {
+                "kind": "validation",
+                "title": "Repetition checks",
+                "detail": "The review checked repeated characters, repeated words, repeated list values, and repeated sentences."
+              }
+            ]
+          },
+          "sourceRoles": [
+            {
+              "kind": "file",
+              "label": "data/protected_areas.json",
+              "role": "Complete protected-area source records and Burmese-language fields used for the follow-up audit."
+            }
+          ],
+          "columns": [
+            "records",
+            "fields_checked",
+            "nonempty_cells",
+            "excluded_known_issue_records",
+            "high_confidence_issue_records",
+            "affected_record_fields",
+            "nonstandard_u1_records",
+            "records_modified"
+          ],
+          "rows": [
+            {
+              "records": 39,
+              "fields_checked": 21,
+              "nonempty_cells": 529,
+              "excluded_known_issue_records": 5,
+              "high_confidence_issue_records": 17,
+              "affected_record_fields": 26,
+              "nonstandard_u1_records": 23,
+              "records_modified": 0
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

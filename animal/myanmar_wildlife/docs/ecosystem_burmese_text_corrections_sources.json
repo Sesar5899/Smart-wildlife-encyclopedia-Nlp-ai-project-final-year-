@@ -1,0 +1,78 @@
+{
+  "schemaVersion": 1,
+  "items": [
+    {
+      "id": "ecosystem-burmese-text-corrections",
+      "title": "Were the reviewed ecosystem Burmese text issues corrected?",
+      "assumptions": [
+        "Only the 13 ecosystem records and 15 fields identified in the preceding audit were in scope.",
+        "The broad non-standard ဥ်/ဉ် group was not part of this correction request unless it occurred inside one of the explicitly identified typo strings."
+      ],
+      "queries": [
+        {
+          "id": "ecosystem-source-and-database-verification",
+          "source": {
+            "label": "Wildlife ecosystem data",
+            "files": [
+              { "label": "data/ecosystems.json" },
+              { "label": "wildlife.db" }
+            ],
+            "filters": [
+              "13 reviewed ecosystem records",
+              "15 reviewed Burmese fields",
+              "Database catalog kind: ecosystems"
+            ],
+            "caveats": [
+              "The Kachin-Sagaing low-elevation rainforest record exists in the JSON source but is absent from the database catalog, so its correction applies only to the source file.",
+              "Protected-area data was outside this correction request and was not changed."
+            ],
+            "evidenceFlow": [
+              {
+                "kind": "validation",
+                "title": "Targeted pattern validation",
+                "detail": "All reviewed incorrect spellings and repeated phrases were absent from the 15 corrected source fields after the update."
+              },
+              {
+                "kind": "validation",
+                "title": "Database parity and integrity",
+                "detail": "All 14 reviewed fields belonging to the 12 database-backed records matched the corrected JSON source, and SQLite integrity_check returned ok."
+              }
+            ]
+          },
+          "sourceRoles": [
+            {
+              "kind": "file",
+              "label": "data/ecosystems.json",
+              "role": "Canonical ecosystem records containing the 15 corrected Burmese fields."
+            },
+            {
+              "kind": "file",
+              "label": "wildlife.db",
+              "role": "Application database synchronized for the 12 reviewed ecosystem records currently present in the catalog."
+            }
+          ],
+          "columns": [
+            "reviewed_records",
+            "corrected_source_fields",
+            "database_records_updated",
+            "database_fields_updated",
+            "old_patterns_remaining",
+            "database_mismatches",
+            "database_integrity"
+          ],
+          "rows": [
+            {
+              "reviewed_records": 13,
+              "corrected_source_fields": 15,
+              "database_records_updated": 12,
+              "database_fields_updated": 14,
+              "old_patterns_remaining": 0,
+              "database_mismatches": 0,
+              "database_integrity": "ok"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

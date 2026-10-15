@@ -1,0 +1,125 @@
+{
+  "schemaVersion": 1,
+  "items": [
+    {
+      "id": "burmese-animal-text-quality",
+      "title": "Which animal records contain Burmese text-quality issues?",
+      "assumptions": [
+        "Visible typo findings are limited to high-confidence spelling and repetition patterns; ambiguous zoological common names are not classified as errors.",
+        "Legacy Unicode spelling forms are reported separately from obvious visible typos."
+      ],
+      "queries": [
+        {
+          "id": "published-burmese-field-scan",
+          "source": {
+            "label": "Wildlife animal database",
+            "files": [
+              { "label": "wildlife.db" }
+            ],
+            "filters": [
+              "Table: animals",
+              "123 animal records",
+              "28 published Burmese or Burmese-facing text fields",
+              "Internal provenance JSON, URLs, and image fields excluded",
+              "Database opened in read-only mode"
+            ],
+            "caveats": [
+              "Automated and manual pattern review can identify high-confidence issues but cannot prove that every free-text Burmese sentence is linguistically perfect.",
+              "The scan did not modify any animal record."
+            ],
+            "evidenceFlow": [
+              {
+                "kind": "source",
+                "showInReceipt": false,
+                "title": "Read-only animal records",
+                "detail": "Published Burmese-facing fields were read from the local animals table through SQLite read-only mode."
+              },
+              {
+                "kind": "validation",
+                "title": "Text-quality checks",
+                "detail": "The review checked repeated code points, repeated words or phrases, curated high-confidence spelling patterns, legacy Unicode spelling forms, and repeated normalized Burmese animal names."
+              }
+            ]
+          },
+          "sourceRoles": [
+            {
+              "kind": "file",
+              "label": "wildlife.db",
+              "role": "Animal names and published Burmese text fields used in the audit."
+            }
+          ],
+          "columns": [
+            "animal_records",
+            "fields_checked",
+            "nonempty_cells",
+            "high_confidence_issue_animals",
+            "legacy_spelling_animals"
+          ],
+          "rows": [
+            {
+              "animal_records": 123,
+              "fields_checked": 28,
+              "nonempty_cells": 1843,
+              "high_confidence_issue_animals": 24,
+              "legacy_spelling_animals": 58
+            }
+          ]
+        },
+        {
+          "id": "duplicate-burmese-common-names",
+          "source": {
+            "label": "Wildlife animal database",
+            "files": [
+              { "label": "wildlife.db" }
+            ],
+            "filters": [
+              "Duplicate after trimming name_my, normalizing Unicode, and removing zero-width joiner characters",
+              "Different scientific species retained for manual review",
+              "Database opened in read-only mode"
+            ],
+            "caveats": [
+              "A shared vernacular name is not necessarily a spelling error."
+            ],
+            "evidenceFlow": [
+              {
+                "kind": "calculation",
+                "title": "Duplicate-name grouping",
+                "detail": "Trimmed, Unicode-normalized Burmese names with zero-width joiner characters removed were grouped, and groups with more than one animal record were returned."
+              }
+            ]
+          },
+          "sourceRoles": [
+            {
+              "kind": "file",
+              "label": "wildlife.db",
+              "role": "Burmese, English, and scientific animal names used to identify shared common names."
+            }
+          ],
+          "columns": ["name_my", "animal_ids", "scientific_species"],
+          "rows": [
+            {
+              "name_my": "လိပ်ကြက်တူရွေး",
+              "animal_ids": "9, 32",
+              "scientific_species": "Playsternon megacephalum; Eretmochelys imbricata"
+            },
+            {
+              "name_my": "လင်းဆွဲ",
+              "animal_ids": "28, 44",
+              "scientific_species": "Cynopterus sphinx; Cynopterus brachyotis"
+            },
+            {
+              "name_my": "လင်းနို့",
+              "animal_ids": "64, 72",
+              "scientific_species": "Hipposideros lylei; Coelops frithii"
+            },
+            {
+              "name_my": "လိပ်ပု",
+              "animal_ids": "53, 56",
+              "scientific_species": "Cyclemys fusca; Cyclemys oldhamii"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

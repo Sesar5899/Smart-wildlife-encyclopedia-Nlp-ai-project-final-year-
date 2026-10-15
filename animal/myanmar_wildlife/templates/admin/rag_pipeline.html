@@ -1,0 +1,190 @@
+{% extends "base.html" %}
+{% block title %}RAG — Content Studio{% endblock %}
+
+{% block content %}
+<div class="admin-shell rag-console">
+
+  <header class="admin-hero rag-hero">
+    <div class="container">
+      <div class="rag-hero-row">
+        <div>
+          <span class="admin-kicker">MYANMAR WILDLIFE · ADMIN</span>
+          <h1>RAG</h1>
+        </div>
+        <div class="admin-hero-actions">
+          <form method="post" action="{{ url_for('admin.rag_index') }}" onsubmit="return confirm('Index ပြန်တည်ဆောက်မည်လား?')">
+            <input type="hidden" name="csrf_token" value="{{ csrf_token }}">
+            <button class="rag-hero-back" type="submit" {{ 'disabled' if not embed.api_configured }}>↻ Reindex</button>
+          </form>
+          <a class="rag-hero-back" href="{{ url_for('admin.dashboard') }}">← Content Studio</a>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <div class="container admin-workspace rag-workspace">
+
+    <!-- Query -------------------------------------------------------- -->
+    <section class="rag-panel rag-controls">
+      <form method="get" action="{{ url_for('admin.rag_pipeline') }}">
+        <label class="rag-field rag-field-subject">
+          <span>မှတ်တမ်း</span>
+          <select name="subject">
+            {% for item in subjects %}
+            <option value="{{ item.key }}" {{ 'selected' if item.key == subject_key }}>{{ item.label }} — {{ item.name }}{% if item.name_en %} ({{ item.name_en }}){% endif %}</option>
+            {% endfor %}
+          </select>
+        </label>
+        <label class="rag-field rag-field-question">
+          <span>မေးခွန်း</span>
+          <input type="search" name="q" value="{{ question }}" placeholder="မေးခွန်း ရိုက်ထည့်ပါ" maxlength="4000" autofocus>
+        </label>
+        <button type="submit">ရှာရန်</button>
+      </form>
+    </section>
+
+    {% if trace %}
+    <!-- Vectors ------------------------------------------------------ -->
+    <section class="rag-panel rag-vectors">
+      <div class="rag-section-head">
+        <h2>Vectors</h2>
+      </div>
+
+      {% if query_vector %}
+      <div class="rag-vector-row is-query">
+        <span class="rag-vector-name">query</span>
+        <span class="rag-vector-score">—</span>
+        <code class="rag-vector-nums">[{% for value in query_vector.preview %}{{ '%.4f'|format(value) }}{{ ', ' if not loop.last }}{% endfor %}{% if query_vector.rest %} … +{{ query_vector.rest }}{% endif %}]</code>
+      </div>
+      {% else %}
+      <p class="rag-skip-note">Query vector မရှိပါ။</p>
+      {% endif %}
+
+      {% for row in vectors %}
+      <div class="rag-vector-row {{ 'is-used' if row.selected }}">
+        <span class="rag-vector-name">{{ row.label }}</span>
+        <span class="rag-vector-score">{% if row.cosine is none %}—{% else %}{{ '%.4f'|format(row.cosine) }}{% endif %}</span>
+        {% if row.preview %}
+        <code class="rag-vector-nums">[{% for value in row.preview %}{{ '%.4f'|format(value) }}{{ ', ' if not loop.last }}{% endfor %}{% if row.rest %} … +{{ row.rest }}{% endif %}]</code>
+        {% else %}
+        <code class="rag-vector-nums rag-vector-none">—</code>
+        {% endif %}
+      </div>
+      {% endfor %}
+    </section>
+
+    <!-- Result ------------------------------------------------------- -->
+    <section class="rag-panel rag-answer" id="ragAnswer">
+      <div class="rag-section-head">
+        <h2>Result</h2>
+      </div>
+
+      {% if answer is not none %}
+      <div class="rag-answer-bubble">{{ answer[0] }}</div>
+      {% if answer[1] %}
+      <div class="rag-answer-photos">
+        {% for image in answer[1] %}
+        <figure><img src="{{ image.url }}" alt="" loading="lazy"><figcaption>{{ image.caption or '—' }}{% if image.sex %} · {{ image.sex }}{% endif %}</figcaption></figure>
+        {% endfor %}
+      </div>
+      {% endif %}
+      {% if trace.outcome == 'handover' and handover_url %}
+      <a class="chat-redirect-button rag-answer-redirect" href="{{ handover_url }}">
+        <span class="chat-redirect-copy"><small>{{ trace.subject.label }}</small><strong>{{ trace.subject.name }}</strong></span>
+        <span class="chat-redirect-arrow">→</span>
+      </a>
+      {% endif %}
+
+      {% else %}
+      <form class="rag-answer-controls" id="ragAnswerForm">
+        <input type="hidden" name="csrf_token" value="{{ csrf_token }}">
+        <input type="hidden" name="subject" value="{{ subject_key }}">
+        <input type="hidden" name="q" value="{{ question }}">
+        <button type="submit" id="ragRunBtn">အဖြေ ထုတ်ရန်</button>
+      </form>
+      <div class="rag-answer-output" id="ragAnswerOutput" hidden>
+        <div class="rag-answer-bubble" id="ragAnswerText"></div>
+        <div class="rag-answer-stats" id="ragAnswerStats"></div>
+      </div>
+      {% endif %}
+    </section>
+    {% endif %}
+
+  </div>
+</div>
+{% endblock %}
+
+{% block scripts %}
+<script>
+// The bench streams the same NDJSON the member's chat consumes, so the panel
+// reads it the same way: one JSON object per line, content arriving in parts.
+const answerForm = document.getElementById('ragAnswerForm');
+if (answerForm) {
+    const output = document.getElementById('ragAnswerOutput');
+    const target = document.getElementById('ragAnswerText');
+    const stats = document.getElementById('ragAnswerStats');
+    const button = document.getElementById('ragRunBtn');
+
+    answerForm.addEventListener('submit', async event => {
+        event.preventDefault();
+        button.disabled = true;
+        button.textContent = 'ထုတ်နေသည်...';
+        output.hidden = false;
+        target.textContent = '';
+        stats.textContent = '';
+
+        try {
+            const response = await fetch({{ url_for('admin.rag_answer')|tojson }}, {
+                method: 'POST',
+                body: new FormData(answerForm)
+            });
+            if (!response.ok) {
+                let detail = 'DeepSeek ချိတ်ဆက်မှု အမှား';
+                try { detail = (await response.json()).error || detail; } catch (error) {}
+                target.textContent = detail;
+                return;
+            }
+
+            const reader = response.body.getReader();
+            const decoder = new TextDecoder();
+            let buffer = '';
+            let answer = '';
+            while (true) {
+                const { done, value } = await reader.read();
+                buffer += decoder.decode(value || new Uint8Array(), { stream: !done });
+                const lines = buffer.split('\n');
+                buffer = done ? '' : lines.pop();
+                for (const line of lines.filter(item => item.trim())) {
+                    let data;
+                    try { data = JSON.parse(line); } catch (error) { continue; }
+                    if (data.error) { target.textContent = data.error; return; }
+                    if (data.content) { answer += data.content; target.textContent = answer; }
+                    if (data.done) {
+                        stats.textContent = '';
+                        [
+                            [data.total + 's', 'စုစုပေါင်း'],
+                            [(data.passages || []).length, 'passage']
+                        ].forEach(([value, label]) => {
+                            const chip = document.createElement('span');
+                            const strong = document.createElement('strong');
+                            strong.textContent = value;
+                            const small = document.createElement('small');
+                            small.textContent = label;
+                            chip.append(strong, small);
+                            stats.appendChild(chip);
+                        });
+                    }
+                }
+                if (done) break;
+            }
+            if (!answer) target.textContent = 'အဖြေ ရရှိမလာပါ။';
+        } catch (error) {
+            target.textContent = 'ချိတ်ဆက်မှု အမှား — DEEPSEEK_API_KEY ကို စစ်ဆေးပါ။';
+        } finally {
+            button.disabled = false;
+            button.textContent = 'ထပ်မံ ထုတ်ရန်';
+        }
+    });
+}
+</script>
+{% endblock %}

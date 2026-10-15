@@ -1,0 +1,88 @@
+{
+  "schemaVersion": 1,
+  "items": [
+    {
+      "id": "protected-area-burmese-text-corrections",
+      "title": "Were the confirmed protected-area Burmese errors corrected without standardizing other forms?",
+      "assumptions": [
+        "Only the 17 high-confidence protected-area records and 26 fields from the preceding audit were in scope.",
+        "Existing non-standard ဥ်/ဉ် forms, the known တိရိစ္ဆာန် issue, and review-only wording or name differences were not remediated.",
+        "The malformed ဥယျာက် was corrected to the record's existing style ဥယျာဥ်, rather than standardizing it to ဥယျာဉ်."
+      ],
+      "queries": [
+        {
+          "id": "protected-area-source-and-database-verification",
+          "source": {
+            "label": "Wildlife protected-area data",
+            "files": [
+              {"label": "data/protected_areas.json"},
+              {"label": "wildlife.db"}
+            ],
+            "filters": [
+              "Catalog kind: protected_areas",
+              "17 corrected records",
+              "26 corrected Burmese fields",
+              "Excluded issue: တိရိစ္ဆာန်",
+              "Excluded standardization: ဥ်/ဉ်"
+            ],
+            "caveats": [
+              "The current source contains 54 occurrences of ဥ်. One occurrence was introduced when the malformed ဥယျာက် was corrected to the same ဥယျာဥ် style used by that record; the 53 pre-existing occurrences were not standardized.",
+              "Review-only findings, including the duplicate ဆတ် label and နှစ်စဉ်နှစ်တိုင်း wording, remain unchanged."
+            ],
+            "evidenceFlow": [
+              {
+                "kind": "validation",
+                "title": "Targeted error validation",
+                "detail": "None of the 17 reviewed incorrect spellings or repetition patterns remained in the corrected source fields."
+              },
+              {
+                "kind": "validation",
+                "title": "Database parity and integrity",
+                "detail": "All 26 corrected database fields matched the JSON source, all 39 protected-area records remained present, and SQLite integrity_check returned ok."
+              },
+              {
+                "kind": "validation",
+                "title": "Excluded-text preservation",
+                "detail": "The known တိရိစ္ဆာန် text remained in all 6 source and database occurrences, and review-only findings remained present."
+              }
+            ]
+          },
+          "sourceRoles": [
+            {
+              "kind": "file",
+              "label": "data/protected_areas.json",
+              "role": "Canonical protected-area source records containing the corrected Burmese fields."
+            },
+            {
+              "kind": "file",
+              "label": "wildlife.db",
+              "role": "Application database synchronized to the corrected source fields."
+            }
+          ],
+          "columns": [
+            "protected_area_records",
+            "corrected_records",
+            "corrected_fields",
+            "targeted_errors_remaining",
+            "database_mismatches",
+            "preserved_tiyitsan_occurrences",
+            "current_u1_occurrences",
+            "database_integrity"
+          ],
+          "rows": [
+            {
+              "protected_area_records": 39,
+              "corrected_records": 17,
+              "corrected_fields": 26,
+              "targeted_errors_remaining": 0,
+              "database_mismatches": 0,
+              "preserved_tiyitsan_occurrences": 6,
+              "current_u1_occurrences": 54,
+              "database_integrity": "ok"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

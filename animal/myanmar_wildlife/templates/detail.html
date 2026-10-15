@@ -1,0 +1,583 @@
+{% extends "base.html" %} {% from "_iucn.html" import iucn_badge,
+iucn_legend_panel %} {% block title %}{{ animal.name_my }} -
+မြန်မာ့တောရိုင်းတိရစ္ဆာန် စွယ်စုံကျမ်း{% endblock %} {% block content %}
+<div class="container">
+  <nav class="breadcrumb">
+    <a href="{{ url_for('home') }}">တိရစ္ဆာန်များ</a>
+    <span class="breadcrumb-sep">›</span>
+    {% if animal.category_id %}
+    <a href="{{ url_for('category_page', category_id=animal.category_id) }}"
+      >{{ animal.category_name_my }}</a
+    >
+    <span class="breadcrumb-sep">›</span>
+    {% endif %}
+    <span class="breadcrumb-current">{{ animal.name_my }}</span>
+  </nav>
+
+  <div class="detail-layout">
+    <aside class="detail-aside">
+      <div class="detail-image">
+        {% if animal.image_url %}
+        <img
+          src="{{ animal.image_url }}"
+          alt="{{ animal.name_en }} ({{ animal.scientific_name }})"
+        />
+        {% else %}
+        <div
+          class="image-unavailable"
+          role="img"
+          aria-label="Portal photograph unavailable"
+        >
+          <svg
+            width="48"
+            height="48"
+            viewBox="0 0 24 24"
+            fill="none"
+            stroke="currentColor"
+            stroke-width="1.5"
+            style="margin-bottom: 12px; opacity: 0.5"
+          >
+            <rect x="3" y="3" width="18" height="18" rx="2" ry="2"></rect>
+            <circle cx="8.5" cy="8.5" r="1.5"></circle>
+            <polyline points="21 15 16 10 5 21"></polyline>
+          </svg>
+          <span>ဓာတ်ပုံ မရှိသေးပါ</span>
+        </div>
+        {% endif %}
+      </div>
+      {% if animal.image_url and animal.image_credit %}
+      <p class="image-credit">ဓာတ်ပုံ — {{ animal.image_credit }}</p>
+      {% endif %} {% if animal.male_image_url or animal.female_image_url %}
+      <section
+        class="animal-sex-gallery"
+        aria-label="Male and female photographs"
+      >
+        {% if animal.male_image_url %}
+        <figure>
+          <img
+            src="{{ animal.male_image_url }}"
+            alt="Male {{ animal.name_en }}"
+          />
+          <figcaption>
+            <span>♂</span>
+            <div><strong>Male</strong><small>အထီး</small></div>
+          </figcaption>
+        </figure>
+        {% endif %} {% if animal.female_image_url %}
+        <figure>
+          <img
+            src="{{ animal.female_image_url }}"
+            alt="Female {{ animal.name_en }}"
+          />
+          <figcaption>
+            <span>♀</span>
+            <div><strong>Female</strong><small>အမ</small></div>
+          </figcaption>
+        </figure>
+        {% endif %}
+      </section>
+      {% endif %}
+
+      <div class="detail-chat-card">
+        <div class="detail-chat-card-head">
+          <span class="detail-chat-spark">
+            <svg
+              width="18"
+              height="18"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="2"
+            >
+              <path
+                d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"
+              ></path>
+            </svg>
+          </span>
+          <div>
+            <strong>{{ animal.name_my }} အကြောင်း မေးမြန်းရန်</strong>
+            <span>ဤမျိုးစိတ်တစ်ခုတည်းအတွက် သီးသန့် ပြောဆိုခန်း</span>
+          </div>
+        </div>
+        {% if suggestions %}
+        <ul class="detail-chat-preview">
+          {% for question in suggestions %}
+          <li>
+            <a
+              href="{{ url_for('animal_chat', animal_id=animal.id, q=question) }}"
+              >{{ question }}</a
+            >
+          </li>
+          {% endfor %}
+        </ul>
+        {% endif %}
+        <a
+          href="{{ url_for('animal_chat', animal_id=animal.id) }}"
+          class="btn btn-green btn-block"
+        >
+          ပြောဆိုခန်း ဖွင့်ရန်
+          <svg
+            width="16"
+            height="16"
+            viewBox="0 0 24 24"
+            fill="none"
+            stroke="currentColor"
+            stroke-width="2"
+          >
+            <path d="M5 12h14M12 5l7 7-7 7"></path>
+          </svg>
+        </a>
+      </div>
+
+      {% if animal.sources %}
+      <div class="detail-source-list">
+        {% for source in animal.sources %}<a
+          href="{{ source.url }}"
+          target="_blank"
+          rel="noopener noreferrer"
+          class="detail-source-link"
+        >
+          <svg
+            width="14"
+            height="14"
+            viewBox="0 0 24 24"
+            fill="none"
+            stroke="currentColor"
+            stroke-width="2"
+          >
+            <path
+              d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"
+            ></path>
+            <polyline points="15 3 21 3 21 9"></polyline>
+            <line x1="10" y1="14" x2="21" y2="3"></line>
+          </svg>
+          {{ source.label or 'မူရင်းရင်းမြစ်' }} </a
+        >{% endfor %}
+      </div>
+      {% endif %}
+    </aside>
+
+    <div class="detail-main">
+      <header class="detail-head">
+        <div class="detail-badges-top">
+          <span class="badge badge-category"
+            >{{ animal.category_name_my or 'အမျိုးအစား မသတ်မှတ်ရသေးပါ' }}</span
+          >
+          {% if animal.taxon_rank and animal.taxon_rank != 'species' %}
+          <span class="badge badge-taxon"
+            >{{ animal.taxon_rank_label_my }}</span
+          >
+          {% endif %} {{ iucn_badge(animal.conservation_status, prefix='မြန်မာ',
+          term=true) }} {{ iucn_badge(animal.global_iucn_status,
+          prefix='Global', classes='badge badge-global', term=true) }} {% if
+          animal.protection_status_my %}
+          <span class="badge badge-protected">
+            <svg
+              width="13"
+              height="13"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="2.4"
+              aria-hidden="true"
+            >
+              <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path>
+            </svg>
+            {{ animal.protection_status_my }}
+          </span>
+          {% endif %}
+        </div>
+
+        <h1>{{ animal.name_my }}</h1>
+        {% if animal.name_en %}
+        <p class="scientific-name">
+          {{ animal.name_en }} — <em>{{ animal.scientific_name }}</em>
+        </p>
+        {% else %}
+        <p class="scientific-name"><em>{{ animal.scientific_name }}</em></p>
+        {% endif %} {% if animal.aliases %}
+        <div class="alias-tags">
+          {% for alias in animal.aliases %}
+          <span class="alias-tag">{{ alias }}</span>
+          {% endfor %}
+        </div>
+        {% endif %}
+      </header>
+
+      {% if animal.protection_status_my %}
+      <aside class="protection-notice" role="note">
+        <span class="protection-notice-mark" aria-hidden="true">
+          <svg
+            width="20"
+            height="20"
+            viewBox="0 0 24 24"
+            fill="none"
+            stroke="currentColor"
+            stroke-width="2"
+          >
+            <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path>
+            <path d="M9 12l2 2 4-4"></path>
+          </svg>
+        </span>
+        <div>
+          <strong
+            >ဤမျိုးစိတ်သည် ဥပဒေအရ {{ animal.protection_status_my }}
+            ဖြစ်သည်။</strong
+          >
+          {% if animal.protection_status_en == 'Seasonally protected' or 'ရာသီ'
+          in animal.protection_status_my %}
+          <p>
+            သတ်မှတ်ထားသော ရာသီကာလနှင့် သက်ဆိုင်ရာ စည်းကမ်းချက်များအတွင်း
+            ကာကွယ်ထားပါသည်။ အသေးစိတ်ကို အောက်ပါ ဥပဒေ/စာရင်း ကိုးကားချက်တွင်
+            စစ်ဆေးပါ။
+          </p>
+          {% else %}
+          <p>
+            ဤကာကွယ်မှုအဆင့်အတွက် သတ်မှတ်ထားသော ခွင့်ပြုချက်နှင့်
+            ကန့်သတ်ချက်များကို လိုက်နာရပါမည်။ အသေးစိတ်ကို အောက်ပါ ဥပဒေ/စာရင်း
+            ကိုးကားချက်တွင် စစ်ဆေးပါ။
+          </p>
+          {% endif %} {% if animal.protection_basis_my %}
+          <p class="protection-notice-basis">
+            {{ animal.protection_basis_my }}
+          </p>
+          {% endif %} {% if animal.protection_law_my %}
+          <p class="protection-notice-law">{{ animal.protection_law_my }}</p>
+          {% endif %}
+        </div>
+      </aside>
+      {% endif %} {% if animal.taxon_rank and animal.taxon_rank != 'species' %}
+      <p class="taxon-note">
+        ဤမှတ်တမ်းသည် မျိုးစိတ်တစ်ခုတည်း မဟုတ်ဘဲ
+        <strong>{{ animal.scientific_name }}</strong>
+        {{ animal.taxon_rank_label_my }} တစ်ခုလုံးအတွက် ဖြစ်ပါသည်။ {% if
+        animal.portal.scientific_raw and animal.portal.scientific_raw !=
+        animal.scientific_name %} စာရင်းမူရင်းတွင် “{{
+        animal.portal.scientific_raw }}” ဟု ဖော်ပြထားသည်။ {% endif %} {% if
+        animal.portal.source_note %} {{ animal.portal.source_note }}{% endif %}
+      </p>
+      {% endif %}
+
+      <p class="detail-description">
+        {{ animal.description_my or animal.physical_description_my or
+        animal.habitat_my or 'အကျဉ်းချုပ်ဖော်ပြချက် မရှိသေးပါ။' }}
+      </p>
+
+      {% if animal.iucn_justification_my %}
+      <section class="detail-section">
+        <h3 class="detail-section-title">IUCN အကဲဖြတ် အကြောင်းပြချက်</h3>
+        <p>{{ animal.iucn_justification_my }}</p>
+      </section>
+      {% endif %} {% if taxon_members %}
+      <section class="detail-section">
+        <h3 class="detail-section-title">
+          <svg
+            width="20"
+            height="20"
+            viewBox="0 0 24 24"
+            fill="none"
+            stroke="currentColor"
+            stroke-width="2"
+          >
+            <path d="M3 6h18M3 12h18M3 18h18"></path>
+          </svg>
+          ဤအုပ်စုတွင် ပါဝင်ပြီး စွယ်စုံကျမ်းတွင် ရှိပြီးသော မျိုးစိတ်များ
+        </h3>
+        <ul class="taxon-members">
+          {% for member in taxon_members %}
+          <li>
+            <a href="{{ url_for('animal_detail', animal_id=member.id) }}">
+              <strong>{{ member.name_my }}</strong>
+              <span
+                >{{ member.name_en }} —
+                <em>{{ member.scientific_name }}</em></span
+              >
+            </a>
+            {% if member.protection_status_my %}<span
+              class="taxon-member-status"
+              >{{ member.protection_status_my }}</span
+            >{% endif %}
+          </li>
+          {% endfor %}
+        </ul>
+      </section>
+      {% endif %}
+
+      <div class="detail-specs">
+        {% if animal.species_order %}
+        <div class="spec-item">
+          <div class="spec-label">Order</div>
+          <div class="spec-value">{{ animal.species_order }}</div>
+        </div>
+        {% endif %} {% if animal.species_family %}
+        <div class="spec-item">
+          <div class="spec-label">Family</div>
+          <div class="spec-value">{{ animal.species_family }}</div>
+        </div>
+        {% endif %} {% if animal.size_my %}
+        <div class="spec-item">
+          <div class="spec-label">အရွယ်အစား</div>
+          <div class="spec-value">{{ animal.size_my }}</div>
+        </div>
+        {% endif %} {% if animal.lifespan_my %}
+        <div class="spec-item">
+          <div class="spec-label">သက်တမ်း</div>
+          <div class="spec-value">{{ animal.lifespan_my }}</div>
+        </div>
+        {% endif %} {% if animal.region_my %}
+        <div class="spec-item spec-item-full">
+          <div class="spec-label">ဒေသ</div>
+          <div class="spec-value">{{ animal.region_my }}</div>
+        </div>
+        {% endif %}
+      </div>
+
+      {% if animal.myanmar_population or animal.global_population or
+      animal.population_trend %}
+      <section class="detail-section">
+        <h3 class="detail-section-title">
+          <svg
+            width="20"
+            height="20"
+            viewBox="0 0 24 24"
+            fill="none"
+            stroke="currentColor"
+            stroke-width="2"
+          >
+            <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"></path>
+            <circle cx="9" cy="7" r="4"></circle>
+            <path d="M23 21v-2a4 4 0 0 0-3-3.87"></path>
+            <path d="M16 3.13a4 4 0 0 1 0 7.75"></path>
+          </svg>
+          အကောင်ရေ
+        </h3>
+        <div class="population-grid">
+          {% if animal.population_trend %}
+          <div class="population-item">
+            <span>တွေ့ရှိမှု အခြေအနေ</span>
+            <strong>{{ animal.population_trend }}</strong>
+          </div>
+          {% endif %} {% if animal.myanmar_population %}
+          <div class="population-item">
+            <span>မြန်မာနိုင်ငံ</span>
+            <strong>{{ animal.myanmar_population }}</strong>
+          </div>
+          {% endif %} {% if animal.global_population %}
+          <div class="population-item">
+            <span>ကမ္ဘာလုံးဆိုင်ရာ</span>
+            <strong>{{ animal.global_population }}</strong>
+          </div>
+          {% endif %}
+        </div>
+        <p class="population-note">အကောင်ရေများသည် ဖော်ပြထားသည့် source ၏ စစ်တမ်း သို့မဟုတ် ခန့်မှန်းချက်ဖြစ်သည်။ မူရင်းမှ ကူးယူသည့်ရက်ကို စစ်တမ်းကောက်ယူသည့်ရက်အဖြစ် မယူဆပါနှင့်။</p>
+      </section>
+      {% endif %} {% if animal.physical_description_my %}
+      <section class="detail-section">
+        <h3 class="detail-section-title">ရုပ်သွင်ပြင် ဖော်ပြချက်</h3>
+        <p>{{ animal.physical_description_my }}</p>
+      </section>
+      {% endif %} {% if animal.distribution_my %}
+      <section class="detail-section">
+        <h3 class="detail-section-title">
+          <svg
+            width="20"
+            height="20"
+            viewBox="0 0 24 24"
+            fill="none"
+            stroke="currentColor"
+            stroke-width="2"
+          >
+            <path d="M1 6v16l7-4 8 4 7-4V2l-7 4-8-4-7 4z"></path>
+            <path d="M8 2v16M16 6v16"></path>
+          </svg>
+          ဖြန့်ကျက်တည်ရှိမှု
+        </h3>
+        <p>{{ animal.distribution_my }}</p>
+      </section>
+      {% endif %} {% if animal.habitat_my %}
+      <section class="detail-section">
+        <h3 class="detail-section-title">
+          <svg
+            width="20"
+            height="20"
+            viewBox="0 0 24 24"
+            fill="none"
+            stroke="currentColor"
+            stroke-width="2"
+          >
+            <path d="M3 21h18M5 21V7l7-4 7 4v14"></path>
+            <path d="M9 21v-6h6v6"></path>
+          </svg>
+          နေထိုင်ရာ
+        </h3>
+        <p>{{ animal.habitat_my }}</p>
+      </section>
+      {% endif %} {% if animal.diet_my %}
+      <section class="detail-section">
+        <h3 class="detail-section-title">
+          <svg
+            width="20"
+            height="20"
+            viewBox="0 0 24 24"
+            fill="none"
+            stroke="currentColor"
+            stroke-width="2"
+          >
+            <path d="M18 8h1a4 4 0 0 1 0 8h-1"></path>
+            <path d="M2 8h16v9a4 4 0 0 1-4 4H6a4 4 0 0 1-4-4V8z"></path>
+            <line x1="6" y1="1" x2="6" y2="4"></line>
+            <line x1="10" y1="1" x2="10" y2="4"></line>
+            <line x1="14" y1="1" x2="14" y2="4"></line>
+          </svg>
+          အစာစားနည်း
+        </h3>
+        <p>{{ animal.diet_my }}</p>
+      </section>
+      {% endif %} {% if animal.behaviour_my %}
+      <section class="detail-section">
+        <h3 class="detail-section-title">
+          <svg
+            width="20"
+            height="20"
+            viewBox="0 0 24 24"
+            fill="none"
+            stroke="currentColor"
+            stroke-width="2"
+          >
+            <circle cx="12" cy="12" r="9"></circle>
+            <path d="M12 7v5l3 2"></path>
+          </svg>
+          အနေအထိုင်နှင့် အပြုအမူ
+        </h3>
+        <p>{{ animal.behaviour_my }}</p>
+      </section>
+      {% endif %} {% if animal.fun_facts_my %}
+      <section class="detail-section">
+        <h3 class="detail-section-title">
+          <svg
+            width="20"
+            height="20"
+            viewBox="0 0 24 24"
+            fill="none"
+            stroke="currentColor"
+            stroke-width="2"
+          >
+            <polygon
+              points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"
+            ></polygon>
+          </svg>
+          ထူးခြားအချက်များ
+        </h3>
+        <div class="fact-box">{{ animal.fun_facts_my }}</div>
+      </section>
+      {% endif %} {% if animal.wild_population_my %}
+      <section class="detail-section">
+        <h3 class="detail-section-title">တောရိုင်း အကောင်ရေ အသေးစိတ်</h3>
+        <div class="fact-box">{{ animal.wild_population_my }}</div>
+      </section>
+      {% endif %} {% if animal.threats_my %}
+      <section class="detail-section">
+        <h3 class="detail-section-title">
+          <svg
+            width="20"
+            height="20"
+            viewBox="0 0 24 24"
+            fill="none"
+            stroke="currentColor"
+            stroke-width="2"
+          >
+            <path
+              d="M10.29 3.86L1.82 18a2 2 0 0 0 1.71 3h16.94a2 2 0 0 0 1.71-3L13.71 3.86a2 2 0 0 0-3.42 0z"
+            ></path>
+            <line x1="12" y1="9" x2="12" y2="13"></line>
+            <line x1="12" y1="17" x2="12.01" y2="17"></line>
+          </svg>
+          ရှင်သန်ရေး ခြိမ်းခြောက်မှုများ
+        </h3>
+        <p>{{ animal.threats_my }}</p>
+      </section>
+      {% endif %} {% if animal.conservation_actions_my %}
+      <section class="detail-section">
+        <h3 class="detail-section-title">
+          <svg
+            width="20"
+            height="20"
+            viewBox="0 0 24 24"
+            fill="none"
+            stroke="currentColor"
+            stroke-width="2"
+          >
+            <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path>
+          </svg>
+          ထိန်းသိမ်းရေး လုပ်ဆောင်ချက်များ
+        </h3>
+        <p>{{ animal.conservation_actions_my }}</p>
+      </section>
+      {% endif %} {% if animal.conservation_needs_my %}
+      <section class="detail-section">
+        <h3 class="detail-section-title">ထိန်းသိမ်းရေး လိုအပ်ချက်များ</h3>
+        <p>{{ animal.conservation_needs_my }}</p>
+      </section>
+      {% endif %} {% if animal.use_trade_my %}
+      <section class="detail-section">
+        <h3 class="detail-section-title">အသုံးပြုမှုနှင့် ကုန်သွယ်မှု</h3>
+        <p>{{ animal.use_trade_my }}</p>
+      </section>
+      {% endif %} {% if related_ecosystems or related_protected_areas or animal.kba_my %}
+      <section class="detail-section relationship-section">
+        <div class="relationship-heading">
+          <div><span>နေထိုင်ရာ ဆက်နွယ်မှု</span><h3>ဤတိရစ္ဆာန်ကို ဘယ်မှာတွေ့နိုင်သလဲ</h3></div>
+        </div>
+        {% if related_ecosystems %}
+        <h4 class="relationship-group-title">ဂေဟစနစ်များ</h4>
+        <div class="relationship-place-grid">
+          {% for place in related_ecosystems %}
+          <a class="relationship-place-card" href="{{ url_for('ecosystem_detail', slug=place.slug) }}">
+            {% if place.image_url %}<img src="{{ place.image_url }}" alt="" loading="lazy">{% else %}<span class="relationship-place-mark" aria-hidden="true">⌁</span>{% endif %}
+            <span><strong>{{ place.name_mm or place.name }}</strong><small>{{ place.name if place.name_mm else place.code or 'ဂေဟစနစ်' }}</small></span><b aria-hidden="true">→</b>
+          </a>
+          {% endfor %}
+        </div>
+        {% endif %}
+        {% if related_protected_areas %}
+        <h4 class="relationship-group-title">ကာကွယ်ထိန်းသိမ်းနယ်မြေများ</h4>
+        <div class="relationship-place-grid">
+          {% for place in related_protected_areas %}
+          <a class="relationship-place-card" href="{{ url_for('protected_area_detail', slug=place.slug) }}">
+            {% if place.image_url %}<img src="{{ place.image_url }}" alt="" loading="lazy">{% else %}<span class="relationship-place-mark" aria-hidden="true">◇</span>{% endif %}
+            <span><strong>{{ place.name_mm or place.name }}</strong><small>{{ place.name if place.name_mm else place.designation_mm or place.designation or 'ကာကွယ်ထိန်းသိမ်းနယ်မြေ' }}</small></span><b aria-hidden="true">→</b>
+          </a>
+          {% endfor %}
+        </div>
+        {% endif %}
+        {% if animal.kba_my %}
+        <div class="detail-specs relationship-kba">
+          <div class="spec-item spec-item-full">
+            <div class="spec-label">
+              အဓိက ဇီဝမျိုးစုံမျိုးကွဲ နယ်မြေများ (KBA)
+            </div>
+            <div class="spec-value">{{ animal.kba_my }}</div>
+          </div>
+        </div>
+        {% endif %}
+      </section>
+      {% endif %} {% if animal.sources %}
+      <div class="source-note">
+        <strong>မူရင်းဒေတာနှင့် ဓာတ်ပုံ:</strong>
+        {% for source in animal.sources %}<a
+          href="{{ source.url }}"
+          target="_blank"
+          rel="noopener noreferrer"
+          >{{ source.label }}</a
+        >{% if not loop.last %}<span>·</span>{% endif %}{% endfor %} {% if
+        animal.crawled_at %}<span>· မူရင်းမှ ကူးယူသည့်ရက် {{ animal.crawled_at[:10] }}</span>{% endif
+        %} {% if animal.portal.description_language == 'en' %}<span
+          >· မြန်မာဘာသာဖြင့် မှတ်တမ်း မရရှိသေးသဖြင့် အင်္ဂလိပ်ဘာသာ မူရင်းအတိုင်း
+          ဖော်ပြထားပါသည်။</span
+        >{% endif %}
+      </div>
+      {% endif %}
+    </div>
+  </div>
+</div>
+{% endblock %}

@@ -1,0 +1,450 @@
+[
+  {
+    "animal_id": 55,
+    "name_my": "ရေံလိပ်",
+    "name_en": "Northern River Terrapin",
+    "field": "global_population",
+    "old_value": "၁၀၀",
+    "new_value": null,
+    "old_sources": [
+      "https://www.myanmarbiodiversity.org/species/Batagur_baska_Northern_River_Terrapin"
+    ],
+    "new_sources": [],
+    "reason": "The supposed global total of 100 is below the roughly 400 animals held in one Indian conservation breeding programme in 2025.",
+    "evidence_url": "https://www.sciencedirect.com/science/article/pii/S2351989425003646"
+  },
+  {
+    "animal_id": 55,
+    "name_my": "ရေံလိပ်",
+    "name_en": "Northern River Terrapin",
+    "field": "wild_population_my",
+    "old_value": "သမိုင်းကြောင်းအရ ဧရာဝတီမြစ်ဝကျွန်းပေါ်ဒေသ (Maxwell 1911) တွင် မြောက်မြားစွာရှိခဲ့သော်လည်း အကောင်ရေသည် ၁၉၀၀ အစောပိုင်း (Moll 1985) တွင် အသိုက်ပြုလုပ်သည့် အကောင်အနည်းငယ်သာ ရှိခဲ့သည်။ သင့်လျော်သော နေထိုင်ရာစားကျက်များကို စစ်တမ်းကောက်ယူခဲ့သော်လည်း မကြာသေးမီနှစ်များအတွင်း တောရိုင်းအခြေအနေမျိုးတွင် မှတ်တမ်းများ မရှိခဲ့ပါ။ ယခုအခါတွင် ရန်ကုန်မြို့နှင့် မော်လမြိုင်အနီးရှိ ဘုရားကန်နှစ်ခုမှ  B.baska ဟု ယူဆရသည့် အမ သုံးကောင်ရှိကြောင်း သိရသည်။ မျိုးစိတ်များ၏ တွေ့ရှိရသည့် အဝန်းအဝိုင်း သည် ၈ စတုရန်းကီလိုမီတာ ရှိပြီး ၎င်း၏ နေရာယူကျက်စားသည့် အဝန်းအဝိုင်းသည် ၎င်း၏နေထိုင်ရာများတွင်  ၈ စတုရန်းကီလိုမီတာ ရှိသည်။\n",
+    "new_value": null,
+    "old_sources": [
+      "https://www.myanmarbiodiversity.org/species/Batagur_baska_Northern_River_Terrapin"
+    ],
+    "new_sources": [],
+    "reason": "Undated 'recent' Myanmar wording relies on historical reports and does not establish a current Myanmar wild count.",
+    "evidence_url": "https://www.sciencedirect.com/science/article/pii/S2351989425003646"
+  },
+  {
+    "animal_id": 69,
+    "name_my": "ရေညောင့်နှုတ်ဝိုင်းငှက်",
+    "name_en": "Spoon-billed Sandpiper",
+    "field": "myanmar_population",
+    "old_value": "< ၁၅၀",
+    "new_value": null,
+    "old_sources": [
+      "https://www.myanmarbiodiversity.org/species/Calidris_pygmaea_Spoon_billed_Sandpiper"
+    ],
+    "new_sources": [],
+    "reason": "The old upper bound is not a current country-wide count; the current source reports a site survey only.",
+    "evidence_url": "https://eaaflyway.org/gulf-of-mottama-place-for-sbs-non-breeding-season/"
+  },
+  {
+    "animal_id": 69,
+    "name_my": "ရေညောင့်နှုတ်ဝိုင်းငှက်",
+    "name_en": "Spoon-billed Sandpiper",
+    "field": "global_population",
+    "old_value": "၂၄၀ - ၆၂၀",
+    "new_value": "၂၀၂၄ ခန့်မှန်းချက် — ကမ္ဘာတစ်ဝန်း အရွယ်ရောက်ပြီးသော အကောင်ရေ ၃၃၀–၅၅၀ ကောင်",
+    "old_sources": [
+      "https://www.myanmarbiodiversity.org/species/Calidris_pygmaea_Spoon_billed_Sandpiper"
+    ],
+    "new_sources": [
+      "https://eaaflyway.org/wp-content/uploads/2025/11/DD.14_ISSAP_for_the_Conservation_of_the_SBS.pdf"
+    ],
+    "reason": "Newer species action plan gives a 2024 estimate and specifies mature individuals.",
+    "evidence_url": "https://eaaflyway.org/wp-content/uploads/2025/11/DD.14_ISSAP_for_the_Conservation_of_the_SBS.pdf"
+  },
+  {
+    "animal_id": 69,
+    "name_my": "ရေညောင့်နှုတ်ဝိုင်းငှက်",
+    "name_en": "Spoon-billed Sandpiper",
+    "field": "wild_population_my",
+    "old_value": "ရေညှောင့် နှုတ်ဝိုင်းငှက် C. pygmaea ၏ မျိုးဆက်သက်တမ်းမှာ ၆.၃ နှစ်ဖြစ်သည်။ အကောင်ရေ လမ်းကြောင်းသည် လျော့ကျလာကာ ဤမျိုးစိတ်များ၏ အကောင်ရေမှာ ခန့်မှန်းခြေအားဖြင့် ၁၅၀ အောက်သာ ရှိနိုင်သည်။ မျိုးစိတ်များ၏ တွေ့ရှိရသည့် အဝန်းအဝိုင်းသည် ၃၂ စတုရန်းကီလိုမီတာ ရှိပြီး ၎င်း၏ နေရာယူကျက်စားသည့် အဝန်းအဝိုင်းသည် ၎င်းရှိနိုင်သည့်နေရာများတွင် ၁၅၁၂၅၅ စတုရန်းကီလိုမီတာ ရှိသည်။ ",
+    "new_value": "၂၀၂၅ ခုနှစ် မုတ္တမကွေ့ စစ်တမ်းတွင် ရေညှောင့်နှုတ်ဝိုင်းငှက် ၅၂ ကောင်ကို တိုက်ရိုက် တွေ့ရှိခဲ့သည်။ ဤသည် စစ်တမ်းဧရိယာအတွင်း တွေ့ရှိမှုသာဖြစ်ပြီး မြန်မာနိုင်ငံတစ်ဝန်း စုစုပေါင်းအကောင်ရေ မဟုတ်ပါ။",
+    "old_sources": [
+      "https://www.myanmarbiodiversity.org/species/Calidris_pygmaea_Spoon_billed_Sandpiper"
+    ],
+    "new_sources": [
+      "https://eaaflyway.org/gulf-of-mottama-place-for-sbs-non-breeding-season/"
+    ],
+    "reason": "Replaces an undated upper bound with a dated, explicitly local direct observation.",
+    "evidence_url": "https://eaaflyway.org/gulf-of-mottama-place-for-sbs-non-breeding-season/"
+  },
+  {
+    "animal_id": 76,
+    "name_my": "ငဟစ်ဝမ်းဖြူ",
+    "name_en": "White-bellied Heron",
+    "field": "myanmar_population",
+    "old_value": "< ၅၀",
+    "new_value": null,
+    "old_sources": [
+      "https://www.myanmarbiodiversity.org/species/Ardea_insignis_White_bellied_Heron"
+    ],
+    "new_sources": [],
+    "reason": "The old upper bound is not a current Myanmar-wide census; recent research estimates one local population only.",
+    "evidence_url": "https://www.cambridge.org/core/journals/oryx/article/conservation-in-response-to-a-crisis-initiating-communityled-conservation-for-the-whitebellied-heron-ardea-insignis-in-northern-myanmar/74127D3E165D2851356506F9721079AF"
+  },
+  {
+    "animal_id": 76,
+    "name_my": "ငဟစ်ဝမ်းဖြူ",
+    "name_en": "White-bellied Heron",
+    "field": "global_population",
+    "old_value": "၅၀ - ၂၄၉",
+    "new_value": "၂၀၂၆ လေ့လာချက် — ကမ္ဘာတစ်ဝန်း တောရိုင်းတွင် အရွယ်ရောက်ပြီးသော အကောင်ရေ ၆၀ အောက်",
+    "old_sources": [
+      "https://www.myanmarbiodiversity.org/species/Ardea_insignis_White_bellied_Heron"
+    ],
+    "new_sources": [
+      "https://academic.oup.com/auk/article/143/3/1/8586360"
+    ],
+    "reason": "Newer study estimates fewer than 60 mature individuals in the wild.",
+    "evidence_url": "https://academic.oup.com/auk/article/143/3/1/8586360"
+  },
+  {
+    "animal_id": 76,
+    "name_my": "ငဟစ်ဝမ်းဖြူ",
+    "name_en": "White-bellied Heron",
+    "field": "wild_population_my",
+    "old_value": "ငဟစ်ဝမ်းဖြူ A. insignis ၏ မျိုးဆက်သက်တမ်းမှာ ၁၀.၅ နှစ်  ဖြစ်သည်။ အကောင်ရေလရေးကြောင်းသည် ကျဆင်းလာကာ ဤမျိုးစိတ်များ၏ အကောင်ရေမှာ ခန့်မှန်းခြေအားဖြင့် ၅၀ သာရှိသည်။ မျိုးစိတ်များ၏ ‌တွေ့ရှိရသည့် အဝန်းအဝိုင်းသည် ၄၀ စတုရန်း ကီလိုမီတာ ကျယ်ဝန်းပြီး ၎င်း၏ နေရာယူကျက်စားသည့် အဝန်းအဝိုင်းသည် ၎င်းရှိနိုင်သော နေထိုင်ရာများတွင် ၂၉၉၄၂.၉၈၃ စတုရန်းကီလိုမီတာ ရှိသည်။",
+    "new_value": "၂၀၂၂–၂၀၂၃ ခုနှစ် မြန်မာနိုင်ငံမြောက်ပိုင်း စစ်တမ်းဧရိယာတွင် ငဟစ်ဝမ်းဖြူ ၃–၅ ကောင်ရှိမည်ဟု ခန့်မှန်းခဲ့သည်။ ဤသည် ဒေသတစ်ခု၏ ခန့်မှန်းချက်ဖြစ်ပြီး မြန်မာနိုင်ငံတစ်ဝန်း အကောင်ရေ မဟုတ်ပါ။",
+    "old_sources": [
+      "https://www.myanmarbiodiversity.org/species/Ardea_insignis_White_bellied_Heron"
+    ],
+    "new_sources": [
+      "https://www.cambridge.org/core/journals/oryx/article/conservation-in-response-to-a-crisis-initiating-communityled-conservation-for-the-whitebellied-heron-ardea-insignis-in-northern-myanmar/74127D3E165D2851356506F9721079AF"
+    ],
+    "reason": "Replaces an undated estimate of about 50 with a dated local study that states its survey scope.",
+    "evidence_url": "https://www.cambridge.org/core/journals/oryx/article/conservation-in-response-to-a-crisis-initiating-communityled-conservation-for-the-whitebellied-heron-ardea-insignis-in-northern-myanmar/74127D3E165D2851356506F9721079AF"
+  },
+  {
+    "animal_id": 21,
+    "name_my": "အင်းကျား",
+    "name_en": "Clouded Leopard",
+    "field": "global_population",
+    "old_value": "၃,၇၀၀ - ၅,၅၈၀",
+    "new_value": "IUCN ၂၀၂၁ အကဲဖြတ်ချက် — ကမ္ဘာတစ်ဝန်း အရွယ်ရောက်ပြီးသော အကောင်ရေ ၃,၇၀၀–၅,၅၈၀ ကောင်ခန့် (ဖြစ်နိုင်ခြေအများဆုံးအပိုင်း)",
+    "old_sources": [
+      "https://www.myanmarbiodiversity.org/species/Neofelis_nebulosa_Clouded_Leopard"
+    ],
+    "new_sources": [
+      "https://www.catsg.org/living-species-cloudedleopard"
+    ],
+    "reason": "The IUCN Cat Specialist Group identifies this as a likely range for mature individuals, not a precise all-age total.",
+    "evidence_url": "https://www.catsg.org/living-species-cloudedleopard"
+  },
+  {
+    "animal_id": 28,
+    "name_my": "လင်းဆွဲ",
+    "name_en": "Greater short-nosed fruit bat",
+    "field": "myanmar_population",
+    "old_value": "၂၀ - ၄၅",
+    "new_value": null,
+    "old_sources": [
+      "https://www.myanmarbiodiversity.org/species/Cynopterus_sphinx_Greater_short_nosed_fruit_bat"
+    ],
+    "new_sources": [],
+    "reason": "The portal's detail describes captures at individual survey sites, not a national estimate of 20–45.",
+    "evidence_url": "https://www.myanmarbiodiversity.org/species/Cynopterus_sphinx_Greater_short_nosed_fruit_bat"
+  },
+  {
+    "animal_id": 39,
+    "name_my": "ဝက်နှာခေါင်းလင်းနို့",
+    "name_en": "Kitti's Hog-nosed Bat",
+    "field": "myanmar_population",
+    "old_value": "၁,၅၀၀ - ၃,၇၇၀",
+    "new_value": null,
+    "old_sources": [
+      "https://www.myanmarbiodiversity.org/species/Craseonycteris_thonglongyai_Kittis_Hog_nosed_Bat"
+    ],
+    "new_sources": [],
+    "reason": "1,500 and 3,770 are values reported in old publications, not a recent Myanmar census range.",
+    "evidence_url": "https://www.myanmarbiodiversity.org/species/Craseonycteris_thonglongyai_Kittis_Hog_nosed_Bat"
+  },
+  {
+    "animal_id": 39,
+    "name_my": "ဝက်နှာခေါင်းလင်းနို့",
+    "name_en": "Kitti's Hog-nosed Bat",
+    "field": "wild_population_my",
+    "old_value": "စုစုပေါင်းအကောင်ရေမှာ ၂၀၀၆ ခုနှစ်တွင် ၁၅၀၀ နှင့် ၂၀၁၃ ခုနှစ်တွင် ၃၇၇၀ ကောင်ရှိကြောင်း စာတမ်းများအရ သိရသော်လည်း မကြာသေးမီက အကဲဖြတ်ချက်အရ အကောင်ရေကျဆင်းမှုကို ညွှန်ပြနေသည်။ အရွယ်ရောက်ပြီးသူ အမ အများဆုံးအရေအတွက်မှာ ၂၅၀၀ အောက် နည်းပါသည်။ ဤမျိုးစိတ်များကို ကရင်ပြည်နယ် ဘားအံမြို့အနီးရှိ ကြွဲလှိုဏ်ဂူတွင် စုစုပေါင်း 1853 ကောင်ရှိကြောင်း မှတ်တမ်းများလည်းရှိသည်။ ",
+    "new_value": "၂၀၀၆ နှင့် ၂၀၁၃ ခုနှစ် ထုတ်ပြန်စာတမ်းများတွင် မြန်မာနိုင်ငံအတွက် အကောင်ရေ ၁,၅၀၀ နှင့် ၃,၇၇၀ ဟု အသီးသီး ဖော်ပြထားသည်။ ဤသည် ထုတ်ပြန်သည့်နှစ်အလိုက် သမိုင်းဝင် ခန့်မှန်းချက်များဖြစ်ပြီး လက်ရှိအကောင်ရေ မဟုတ်ပါ။",
+    "old_sources": [
+      "https://www.myanmarbiodiversity.org/species/Craseonycteris_thonglongyai_Kittis_Hog_nosed_Bat"
+    ],
+    "new_sources": [
+      "https://www.myanmarbiodiversity.org/species/Craseonycteris_thonglongyai_Kittis_Hog_nosed_Bat"
+    ],
+    "reason": "Labels old publication figures as historical; the original wording implied a current count and assigned publication years as census years.",
+    "evidence_url": "https://www.myanmarbiodiversity.org/species/Craseonycteris_thonglongyai_Kittis_Hog_nosed_Bat"
+  },
+  {
+    "animal_id": 44,
+    "name_my": "လင်းဆွဲ",
+    "name_en": "Lesser Short-nosed Fruit Bat",
+    "field": "myanmar_population",
+    "old_value": "< ၁၀၀၀၀",
+    "new_value": null,
+    "old_sources": [
+      "https://www.myanmarbiodiversity.org/species/Cynopterus_brachyotis_Lesser_Short_nosed_Fruit_Bat"
+    ],
+    "new_sources": [],
+    "reason": "The under-10,000 figure is a tentative old extrapolation, not a current national count.",
+    "evidence_url": "https://www.myanmarbiodiversity.org/species/Cynopterus_brachyotis_Lesser_Short_nosed_Fruit_Bat"
+  },
+  {
+    "animal_id": 44,
+    "name_my": "လင်းဆွဲ",
+    "name_en": "Lesser Short-nosed Fruit Bat",
+    "field": "wild_population_my",
+    "old_value": "မြစ်ဆုံဒေသတဝိုက်တွင် မကြာသေးမီက ပြုလုပ်ခဲ့သော စစ်တမ်းအရ အကောင်ရေ အနည်းငယ် (၅ ကောင်) သာ မှတ်တမ်းတင်နိုင်ခဲ့သည်။ နိုင်ငံတစ်ဝှမ်းတွင် အရွယ်ရောက်ပြီးသူ ၁၀,၀၀၀ ထက် နည်းနိုင်သည် (နေရာယူကျက်စားသော အဝန်အဝိုင်းမှာ ၃၅၀,၀၀၀ စတုရန်းကီလိုမီတာ အထက် ရှိနိုင်)။ ",
+    "new_value": "၂၀၁၂ ခုနှစ် မြစ်ဆုံဒေသ စစ်တမ်းတွင် ဤမျိုးစိတ် ၅ ကောင်ကို မှတ်တမ်းတင်ခဲ့သည်။ ဤအရေအတွက်သည် စစ်တမ်းဧရိယာတစ်ခုအတွက်သာဖြစ်ပြီး မြန်မာနိုင်ငံတစ်ဝန်း အကောင်ရေမဟုတ်ပါ။",
+    "old_sources": [
+      "https://www.myanmarbiodiversity.org/species/Cynopterus_brachyotis_Lesser_Short_nosed_Fruit_Bat"
+    ],
+    "new_sources": [
+      "https://www.myanmarbiodiversity.org/species/Cynopterus_brachyotis_Lesser_Short_nosed_Fruit_Bat"
+    ],
+    "reason": "Replaces 'recent survey' with the source's 2012 study year and removes an unsupported national extrapolation.",
+    "evidence_url": "https://www.myanmarbiodiversity.org/species/Cynopterus_brachyotis_Lesser_Short_nosed_Fruit_Bat"
+  },
+  {
+    "animal_id": 79,
+    "name_my": "တောဘဲမန်ဒါလီ",
+    "name_en": "White-winged Duck",
+    "field": "myanmar_population",
+    "old_value": "< ၁၀၀",
+    "new_value": "၂၀၂၄ ခန့်မှန်းချက် — မြန်မာနိုင်ငံတွင် အရွယ်ရောက်ပြီးသော အကောင်ရေ ၄၀–၁၀၀ ကောင်",
+    "old_sources": [
+      "https://www.myanmarbiodiversity.org/species/Asarcornis_scutulata_White_winged_Duck"
+    ],
+    "new_sources": [
+      "https://media.eaza.net/uploads/202508_Published_WWD_Best_Practice_Guidelines_4e510b9bc5.pdf"
+    ],
+    "reason": "2025 EAZA guidance reports the 2024 cautious Myanmar estimate and specifies mature birds.",
+    "evidence_url": "https://media.eaza.net/uploads/202508_Published_WWD_Best_Practice_Guidelines_4e510b9bc5.pdf"
+  },
+  {
+    "animal_id": 79,
+    "name_my": "တောဘဲမန်ဒါလီ",
+    "name_en": "White-winged Duck",
+    "field": "global_population",
+    "old_value": "၂၅၀ - ၉၉၉",
+    "new_value": "၂၀၂၄ ခန့်မှန်းချက် — ကမ္ဘာတစ်ဝန်း အရွယ်ရောက်ပြီးသော အကောင်ရေ ၁၅၀–၄၅၀ ကောင်",
+    "old_sources": [
+      "https://www.myanmarbiodiversity.org/species/Asarcornis_scutulata_White_winged_Duck"
+    ],
+    "new_sources": [
+      "https://media.eaza.net/uploads/202508_Published_WWD_Best_Practice_Guidelines_4e510b9bc5.pdf"
+    ],
+    "reason": "2024 BirdLife reassessment supersedes the old 250–999 mature-individual band.",
+    "evidence_url": "https://media.eaza.net/uploads/202508_Published_WWD_Best_Practice_Guidelines_4e510b9bc5.pdf"
+  },
+  {
+    "animal_id": 79,
+    "name_my": "တောဘဲမန်ဒါလီ",
+    "name_en": "White-winged Duck",
+    "field": "wild_population_my",
+    "old_value": "တောဘဲမန်ဒါလီ/ကြိုးခွေ A. scutulata ၏ မျိုးဆက်သက်တမ်းမှာ ၇.၈ နှစ်ဖြစ်သည်။ အကောင်ရေ လမ်းကြောင်းသည် လျော့ကျလာကာ ဤမျိုးစိတ်များ၏ အကောင်ရေမှာ ခန့်မှန်းခြေအားဖြင့် ၁၀၀ အောက်သာရှိနိုင်သည်။ သို့သော် မြန်မာနိုင်ငံမှ ကြိုးခွေများကို သေချာစွာ မှတ်တမ်းတင်ထားသော မှတ်တမ်းအနည်းငယ်သာရှိသည်။ မျိုးစိတ်များ၏ တွေ့ရှိရသည့် အဝန်းအဝိုင်းသည် ၁၂ စတုရန်းကီလိုမီတာ ရှိပြီး ၎င်း၏ နေရာယူကျက်စားသည့် အဝန်းအဝိုင်းသည် ၎င်းရှိနိုင်သည့်နေရာများတွင် ၁၁၄၂၅၂.၅၇၂ စတုရန်းကီလိုမီတာ ရှိသည်။ ",
+    "new_value": "၂၀၂၄ ခန့်မှန်းချက်အရ မြန်မာနိုင်ငံတွင် ကြိုးခွေငှက် အရွယ်ရောက်ပြီးသော အကောင်ရေ ၄၀–၁၀၀ ကောင်ခန့် ရှိနိုင်သည်။ ဤသည် စစ်တမ်းဖြင့် တစ်ကောင်ချင်း ရေတွက်ထားသော စုစုပေါင်းမဟုတ်ဘဲ သတိထား၍ ခန့်မှန်းထားသော အပိုင်းအခြားဖြစ်သည်။",
+    "old_sources": [
+      "https://www.myanmarbiodiversity.org/species/Asarcornis_scutulata_White_winged_Duck"
+    ],
+    "new_sources": [
+      "https://media.eaza.net/uploads/202508_Published_WWD_Best_Practice_Guidelines_4e510b9bc5.pdf"
+    ],
+    "reason": "Replaces an undated under-100 claim with a dated and qualified assessment.",
+    "evidence_url": "https://media.eaza.net/uploads/202508_Published_WWD_Best_Practice_Guidelines_4e510b9bc5.pdf"
+  },
+  {
+    "animal_id": 42,
+    "name_my": "ကျားသစ်",
+    "name_en": "Leopard",
+    "field": "myanmar_population",
+    "old_value": "အရွယ်ရောက် အကောင်ရေ ၉၄-၂၈၁ ကောင် ပါနိုင်သော အကောင်ရေ စုစုပေါင်း ၂၂၃ မှ ၆၇၀ ကောင်ရှိနိုင်ကြောင်း ခန့်မှန်းထားသည်။ကျား (Tiger) ကဲ့သို့ camera-trap စစ်တမ်းများဖြင့် အတိအကျ စောင့်ကြည့်နိုင်သော မျိုးစိတ်မဟုတ်သောကြောင့် မြန်မာနိုင်ငံရှိ ကျားသစ်အကောင်ရေကို ၂၀၂၆ အတွက် တိတိကျကျ သတ်မှတ်ထားခြင်း မရှိသေးပါ။",
+    "new_value": "၂၀၁၆ ထုတ်ပြန် လေ့လာချက်အရ မြန်မာနိုင်ငံတွင် ကျားသစ် စုစုပေါင်း ၂၂၃–၆၇၀ ကောင်ခန့် (မျိုးပွားနိုင်သော အရွယ်ရောက်အကောင် ၉၄–၂၈၁ ကောင်) ရှိနိုင်သည်ဟု ခန့်မှန်းခဲ့သည်။ ဤသည် သမိုင်းဝင် ခန့်မှန်းချက်ဖြစ်ပြီး ၂၀၂၆ ခုနှစ် လက်ရှိအကောင်ရေကို မဖော်ပြပါ။",
+    "old_sources": [],
+    "new_sources": [
+      "https://kpkkt.com.my/storage/upload/2024/06/4D4vXPyPqhQoVEZn7Rh6ZsnZRlIM1LFqVXCCVYhq.pdf"
+    ],
+    "reason": "The original 2016 paper gives these two distinct estimates. The previous record misleadingly framed them alongside an unsupported 2026 claim.",
+    "evidence_url": "https://kpkkt.com.my/storage/upload/2024/06/4D4vXPyPqhQoVEZn7Rh6ZsnZRlIM1LFqVXCCVYhq.pdf"
+  },
+  {
+    "animal_id": 62,
+    "name_my": "မိကျောင်း",
+    "name_en": "Salt-water Crocodile",
+    "field": "global_population",
+    "old_value": "၅၀,၀၀၀",
+    "new_value": "IUCN ၂၀၁၉ အကဲဖြတ်ချက် (UN သုံးသပ်ချက်တွင် ဖော်ပြ) — ကမ္ဘာတစ်ဝန်း တောရိုင်း အကောင်ရေ ၄၀၀,၀၀၀ ကျော် (ဥမှပေါက်ခါစအကောင်များ မပါ)",
+    "old_sources": [
+      "https://www.myanmarbiodiversity.org/species/Crocodylus_porosus_Salt_water_Crocodile"
+    ],
+    "new_sources": [
+      "https://woa.un.org/third-world-ocean-assessment/changes-second-world-ocean-assessment/biodiversity/chapter-4-subchapter-4f-marine"
+    ],
+    "reason": "UN World Ocean Assessment reports more than 400,000 non-hatchlings, contradicting the undated 50,000 global value.",
+    "evidence_url": "https://woa.un.org/third-world-ocean-assessment/changes-second-world-ocean-assessment/biodiversity/chapter-4-subchapter-4f-marine"
+  },
+  {
+    "animal_id": 62,
+    "name_my": "မိကျောင်း",
+    "name_en": "Salt-water Crocodile",
+    "field": "population_trend",
+    "old_value": "ကျဆင်းနေသည်။",
+    "new_value": "မြန်မာနိုင်ငံတွင် ကျဆင်းနေသည်ဟု ခန့်မှန်းထားပြီး ကမ္ဘာလုံးဆိုင်ရာ အခြေအနေမှာ တည်ငြိမ်သည် (IUCN ၂၀၁၉ အကဲဖြတ်ချက်)",
+    "old_sources": [
+      "https://www.myanmarbiodiversity.org/species/Crocodylus_porosus_Salt_water_Crocodile"
+    ],
+    "new_sources": [
+      "https://woa.un.org/third-world-ocean-assessment/changes-second-world-ocean-assessment/biodiversity/chapter-4-subchapter-4f-marine"
+    ],
+    "reason": "Clarifies that the declining trend concerns Myanmar; the same UN review lists global status as stable.",
+    "evidence_url": "https://woa.un.org/third-world-ocean-assessment/changes-second-world-ocean-assessment/biodiversity/chapter-4-subchapter-4f-marine"
+  },
+  {
+    "animal_id": 63,
+    "name_my": "ကြိုးကြာခေါင်းနီ",
+    "name_en": "Sarus Crane",
+    "field": "myanmar_population",
+    "old_value": "< ၈၀၀",
+    "new_value": "၂၀၁၇ ထုတ်ပြန် စစ်တမ်းများအပေါ် အခြေခံသော မြန်မာနိုင်ငံ ခန့်မှန်းချက် — ၃၀၀–၄၀၀ ကောင်။ လက်ရှိအကောင်ရေဟု မယူဆရပါ။",
+    "old_sources": [
+      "https://www.myanmarbiodiversity.org/species/Antigone_antigone_Sarus_Crane"
+    ],
+    "new_sources": [
+      "https://savingcranes.org/wp-content/uploads/2024/10/crane_conservation_strategy_sarus_crane.pdf"
+    ],
+    "reason": "International Crane Foundation strategy estimates 300–400 Sarus Cranes in Myanmar using 2016–2017 surveys; the portal's under-800 count was undated.",
+    "evidence_url": "https://savingcranes.org/wp-content/uploads/2024/10/crane_conservation_strategy_sarus_crane.pdf"
+  },
+  {
+    "animal_id": 63,
+    "name_my": "ကြိုးကြာခေါင်းနီ",
+    "name_en": "Sarus Crane",
+    "field": "global_population",
+    "old_value": "၁၃,၀၀၀ - ၁၅,၀၀၀",
+    "new_value": "International Crane Foundation ဖော်ပြချက် — ကမ္ဘာတစ်ဝန်း ၂၀,၀၀၀–၃၀,၀၀၀ ကောင်ခန့် (ခန့်မှန်းနှစ် မဖော်ပြထား)",
+    "old_sources": [
+      "https://www.myanmarbiodiversity.org/species/Antigone_antigone_Sarus_Crane"
+    ],
+    "new_sources": [
+      "https://savingcranes.org/species/sarus-crane/"
+    ],
+    "reason": "Current International Crane Foundation species page gives 20,000–30,000; its estimate year is not stated, so it is not presented as a 2026 census.",
+    "evidence_url": "https://savingcranes.org/species/sarus-crane/"
+  },
+  {
+    "animal_id": 63,
+    "name_my": "ကြိုးကြာခေါင်းနီ",
+    "name_en": "Sarus Crane",
+    "field": "wild_population_my",
+    "old_value": "ကြိုးကြာခေါင်းနီ A. antigone ၏ မျိုးဆက်သက်တမ်းမှာ ၁၅.၆ နှစ် ဖြစ်သည်။ အကောင်ရေလမ်းကြောင်းသည် လျော့ကျလာကာ ဤမျိုးစိတ်များ၏ အကောင်ရေမှာ ခန့်မှန်းခြေအားဖြင့် ၈၀၀ အောက်သာ ရှိနိုင်သည်။ မျိုးစိတ်၏ ‌တွေ့ရှိရသည့် အဝန်းအဝိုင်းသည် ၇၂ စတုရန်းကီလိုမီတာ ကျယ်ဝန်းပြီး ၎င်း၏ နေရာယူကျက်စားသည့် အဝန်းအဝိုင်းသည် ၎င်းရှိနိုင်သော နေထိုင်ရာစားကျက်များတွင် ၂၇၆၄၀၀ စတုရန်းကီလိုမီတာ ကျယ်ဝန်းသည်။",
+    "new_value": "၂၀၁၈ ခုနှစ် ဧရာဝတီမြစ်ဝကျွန်းပေါ်ဒေသ စစ်တမ်းတွင် ကြိုးကြာခေါင်းနီ ၂၉၉ ကောင်ကို တွေ့ရှိခဲ့သည်။ ဤသည် စစ်တမ်းဧရိယာအတွင်း တွေ့ရှိမှုဖြစ်ပြီး လက်ရှိ မြန်မာနိုင်ငံတစ်ဝန်း အကောင်ရေ မဟုတ်ပါ။",
+    "old_sources": [
+      "https://www.myanmarbiodiversity.org/species/Antigone_antigone_Sarus_Crane"
+    ],
+    "new_sources": [
+      "https://savingcranes.org/news/resources/sarus-crane-population-surveys-in-myanmar-discover-new-crane-sites/"
+    ],
+    "reason": "Replaces the undated under-800 claim with a dated, explicitly local 2018 direct survey count.",
+    "evidence_url": "https://savingcranes.org/news/resources/sarus-crane-population-surveys-in-myanmar-discover-new-crane-sites/"
+  },
+  {
+    "animal_id": 67,
+    "name_my": "လင်းတ နှုတ်သီးရှည်",
+    "name_en": "Slender-billed Vulture",
+    "field": "myanmar_population",
+    "old_value": "< ၁,၀၀၀",
+    "new_value": null,
+    "old_sources": [
+      "https://www.myanmarbiodiversity.org/species/Gyps_tenuirostris_Slender_billed_Vulture"
+    ],
+    "new_sources": [],
+    "reason": "The portal's undated under-1,000 national bound is too broad to function as a current national estimate; the recent BANCA survey is local only.",
+    "evidence_url": "https://www.banca-env.org/community-leading-the-vulture-restaurant-activities-at-nam-sang-township-in-southern-shan-state/"
+  },
+  {
+    "animal_id": 67,
+    "name_my": "လင်းတ နှုတ်သီးရှည်",
+    "name_en": "Slender-billed Vulture",
+    "field": "global_population",
+    "old_value": "၇၃၀ - ၈၇၀",
+    "new_value": "၂၀၂၄ သုံးသပ်ချက် — ကမ္ဘာတစ်ဝန်း မျိုးပွားနိုင်သော အရွယ်ရောက်အကောင် ၇၃၀–၈၇၀ ကောင်ခန့်",
+    "old_sources": [
+      "https://www.myanmarbiodiversity.org/species/Gyps_tenuirostris_Slender_billed_Vulture"
+    ],
+    "new_sources": [
+      "https://boc-online.org/bulletins/downloads/bboc.v144i3.2024.a15.pdf"
+    ],
+    "reason": "The published range is for mature individuals; the old field omitted that scope and assessment context.",
+    "evidence_url": "https://boc-online.org/bulletins/downloads/bboc.v144i3.2024.a15.pdf"
+  },
+  {
+    "animal_id": 67,
+    "name_my": "လင်းတ နှုတ်သီးရှည်",
+    "name_en": "Slender-billed Vulture",
+    "field": "wild_population_my",
+    "old_value": "လင်းတနှုတ်သီးရှည် G. tenuirostris ၏ မျိုးဆက်သက်တမ်းမှာ ၁၆ နှစ်ဖြစ်သည်။ အကောင်ရေလမ်းကြောင်းသည် လျော့နည်းလာကာ ဤမျိုးစိတ်များ၏ အကောင်ရေမှာ ခန့်မှန်းခြေအားဖြင့် ‌၁၀၀၀ အောက် ခန့်ရှိသည်။ မျိုးစိတ်များ၏ တွေ့ရှိရသော အဝန်းအဝိုင်းသည် ၂၄ စတုရန်းကီလိုမီတာ ရှိပြီး ၎င်း၏ နေရာယူကျက်စားနေသော အဝန်းအဝိုင်းသည် ၎င်းရှိနိုင်သည့်နေရာများတွင် ၅၁၉ စတုရန်းကီလိုမီတာ ရှိသည်။ ",
+    "new_value": "၂၀၂၄ ဇန်နဝါရီ ၂၇ ရက် ရှမ်းပြည်နယ်တောင်ပိုင်း Hai Hpak ဒေသ စစ်တမ်းတစ်ခုတွင် လင်းတနှုတ်သီးရှည် ၁၈ ကောင်ကို မှတ်တမ်းတင်ခဲ့သည်။ ဤသည် စစ်တမ်းနေရာတစ်ခု၏ တွေ့ရှိမှုသာဖြစ်ပြီး မြန်မာနိုင်ငံတစ်ဝန်း အကောင်ရေ မဟုတ်ပါ။",
+    "old_sources": [
+      "https://www.myanmarbiodiversity.org/species/Gyps_tenuirostris_Slender_billed_Vulture"
+    ],
+    "new_sources": [
+      "https://www.banca-env.org/community-leading-the-vulture-restaurant-activities-at-nam-sang-township-in-southern-shan-state/"
+    ],
+    "reason": "Replaces an undated under-1,000 claim with BANCA's dated local observation and explicit survey scope.",
+    "evidence_url": "https://www.banca-env.org/community-leading-the-vulture-restaurant-activities-at-nam-sang-township-in-southern-shan-state/"
+  },
+  {
+    "animal_id": 71,
+    "name_my": "ချည်ခင်စွပ်",
+    "name_en": "Storm's Stork",
+    "field": "global_population",
+    "old_value": "၂၆၀ - ၃၃၀",
+    "new_value": "BirdLife ၂၀၂၅ အကဲဖြတ်ချက် — ကမ္ဘာတစ်ဝန်း အရွယ်ရောက်ပြီးသော အကောင်ရေ ၃၀၀–၁,၇၅၀ ကောင်ခန့်",
+    "old_sources": [
+      "https://www.myanmarbiodiversity.org/species/Ciconia_stormi_Storms_Stork"
+    ],
+    "new_sources": [
+      "https://malaysianbird.report/wp-content/uploads/Malaysian-Bird-Report-March-2025-Final-31Mar2025-High-Res-3.pdf"
+    ],
+    "reason": "The 2025 Malaysian Bird Report cites BirdLife International 2025 for 300–1,750 mature individuals, superseding the older 260–330 range.",
+    "evidence_url": "https://malaysianbird.report/wp-content/uploads/Malaysian-Bird-Report-March-2025-Final-31Mar2025-High-Res-3.pdf"
+  },
+  {
+    "animal_id": 81,
+    "name_my": "စာဝါကြား",
+    "name_en": "Yellow-breasted Bunting",
+    "field": "myanmar_population",
+    "old_value": "< ၅၀၀",
+    "new_value": null,
+    "old_sources": [
+      "https://www.myanmarbiodiversity.org/species/Emberiza_aureola_Yellow_breasted_Bunting"
+    ],
+    "new_sources": [],
+    "reason": "The old Myanmar-wide under-500 bound is contradicted by 6,312 birds counted at one Myanmar roost in 2023.",
+    "evidence_url": "https://cdn.digitalagencybangkok.com/file/client-cdn/banca/wp-content/uploads/2024/04/Final-report-on-Winter-Bunting-Count-in-Myanmar-BANCA-TDA.pdf"
+  },
+  {
+    "animal_id": 81,
+    "name_my": "စာဝါကြား",
+    "name_en": "Yellow-breasted Bunting",
+    "field": "wild_population_my",
+    "old_value": "စာဝါကြား E. aureola ၏ မျိုးဆက်သက်တမ်းမှာ ၃.၆ နှစ်ဖြစ်သည်။ အကောင်ရေ လမ်းကြောင်းသည် လျော့ကျလာကာ ဤမျိုးစိတ်များ၏ အကောင်ရေမှာ ခန့်မှန်းခြေအားဖြင့် ၅၀၀ အောက်ရှိသည်ဟု သိရသည်။ မျိုးစိတ်များ၏ တွေ့ရှိရသည့် အဝန်းအဝိုင်းသည် ၂၀ စတုရန်းကီလိုမီတာ ရှိပြီး ၎င်း၏ နေရာယူကျက်စားသည့် အဝန်းအဝိုင်းသည် ၎င်း၏ကျက်စားနိုင်သည့်နေရာများတွင် ၅၀,၄၈၄.၄၁၅ စတုရန်းကီလိုမီတာ ရှိသည်။ ",
+    "new_value": "၂၀၂၃ ခုနှစ် ဧရာဝတီတိုင်း Kyon Ka Pyin–Tap Seik ဒေသ စစ်တမ်းတွင် စာဝါကြား ၆,၃၁၂ ကောင်ကို တွေ့ရှိခဲ့သည်။ ၂၀၂၅ ခုနှစ် အင်းလေးကန် ဘေးမဲ့တောမှတ်တမ်းတွင်လည်း ၅၀၀ ကျော်ကို တွေ့ရှိထားသည်။ နှစ်ခုစလုံးသည် ဒေသအလိုက် တွေ့ရှိမှုများဖြစ်ပြီး မြန်မာနိုင်ငံတစ်ဝန်း အကောင်ရေ ခန့်မှန်းချက် မဟုတ်ပါ။",
+    "old_sources": [
+      "https://www.myanmarbiodiversity.org/species/Emberiza_aureola_Yellow_breasted_Bunting"
+    ],
+    "new_sources": [
+      "https://cdn.digitalagencybangkok.com/file/client-cdn/banca/wp-content/uploads/2024/04/Final-report-on-Winter-Bunting-Count-in-Myanmar-BANCA-TDA.pdf",
+      "https://www.forestdepartment.gov.mm/news/28789"
+    ],
+    "reason": "Uses two dated, independently scoped Myanmar observations rather than the contradicted national upper bound.",
+    "evidence_url": [
+      "https://cdn.digitalagencybangkok.com/file/client-cdn/banca/wp-content/uploads/2024/04/Final-report-on-Winter-Bunting-Count-in-Myanmar-BANCA-TDA.pdf",
+      "https://www.forestdepartment.gov.mm/news/28789"
+    ]
+  }
+]

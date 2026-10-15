@@ -1,0 +1,166 @@
+{
+  "schemaVersion": 1,
+  "items": [
+    {
+      "id": "current-alias-conflicts",
+      "title": "Which current animal names link to more than one record?",
+      "assumptions": [
+        "Names were compared after Unicode NFC normalization, case folding, and removal of spaces and invisible format characters.",
+        "A name shared by multiple species can be a legitimate broad common name, but it is unsafe for a router that must select exactly one animal record."
+      ],
+      "queries": [
+        {
+          "id": "animal-name-conflicts",
+          "source": {
+            "label": "Wildlife database",
+            "files": [
+              {
+                "label": "wildlife.db"
+              }
+            ],
+            "filters": [
+              "Current animal records only",
+              "Canonical Myanmar names, English names, scientific names, and saved aliases",
+              "Names linked to more than one animal ID"
+            ],
+            "caveats": [
+              "This is an exact normalized-name audit; it does not classify merely similar spellings as conflicts."
+            ],
+            "evidenceFlow": [
+              {
+                "kind": "validation",
+                "title": "Coverage check",
+                "detail": "The audit checked 123 animal records and 764 canonical-name or alias links."
+              },
+              {
+                "kind": "result",
+                "title": "Conflict count",
+                "detail": "Eight names were linked to multiple animal IDs, affecting 18 animal records."
+              }
+            ]
+          },
+          "sourceRoles": [
+            {
+              "kind": "file",
+              "label": "wildlife.db",
+              "role": "Current animal identities and alias relationships used by search and chat routing."
+            }
+          ],
+          "columns": [
+            {"field": "name", "label": "Conflicting name"},
+            {"field": "animal_ids", "label": "Animal IDs"},
+            {"field": "records", "label": "Linked records"},
+            {"field": "conflict_type", "label": "Conflict type"},
+            {"field": "severity", "label": "Routing severity"}
+          ],
+          "rows": [
+            {
+              "name": "လင်းဆွဲ",
+              "animal_ids": "28, 44",
+              "records": "Greater short-nosed fruit bat (Cynopterus sphinx); Lesser Short-nosed Fruit Bat (Cynopterus brachyotis)",
+              "conflict_type": "canonical ↔ canonical",
+              "severity": "High"
+            },
+            {
+              "name": "လင်းနို့",
+              "animal_ids": "64, 72",
+              "records": "Shield-faced Roundleaf Bat (Hipposideros lylei); Tail-less Leaf-nosed Bat (Coelops frithii)",
+              "conflict_type": "canonical ↔ canonical",
+              "severity": "High"
+            },
+            {
+              "name": "လိပ်ပု",
+              "animal_ids": "53, 56",
+              "records": "Myanmar Brown Leaf Turtle (Cyclemys fusca); Oldham's Leaf Turtle (Cyclemys oldhamii)",
+              "conflict_type": "canonical ↔ canonical",
+              "severity": "High"
+            },
+            {
+              "name": "ဖက်လိပ်",
+              "animal_ids": "53, 56",
+              "records": "Myanmar Brown Leaf Turtle (Cyclemys fusca); Oldham's Leaf Turtle (Cyclemys oldhamii)",
+              "conflict_type": "alias ↔ alias",
+              "severity": "Medium"
+            },
+            {
+              "name": "ဖျံ",
+              "animal_ids": "98, 99",
+              "records": "European Otter (Lutra lutra); Hairy-nosed Otter (Lutra sumatrana)",
+              "conflict_type": "alias ↔ alias",
+              "severity": "Medium"
+            },
+            {
+              "name": "ဘိုတဲ",
+              "animal_ids": "158, 175",
+              "records": "Asian Barbets family (Megalaimidae); Coppersmith Barbet (Megalaima haemacephala)",
+              "conflict_type": "alias ↔ alias; family ↔ species",
+              "severity": "Medium"
+            },
+            {
+              "name": "monkey",
+              "animal_ids": "40, 85, 88, 92",
+              "records": "White-handed Gibbon; Bengal Slow Loris; Stump-tailed Macaque; Banded Langur",
+              "conflict_type": "generic English alias",
+              "severity": "Medium"
+            },
+            {
+              "name": "snake",
+              "animal_ids": "208, 209, 210, 211",
+              "records": "Reticulated Python; Banded Krait; Eastern Russell's Viper; Monocled Cobra",
+              "conflict_type": "generic English alias",
+              "severity": "Medium"
+            }
+          ],
+          "methods": [
+            {
+              "language": "python",
+              "code": "Normalize every canonical name and alias with Unicode NFC, case folding, whitespace removal, and invisible-format-character removal; group by normalized name; retain groups containing more than one distinct animal ID."
+            }
+          ],
+          "preview": {
+            "kind": "aggregate",
+            "note": "Complete list of current exact normalized-name conflicts.",
+            "totalRows": 8
+          }
+        }
+      ]
+    },
+    {
+      "id": "source-recurrence-risk",
+      "title": "Could the earlier သစ်တက်ကျား conflict return?",
+      "queries": [
+        {
+          "id": "protected-list-duplicate-name",
+          "source": {
+            "label": "Protected mammals source list",
+            "files": [
+              {
+                "label": "data/totally_protected_mammals_2020.json"
+              }
+            ],
+            "filters": [
+              "Rows named သစ်တက်ကျား"
+            ],
+            "caveats": [
+              "The current database no longer links သစ်တက်ကျား to multiple IDs, but the import source still assigns that Myanmar name to two scientific species."
+            ],
+            "evidenceFlow": [
+              {
+                "kind": "result",
+                "title": "Source-level duplicate",
+                "detail": "The source list assigns သစ်တက်ကျား to both Neofelis nebulosa and Neofelis diardi, so a future re-import can recreate the collision."
+              }
+            ]
+          },
+          "sourceRoles": [
+            {
+              "kind": "file",
+              "label": "data/totally_protected_mammals_2020.json",
+              "role": "Importer source that supplies protected-mammal Myanmar names."
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

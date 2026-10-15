@@ -1,0 +1,683 @@
+{
+  "list_name_my": "မြန်မာ့သတ္တဝါများ၏ မြန်မာအမည်ကွဲများ",
+  "list_name_en": "Myanmar name variants for Myanmar wildlife",
+  "note_my": "တစ်မျိုးစိတ်တည်းကို ဒေသအလိုက် အမည်အမျိုးမျိုးဖြင့် ခေါ်ဝေါ်ကြသည်။ ဤစာရင်းရှိ အမည်ကွဲအားလုံးကို ရှာဖွေမှုတွင် အသုံးပြုနိုင်ရန် alias အဖြစ် သိမ်းထားသည်။",
+  "note_en": "One species carries several Myanmar names depending on region and usage. Every variant here is stored as a searchable alias. Names the source marked with an asterisk are colloquial or constructed rather than official; the asterisk is dropped and the name kept, because a reader may still search it.",
+  "count": 52,
+  "entries": [
+    {
+      "names_my": [
+        "ချေ",
+        "ဂျီ"
+      ],
+      "names_en": [
+        "Muntjac",
+        "Barking Deer"
+      ],
+      "taxon": {
+        "name": "Muntiacus",
+        "rank": "genus"
+      }
+    },
+    {
+      "names_my": [
+        "ရွှေသမင်",
+        "သမင်"
+      ],
+      "names_en": [
+        "Eld's Deer"
+      ],
+      "taxon": {
+        "name": "Rucervus eldii",
+        "rank": "species"
+      }
+    },
+    {
+      "names_my": [
+        "ဆတ်",
+        "ဆတ်ကြီး"
+      ],
+      "names_en": [
+        "Sambar"
+      ],
+      "taxon": {
+        "name": "Rusa unicolor",
+        "rank": "species"
+      }
+    },
+    {
+      "names_my": [
+        "တောကျွဲ",
+        "ကျွဲရိုင်း"
+      ],
+      "names_en": [
+        "Wild Water Buffalo"
+      ],
+      "taxon": {
+        "name": "Bubalus arnee",
+        "rank": "species"
+      }
+    },
+    {
+      "names_my": [
+        "ပြောင်",
+        "နွားပြောင်"
+      ],
+      "names_en": [
+        "Gaur"
+      ],
+      "taxon": {
+        "name": "Bos gaurus",
+        "rank": "species"
+      }
+    },
+    {
+      "names_my": [
+        "တောနွား",
+        "ဘန်တန်"
+      ],
+      "names_en": [
+        "Banteng"
+      ],
+      "taxon": {
+        "name": "Bos javanicus",
+        "rank": "species"
+      }
+    },
+    {
+      "names_my": [
+        "ချေလှောင်",
+        "ယုန်သမင်",
+        "ကြွက်သမင်"
+      ],
+      "names_en": [
+        "Mouse-deer"
+      ],
+      "taxon": {
+        "name": "Tragulus",
+        "rank": "genus"
+      }
+    },
+    {
+      "names_my": [
+        "ချေလှောင် (အသေး)",
+        "ယုန်သမင် (အသေး)"
+      ],
+      "names_en": [
+        "Lesser Mouse-deer"
+      ],
+      "taxon": {
+        "name": "Tragulus kanchil",
+        "rank": "species"
+      }
+    },
+    {
+      "names_my": [
+        "ချေလှောင် (အကြီး)",
+        "ယုန်သမင် (အကြီး)"
+      ],
+      "names_en": [
+        "Greater Mouse-deer"
+      ],
+      "taxon": {
+        "name": "Tragulus napu",
+        "rank": "species"
+      }
+    },
+    {
+      "names_my": [
+        "တောင်ဆိတ်",
+        "ဆိတ်သမင်"
+      ],
+      "names_en": [
+        "Serow"
+      ],
+      "taxon": {
+        "name": "Capricornis",
+        "rank": "genus"
+      }
+    },
+    {
+      "names_my": [
+        "တာကင်",
+        "တောင်နွား"
+      ],
+      "names_en": [
+        "Takin"
+      ],
+      "taxon": {
+        "name": "Budorcas taxicolor",
+        "rank": "species"
+      }
+    },
+    {
+      "names_my": [
+        "တောဝက်",
+        "ဝက်ရိုင်း"
+      ],
+      "names_en": [
+        "Wild Boar"
+      ],
+      "taxon": {
+        "name": "Sus scrofa",
+        "rank": "species"
+      }
+    },
+    {
+      "names_my": [
+        "ကျား",
+        "ကျားကြီး"
+      ],
+      "names_en": [
+        "Tiger"
+      ],
+      "taxon": {
+        "name": "Panthera tigris",
+        "rank": "species"
+      }
+    },
+    {
+      "names_my": [
+        "ကျားသစ်"
+      ],
+      "names_en": [
+        "Leopard"
+      ],
+      "taxon": {
+        "name": "Panthera pardus",
+        "rank": "species"
+      }
+    },
+    {
+      "names_my": [
+        "အင်းကျား",
+        "သစ်တောကျား",
+        "ကျားတိမ်"
+      ],
+      "names_en": [
+        "Clouded Leopard"
+      ],
+      "taxon": {
+        "name": "Neofelis nebulosa",
+        "rank": "species"
+      }
+    },
+    {
+      "names_my": [
+        "ကျားမင်း",
+        "ကြောင်မင်း"
+      ],
+      "names_en": [
+        "Asian Golden Cat"
+      ],
+      "taxon": {
+        "name": "Catopuma temminckii",
+        "rank": "species"
+      }
+    },
+    {
+      "names_my": [
+        "တောကြောင်",
+        "တောကြောင်ကြီး",
+        "ကြောင်ရိုင်း"
+      ],
+      "names_en": [
+        "Jungle Cat"
+      ],
+      "taxon": {
+        "name": "Felis chaus",
+        "rank": "species"
+      }
+    },
+    {
+      "names_my": [
+        "ကြောင်ကျားသစ်"
+      ],
+      "names_en": [
+        "Leopard Cat"
+      ],
+      "taxon": {
+        "name": "Prionailurus bengalensis",
+        "rank": "species"
+      }
+    },
+    {
+      "names_my": [
+        "ငါးဖမ်းကြောင်",
+        "ငါးစားကြောင်"
+      ],
+      "names_en": [
+        "Fishing Cat"
+      ],
+      "taxon": {
+        "name": "Prionailurus viverrinus",
+        "rank": "species"
+      }
+    },
+    {
+      "names_my": [
+        "ကြောင်ကျောက်",
+        "ကြောင်လှလှ",
+        "သစ်တောကြောင်"
+      ],
+      "names_en": [
+        "Marbled Cat"
+      ],
+      "taxon": {
+        "name": "Pardofelis marmorata",
+        "rank": "species"
+      }
+    },
+    {
+      "names_my": [
+        "ကြောင်နီ",
+        "ပန်ဒါနီ"
+      ],
+      "names_en": [
+        "Red Panda"
+      ],
+      "taxon": {
+        "name": "Ailurus fulgens",
+        "rank": "species"
+      }
+    },
+    {
+      "names_my": [
+        "ခွေးဝံ",
+        "ဝက်ဝံငယ်"
+      ],
+      "names_en": [
+        "Sun Bear"
+      ],
+      "taxon": {
+        "name": "Helarctos malayanus",
+        "rank": "species"
+      }
+    },
+    {
+      "names_my": [
+        "မြင်းဝံ",
+        "ဝက်ဝံနက်"
+      ],
+      "names_en": [
+        "Asiatic Black Bear"
+      ],
+      "taxon": {
+        "name": "Ursus thibetanus",
+        "rank": "species"
+      }
+    },
+    {
+      "names_my": [
+        "တောခွေး",
+        "ခွေးနီ"
+      ],
+      "names_en": [
+        "Dhole"
+      ],
+      "taxon": {
+        "name": "Cuon alpinus",
+        "rank": "species"
+      }
+    },
+    {
+      "names_my": [
+        "ဝံပုလွေ",
+        "တောခွေးမီးခိုး"
+      ],
+      "names_en": [
+        "Wolf"
+      ],
+      "taxon": {
+        "name": "Canis lupus",
+        "rank": "species"
+      }
+    },
+    {
+      "names_my": [
+        "မြေခွေး"
+      ],
+      "names_en": [
+        "Fox"
+      ],
+      "taxon": {
+        "name": "Vulpes",
+        "rank": "genus"
+      }
+    },
+    {
+      "names_my": [
+        "ခွေးတူဝက်တူ"
+      ],
+      "names_en": [
+        "Hog Badger"
+      ],
+      "taxon": {
+        "name": "Arctonyx",
+        "rank": "genus"
+      }
+    },
+    {
+      "names_my": [
+        "ဝက်ဝံကြောင်"
+      ],
+      "names_en": [
+        "Binturong"
+      ],
+      "taxon": {
+        "name": "Arctictis binturong",
+        "rank": "species"
+      }
+    },
+    {
+      "names_my": [
+        "ဆင်",
+        "အာရှဆင်"
+      ],
+      "names_en": [
+        "Asian Elephant"
+      ],
+      "taxon": {
+        "name": "Elephas maximus",
+        "rank": "species"
+      }
+    },
+    {
+      "names_my": [
+        "ကြံ့"
+      ],
+      "names_en": [
+        "Rhinoceros"
+      ],
+      "taxon": {
+        "name": "Rhinocerotidae",
+        "rank": "family"
+      }
+    },
+    {
+      "names_my": [
+        "ဝက်ကြံ့",
+        "ဆူမတြားကြံ့"
+      ],
+      "names_en": [
+        "Sumatran Rhinoceros"
+      ],
+      "taxon": {
+        "name": "Dicerorhinus sumatrensis",
+        "rank": "species"
+      }
+    },
+    {
+      "names_my": [
+        "ကြံ့ဆင်",
+        "ဂျာဗားကြံ့"
+      ],
+      "names_en": [
+        "Javan Rhinoceros"
+      ],
+      "taxon": {
+        "name": "Rhinoceros sondaicus",
+        "rank": "species"
+      }
+    },
+    {
+      "names_my": [
+        "ကြံ့သူတော်",
+        "ကြံ့ချိုတစ်ချောင်း"
+      ],
+      "names_en": [
+        "Indian Rhinoceros"
+      ],
+      "taxon": {
+        "name": "Rhinoceros unicornis",
+        "rank": "species"
+      }
+    },
+    {
+      "names_my": [
+        "မျောက်လွှဲကျော်",
+        "မျောက်လွှဲ"
+      ],
+      "names_en": [
+        "Gibbon"
+      ],
+      "taxon": {
+        "name": "Hylobatidae",
+        "rank": "family"
+      }
+    },
+    {
+      "names_my": [
+        "ဟူးလော့မျောက်လွှဲကျော်",
+        "ဟူးလော့"
+      ],
+      "names_en": [
+        "Hoolock Gibbon"
+      ],
+      "taxon": {
+        "name": "Hoolock",
+        "rank": "genus"
+      }
+    },
+    {
+      "names_my": [
+        "မျောက်",
+        "မျောက်ရိုင်း"
+      ],
+      "names_en": [
+        "Macaque"
+      ],
+      "taxon": {
+        "name": "Macaca",
+        "rank": "genus"
+      }
+    },
+    {
+      "names_my": [
+        "မျောက်ဝက်မြီး",
+        "ဝက်မြီးမျောက်"
+      ],
+      "names_en": [
+        "Pig-tailed Macaque"
+      ],
+      "taxon": {
+        "name": "Macaca leonina",
+        "rank": "species"
+      }
+    },
+    {
+      "names_my": [
+        "မျောက်လက်တို",
+        "စတမ့်တေးမျောက်"
+      ],
+      "names_en": [
+        "Stump-tailed Macaque"
+      ],
+      "taxon": {
+        "name": "Macaca arctoides",
+        "rank": "species"
+      }
+    },
+    {
+      "names_my": [
+        "မျောက်ရွက်စား",
+        "လန်ဂါ"
+      ],
+      "names_en": [
+        "Langur"
+      ],
+      "taxon": {
+        "name": "Trachypithecus",
+        "rank": "genus"
+      }
+    },
+    {
+      "names_my": [
+        "မျောက်မျက်မှန်",
+        "ဖေယားမျောက်ရွက်စား"
+      ],
+      "names_en": [
+        "Phayre's Langur"
+      ],
+      "taxon": {
+        "name": "Trachypithecus phayrei",
+        "rank": "species"
+      }
+    },
+    {
+      "names_my": [
+        "မျောက်နှာပေါက်",
+        "နှာခေါင်းပေါက်မျောက်"
+      ],
+      "names_en": [
+        "Snub-nosed Monkey"
+      ],
+      "taxon": {
+        "name": "Rhinopithecus",
+        "rank": "genus"
+      }
+    },
+    {
+      "names_my": [
+        "ပုပ္ပားမျောက်",
+        "ပုပ္ပားလန်ဂါ"
+      ],
+      "names_en": [
+        "Popa Langur"
+      ],
+      "taxon": {
+        "name": "Trachypithecus popa",
+        "rank": "species"
+      }
+    },
+    {
+      "names_my": [
+        "ဖျံ",
+        "ရေဖျံ"
+      ],
+      "names_en": [
+        "Otter"
+      ],
+      "taxon": {
+        "name": "Lutrinae",
+        "rank": "subfamily"
+      }
+    },
+    {
+      "names_my": [
+        "ဖျံချော"
+      ],
+      "names_en": [
+        "Smooth-coated Otter"
+      ],
+      "taxon": {
+        "name": "Lutrogale perspicillata",
+        "rank": "species"
+      }
+    },
+    {
+      "names_my": [
+        "ဖျံငယ်",
+        "လက်သည်းတိုဖျံ"
+      ],
+      "names_en": [
+        "Asian Small-clawed Otter"
+      ],
+      "taxon": {
+        "name": "Aonyx cinereus",
+        "rank": "species"
+      }
+    },
+    {
+      "names_my": [
+        "သင်းခွေချပ်",
+        "သင်းခွေချပ်ကြီး",
+        "သင်းခွေချပ်သေး"
+      ],
+      "names_en": [
+        "Pangolin"
+      ],
+      "taxon": {
+        "name": "Manis",
+        "rank": "genus"
+      }
+    },
+    {
+      "names_my": [
+        "ဖြူကောင်",
+        "ဆူးဖြူကောင်"
+      ],
+      "names_en": [
+        "Porcupine"
+      ],
+      "taxon": {
+        "name": "Hystricidae",
+        "rank": "family"
+      }
+    },
+    {
+      "names_my": [
+        "ရှဉ့်",
+        "ရှဉ့်ပျံ"
+      ],
+      "names_en": [
+        "Squirrel"
+      ],
+      "taxon": {
+        "name": "Sciuridae",
+        "rank": "family"
+      }
+    },
+    {
+      "names_my": [
+        "ရေဝက်",
+        "ရေသူမ"
+      ],
+      "names_en": [
+        "Dugong"
+      ],
+      "taxon": {
+        "name": "Dugong dugon",
+        "rank": "species"
+      }
+    },
+    {
+      "names_my": [
+        "ဒေါင်းကုလား",
+        "ဒေါင်းမင်း"
+      ],
+      "names_en": [
+        "Grey Peacock-Pheasant"
+      ],
+      "taxon": {
+        "name": "Polyplectron bicalcaratum",
+        "rank": "species"
+      }
+    },
+    {
+      "names_my": [
+        "ဒေါင်း",
+        "ဥဒေါင်း"
+      ],
+      "names_en": [
+        "Green Peafowl"
+      ],
+      "taxon": {
+        "name": "Pavo muticus",
+        "rank": "species"
+      }
+    },
+    {
+      "names_my": [
+        "ဧရာဝတီ လင်းပိုင်"
+      ],
+      "names_en": [
+        "Irrawaddy Dolphin"
+      ],
+      "taxon": {
+        "name": "Orcaella brevirostris",
+        "rank": "species"
+      }
+    }
+  ]
+}

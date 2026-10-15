@@ -1,0 +1,168 @@
+{% extends "base.html" %}
+{% from "_iucn.html" import iucn_badge, iucn_legend_panel %}
+{% block title %}မြန်မာ့တောရိုင်းတိရစ္ဆာန်
+စွယ်စုံကျမ်း{% endblock %} {% block content %}
+<div class="hero">
+  <div class="hero-content">
+    <h1>မြန်မာ့တောရိုင်းတိရစ္ဆာန် စွယ်စုံကျမ်း</h1>
+    <p>
+      မြန်မာနိုင်ငံရှိ တောရိုင်းတိရစ္ဆာန်များအကြောင်း အသေးစိတ် သိရှိနိုင်ပြီး AI
+      ပြောဆိုခန်းမှ မေးမြန်းနိုင်သည်။
+    </p>
+    <a href="#animals" class="hero-cta">
+      တိရစ္ဆာန်များ ရှာဖွေရန်
+      <svg
+        width="16"
+        height="16"
+        viewBox="0 0 24 24"
+        fill="none"
+        stroke="currentColor"
+        stroke-width="2"
+      >
+        <path d="M7 17l9.2-9.2M17 17V7.8H7.8"></path>
+      </svg>
+    </a>
+  </div>
+</div>
+
+<div class="container">
+  <section class="section" id="animals">
+    <div class="section-header">
+      <h2 class="heading-lg">အမျိုးအစားများ</h2>
+    </div>
+    <div class="category-pills">
+      <a href="{{ url_for('home') }}#animals" class="pill active">
+        အားလုံး
+        <span class="count">{{ catalog_total|mm_number }}</span>
+      </a>
+      {% for cat in categories %}
+      <a href="{{ url_for('category_page', category_id=cat.id) }}" class="pill">
+        {{ cat.name_my }}
+        <span class="count">{{ cat.animal_count|mm_number }}</span>
+      </a>
+      {% endfor %}
+    </div>
+
+    <div class="catalog-results-head animal-results-head">
+      <h2 class="heading-lg" id="animalsHeading">တွေ့ရလွယ်သည့် တိရစ္ဆာန်များ</h2>
+      <span>{{ animal_total|mm_number }} ခု ရှိသည်</span>
+    </div>
+    {{ iucn_legend_panel() }}
+
+    {% if animals %}
+    <div class="animals-grid" id="featuredAnimals">
+      {% for animal in featured %} {% include "_animal_card.html" %} {% endfor
+      %}
+    </div>
+
+    <div class="animals-grid" id="allAnimals" style="display: none">
+      {% for animal in animals %} {% include "_animal_card.html" %} {% endfor %}
+    </div>
+    {% if animal_total > featured|length %}
+    <div style="text-align: center; padding: var(--spacing-xxl) 0">
+      <button
+        class="btn btn-secondary"
+        id="showAllBtn"
+        onclick="showAllAnimals()"
+      >
+        အားလုံးကြည့်ရန် ({{ animal_total|mm_number }})
+      </button>
+    </div>
+    {% endif %}
+    {% else %}
+    <div class="empty-state catalog-empty">
+      <div class="icon">🔍</div>
+      <h3>ကိုက်ညီသော တိရစ္ဆာန် မတွေ့ပါ</h3>
+      <p>တိရစ္ဆာန်မှတ်တမ်း မရှိသေးပါ။</p>
+    </div>
+    {% endif %}
+  </section>
+
+  <section class="section discovery-section" aria-labelledby="discoveryHeading">
+    <div class="section-header discovery-heading">
+      <div>
+        <span class="section-kicker">နေရာနှင့် သဘာဝပတ်ဝန်းကျင်</span>
+        <h2 class="heading-lg" id="discoveryHeading">မြန်မာ့သဘာဝကို ဆက်လက်လေ့လာရန်</h2>
+      </div>
+      <p>မျိုးစိတ်များ၏ နေထိုင်ရာဂေဟစနစ်နှင့် ကာကွယ်ထိန်းသိမ်းထားသော နယ်မြေများကို လေ့လာပါ။</p>
+    </div>
+    <div class="discovery-grid">
+      <a href="{{ url_for('ecosystems') }}" class="discovery-card ecosystem-discovery">
+        <span class="discovery-icon" aria-hidden="true">⌁</span>
+        <span class="discovery-card-copy">
+          <small>သဘာဝပတ်ဝန်းကျင်</small>
+          <strong>ဂေဟစနစ်များ</strong>
+          <span>သစ်တော၊ ရေဝပ်ဒေသ၊ မြက်ခင်းနှင့် ကမ်းရိုးတန်း ဂေဟစနစ်များ</span>
+        </span>
+        <span class="discovery-count"><strong>{{ ecosystem_count|mm_number }}</strong><small>မှတ်တမ်း</small></span>
+      </a>
+      <a href="{{ url_for('protected_areas') }}" class="discovery-card protected-discovery">
+        <span class="discovery-icon" aria-hidden="true">◇</span>
+        <span class="discovery-card-copy">
+          <small>ထိန်းသိမ်းရေး</small>
+          <strong>ကာကွယ်ထိန်းသိမ်းနယ်မြေများ</strong>
+          <span>အမျိုးသားဥယျာဉ်၊ ဘေးမဲ့တောနှင့် သဘာဝကြိုးဝိုင်းများ</span>
+        </span>
+        <span class="discovery-count"><strong>{{ protected_area_count|mm_number }}</strong><small>မှတ်တမ်း</small></span>
+      </a>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="card-promo-strip">
+      <div class="card-promo-copy">
+        <span class="promo-eyebrow">မျိုးစိတ်တစ်ခု · ပြောဆိုခန်းတစ်ခု</span>
+        <h2 class="heading-lg">တိရစ္ဆာန်အလိုက် AI ပြောဆိုခန်း</h2>
+        <p>
+          တိရစ္ဆာန်တစ်ကောင်ကို ရွေးပြီး ၎င်း၏ မှတ်တမ်းအပေါ် အခြေခံသည့်
+          မေးခွန်းများကို မြန်မာဘာသာဖြင့် မေးမြန်းပါ။
+        </p>
+        <div class="promo-benefits" aria-label="ပြောဆိုခန်း၏ အားသာချက်များ">
+          <span>မှတ်တမ်းအခြေခံ</span>
+          <span>စကားဝိုင်းသိမ်းဆည်းမှု</span>
+          <span>မြန်မာဘာသာ</span>
+        </div>
+      </div>
+      <div class="card-promo-action">
+        <span class="promo-action-label">ယခု စတင်မေးမြန်းရန်</span>
+        <div class="card-promo-examples">
+        {% for animal in featured[:3] %}
+        <a
+          href="{{ url_for('animal_chat', animal_id=animal.id) }}"
+          class="promo-chip"
+        >
+          <span class="promo-chip-photo">
+            {% if animal.image_url %}<img src="{{ animal.image_url }}" alt="">{% else %}🐾{% endif %}
+          </span>
+          <span class="promo-chip-copy">
+            <strong>{{ animal.name_my }}</strong>
+            <small>ပြောဆိုခန်း ဖွင့်ရန်</small>
+          </span>
+          <span class="promo-chip-arrow" aria-hidden="true">→</span>
+        </a>
+        {% endfor %}
+        </div>
+      </div>
+    </div>
+  </section>
+</div>
+
+<script>
+  function showAllAnimals() {
+    const featured = document.getElementById("featuredAnimals");
+    const allAnimals = document.getElementById("allAnimals");
+    const heading = document.getElementById("animalsHeading");
+    const btn = document.getElementById("showAllBtn");
+    const showingAll = allAnimals.style.display !== "none";
+
+    featured.style.display = showingAll ? "grid" : "none";
+    allAnimals.style.display = showingAll ? "none" : "grid";
+    heading.textContent = showingAll
+      ? "တွေ့ရလွယ်သည့် တိရစ္ဆာန်များ"
+      : "တိရစ္ဆာန် အားလုံး";
+    btn.textContent = showingAll
+      ? "အားလုံးကြည့်ရန် ({{ animal_total|mm_number }})"
+      : "အနည်းငယ်သာ ပြရန်";
+  }
+</script>
+{% endblock %}

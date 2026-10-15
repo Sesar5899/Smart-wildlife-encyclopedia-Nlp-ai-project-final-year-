@@ -1,0 +1,70 @@
+{% extends "base.html" %}
+{% from "_iucn.html" import iucn_badge, iucn_legend_panel %}
+{% block title %}{{ ecosystem.name_mm or ecosystem.name }} - ဂေဟစနစ်များ{% endblock %}
+
+{% block content %}
+<header class="record-hero ecosystem-record-hero">
+  <div class="container">
+    <nav class="breadcrumb record-breadcrumb">
+      <a href="{{ url_for('ecosystems') }}">ဂေဟစနစ်များ</a><span class="breadcrumb-sep">›</span><span>{{ ecosystem.name_mm or ecosystem.name }}</span>
+    </nav>
+    <div class="record-title-row">
+      <div>
+        <div class="catalog-card-badges">
+          {{ iucn_badge(ecosystem.national_iucn_status, scale='ecosystem', prefix='IUCN',
+                        classes='status-pill', term=true) }}
+          {% if ecosystem.code %}<span class="record-code">{{ ecosystem.code }}</span>{% endif %}
+        </div>
+        <h1>{{ ecosystem.name_mm or ecosystem.name }}</h1>
+        {% if ecosystem.name_mm %}<p>{{ ecosystem.name }}</p>{% endif %}
+      </div>
+      <div class="record-hero-actions">{% if ecosystem.source_url %}<a href="{{ ecosystem.source_url }}" target="_blank" rel="noopener noreferrer" class="btn record-source-button">မူရင်း Portal ↗</a>{% endif %}</div>
+    </div>
+  </div>
+</header>
+
+{% if ecosystem.image_urls %}
+<div class="container record-gallery record-gallery-count-{{ ecosystem.image_urls|length }} {{ 'record-gallery-multiple' if ecosystem.image_urls|length > 1 }}">
+  {% for image_url in ecosystem.image_urls %}
+  <figure class="record-photo {{ 'record-photo-main' if loop.first }}">
+    <img src="{{ image_url }}" alt="{{ ecosystem.name_mm or ecosystem.name }}{% if not loop.first %} ဓာတ်ပုံ {{ loop.index }}{% endif %}" decoding="async" {% if loop.first %}fetchpriority="high"{% else %}loading="lazy"{% endif %}>
+  </figure>
+  {% endfor %}
+</div>
+{% else %}
+<div class="container record-photo-missing"><span class="record-photo-mark" aria-hidden="true">⌁</span><div><strong>မူရင်းဓာတ်ပုံ မရှိသေးပါ</strong><p>Myanmar Biodiversity Portal မှတ်တမ်းတွင် ဤဂေဟစနစ်၏ ဓာတ်ပုံ မပါရှိသေးပါ။</p></div></div>
+{% endif %}
+
+<div class="container record-layout">
+  <aside class="record-facts">
+    <h2>အချက်အလက်အကျဉ်း</h2>
+    <dl>
+      {% if ecosystem.in_realm_mm %}<div><dt>နယ်ပယ်</dt><dd>{{ ecosystem.in_realm_mm }}</dd></div>{% endif %}
+      {% if ecosystem.in_biome_mm %}<div><dt>ဇီဝဒေသ</dt><dd>{{ ecosystem.in_biome_mm }}</dd></div>{% endif %}
+      {% if ecosystem.in_functional_group_mm %}<div><dt>လုပ်ဆောင်ချက်အုပ်စု</dt><dd>{{ ecosystem.in_functional_group_mm }}</dd></div>{% endif %}
+      {% if ecosystem.in_state_region_mm %}<div><dt>တိုင်း/ပြည်နယ်</dt><dd>{{ ecosystem.in_state_region_mm }}</dd></div>{% endif %}
+      {% if ecosystem.temperature_text_mm %}<div><dt>ပျမ်းမျှအပူချိန်</dt><dd>{{ ecosystem.temperature_text_mm }}</dd></div>{% endif %}
+      {% if ecosystem.precipitation_text_mm %}<div><dt>မိုးရေချိန်</dt><dd>{{ ecosystem.precipitation_text_mm }}</dd></div>{% endif %}
+      {% if ecosystem.soil_text_mm %}<div><dt>မြေဆီလွှာ</dt><dd>{{ ecosystem.soil_text_mm }}</dd></div>{% endif %}
+      {% if ecosystem.elevation_text_mm %}<div><dt>အမြင့်</dt><dd>{{ ecosystem.elevation_text_mm }}</dd></div>{% endif %}
+      {% if ecosystem.date_assessed %}<div><dt>အကဲဖြတ်သည့်နေ့</dt><dd>{{ ecosystem.date_assessed }}</dd></div>{% endif %}
+      {% if ecosystem.year_published %}<div><dt>ထုတ်ဝေသည့်နှစ်</dt><dd>{{ ecosystem.year_published }}</dd></div>{% endif %}
+    </dl>
+  </aside>
+
+  <article class="record-content">
+    <section class="record-lead"><h2>ဖော်ပြချက်</h2><p>{{ ecosystem.description_mm or 'ဖော်ပြချက် မရှိသေးပါ။' }}</p></section>
+    {% if ecosystem.distribution_mm %}<section><h2>ဖြန့်ကျက်တည်ရှိမှု</h2><p>{{ ecosystem.distribution_mm }}</p></section>{% endif %}
+    {% if ecosystem.native_biota_mm %}<section><h2>မူရင်း ဇီဝအစုအဖွဲ့</h2><p>{{ ecosystem.native_biota_mm }}</p></section>{% endif %}
+    {% if ecosystem.abiotic_environment_mm %}<section><h2>ဇီဝမဲ့ပတ်ဝန်းကျင်</h2><p>{{ ecosystem.abiotic_environment_mm }}</p></section>{% endif %}
+    {% if ecosystem.key_processes_and_interactions_mm %}<section><h2>အဓိက လုပ်ငန်းစဉ်များနှင့် ဆက်နွယ်မှု</h2><p>{{ ecosystem.key_processes_and_interactions_mm }}</p></section>{% endif %}
+    {% if ecosystem.species_fauna_mm %}<section><h2>တွေ့ရှိရသော သတ္တဝါများ</h2><p>{{ ecosystem.species_fauna_mm|catalog_text }}</p></section>{% endif %}
+    {% if ecosystem.species_flora_mm %}<section><h2>တွေ့ရှိရသော အပင်များ</h2><p>{{ ecosystem.species_flora_mm|catalog_text }}</p></section>{% endif %}
+    {% if ecosystem.threats_mm %}<section><h2>ပျက်စီးစေသည့် အချက်များ</h2><p>{{ ecosystem.threats_mm }}</p></section>{% endif %}
+    {% if ecosystem.assessment_summary_mm %}<section><h2>ဂေဟစနစ် အကဲဖြတ်ချက်</h2><p>{{ ecosystem.assessment_summary_mm }}</p></section>{% endif %}
+    {% if ecosystem.collapse_definition_mm %}<section><h2>ဂေဟစနစ် ပျက်စီးဆုံးရှုံးမှု သတ်မှတ်ချက်</h2><p>{{ ecosystem.collapse_definition_mm }}</p></section>{% endif %}
+    {% if ecosystem.source_urls or ecosystem.source_url %}<section class="record-source-section"><h2>အချက်အလက် ရင်းမြစ်များ</h2><div class="record-source-list">{% for source in ecosystem.source_urls or [] %}<a href="{{ source.url }}" target="_blank" rel="noopener noreferrer"><span>{{ source.label or 'Source' }}</span><b>↗</b></a>{% else %}<a href="{{ ecosystem.source_url }}" target="_blank" rel="noopener noreferrer"><span>{{ ecosystem.source_name or 'Original source' }}</span><b>↗</b></a>{% endfor %}</div></section>{% endif %}
+  </article>
+</div>
+{% include "_related_animals.html" %}
+{% endblock %}

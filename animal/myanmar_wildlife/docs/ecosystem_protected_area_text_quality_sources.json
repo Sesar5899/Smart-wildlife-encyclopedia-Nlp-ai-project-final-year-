@@ -1,0 +1,117 @@
+{
+  "schemaVersion": 1,
+  "items": [
+    {
+      "id": "ecosystem-protected-area-burmese-text-quality",
+      "title": "Which ecosystem and protected-area records contain Burmese text-quality issues?",
+      "assumptions": [
+        "Confirmed findings are limited to high-confidence visible misspellings, duplicated characters, and duplicated words or phrases.",
+        "Specific words using non-standard ဥ် are reported separately from obvious visible typos.",
+        "Canonically equivalent Unicode forms such as ဦး/ဦး are excluded from spelling-error counts.",
+        "Ambiguous terminology variants such as အိမ်ယာ/အိမ်ရာ and ဒဟက်/ဒဟတ် are review candidates, not confirmed errors."
+      ],
+      "queries": [
+        {
+          "id": "ecosystem-burmese-field-scan",
+          "source": {
+            "label": "Wildlife ecosystem source data",
+            "files": [
+              { "label": "data/ecosystems.json" }
+            ],
+            "filters": [
+              "62 ecosystem records",
+              "27 fields ending in _mm",
+              "1,312 non-empty Burmese cells",
+              "Read-only scan"
+            ],
+            "caveats": [
+              "Automated and manual pattern review can identify high-confidence issues but cannot prove every free-text sentence is linguistically perfect.",
+              "No ecosystem source record was modified."
+            ],
+            "evidenceFlow": [
+              {
+                "kind": "source",
+                "showInReceipt": false,
+                "title": "Ecosystem JSON",
+                "detail": "All Burmese-language fields ending in _mm were read from the local ecosystem source file."
+              },
+              {
+                "kind": "validation",
+                "title": "Burmese text-quality checks",
+                "detail": "The review checked repeated code points, repeated words or phrases, curated high-confidence spelling patterns, and specific non-standard ဥ် spellings."
+              }
+            ]
+          },
+          "sourceRoles": [
+            {
+              "kind": "file",
+              "label": "data/ecosystems.json",
+              "role": "Complete ecosystem source records used for the audit."
+            }
+          ],
+          "columns": ["records", "fields_checked", "nonempty_cells", "high_confidence_records", "nonstandard_u1_records", "review_candidate_records"],
+          "rows": [
+            {
+              "records": 62,
+              "fields_checked": 27,
+              "nonempty_cells": 1312,
+              "high_confidence_records": 13,
+              "nonstandard_u1_records": 62,
+              "review_candidate_records": 19
+            }
+          ]
+        },
+        {
+          "id": "protected-area-burmese-field-scan",
+          "source": {
+            "label": "Wildlife protected-area source data",
+            "files": [
+              { "label": "data/protected_areas.json" }
+            ],
+            "filters": [
+              "39 protected-area records",
+              "21 fields ending in _mm",
+              "610 non-empty Burmese cells",
+              "Read-only scan"
+            ],
+            "caveats": [
+              "The source file contains one record with no Burmese protected-area name.",
+              "No protected-area source record was modified."
+            ],
+            "evidenceFlow": [
+              {
+                "kind": "source",
+                "showInReceipt": false,
+                "title": "Protected-area JSON",
+                "detail": "All Burmese-language fields ending in _mm were read from the local protected-area source file."
+              },
+              {
+                "kind": "validation",
+                "title": "Burmese text-quality checks",
+                "detail": "The review checked repeated code points, repeated words or phrases, curated high-confidence spelling patterns, and specific non-standard ဥ် spellings."
+              }
+            ]
+          },
+          "sourceRoles": [
+            {
+              "kind": "file",
+              "label": "data/protected_areas.json",
+              "role": "Complete protected-area source records used for the audit."
+            }
+          ],
+          "columns": ["records", "fields_checked", "nonempty_cells", "high_confidence_records", "nonstandard_u1_records", "review_candidate_records"],
+          "rows": [
+            {
+              "records": 39,
+              "fields_checked": 21,
+              "nonempty_cells": 610,
+              "high_confidence_records": 5,
+              "nonstandard_u1_records": 23,
+              "review_candidate_records": 4
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

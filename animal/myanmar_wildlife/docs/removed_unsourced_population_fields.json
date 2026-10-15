@@ -1,0 +1,42 @@
+[
+  {
+    "animal_id": 12,
+    "name_my": "ငှက်ကုလား/တုံးကလား",
+    "name_en": "Black-necked Stork",
+    "field": "global_population",
+    "removed_value": "ကမ္ဘာလုံးဆိုင်ရာ၁၀,၀၀၀–၃၀,၀၀၀ ကောင်ခန့် ရှိနိုင်သည်ဟု ခန့်မှန်းထားသည်။",
+    "reason": "No field-level source link; removal requested by user."
+  },
+  {
+    "animal_id": 36,
+    "name_my": "ကိုင်းစွေ့",
+    "name_en": "Jerdon's Babbler",
+    "field": "wild_population_my",
+    "removed_value": "ကိုင်းစွေ့ C. altirostre အတွက် မျိုးဆက်သက်တမ်းမှာ ၄.၄ နှစ် ဖြစ်သည်။ အကောင်ရေ လမ်းကြောင်းသည် လျော့ကျလာကာ မျိုးစိတ်များ၏ တွေ့ရှိရသည့် အဝန်းအဝိုင်းသည် ၂၄ စတုရန်းကီလိုမီတာ ရှိပြီး ၎င်း၏ နေရာယူကျက်စားသည့် အဝန်းအဝိုင်းသည် ၎င်းရှိနိုင်သည့်နေရာများတွင် ၃၂၄၂ စတုရန်းကီလိုမီတာ ရှိသည်။",
+    "reason": "No field-level source link; removal requested by user."
+  },
+  {
+    "animal_id": 95,
+    "name_my": "သစ်တက်ကျား",
+    "name_en": "Sunda Clouded Leopard",
+    "field": "population_trend",
+    "removed_value": "လျော့နည်းနေသည် (Decreasing)",
+    "reason": "No field-level source link; removal requested by user."
+  },
+  {
+    "animal_id": 184,
+    "name_my": "ဆတ်",
+    "name_en": "Sambar",
+    "field": "population_trend",
+    "removed_value": "ကျဆင်းနေသည် (Decreasing)",
+    "reason": "No field-level source link; removal requested by user."
+  },
+  {
+    "animal_id": 207,
+    "name_my": "ကြောင်ကတိုး/ကြောင်နံ့သာ",
+    "name_en": "Small Indian civet",
+    "field": "population_trend",
+    "removed_value": "တည်ငြိမ်သည်။",
+    "reason": "No field-level source link; removal requested by user."
+  }
+]

@@ -1,0 +1,49 @@
+{% extends "base.html" %}
+{% block title %}ရှာဖွေမှုရလဒ် - မြန်မာ့တောရိုင်းတိရစ္ဆာန် စွယ်စုံကျမ်း{% endblock %}
+
+{% block content %}
+<div class="container">
+    <div class="search-header">
+        <h1>"<span class="query">{{ query }}</span>" ရှာဖွေမှုရလဒ်</h1>
+        <p style="color: var(--steel); margin-top: var(--spacing-xs);">
+            {% if animal_total %}
+            ရလဒ် {{ animal_total|mm_number }} ခု တွေ့ရှိပါသည်
+            {% else %}
+            ရလဒ် မတွေ့ပါ
+            {% endif %}
+        </p>
+    </div>
+
+    <div class="catalog-results-head animal-results-head">
+        <h2>ရှာဖွေမှုနှင့် ကိုက်ညီသော တိရစ္ဆာန်များ</h2>
+        <span>{{ animal_total|mm_number }} ခု တွေ့ရှိသည်</span>
+    </div>
+
+    {% if animals %}
+    <div class="animals-grid">
+        {% for animal in animals %}
+        {% include "_animal_card.html" %}
+        {% endfor %}
+    </div>
+    {% else %}
+    <div class="empty-state">
+        <div class="icon">🔍</div>
+        <h3>တိရစ္ဆာန် မတွေ့ပါ</h3>
+        <p>ရှာဖွေသည့် စာလုံးကို ပြောင်းပြီး ထပ်မံကြည့်ပါ။</p>
+        <a href="{{ url_for('home') }}" class="btn btn-secondary" style="margin-top: var(--spacing-xl);">တိရစ္ဆာန်များ ကြည့်ရန်</a>
+    </div>
+    {% endif %}
+
+    {% if total_pages > 1 %}
+    <nav class="catalog-pagination" aria-label="စာမျက်နှာများ">
+        {% if page > 1 %}
+        <a href="{{ url_for('search', q=query, page=page-1) }}">← ရှေ့စာမျက်နှာ</a>
+        {% else %}<span></span>{% endif %}
+        <strong>{{ page|mm_number }} / {{ total_pages|mm_number }}</strong>
+        {% if page < total_pages %}
+        <a href="{{ url_for('search', q=query, page=page+1) }}">နောက်စာမျက်နှာ →</a>
+        {% else %}<span></span>{% endif %}
+    </nav>
+    {% endif %}
+</div>
+{% endblock %}

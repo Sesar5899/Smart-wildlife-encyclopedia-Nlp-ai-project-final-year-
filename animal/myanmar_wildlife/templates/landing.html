@@ -1,0 +1,184 @@
+{% extends "base.html" %}
+{% block title %}မြန်မာ့ဇီဝမျိုးစုံမျိုးကွဲ စွယ်စုံကျမ်း{% endblock %}
+
+{% block content %}
+<div class="landing-v2">
+    <section class="landing-v2-hero">
+        <div class="landing-hero-bg"></div>
+        <div class="container landing-v2-hero-grid">
+            <div class="landing-v2-copy">
+                <div class="landing-hero-badge">
+                    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+                        <path d="M12 22c4-3 7-7 7-12a7 7 0 1 0-14 0c0 5 3 9 7 12Z"></path>
+                        <circle cx="12" cy="10" r="2.5"></circle>
+                    </svg>
+                    မြန်မာ့သဘာဝကို တစ်နေရာတည်းတွင်
+                </div>
+                <h1>မျိုးစိတ်မှ နေထိုင်ရာအထိ မြန်မာ့သဘာဝကို လေ့လာပါ</h1>
+                <p class="landing-v2-lead">တောရိုင်းတိရစ္ဆာန်များ၊ ဂေဟစနစ်များနှင့် ကာကွယ်ထိန်းသိမ်းနယ်မြေများကို မြန်မာဘာသာဖြင့် ရှာဖွေဖတ်ရှုပြီး အရင်းအမြစ်ပါ AI ပြောဆိုခန်းတွင် ဆက်လက်မေးမြန်းနိုင်ပါသည်။</p>
+
+                <div class="landing-hero-actions">
+                    <a href="{{ url_for('register') }}" class="btn btn-landing-primary">
+                        အခမဲ့ စတင်လေ့လာရန်
+                        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+                            <path d="M5 12h14M12 5l7 7-7 7"></path>
+                        </svg>
+                    </a>
+                    <a href="{{ url_for('login') }}" class="btn btn-landing-secondary">အကောင့်ဝင်ရန်</a>
+                </div>
+            </div>
+
+            <div class="landing-v2-visual" aria-label="ပရောဂျက်တွင် ပါဝင်သော မြန်မာ့သဘာဝ မှတ်တမ်းများ">
+                {% if landing_species %}
+                <figure class="landing-v2-photo landing-v2-photo-main">
+                    <img src="{{ landing_species.image_url }}" alt="{{ landing_species.name_my }}" loading="eager">
+                    <figcaption>
+                        <span>တောရိုင်းတိရစ္ဆာန်</span>
+                        <strong>{{ landing_species.name_my }}</strong>
+                    </figcaption>
+                </figure>
+                {% endif %}
+                {% if landing_ecosystem %}
+                <figure class="landing-v2-photo landing-v2-photo-small">
+                    <img src="{{ landing_ecosystem.image_url }}" alt="{{ landing_ecosystem.name_mm or landing_ecosystem.name }}" loading="eager">
+                    <figcaption>
+                        <span>ဂေဟစနစ်</span>
+                        <strong>{{ landing_ecosystem.name_mm or landing_ecosystem.name }}</strong>
+                    </figcaption>
+                </figure>
+                {% endif %}
+                {% if landing_protected_area %}
+                <figure class="landing-v2-photo landing-v2-photo-small">
+                    <img src="{{ landing_protected_area.image_url }}" alt="{{ landing_protected_area.name_mm or landing_protected_area.name }}" loading="lazy">
+                    <figcaption>
+                        <span>ကာကွယ်ထိန်းသိမ်းနယ်မြေ</span>
+                        <strong>{{ landing_protected_area.name_mm or landing_protected_area.name }}</strong>
+                    </figcaption>
+                </figure>
+                {% endif %}
+            </div>
+        </div>
+    </section>
+
+    <section class="landing-v2-summary" aria-label="မှတ်တမ်း အကျဉ်းချုပ်">
+        <div class="container landing-v2-summary-grid">
+            <div class="landing-v2-stat">
+                <strong>{{ species_count|mm_number }}</strong>
+                <span>တောရိုင်းတိရစ္ဆာန်မျိုးစိတ်</span>
+            </div>
+            <div class="landing-v2-stat">
+                <strong>{{ ecosystem_count|mm_number }}</strong>
+                <span>ဂေဟစနစ်</span>
+            </div>
+            <div class="landing-v2-stat">
+                <strong>{{ protected_area_count|mm_number }}</strong>
+                <span>ကာကွယ်ထိန်းသိမ်းနယ်မြေ</span>
+            </div>
+            <div class="landing-v2-stat landing-v2-stat-feature">
+                <strong>AI</strong>
+                <span>အရင်းအမြစ်ပါ ပြောဆိုခန်း</span>
+            </div>
+        </div>
+    </section>
+
+    <div class="container landing-v2-body">
+        <section class="section landing-v2-collections">
+            <div class="landing-v2-section-heading">
+                <div>
+                    <span class="landing-section-kicker">လေ့လာစရာ အစုအဝေးများ</span>
+                    <h2 class="heading-lg">သဘာဝကို ရှုထောင့်သုံးမျိုးဖြင့် ကြည့်ပါ</h2>
+                </div>
+                <p>မျိုးစိတ်တစ်ခုချင်းစီမှ ၎င်းတို့ ရှင်သန်ရာ ဂေဟစနစ်နှင့် ကာကွယ်နယ်မြေများအထိ ချိတ်ဆက်လေ့လာနိုင်ပါသည်။</p>
+            </div>
+
+            <div class="landing-v2-collection-grid">
+                <a class="landing-v2-collection-card" href="{{ url_for('login', next=url_for('home')) }}">
+                    <div class="landing-v2-card-image">
+                        {% if landing_species %}<img src="{{ landing_species.image_url }}" alt="" loading="lazy">{% endif %}
+                        <span>{{ species_count|mm_number }} မျိုး</span>
+                    </div>
+                    <div class="landing-v2-card-copy">
+                        <small>SPECIES</small>
+                        <h3>တောရိုင်းတိရစ္ဆာန်များ</h3>
+                        <p>အမည်များ၊ နေထိုင်ရာ၊ အစားအစာနှင့် ထိန်းသိမ်းရေးအခြေအနေကို လေ့လာပါ။</p>
+                        <b>အကောင့်ဝင်ပြီး ကြည့်ရန် <span aria-hidden="true">→</span></b>
+                    </div>
+                </a>
+
+                <a class="landing-v2-collection-card" href="{{ url_for('login', next=url_for('ecosystems')) }}">
+                    <div class="landing-v2-card-image">
+                        {% if landing_ecosystem %}<img src="{{ landing_ecosystem.image_url }}" alt="" loading="lazy">{% endif %}
+                        <span>{{ ecosystem_count|mm_number }} ခု</span>
+                    </div>
+                    <div class="landing-v2-card-copy">
+                        <small>ECOSYSTEMS</small>
+                        <h3>ဂေဟစနစ်များ</h3>
+                        <p>သစ်တော၊ စိုစွတ်မြေနှင့် ကမ်းရိုးတန်းအပါအဝင် သက်ရှိများ ရှင်သန်ရာ နေရာများကို ရှာဖွေပါ။</p>
+                        <b>အကောင့်ဝင်ပြီး ကြည့်ရန် <span aria-hidden="true">→</span></b>
+                    </div>
+                </a>
+
+                <a class="landing-v2-collection-card" href="{{ url_for('login', next=url_for('protected_areas')) }}">
+                    <div class="landing-v2-card-image">
+                        {% if landing_protected_area %}<img src="{{ landing_protected_area.image_url }}" alt="" loading="lazy">{% endif %}
+                        <span>{{ protected_area_count|mm_number }} ခု</span>
+                    </div>
+                    <div class="landing-v2-card-copy">
+                        <small>PROTECTED AREAS</small>
+                        <h3>ကာကွယ်ထိန်းသိမ်းနယ်မြေများ</h3>
+                        <p>အမျိုးသားဥယျာဉ်နှင့် ဘေးမဲ့တောများ၏ တည်နေရာ၊ သတ်မှတ်ချက်နှင့် စီမံခန့်ခွဲမှုကို ကြည့်ပါ။</p>
+                        <b>အကောင့်ဝင်ပြီး ကြည့်ရန် <span aria-hidden="true">→</span></b>
+                    </div>
+                </a>
+            </div>
+        </section>
+
+        <section class="section landing-v2-tools">
+            <div class="landing-v2-tools-intro">
+                <div>
+                    <span class="landing-section-kicker">လေ့လာရေး ကိရိယာများ</span>
+                    <h2 class="heading-lg">ရှာဖွေမှုကနေ စကားဝိုင်းအထိ</h2>
+                </div>
+                <p>မြန်မာစာဖြင့် အလွယ်တကူ ရှာဖွေပါ။ မှတ်တမ်းအပေါ် အခြေခံသော AI ကို မေးမြန်းပြီး ယခင်စကားဝိုင်းမှ ဆက်လက်လေ့လာပါ။</p>
+            </div>
+            <div class="landing-v2-tool-list">
+                <article>
+                    <span class="landing-v2-tool-number">၀၁</span>
+                    <div><h3>မြန်မာစာနားလည်သော ရှာဖွေမှု</h3><p>စာလုံးပေါင်းနှင့် အက္ခရာအစီအစဉ် ကွဲပြားမှုများကြားမှ သက်ဆိုင်ရာ မှတ်တမ်းကို ရှာပေးသည်။</p></div>
+                </article>
+                <article>
+                    <span class="landing-v2-tool-number">၀၂</span>
+                    <div><h3>အရင်းအမြစ်ပါ AI ဖြေကြားချက်</h3><p>တိရစ္ဆာန်မှတ်တမ်းကို အခြေခံပြီး ပရောဂျက်အတွင်းနှင့် ပြင်ပအရင်းအမြစ်များကို ဖြေကြားချက်နှင့်အတူ ဖော်ပြသည်။</p></div>
+                </article>
+                <article>
+                    <span class="landing-v2-tool-number">၀၃</span>
+                    <div><h3>သိမ်းထားသော စကားဝိုင်းများ</h3><p>တိရစ္ဆာန်တစ်ကောင်ချင်းစီအလိုက် ယခင်မေးမြန်းချက်များကို ပြန်ဖတ်ပြီး ဆက်လက်လေ့လာနိုင်သည်။</p></div>
+                </article>
+            </div>
+        </section>
+
+        {% if categories %}
+        <section class="section landing-categories-section">
+            <div class="section-header landing-category-heading">
+                <div>
+                    <span class="landing-section-kicker">မျိုးစိတ် အကျဉ်းချုပ်</span>
+                    <h2 class="heading-lg">တိရစ္ဆာန် အမျိုးအစားများ</h2>
+                </div>
+                <span class="landing-category-lock">အကောင့်ဝင်ပြီး ကြည့်ရန်</span>
+            </div>
+            <div class="landing-category-grid">
+                {% for cat in categories %}
+                <div class="landing-category-card">
+                    <span class="landing-category-name">{{ cat.name_my }}</span>
+                    <span class="landing-category-count">
+                        <strong>{{ cat.animal_count|mm_number }}</strong>
+                        <small>မျိုး</small>
+                    </span>
+                </div>
+                {% endfor %}
+            </div>
+        </section>
+        {% endif %}
+    </div>
+</div>
+{% endblock %}

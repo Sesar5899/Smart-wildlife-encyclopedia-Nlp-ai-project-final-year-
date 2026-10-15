@@ -1,0 +1,138 @@
+%% Smart Wildlife Encyclopedia — physical SQLite ER diagram
+%% Generated from wildlife.db. Only the four declared FK constraints are edges.
+erDiagram
+    categories o|--o{ animals : "category_id (nullable)"
+    animals ||--o{ animal_aliases : "animal_id"
+    users ||--o{ chat_messages : "user_id; cascade delete"
+    embedding_vectors ||--o{ embedding_passages : "(model, text_hash); cascade delete"
+
+    categories {
+        INTEGER id PK
+        TEXT name_my
+        TEXT name_en
+        TEXT description_my
+        TEXT icon
+    }
+
+    animals {
+        INTEGER id PK
+        TEXT name_my
+        TEXT name_en
+        TEXT scientific_name
+        INTEGER category_id FK
+        TEXT habitat_my
+        TEXT description_my
+        TEXT diet_my
+        TEXT conservation_status
+        TEXT image_url
+        TEXT fun_facts_my
+        TEXT size_my
+        TEXT lifespan_my
+        TEXT region_my
+        TEXT source_record_id
+        TEXT source_url
+        TEXT source_name
+        TEXT source_image_url
+        TEXT linked_name
+        TEXT other_name
+        TEXT species_order
+        TEXT species_family
+        TEXT global_iucn_status
+        TEXT population_trend
+        TEXT myanmar_population
+        TEXT global_population
+        TEXT portal_data
+        TEXT crawled_at
+        TEXT male_image_url
+        TEXT female_image_url
+        TEXT source_urls
+        TEXT protection_status_my
+        TEXT protection_status_en
+        TEXT protection_law_my
+        TEXT image_credit
+        TEXT taxon_rank
+        TEXT protection_basis_my
+        TEXT iucn_justification_my
+        TEXT physical_description_my
+        TEXT distribution_my
+        TEXT behaviour_my
+        TEXT threats_my
+        TEXT conservation_actions_my
+        TEXT conservation_needs_my
+        TEXT use_trade_my
+        TEXT wild_population_my
+        TEXT protected_areas_my
+        TEXT ecosystems_my
+        TEXT kba_my
+    }
+
+    animal_aliases {
+        INTEGER id PK
+        INTEGER animal_id FK
+        TEXT alias_my
+    }
+
+    users {
+        INTEGER id PK
+        TEXT name
+        TEXT email
+        TEXT password_hash
+        TEXT created_at
+        INTEGER is_admin
+    }
+
+    chat_messages {
+        INTEGER id PK
+        INTEGER user_id FK
+        TEXT animal_key
+        TEXT role
+        TEXT content
+        TEXT created_at
+        TEXT sources
+    }
+
+    embedding_vectors {
+        TEXT model PK
+        TEXT text_hash PK
+        INTEGER dims
+        BLOB vector
+        TEXT created_at
+    }
+
+    embedding_passages {
+        TEXT model PK,FK
+        TEXT content_kind PK
+        TEXT record_key PK
+        INTEGER position PK
+        TEXT passage_label
+        TEXT text_hash FK
+        TEXT updated_at
+    }
+
+    embedding_queries {
+        TEXT model PK
+        TEXT text_hash PK
+        INTEGER dims
+        BLOB vector
+        TEXT created_at
+    }
+
+    catalog_records {
+        TEXT kind PK
+        TEXT slug PK
+        TEXT data_json
+        TEXT updated_at
+    }
+
+    catalog_state {
+        TEXT kind PK
+        TEXT initialized_at
+    }
+
+%% animals_fts is a derived FTS5 virtual index, not a relational entity.
+%% Its content_rowid=id points to animals.id and triggers maintain it.
+%% chat_messages.animal_key is an application-level lookup, not a FK:
+%%   COALESCE(animals.source_record_id, 'local-animal:' || animals.id).
+%% embedding_passages.(content_kind,record_key) resolves to an animal
+%%   or catalog record in application code; no SQLite FK enforces it.
+%% catalog_state.kind and catalog_records.kind are not linked by a FK.

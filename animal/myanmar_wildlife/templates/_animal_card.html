@@ -1,0 +1,37 @@
+{% from "_iucn.html" import iucn_badge, iucn_legend_panel %}
+<div class="animal-card">
+    <a href="{{ url_for('animal_detail', animal_id=animal.id) }}" class="animal-card-link">
+        <div class="animal-card-image">
+            {% if animal.image_url %}
+            <img src="{{ animal.image_url }}" alt="{{ animal.name_en }} ({{ animal.scientific_name }})" loading="lazy">
+            {% else %}
+            <div class="image-unavailable" role="img" aria-label="Portal photograph unavailable">
+                <span>ဓာတ်ပုံ မရှိသေးပါ</span>
+            </div>
+            {% endif %}
+            {{ iucn_badge(animal.conservation_status or animal.global_iucn_status,
+                          classes='animal-card-status') }}
+            {% if animal.protection_status_my %}
+            <span class="animal-card-protected" title="{{ animal.protection_status_my }}">
+                <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" aria-hidden="true">
+                    <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path>
+                </svg>
+                ဥပဒေအရ ကာကွယ်
+            </span>
+            {% endif %}
+        </div>
+        <div class="animal-card-body">
+            <div class="animal-card-category">{{ animal.category_name_my or 'အမျိုးအစား မသတ်မှတ်ရသေးပါ' }}{% if animal.taxon_rank and animal.taxon_rank != 'species' %} · {{ animal.taxon_rank|upper }}{% endif %}</div>
+            <h3 class="animal-card-title">{{ animal.name_my }}</h3>
+            <p class="animal-card-english">{{ animal.name_en }}</p>
+            <p class="animal-card-subtitle">{{ animal.scientific_name }}</p>
+            <p class="animal-card-desc">{{ animal.description_my or animal.physical_description_my or animal.habitat_my or 'အကျဉ်းချုပ်ဖော်ပြချက် မရှိသေးပါ။' }}</p>
+        </div>
+    </a>
+    <a href="{{ url_for('animal_chat', animal_id=animal.id) }}" class="animal-card-chat">
+        <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"></path>
+        </svg>
+        ဤတိရစ္ဆာန်အကြောင်း မေးရန်
+    </a>
+</div>

@@ -1,0 +1,1 @@
+{% extends "base.html" %}{% block title %}Admin access required{% endblock %}{% block content %}<div class="container admin-forbidden"><span>403</span><h1>Admin access လိုအပ်ပါသည်</h1><p>ဤအကောင့်တွင် content ထုတ်ဝေခွင့် မရှိသေးပါ။ စနစ်စီမံသူအား ဆက်သွယ်ပါ။</p><a class="btn btn-primary" href="{{ url_for('home') }}">Website သို့ ပြန်ရန်</a></div>{% endblock %}

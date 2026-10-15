@@ -1,0 +1,101 @@
+{% extends "base.html" %}
+{% macro field_key(name) -%}<code class="admin-field-name">{{ name }}</code>{%- endmacro %}
+{% block title %}{{ 'တိရစ္ဆာန်အသစ်' if is_new else animal.name_my }} — Content Studio{% endblock %}
+{% block content %}
+<div class="admin-shell admin-editor-shell">
+  <div class="container admin-editor-head"><div><a href="{{ url_for('admin.dashboard', section='animals') }}">← Content Studio</a><h1>{{ 'တိရစ္ဆာန်အသစ် ထည့်ရန်' if is_new else animal.name_my + ' ကို ပြင်ရန်' }}</h1><p>သိမ်းပြီးသည်နှင့် website နှင့် မျိုးစိတ်အလိုက် AI chatbot တွင် ချက်ချင်း အသုံးပြုပါမည်။</p></div>{% if not is_new %}<a class="btn btn-outline-sm" href="{{ url_for('animal_detail', animal_id=animal.id) }}">Live page ကြည့်ရန် ↗</a>{% endif %}</div>
+  <form class="container admin-editor" method="post" enctype="multipart/form-data">
+    <input type="hidden" name="csrf_token" value="{{ csrf_token }}">
+    <input type="hidden" name="existing_image_url" value="{{ animal.image_url or '' }}">
+    <input type="hidden" name="existing_male_image_url" value="{{ animal.male_image_url or '' }}">
+    <input type="hidden" name="existing_female_image_url" value="{{ animal.female_image_url or '' }}">
+    <div class="admin-editor-main">
+      <section class="admin-form-guide" aria-labelledby="animalFormGuideTitle">
+        <div>
+          <span class="admin-guide-kicker">DATA ENTRY GUIDE</span>
+          <h2 id="animalFormGuideTitle">တိရစ္ဆာန်အချက်အလက် ဖြည့်သွင်းပုံ</h2>
+          <p>Field ခေါင်းစဉ်အောက်ရှိ <code>field_name</code> သည် database တွင် သိမ်းမည့်အမည်ဖြစ်ပြီး၊ input အတွင်းမှ စာသားသည် ထည့်သွင်းပုံဥပမာ ဖြစ်ပါသည်။</p>
+        </div>
+        <div class="admin-guide-legend">
+          <span><b>*</b> မဖြစ်မနေ ဖြည့်ရန်</span>
+          <span>အမှတ်မပါသော field များသည် optional ဖြစ်သည်</span>
+        </div>
+      </section>
+      <section class="admin-form-card"><div class="admin-form-heading"><span>01</span><div><h2>အခြေခံအချက်အလက်</h2><p>အသုံးပြုသူတွေ ပထမဆုံးမြင်ရမည့် အမည်နှင့် အမျိုးအစား</p></div></div><div class="admin-form-grid">
+        <label><span>မြန်မာအမည် <b class="admin-required" aria-label="မဖြစ်မနေ ဖြည့်ရန်">*</b>{{ field_key('name_my') }}</span><input name="name_my" required placeholder="ဥပမာ — အာရှဆင်" value="{{ animal.name_my or '' }}"></label>
+        <label><span>အင်္ဂလိပ်အမည် <b class="admin-required" aria-label="မဖြစ်မနေ ဖြည့်ရန်">*</b>{{ field_key('name_en') }}</span><input name="name_en" required placeholder="e.g. Asian Elephant" value="{{ animal.name_en or '' }}"></label>
+        <label><span>သိပ္ပံအမည် {{ field_key('scientific_name') }}</span><input name="scientific_name" placeholder="e.g. Elephas maximus" value="{{ animal.scientific_name or '' }}"></label>
+        <label><span>အမျိုးအစား {{ field_key('category_id') }}</span><select name="category_id"><option value="">— ရွေးရန် —</option>{% for category in categories %}<option value="{{ category.id }}" {{ 'selected' if animal.category_id|string == category.id|string }}>{{ category.name_my }} / {{ category.name_en }}</option>{% endfor %}</select></label>
+        <label class="admin-field-wide"><span>အခြားအခေါ်အဝေါ်များ <small>(comma ခြားပါ)</small> {{ field_key('aliases') }}</span><input name="aliases" placeholder="ဥပမာ — ဆင်၊ မြန်မာဆင်" value="{{ (animal.aliases or [])|join(', ') }}"></label>
+      </div></section>
+      <section class="admin-form-card"><div class="admin-form-heading"><span>02</span><div><h2>ဖော်ပြချက်နှင့် နေထိုင်မှု</h2><p>Website နှင့် AI နှစ်ခုလုံးတွင် တူညီစွာ အသုံးပြုမည့် အချက်အလက်များ</p></div></div><div class="admin-form-grid">
+        <label class="admin-field-wide"><span>အကျဉ်းချုပ် ဖော်ပြချက် {{ field_key('description_my') }}</span><textarea name="description_my" rows="6" placeholder="မျိုးစိတ်၏ အဓိကလက္ခဏာနှင့် အရေးပါမှုကို အကျဉ်းချုပ်ရေးပါ။">{{ animal.description_my or '' }}</textarea></label>
+        <label class="admin-field-wide"><span>ရုပ်သွင်ပြင် ဖော်ပြချက် {{ field_key('physical_description_my') }}</span><textarea name="physical_description_my" rows="4" placeholder="အရောင်၊ ကိုယ်ခန္ဓာပုံစံနှင့် ခွဲခြားသိနိုင်သော လက္ခဏာများရေးပါ။">{{ animal.physical_description_my or '' }}</textarea></label>
+        <label class="admin-field-wide"><span>နေထိုင်ရာ {{ field_key('habitat_my') }}</span><textarea name="habitat_my" rows="3" placeholder="ဥပမာ — အမြဲစိမ်းတော၊ မြက်ခင်းနှင့် ရေဝပ်ဒေသများ">{{ animal.habitat_my or '' }}</textarea></label>
+        <label class="admin-field-wide"><span>အစာစားနည်း {{ field_key('diet_my') }}</span><textarea name="diet_my" rows="3" placeholder="စားသုံးသည့် အစာအမျိုးအစားနှင့် အစာရှာပုံကို ရေးပါ။">{{ animal.diet_my or '' }}</textarea></label>
+        <label class="admin-field-wide"><span>ဖြန့်ကျက်တည်ရှိမှု {{ field_key('distribution_my') }}</span><textarea name="distribution_my" rows="4" placeholder="ကမ္ဘာနှင့် မြန်မာနိုင်ငံအတွင်း ပျံ့နှံ့တွေ့ရှိရာဒေသများကို ရေးပါ။">{{ animal.distribution_my or '' }}</textarea></label>
+        <label class="admin-field-wide"><span>အနေအထိုင်နှင့် အပြုအမူ {{ field_key('behaviour_my') }}</span><textarea name="behaviour_my" rows="4" placeholder="နေ့/ည လှုပ်ရှားမှု၊ အုပ်စုဖွဲ့ပုံနှင့် အပြုအမူများကို ရေးပါ။">{{ animal.behaviour_my or '' }}</textarea></label>
+        <label><span>အရွယ်အစား {{ field_key('size_my') }}</span><input name="size_my" placeholder="ဥပမာ — အလျား ၂–၃ မီတာ" value="{{ animal.size_my or '' }}"></label><label><span>သက်တမ်း {{ field_key('lifespan_my') }}</span><input name="lifespan_my" placeholder="ဥပမာ — ၄၀–၆၀ နှစ်" value="{{ animal.lifespan_my or '' }}"></label>
+        <label class="admin-field-wide"><span>တွေ့ရှိရသော ဒေသ {{ field_key('region_my') }}</span><input name="region_my" placeholder="ဥပမာ — ကချင်၊ ရှမ်း၊ တနင်္သာရီ" value="{{ animal.region_my or '' }}"></label>
+        <label class="admin-field-wide"><span>ထူးခြားအချက်များ {{ field_key('fun_facts_my') }}</span><textarea name="fun_facts_my" rows="3" placeholder="စိတ်ဝင်စားဖွယ် သီးခြားအချက်များကို ရေးပါ။">{{ animal.fun_facts_my or '' }}</textarea></label>
+      </div></section>
+      <section class="admin-form-card"><div class="admin-form-heading"><span>03</span><div><h2>ထိန်းသိမ်းရေးနှင့် မျိုးခွဲ</h2></div></div><div class="admin-form-grid">
+        {% for field, label, placeholder in [('conservation_status','မြန်မာ IUCN အဆင့်','ဥပမာ — EN / မျိုးသုဉ်းရန် အန္တရာယ်ရှိ'),('global_iucn_status','ကမ္ဘာလုံးဆိုင်ရာ IUCN အဆင့်','ဥပမာ — Endangered (EN)'),('population_trend','အကောင်ရေတွေ့ရှိမှုနှုန်း','ဥပမာ — လျော့ကျနေ (Decreasing)'),('myanmar_population','မြန်မာနိုင်ငံ အကောင်ရေ','ဥပမာ — ၁,၀၀၀–၂,၀၀၀ ကောင် (ခန့်မှန်း)'),('global_population','ကမ္ဘာလုံးဆိုင်ရာ အကောင်ရေ','ဥပမာ — ၄၈,၀၀၀–၅၁,၀၀၀ ကောင်'),('species_order','Order','ဥပမာ — Proboscidea'),('species_family','Family','ဥပမာ — Elephantidae')] %}<label><span>{{ label }} {{ field_key(field) }}</span><input name="{{ field }}" placeholder="{{ placeholder }}" value="{{ animal[field] or '' }}"></label>{% endfor %}
+        <label class="admin-field-wide"><span>IUCN အကဲဖြတ် အကြောင်းပြချက် {{ field_key('iucn_justification_my') }}</span><textarea name="iucn_justification_my" rows="5" placeholder="IUCN အဆင့်သတ်မှတ်ရသည့် အထောက်အထားနှင့် အကြောင်းပြချက်ကို ရေးပါ။">{{ animal.iucn_justification_my or '' }}</textarea></label>
+        <label class="admin-field-wide"><span>တောရိုင်း အကောင်ရေ အသေးစိတ် {{ field_key('wild_population_my') }}</span><textarea name="wild_population_my" rows="4" placeholder="ခုနှစ်၊ နေရာနှင့် ခန့်မှန်းအရေအတွက်ပါဝင်အောင် ရေးပါ။">{{ animal.wild_population_my or '' }}</textarea></label>
+        <label class="admin-field-wide"><span>ရှင်သန်ရေး ခြိမ်းခြောက်မှုများ {{ field_key('threats_my') }}</span><textarea name="threats_my" rows="4" placeholder="ဥပမာ — နေထိုင်ရာဆုံးရှုံးမှု၊ တရားမဝင် အမဲလိုက်မှု">{{ animal.threats_my or '' }}</textarea></label>
+        <label class="admin-field-wide"><span>ထိန်းသိမ်းရေး လုပ်ဆောင်ချက်များ {{ field_key('conservation_actions_my') }}</span><textarea name="conservation_actions_my" rows="4" placeholder="လက်ရှိ ဆောင်ရွက်နေသည့် ထိန်းသိမ်းရေးအစီအစဉ်များကို ရေးပါ။">{{ animal.conservation_actions_my or '' }}</textarea></label>
+        <label class="admin-field-wide"><span>ထိန်းသိမ်းရေး လိုအပ်ချက်များ {{ field_key('conservation_needs_my') }}</span><textarea name="conservation_needs_my" rows="4" placeholder="နောင်တွင် လိုအပ်သည့် သုတေသနနှင့် ထိန်းသိမ်းရေးလုပ်ငန်းများကို ရေးပါ။">{{ animal.conservation_needs_my or '' }}</textarea></label>
+        <label class="admin-field-wide"><span>အသုံးပြုမှုနှင့် ကုန်သွယ်မှု {{ field_key('use_trade_my') }}</span><textarea name="use_trade_my" rows="4" placeholder="လူသားအသုံးပြုမှု၊ ဒေသတွင်း/နိုင်ငံတကာ ကုန်သွယ်မှုများကို ရေးပါ။">{{ animal.use_trade_my or '' }}</textarea></label>
+        <label class="admin-field-wide"><span>တွေ့ရှိရသော ကာကွယ်ထိန်းသိမ်းနယ်မြေများ {{ field_key('protected_areas_my') }}</span><textarea name="protected_areas_my" rows="3" placeholder="ဥပမာ — အလောင်းတော်ကဿပ အမျိုးသားဥယျာဉ်">{{ animal.protected_areas_my or '' }}</textarea></label>
+        <label class="admin-field-wide"><span>ဆက်စပ် ဂေဟစနစ်များ {{ field_key('ecosystems_my') }}</span><textarea name="ecosystems_my" rows="3" placeholder="တွေ့ရှိရသော ဂေဟစနစ်အမည်များကို ရေးပါ။">{{ animal.ecosystems_my or '' }}</textarea></label>
+        <label class="admin-field-wide"><span>အဓိက ဇီဝမျိုးစုံမျိုးကွဲ နယ်မြေများ (KBA) {{ field_key('kba_my') }}</span><textarea name="kba_my" rows="3" placeholder="ဆက်စပ် KBA အမည်များကို ရေးပါ။">{{ animal.kba_my or '' }}</textarea></label>
+      </div></section>
+      <section class="admin-form-card"><div class="admin-form-heading"><span>04</span><div><h2>ဥပဒေအရ ကာကွယ်ထားမှု</h2><p>ကာကွယ်ထားသည့် တောရိုင်းတိရစ္ဆာန်များစာရင်း (၂၀၂၀) အရ အဆင့်။ ဖြည့်ထားပါက species page နှင့် card တွင် ကာကွယ်ထားကြောင်း အမှတ်အသား ပေါ်ပါမည်။</p></div></div><div class="admin-form-grid">
+        <label><span>ကာကွယ်မှုအဆင့် (မြန်မာ) {{ field_key('protection_status_my') }}</span><input name="protection_status_my" list="protectionStatusOptions" value="{{ animal.protection_status_my or '' }}" placeholder="ဥပမာ — အပြည့်အဝ ကာကွယ်ထားသော မျိုးစိတ်"></label>
+        <label><span>ကာကွယ်မှုအဆင့် (English) {{ field_key('protection_status_en') }}</span><input name="protection_status_en" list="protectionStatusEnOptions" value="{{ animal.protection_status_en or '' }}" placeholder="Totally protected"></label>
+        <datalist id="protectionStatusOptions">
+          <option value="အပြည့်အဝ ကာကွယ်ထားသော မျိုးစိတ်"></option>
+          <option value="သာမန် ကာကွယ်ထားသော မျိုးစိတ်"></option>
+          <option value="ရာသီအလိုက် ကာကွယ်ထားသော မျိုးစိတ်"></option>
+        </datalist>
+        <datalist id="protectionStatusEnOptions">
+          <option value="Totally protected"></option>
+          <option value="Normally protected"></option>
+          <option value="Seasonally protected"></option>
+        </datalist>
+        <label class="admin-field-wide"><span>ဥပဒေ / စာရင်း ကိုးကား {{ field_key('protection_law_my') }}</span><input name="protection_law_my" value="{{ animal.protection_law_my or '' }}" placeholder="ဇီဝမျိုးစုံမျိုးကွဲနှင့် သဘာဝထိန်းသိမ်းရေးနယ်မြေများ ကာကွယ်စောင့်ရှောက်ခြင်းဆိုင်ရာ ဥပဒေ (၂၀၁၈)"></label>
+        <label class="admin-field-wide"><span>ကာကွယ်ရသည့် အကြောင်းရင်း {{ field_key('protection_basis_my') }}</span><input name="protection_basis_my" value="{{ animal.protection_basis_my or '' }}" placeholder="ဥပမာ — စာရင်းတွင် မျိုးစိတ်အလိုက် တိုက်ရိုက် ပါဝင်သည်။"></label>
+        <label><span>မှတ်တမ်းအဆင့် (Taxon rank) {{ field_key('taxon_rank') }}</span><select name="taxon_rank">{% for value, label in [('species', 'မျိုးစိတ် (species)'), ('genus', 'မျိုးရင်း (genus)'), ('subfamily', 'မျိုးရင်းခွဲ (subfamily)'), ('family', 'မိသားစု (family)'), ('order', 'မျိုးစဉ် (order)')] %}<option value="{{ value }}" {{ 'selected' if (animal.taxon_rank or 'species') == value }}>{{ label }}</option>{% endfor %}</select></label>
+        <label class="admin-field-wide"><span>ဓာတ်ပုံ ခရက်ဒစ် <small>(ဓာတ်ပုံဆရာနှင့် license)</small> {{ field_key('image_credit') }}</span><input name="image_credit" value="{{ animal.image_credit or '' }}" placeholder="ဥပမာ — Stefan Brending · CC BY-SA 3.0 · Wikimedia Commons"></label>
+      </div></section>
+      <section class="admin-form-card"><div class="admin-form-heading"><span>05</span><div><h2>ရင်းမြစ် URL များ</h2><p>အမည်နှင့် URL ကို အများကြီး ထည့်နိုင်သည်။ ပထမ URL ကို အဓိကရင်းမြစ်အဖြစ် သုံးမည်။</p></div></div>
+        <div class="admin-source-editor" id="sourceEditor">
+          {% for source in animal.sources or [] %}
+          <div class="admin-source-row"><label><span>ရင်းမြစ်အမည် {{ field_key('source_label') }}</span><input name="source_label" value="{{ source.label or '' }}" placeholder="ဥပမာ — IUCN Red List"></label><label class="admin-source-url"><span>Source URL {{ field_key('source_url_item') }}</span><input type="url" name="source_url_item" value="{{ source.url }}" placeholder="https://..."></label><button type="button" class="admin-source-remove" aria-label="ရင်းမြစ် ဖယ်ရှားရန်">×</button></div>
+          {% else %}
+          <div class="admin-source-row"><label><span>ရင်းမြစ်အမည် {{ field_key('source_label') }}</span><input name="source_label" placeholder="ဥပမာ — IUCN Red List"></label><label class="admin-source-url"><span>Source URL {{ field_key('source_url_item') }}</span><input type="url" name="source_url_item" placeholder="https://..."></label><button type="button" class="admin-source-remove" aria-label="ရင်းမြစ် ဖယ်ရှားရန်">×</button></div>
+          {% endfor %}
+        </div>
+        <button type="button" class="admin-add-source" id="addSourceButton">+ နောက်ထပ် source URL ထည့်ရန်</button>
+        <p class="admin-source-help">အချက်အလက်တစ်ခုစီအောက်တွင် ၎င်း၏ source ကို တန်းကြည့်ပြီး ချိတ်နိုင်ပါသည်။ ချိတ်ထားသော source ဘေးရှိ × ကိုနှိပ်လျှင် ထို field နှင့် ချိတ်ဆက်မှုကို ဖြုတ်နိုင်ပြီး၊ Source URL စာရင်းထဲမှ source ကို မဖျက်ပါ။</p>
+      </section>
+    </div>
+    <aside class="admin-editor-side">
+      <section class="admin-form-card admin-photo-card"><div class="admin-side-title"><span>PHOTO SET</span><h2>တိရစ္ဆာန် ဓာတ်ပုံများ</h2><p>Male နှင့် Female ကို သီးခြားတင်ပါ။ Cover မရှိလျှင် Male/Female ပုံကို အလိုအလျောက် အသုံးပြုမည်။</p></div>
+        <div class="admin-sex-photo-grid">
+          <div class="admin-photo-slot"><div class="admin-photo-preview">{% if animal.male_image_url %}<img src="{{ animal.male_image_url }}" alt="Male {{ animal.name_en }}">{% else %}<span class="admin-photo-gender">♂</span><small>Male photo</small>{% endif %}</div><label class="admin-upload"><input type="file" name="male_photo" accept="image/jpeg,image/png,image/webp"><strong>Male ပုံ ရွေးရန်</strong><span>male_photo · JPEG, PNG, WebP</span></label>{% if animal.male_image_url %}<label class="admin-check"><input type="checkbox" name="remove_male_photo" value="1"> ဖယ်ရှားရန်</label>{% endif %}</div>
+          <div class="admin-photo-slot"><div class="admin-photo-preview">{% if animal.female_image_url %}<img src="{{ animal.female_image_url }}" alt="Female {{ animal.name_en }}">{% else %}<span class="admin-photo-gender female">♀</span><small>Female photo</small>{% endif %}</div><label class="admin-upload"><input type="file" name="female_photo" accept="image/jpeg,image/png,image/webp"><strong>Female ပုံ ရွေးရန်</strong><span>female_photo · JPEG, PNG, WebP</span></label>{% if animal.female_image_url %}<label class="admin-check"><input type="checkbox" name="remove_female_photo" value="1"> ဖယ်ရှားရန်</label>{% endif %}</div>
+        </div>
+        <details class="admin-cover-details"><summary>Catalog cover သီးခြား သတ်မှတ်ရန်</summary><div class="admin-photo-preview admin-cover-preview">{% if animal.image_url %}<img src="{{ animal.image_url }}" alt="Cover {{ animal.name_en }}">{% else %}<span>Cover မရှိသေးပါ</span>{% endif %}</div><label class="admin-upload"><input type="file" name="photo" accept="image/jpeg,image/png,image/webp"><strong>Cover ပုံ ရွေးရန်</strong><span>photo · JPEG, PNG, WebP</span></label>{% if animal.image_url %}<label class="admin-check"><input type="checkbox" name="remove_photo" value="1"> Cover ဖယ်ရှားရန်</label>{% endif %}</details>
+      </section>
+      <section class="admin-publish-card"><span class="admin-live-dot"></span><div><strong>အသင့်ထုတ်ဝေမည်</strong><p>Save လုပ်ပြီးသည်နှင့် public page နှင့် AI knowledge တွင် update ဖြစ်မည်။</p></div><button class="btn btn-primary" type="submit">{{ 'ထုတ်ဝေရန်' if is_new else 'ပြင်ဆင်ချက် သိမ်းရန်' }}</button></section>
+    </aside>
+  </form>
+</div>
+{% endblock %}
+{% block scripts %}
+<script src="{{ url_for('static', filename='js/admin-photo-preview.js') }}"></script>
+<script id="fieldSourceData" type="application/json">{{ {'labels': sourceable_fields, 'mapping': animal.field_sources or {}}|tojson }}</script>
+<script src="{{ url_for('static', filename='js/admin-field-sources.js') }}"></script>
+{% endblock %}

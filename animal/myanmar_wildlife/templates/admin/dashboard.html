@@ -1,0 +1,49 @@
+{% extends "base.html" %}
+{% block title %}Content Studio — Myanmar Wildlife{% endblock %}
+{% block content %}
+<div class="admin-shell admin-dashboard-v2">
+  <header class="admin-hero"><div class="container admin-hero-row"><div><span class="admin-kicker">MYANMAR WILDLIFE · ADMIN</span><h1>Content Studio</h1><p>မှတ်တမ်း၊ ဓာတ်ပုံ၊ ရင်းမြစ်နှင့် AI knowledge ကို စီမံထုတ်ဝေပါ။</p></div><div class="admin-hero-actions"><a class="admin-ghost-button" href="{{ url_for('admin.rag_pipeline') }}"><span>⌁</span> Retrieval pipeline</a><a class="btn admin-create-button" href="{{ url_for('admin.animal_form') if section == 'animals' else url_for('admin.collection_form', kind=section) }}"><span>＋</span> အသစ်ထည့်ရန်</a></div></div></header>
+  <div class="container admin-workspace">
+    <section class="admin-library-summary">
+      <a href="{{ url_for('admin.dashboard', section='animals') }}" class="admin-summary-card {{ 'active' if section == 'animals' }}"><span class="admin-summary-icon">🐾</span><div><small>SPECIES</small><strong>{{ counts.animals|mm_number }}</strong><p>တိရစ္ဆာန်များ · ဥပဒေအရ ကာကွယ် {{ counts.protected|mm_number }}</p></div><b>→</b></a>
+      <a href="{{ url_for('admin.dashboard', section='ecosystems') }}" class="admin-summary-card {{ 'active' if section == 'ecosystems' }}"><span class="admin-summary-icon">⌁</span><div><small>ECOSYSTEMS</small><strong>{{ counts.ecosystems|mm_number }}</strong><p>ဂေဟစနစ်များ</p></div><b>→</b></a>
+      <a href="{{ url_for('admin.dashboard', section='protected_areas') }}" class="admin-summary-card {{ 'active' if section == 'protected_areas' }}"><span class="admin-summary-icon">◇</span><div><small>PROTECTED AREAS</small><strong>{{ counts.protected_areas|mm_number }}</strong><p>ထိန်းသိမ်းနယ်မြေများ</p></div><b>→</b></a>
+    </section>
+    <section class="admin-library">
+      <div class="admin-toolbar">
+        <div><span class="admin-kicker-dark">CONTENT LIBRARY</span><h2>{% if section == 'animals' %}တိရစ္ဆာန်များ{% elif section == 'ecosystems' %}ဂေဟစနစ်များ{% else %}ကာကွယ်ထိန်းသိမ်းနယ်မြေများ{% endif %}</h2><p>Published {{ records|length|mm_number }} records</p></div>
+        <form method="get" class="admin-search" data-studio-section="{{ section }}">
+          <input type="hidden" name="section" value="{{ section }}">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><circle cx="11" cy="11" r="8"></circle><path d="m21 21-4.35-4.35"></path></svg>
+          <input id="studioSearchInput" type="search" name="q" value="{{ query }}" placeholder="အမည်ဖြင့် ရှာရန်" autocomplete="off" role="combobox" aria-autocomplete="list" aria-controls="studioSearchSuggestions" aria-expanded="false">
+          <button type="submit">ရှာရန်</button>
+          <div class="search-suggestions admin-search-suggestions" id="studioSearchSuggestions" role="listbox"></div>
+        </form>
+      </div>
+      <div class="admin-card-grid">
+        {% for item in records %}
+        <article class="admin-content-card">
+          <a class="admin-card-media" href="{{ url_for('admin.animal_form', animal_id=item.id) if section == 'animals' else url_for('admin.collection_form', kind=section, slug=item.slug) }}">
+            {% if item.image_url %}<img src="{{ item.image_url }}" alt="">{% else %}<div class="admin-card-placeholder"><span>{{ '🐾' if section == 'animals' else ('⌁' if section == 'ecosystems' else '◇') }}</span><small>ဓာတ်ပုံ မရှိသေးပါ</small></div>{% endif %}
+            <span class="admin-published-pill"><i></i> Published</span>
+            {% if section == 'animals' and (item.male_image_url or item.female_image_url) %}<span class="admin-sex-pill">{{ '♂' if item.male_image_url }} {{ '♀' if item.female_image_url }}</span>{% endif %}
+          </a>
+          <div class="admin-card-body">
+            <div class="admin-card-type">{% if section == 'animals' %}{{ item.category_name_my or 'တိရစ္ဆာန်' }}{% elif section == 'ecosystems' %}{{ item.code or 'ECOSYSTEM' }}{% else %}{{ item.designation or 'PROTECTED AREA' }}{% endif %}</div>
+            {% if section == 'animals' %}<h3>{{ item.name_my }}</h3><p>{{ item.name_en }}{% if item.scientific_name %}<em>{{ item.scientific_name }}</em>{% endif %}</p>{% else %}<h3>{{ item.name_mm or item.name }}</h3><p>{{ item.name if item.name_mm else item.slug }}</p>{% endif %}
+            <div class="admin-card-meta"><span>{% if item.source_url %}ရင်းမြစ် ချိတ်ထားသည်{% else %}ရင်းမြစ် မရှိသေးပါ{% endif %}</span>{% if item.protection_status_my %}<span class="admin-protected-pill">🛡 ဥပဒေအရ ကာကွယ်</span>{% endif %}<span>AI ready</span></div>
+          </div>
+          <div class="admin-card-actions">
+            {% if section == 'animals' %}
+            <a href="{{ url_for('animal_detail', animal_id=item.id) }}">Live page ↗</a><a class="primary" href="{{ url_for('admin.animal_form', animal_id=item.id) }}">ပြင်ဆင်ရန်</a><form method="post" action="{{ url_for('admin.animal_delete', animal_id=item.id) }}" onsubmit="return confirm('ဤမှတ်တမ်းကို အပြီးဖျက်မည်လား?')"><input type="hidden" name="csrf_token" value="{{ csrf_token }}"><button class="danger" aria-label="ဖျက်ရန်">⋯</button></form>
+            {% else %}
+            <a href="{{ url_for('ecosystem_detail' if section == 'ecosystems' else 'protected_area_detail', slug=item.slug) }}">Live page ↗</a><a class="primary" href="{{ url_for('admin.collection_form', kind=section, slug=item.slug) }}">ပြင်ဆင်ရန်</a><form method="post" action="{{ url_for('admin.collection_delete', kind=section, slug=item.slug) }}" onsubmit="return confirm('ဤမှတ်တမ်းကို အပြီးဖျက်မည်လား?')"><input type="hidden" name="csrf_token" value="{{ csrf_token }}"><button class="danger" aria-label="ဖျက်ရန်">⋯</button></form>
+            {% endif %}
+          </div>
+        </article>
+        {% else %}<div class="admin-empty-card"><span>⌕</span><h3>ကိုက်ညီသော မှတ်တမ်း မရှိပါ</h3><p>ရှာဖွေစာလုံးကို ပြောင်းပြီး ထပ်မံရှာကြည့်ပါ။</p></div>{% endfor %}
+      </div>
+    </section>
+  </div>
+</div>
+{% endblock %}

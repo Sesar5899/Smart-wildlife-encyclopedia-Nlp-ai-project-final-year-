@@ -1,0 +1,72 @@
+{% extends "base.html" %}
+{% block title %}{{ protected_area.name_mm or protected_area.name }} - ကာကွယ်ထိန်းသိမ်းနယ်မြေများ{% endblock %}
+
+{% block content %}
+<header class="record-hero protected-record-hero">
+  <div class="container">
+    <nav class="breadcrumb record-breadcrumb">
+      <a href="{{ url_for('protected_areas') }}">ကာကွယ်ထိန်းသိမ်းနယ်မြေများ</a><span class="breadcrumb-sep">›</span><span>{{ protected_area.name_mm or protected_area.name }}</span>
+    </nav>
+    <div class="record-title-row">
+      <div>
+        <div class="catalog-card-badges">
+          {% if protected_area.status or protected_area.status_mm %}<span class="area-status-pill">{{ protected_area.status_mm or protected_area.status }}</span>{% endif %}
+          {% if protected_area.protection_level or protected_area.protection_level_mm %}<span class="record-code">{{ protected_area.protection_level_mm or protected_area.protection_level }}</span>{% endif %}
+        </div>
+        <h1>{{ protected_area.name_mm or protected_area.name }}</h1>
+        {% if protected_area.name_mm %}<p>{{ protected_area.name }}</p>{% endif %}
+      </div>
+      <div class="record-hero-actions">{% if protected_area.source_url %}<a href="{{ protected_area.source_url }}" target="_blank" rel="noopener noreferrer" class="btn record-source-button">မူရင်း Portal ↗</a>{% endif %}</div>
+    </div>
+  </div>
+</header>
+
+{% if protected_area.image_urls %}
+<div class="container record-gallery record-gallery-count-{{ protected_area.image_urls|length }} {{ 'record-gallery-multiple' if protected_area.image_urls|length > 1 }}">
+  {% for image_url in protected_area.image_urls %}
+  <figure class="record-photo {{ 'record-photo-main' if loop.first }}">
+    <img src="{{ image_url }}" alt="{{ protected_area.name_mm or protected_area.name }}{% if not loop.first %} ဓာတ်ပုံ {{ loop.index }}{% endif %}" decoding="async" {% if loop.first %}fetchpriority="high"{% else %}loading="lazy"{% endif %}>
+  </figure>
+  {% endfor %}
+</div>
+{% else %}
+<div class="container record-photo-missing protected-photo-missing"><span class="record-photo-mark" aria-hidden="true">◇</span><div><strong>မူရင်းဓာတ်ပုံ မရှိသေးပါ</strong><p>Myanmar Biodiversity Portal မှတ်တမ်းတွင် ဤနယ်မြေ၏ ဓာတ်ပုံ မပါရှိသေးပါ။</p></div></div>
+{% endif %}
+
+<div class="container record-layout">
+  <aside class="record-facts protected-facts">
+    <h2>နယ်မြေအချက်အလက်</h2>
+    <dl>
+      {% if protected_area.designation or protected_area.designation_mm %}<div><dt>သတ်မှတ်အမျိုးအစား</dt><dd>{{ protected_area.designation_mm or protected_area.designation }}</dd></div>{% endif %}
+      {% if protected_area.status or protected_area.status_mm %}<div><dt>အခြေအနေ</dt><dd>{{ protected_area.status_mm or protected_area.status }}</dd></div>{% endif %}
+      {% if protected_area.in_state_region or protected_area.in_state_region_mm %}<div><dt>တိုင်း/ပြည်နယ်</dt><dd>{{ protected_area.in_state_region_mm or protected_area.in_state_region }}</dd></div>{% endif %}
+      {% if protected_area.boundary or protected_area.boundary_mm %}<div><dt>နယ်နိမိတ်</dt><dd>{{ protected_area.boundary_mm or protected_area.boundary }}</dd></div>{% endif %}
+      {% if protected_area.established_year %}<div><dt>တည်ထောင်သည့်နှစ်</dt><dd>{{ protected_area.established_year }}</dd></div>{% endif %}
+      {% if protected_area.designaton_date %}<div><dt>သတ်မှတ်ကြေညာသည့်နေ့</dt><dd>{{ protected_area.designaton_date }}</dd></div>{% endif %}
+      {% if protected_area.eval_year %}<div><dt>အကဲဖြတ်သည့်နှစ်</dt><dd>{{ protected_area.eval_year }}</dd></div>{% endif %}
+      {% if protected_area.area_ha %}<div><dt>ဧရိယာ (ဟက်တာ)</dt><dd>{{ protected_area.area_ha }}</dd></div>{% endif %}
+      {% if protected_area.area_acre %}<div><dt>ဧရိယာ (ဧက)</dt><dd>{{ protected_area.area_acre }}</dd></div>{% endif %}
+      {% if protected_area.protection_level or protected_area.protection_level_mm %}<div><dt>ကာကွယ်မှုအဆင့်</dt><dd>{{ protected_area.protection_level_mm or protected_area.protection_level }}</dd></div>{% endif %}
+      {% if protected_area.bio_unit_mm or protected_area.bio_unit_n %}<div><dt>ဇီဝနယ်မြေ</dt><dd>{{ protected_area.bio_unit_mm or protected_area.bio_unit_n }}</dd></div>{% endif %}
+      {% if protected_area.bio_unit %}<div><dt>ဇီဝနယ်မြေ ကုဒ်/အမျိုးအစား</dt><dd>{{ protected_area.bio_unit }}</dd></div>{% endif %}
+      {% if protected_area.habitat_types_mm or protected_area.habitat_types %}<div><dt>နေထိုင်ရာပတ်ဝန်းကျင်</dt><dd>{{ protected_area.habitat_types_mm or protected_area.habitat_types }}</dd></div>{% endif %}
+      {% if protected_area.governance_type or protected_area.governance_type_mm %}<div><dt>အုပ်ချုပ်မှုပုံစံ</dt><dd>{{ protected_area.governance_type_mm or protected_area.governance_type }}</dd></div>{% endif %}
+      {% if protected_area.management_authority or protected_area.management_authority_mm %}<div><dt>စီမံခန့်ခွဲသူ</dt><dd>{{ protected_area.management_authority_mm or protected_area.management_authority }}</dd></div>{% endif %}
+    </dl>
+  </aside>
+
+  <article class="record-content">
+    <section class="record-lead"><h2>ဖော်ပြချက်</h2><p>{{ protected_area.description_mm or protected_area.description or 'ဖော်ပြချက် မရှိသေးပါ။' }}</p></section>
+    {% if protected_area.natural_resources_mm or protected_area.natural_resources_biodiversity %}<section><h2>သဘာဝရင်းမြစ်နှင့် ဇီဝမျိုးစုံမျိုးကွဲ</h2><p>{{ protected_area.natural_resources_mm or protected_area.natural_resources_biodiversity }}</p></section>{% endif %}
+    {% if protected_area.tourism_mm or protected_area.tourism %}<section><h2>ခရီးသွားနှင့် လေ့လာရေး</h2><p>{{ protected_area.tourism_mm or protected_area.tourism }}</p></section>{% endif %}
+    {% if protected_area.main_purposes_mm or protected_area.main_purposes %}<section><h2>အဓိက ရည်ရွယ်ချက်များ</h2><div class="record-tag-list">{% for purpose in (protected_area.main_purposes_mm or protected_area.main_purposes).split(',') %}<span>{{ purpose }}</span>{% endfor %}</div></section>{% endif %}
+    {% if protected_area.species_fauna_mm or protected_area.other_fauna_mm or protected_area.species_fauna or protected_area.other_fauna %}<section><h2>တွေ့ရှိရသော သတ္တဝါများ</h2>{% if protected_area.species_fauna_mm or protected_area.species_fauna %}<p>{{ (protected_area.species_fauna_mm or protected_area.species_fauna)|catalog_text }}</p>{% endif %}{% if protected_area.other_fauna_mm or protected_area.other_fauna %}<p>{{ (protected_area.other_fauna_mm or protected_area.other_fauna)|catalog_text }}</p>{% endif %}</section>{% endif %}
+    {% if protected_area.species_flora_mm or protected_area.other_flora_mm or protected_area.species_flora or protected_area.other_flora %}<section><h2>တွေ့ရှိရသော အပင်များ</h2>{% if protected_area.species_flora_mm or protected_area.species_flora %}<p>{{ (protected_area.species_flora_mm or protected_area.species_flora)|catalog_text }}</p>{% endif %}{% if protected_area.other_flora_mm or protected_area.other_flora %}<p>{{ (protected_area.other_flora_mm or protected_area.other_flora)|catalog_text }}</p>{% endif %}</section>{% endif %}
+    {% if protected_area.other_species_mm or protected_area.other_species %}<section><h2>အခြား မျိုးစိတ်များ</h2><p>{{ (protected_area.other_species_mm or protected_area.other_species)|catalog_text }}</p></section>{% endif %}
+    {% if protected_area.threats_subcategory_inside_mm or protected_area.threats_subcategory_inside %}<section class="record-alert"><span>နယ်မြေအတွင်း</span><h2>အဓိက ပျက်စီးနိုင်မှုများ</h2><div class="record-tag-list alert-tags">{% for threat in (protected_area.threats_subcategory_inside_mm or protected_area.threats_subcategory_inside).split(',') %}<span>{{ threat }}</span>{% endfor %}</div></section>{% endif %}
+    {% if protected_area.threats_subcategory_outside_mm or protected_area.threats_subcategory_outside %}<section><h2>နယ်မြေပြင်ပ ပျက်စီးနိုင်မှုများ</h2><div class="record-tag-list">{% for threat in (protected_area.threats_subcategory_outside_mm or protected_area.threats_subcategory_outside).split(',') %}<span>{{ threat }}</span>{% endfor %}</div></section>{% endif %}
+    {% if protected_area.source_urls or protected_area.source_url %}<section class="record-source-section"><h2>အချက်အလက် ရင်းမြစ်များ</h2><div class="record-source-list">{% for source in protected_area.source_urls or [] %}<a href="{{ source.url }}" target="_blank" rel="noopener noreferrer"><span>{{ source.label or 'Source' }}</span><b>↗</b></a>{% else %}<a href="{{ protected_area.source_url }}" target="_blank" rel="noopener noreferrer"><span>{{ protected_area.source_name or 'Original source' }}</span><b>↗</b></a>{% endfor %}</div></section>{% endif %}
+  </article>
+</div>
+{% include "_related_animals.html" %}
+{% endblock %}

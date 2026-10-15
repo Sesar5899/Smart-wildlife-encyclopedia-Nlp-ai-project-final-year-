@@ -1,0 +1,876 @@
+﻿animal_id,animal_name_my,animal_name_en,scientific_name,section,field_label,field_key
+1,ရခိုင်တောင်လိပ်,Arakan Forest Turtle,Heosemys depressa,03. ထိန်းသိမ်းရေးနှင့် မျိုးခွဲ,ရှင်သန်ရေး ခြိမ်းခြောက်မှုများ,threats_my
+1,ရခိုင်တောင်လိပ်,Arakan Forest Turtle,Heosemys depressa,03. ထိန်းသိမ်းရေးနှင့် မျိုးခွဲ,ထိန်းသိမ်းရေး လုပ်ဆောင်ချက်များ,conservation_actions_my
+1,ရခိုင်တောင်လိပ်,Arakan Forest Turtle,Heosemys depressa,03. ထိန်းသိမ်းရေးနှင့် မျိုးခွဲ,ထိန်းသိမ်းရေး လိုအပ်ချက်များ,conservation_needs_my
+1,ရခိုင်တောင်လိပ်,Arakan Forest Turtle,Heosemys depressa,03. ထိန်းသိမ်းရေးနှင့် မျိုးခွဲ,ဆက်စပ် ဂေဟစနစ်များ,ecosystems_my
+2,အာရှဆင်,Asian Elephant,Elephas maximus,02. ဖော်ပြချက်နှင့် နေထိုင်မှု,ရုပ်သွင်ပြင် ဖော်ပြချက်,physical_description_my
+2,အာရှဆင်,Asian Elephant,Elephas maximus,02. ဖော်ပြချက်နှင့် နေထိုင်မှု,အစာစားနည်း,diet_my
+2,အာရှဆင်,Asian Elephant,Elephas maximus,02. ဖော်ပြချက်နှင့် နေထိုင်မှု,ဖြန့်ကျက်တည်ရှိမှု,distribution_my
+2,အာရှဆင်,Asian Elephant,Elephas maximus,02. ဖော်ပြချက်နှင့် နေထိုင်မှု,အနေအထိုင်နှင့် အပြုအမူ,behaviour_my
+2,အာရှဆင်,Asian Elephant,Elephas maximus,02. ဖော်ပြချက်နှင့် နေထိုင်မှု,တွေ့ရှိရသော ဒေသ,region_my
+2,အာရှဆင်,Asian Elephant,Elephas maximus,02. ဖော်ပြချက်နှင့် နေထိုင်မှု,ထူးခြားအချက်များ,fun_facts_my
+2,အာရှဆင်,Asian Elephant,Elephas maximus,03. ထိန်းသိမ်းရေးနှင့် မျိုးခွဲ,IUCN အကဲဖြတ် အကြောင်းပြချက်,iucn_justification_my
+2,အာရှဆင်,Asian Elephant,Elephas maximus,03. ထိန်းသိမ်းရေးနှင့် မျိုးခွဲ,ရှင်သန်ရေး ခြိမ်းခြောက်မှုများ,threats_my
+2,အာရှဆင်,Asian Elephant,Elephas maximus,03. ထိန်းသိမ်းရေးနှင့် မျိုးခွဲ,ထိန်းသိမ်းရေး လုပ်ဆောင်ချက်များ,conservation_actions_my
+2,အာရှဆင်,Asian Elephant,Elephas maximus,03. ထိန်းသိမ်းရေးနှင့် မျိုးခွဲ,ထိန်းသိမ်းရေး လိုအပ်ချက်များ,conservation_needs_my
+2,အာရှဆင်,Asian Elephant,Elephas maximus,03. ထိန်းသိမ်းရေးနှင့် မျိုးခွဲ,အသုံးပြုမှုနှင့် ကုန်သွယ်မှု,use_trade_my
+2,အာရှဆင်,Asian Elephant,Elephas maximus,03. ထိန်းသိမ်းရေးနှင့် မျိုးခွဲ,တွေ့ရှိရသော ကာကွယ်ထိန်းသိမ်းနယ်မြေများ,protected_areas_my
+2,အာရှဆင်,Asian Elephant,Elephas maximus,03. ထိန်းသိမ်းရေးနှင့် မျိုးခွဲ,ဆက်စပ် ဂေဟစနစ်များ,ecosystems_my
+3,လိပ်မောင်း,Asian Giant Tortoise,Manouria emys,03. ထိန်းသိမ်းရေးနှင့် မျိုးခွဲ,ဆက်စပ် ဂေဟစနစ်များ,ecosystems_my
+4,ဟိမဝန္တာဝက်ဝံ,Asiatic Black Bear,Ursus thibetanus,02. ဖော်ပြချက်နှင့် နေထိုင်မှု,ရုပ်သွင်ပြင် ဖော်ပြချက်,physical_description_my
+4,ဟိမဝန္တာဝက်ဝံ,Asiatic Black Bear,Ursus thibetanus,02. ဖော်ပြချက်နှင့် နေထိုင်မှု,အစာစားနည်း,diet_my
+4,ဟိမဝန္တာဝက်ဝံ,Asiatic Black Bear,Ursus thibetanus,02. ဖော်ပြချက်နှင့် နေထိုင်မှု,ဖြန့်ကျက်တည်ရှိမှု,distribution_my
+4,ဟိမဝန္တာဝက်ဝံ,Asiatic Black Bear,Ursus thibetanus,02. ဖော်ပြချက်နှင့် နေထိုင်မှု,အနေအထိုင်နှင့် အပြုအမူ,behaviour_my
+4,ဟိမဝန္တာဝက်ဝံ,Asiatic Black Bear,Ursus thibetanus,02. ဖော်ပြချက်နှင့် နေထိုင်မှု,အရွယ်အစား,size_my
+4,ဟိမဝန္တာဝက်ဝံ,Asiatic Black Bear,Ursus thibetanus,02. ဖော်ပြချက်နှင့် နေထိုင်မှု,သက်တမ်း,lifespan_my
+4,ဟိမဝန္တာဝက်ဝံ,Asiatic Black Bear,Ursus thibetanus,02. ဖော်ပြချက်နှင့် နေထိုင်မှု,တွေ့ရှိရသော ဒေသ,region_my
+4,ဟိမဝန္တာဝက်ဝံ,Asiatic Black Bear,Ursus thibetanus,02. ဖော်ပြချက်နှင့် နေထိုင်မှု,ထူးခြားအချက်များ,fun_facts_my
+4,ဟိမဝန္တာဝက်ဝံ,Asiatic Black Bear,Ursus thibetanus,03. ထိန်းသိမ်းရေးနှင့် မျိုးခွဲ,IUCN အကဲဖြတ် အကြောင်းပြချက်,iucn_justification_my
+4,ဟိမဝန္တာဝက်ဝံ,Asiatic Black Bear,Ursus thibetanus,03. ထိန်းသိမ်းရေးနှင့် မျိုးခွဲ,ရှင်သန်ရေး ခြိမ်းခြောက်မှုများ,threats_my
+4,ဟိမဝန္တာဝက်ဝံ,Asiatic Black Bear,Ursus thibetanus,03. ထိန်းသိမ်းရေးနှင့် မျိုးခွဲ,ထိန်းသိမ်းရေး လုပ်ဆောင်ချက်များ,conservation_actions_my
+4,ဟိမဝန္တာဝက်ဝံ,Asiatic Black Bear,Ursus thibetanus,03. ထိန်းသိမ်းရေးနှင့် မျိုးခွဲ,ထိန်းသိမ်းရေး လိုအပ်ချက်များ,conservation_needs_my
+4,ဟိမဝန္တာဝက်ဝံ,Asiatic Black Bear,Ursus thibetanus,03. ထိန်းသိမ်းရေးနှင့် မျိုးခွဲ,အသုံးပြုမှုနှင့် ကုန်သွယ်မှု,use_trade_my
+4,ဟိမဝန္တာဝက်ဝံ,Asiatic Black Bear,Ursus thibetanus,03. ထိန်းသိမ်းရေးနှင့် မျိုးခွဲ,တွေ့ရှိရသော ကာကွယ်ထိန်းသိမ်းနယ်မြေများ,protected_areas_my
+4,ဟိမဝန္တာဝက်ဝံ,Asiatic Black Bear,Ursus thibetanus,03. ထိန်းသိမ်းရေးနှင့် မျိုးခွဲ,ဆက်စပ် ဂေဟစနစ်များ,ecosystems_my
+5,"ကြောင်မင်း,ကျားမင်း",Asiatic Golden Cat,Catopuma temminckii,02. ဖော်ပြချက်နှင့် နေထိုင်မှု,ရုပ်သွင်ပြင် ဖော်ပြချက်,physical_description_my
+5,"ကြောင်မင်း,ကျားမင်း",Asiatic Golden Cat,Catopuma temminckii,02. ဖော်ပြချက်နှင့် နေထိုင်မှု,အစာစားနည်း,diet_my
+5,"ကြောင်မင်း,ကျားမင်း",Asiatic Golden Cat,Catopuma temminckii,02. ဖော်ပြချက်နှင့် နေထိုင်မှု,ဖြန့်ကျက်တည်ရှိမှု,distribution_my
+5,"ကြောင်မင်း,ကျားမင်း",Asiatic Golden Cat,Catopuma temminckii,02. ဖော်ပြချက်နှင့် နေထိုင်မှု,အနေအထိုင်နှင့် အပြုအမူ,behaviour_my
+5,"ကြောင်မင်း,ကျားမင်း",Asiatic Golden Cat,Catopuma temminckii,02. ဖော်ပြချက်နှင့် နေထိုင်မှု,အရွယ်အစား,size_my
+5,"ကြောင်မင်း,ကျားမင်း",Asiatic Golden Cat,Catopuma temminckii,02. ဖော်ပြချက်နှင့် နေထိုင်မှု,သက်တမ်း,lifespan_my
+5,"ကြောင်မင်း,ကျားမင်း",Asiatic Golden Cat,Catopuma temminckii,02. ဖော်ပြချက်နှင့် နေထိုင်မှု,တွေ့ရှိရသော ဒေသ,region_my
+5,"ကြောင်မင်း,ကျားမင်း",Asiatic Golden Cat,Catopuma temminckii,02. ဖော်ပြချက်နှင့် နေထိုင်မှု,ထူးခြားအချက်များ,fun_facts_my
+5,"ကြောင်မင်း,ကျားမင်း",Asiatic Golden Cat,Catopuma temminckii,03. ထိန်းသိမ်းရေးနှင့် မျိုးခွဲ,ကမ္ဘာလုံးဆိုင်ရာ IUCN အဆင့်,global_iucn_status
+5,"ကြောင်မင်း,ကျားမင်း",Asiatic Golden Cat,Catopuma temminckii,03. ထိန်းသိမ်းရေးနှင့် မျိုးခွဲ,IUCN အကဲဖြတ် အကြောင်းပြချက်,iucn_justification_my
+5,"ကြောင်မင်း,ကျားမင်း",Asiatic Golden Cat,Catopuma temminckii,03. ထိန်းသိမ်းရေးနှင့် မျိုးခွဲ,ရှင်သန်ရေး ခြိမ်းခြောက်မှုများ,threats_my
+5,"ကြောင်မင်း,ကျားမင်း",Asiatic Golden Cat,Catopuma temminckii,03. ထိန်းသိမ်းရေးနှင့် မျိုးခွဲ,ထိန်းသိမ်းရေး လုပ်ဆောင်ချက်များ,conservation_actions_my
+5,"ကြောင်မင်း,ကျားမင်း",Asiatic Golden Cat,Catopuma temminckii,03. ထိန်းသိမ်းရေးနှင့် မျိုးခွဲ,ထိန်းသိမ်းရေး လိုအပ်ချက်များ,conservation_needs_my
+5,"ကြောင်မင်း,ကျားမင်း",Asiatic Golden Cat,Catopuma temminckii,03. ထိန်းသိမ်းရေးနှင့် မျိုးခွဲ,အသုံးပြုမှုနှင့် ကုန်သွယ်မှု,use_trade_my
+5,"ကြောင်မင်း,ကျားမင်း",Asiatic Golden Cat,Catopuma temminckii,03. ထိန်းသိမ်းရေးနှင့် မျိုးခွဲ,ဆက်စပ် ဂေဟစနစ်များ,ecosystems_my
+6,ပို့ချပ် ခေါင်းစိမ်းငှက်,Baer’s Pochard,Aythya baeri,03. ထိန်းသိမ်းရေးနှင့် မျိုးခွဲ,ရှင်သန်ရေး ခြိမ်းခြောက်မှုများ,threats_my
+6,ပို့ချပ် ခေါင်းစိမ်းငှက်,Baer’s Pochard,Aythya baeri,03. ထိန်းသိမ်းရေးနှင့် မျိုးခွဲ,ထိန်းသိမ်းရေး လုပ်ဆောင်ချက်များ,conservation_actions_my
+6,ပို့ချပ် ခေါင်းစိမ်းငှက်,Baer’s Pochard,Aythya baeri,03. ထိန်းသိမ်းရေးနှင့် မျိုးခွဲ,ထိန်းသိမ်းရေး လိုအပ်ချက်များ,conservation_needs_my
+6,ပို့ချပ် ခေါင်းစိမ်းငှက်,Baer’s Pochard,Aythya baeri,03. ထိန်းသိမ်းရေးနှင့် မျိုးခွဲ,တွေ့ရှိရသော ကာကွယ်ထိန်းသိမ်းနယ်မြေများ,protected_areas_my
+7,စိုင်,Banteng,Bos javanicus,02. ဖော်ပြချက်နှင့် နေထိုင်မှု,ရုပ်သွင်ပြင် ဖော်ပြချက်,physical_description_my
+7,စိုင်,Banteng,Bos javanicus,02. ဖော်ပြချက်နှင့် နေထိုင်မှု,အစာစားနည်း,diet_my
+7,စိုင်,Banteng,Bos javanicus,02. ဖော်ပြချက်နှင့် နေထိုင်မှု,ဖြန့်ကျက်တည်ရှိမှု,distribution_my
+7,စိုင်,Banteng,Bos javanicus,02. ဖော်ပြချက်နှင့် နေထိုင်မှု,အနေအထိုင်နှင့် အပြုအမူ,behaviour_my
+7,စိုင်,Banteng,Bos javanicus,02. ဖော်ပြချက်နှင့် နေထိုင်မှု,အရွယ်အစား,size_my
+7,စိုင်,Banteng,Bos javanicus,02. ဖော်ပြချက်နှင့် နေထိုင်မှု,သက်တမ်း,lifespan_my
+7,စိုင်,Banteng,Bos javanicus,02. ဖော်ပြချက်နှင့် နေထိုင်မှု,တွေ့ရှိရသော ဒေသ,region_my
+7,စိုင်,Banteng,Bos javanicus,02. ဖော်ပြချက်နှင့် နေထိုင်မှု,ထူးခြားအချက်များ,fun_facts_my
+7,စိုင်,Banteng,Bos javanicus,03. ထိန်းသိမ်းရေးနှင့် မျိုးခွဲ,ကမ္ဘာလုံးဆိုင်ရာ IUCN အဆင့်,global_iucn_status
+7,စိုင်,Banteng,Bos javanicus,03. ထိန်းသိမ်းရေးနှင့် မျိုးခွဲ,IUCN အကဲဖြတ် အကြောင်းပြချက်,iucn_justification_my
+7,စိုင်,Banteng,Bos javanicus,03. ထိန်းသိမ်းရေးနှင့် မျိုးခွဲ,ရှင်သန်ရေး ခြိမ်းခြောက်မှုများ,threats_my
+7,စိုင်,Banteng,Bos javanicus,03. ထိန်းသိမ်းရေးနှင့် မျိုးခွဲ,ထိန်းသိမ်းရေး လုပ်ဆောင်ချက်များ,conservation_actions_my
+7,စိုင်,Banteng,Bos javanicus,03. ထိန်းသိမ်းရေးနှင့် မျိုးခွဲ,ထိန်းသိမ်းရေး လိုအပ်ချက်များ,conservation_needs_my
+7,စိုင်,Banteng,Bos javanicus,03. ထိန်းသိမ်းရေးနှင့် မျိုးခွဲ,အသုံးပြုမှုနှင့် ကုန်သွယ်မှု,use_trade_my
+7,စိုင်,Banteng,Bos javanicus,03. ထိန်းသိမ်းရေးနှင့် မျိုးခွဲ,တွေ့ရှိရသော ကာကွယ်ထိန်းသိမ်းနယ်မြေများ,protected_areas_my
+8,ခေါင်းမည်း မိန်ဇိမ်,Beach Thick-knee,Esacus neglectus,02. ဖော်ပြချက်နှင့် နေထိုင်မှု,အကျဉ်းချုပ် ဖော်ပြချက်,description_my
+8,ခေါင်းမည်း မိန်ဇိမ်,Beach Thick-knee,Esacus neglectus,03. ထိန်းသိမ်းရေးနှင့် မျိုးခွဲ,ထိန်းသိမ်းရေး လုပ်ဆောင်ချက်များ,conservation_actions_my
+8,ခေါင်းမည်း မိန်ဇိမ်,Beach Thick-knee,Esacus neglectus,03. ထိန်းသိမ်းရေးနှင့် မျိုးခွဲ,ထိန်းသိမ်းရေး လိုအပ်ချက်များ,conservation_needs_my
+9,လိပ်ကြက်တူရွေး,Big-headed Turtle,Playsternon megacephalum,03. ထိန်းသိမ်းရေးနှင့် မျိုးခွဲ,ဆက်စပ် ဂေဟစနစ်များ,ecosystems_my
+10,လိပ်မဲကြီး,Black Marsh Turtle,Siebenrockiella crassicollis,03. ထိန်းသိမ်းရေးနှင့် မျိုးခွဲ,ဆက်စပ် ဂေဟစနစ်များ,ecosystems_my
+11,မြစ်တွေး ဗိုက်,Black-bellied Tern,Sterna acuticauda,03. ထိန်းသိမ်းရေးနှင့် မျိုးခွဲ,ထိန်းသိမ်းရေး လုပ်ဆောင်ချက်များ,conservation_actions_my
+11,မြစ်တွေး ဗိုက်,Black-bellied Tern,Sterna acuticauda,03. ထိန်းသိမ်းရေးနှင့် မျိုးခွဲ,ထိန်းသိမ်းရေး လိုအပ်ချက်များ,conservation_needs_my
+11,မြစ်တွေး ဗိုက်,Black-bellied Tern,Sterna acuticauda,03. ထိန်းသိမ်းရေးနှင့် မျိုးခွဲ,တွေ့ရှိရသော ကာကွယ်ထိန်းသိမ်းနယ်မြေများ,protected_areas_my
+11,မြစ်တွေး ဗိုက်,Black-bellied Tern,Sterna acuticauda,04. ဥပဒေအရ ကာကွယ်ထားမှု,ကာကွယ်မှုအဆင့် (မြန်မာ),protection_status_my
+11,မြစ်တွေး ဗိုက်,Black-bellied Tern,Sterna acuticauda,04. ဥပဒေအရ ကာကွယ်ထားမှု,ကာကွယ်မှုအဆင့် (English),protection_status_en
+11,မြစ်တွေး ဗိုက်,Black-bellied Tern,Sterna acuticauda,04. ဥပဒေအရ ကာကွယ်ထားမှု,ဥပဒေ / စာရင်း ကိုးကား,protection_law_my
+11,မြစ်တွေး ဗိုက်,Black-bellied Tern,Sterna acuticauda,04. ဥပဒေအရ ကာကွယ်ထားမှု,ကာကွယ်ရသည့် အကြောင်းရင်း,protection_basis_my
+12,ငှက်ကုလား/တုံးကလား,Black-necked Stork,Ephippiorhynchus asiaticus,03. ထိန်းသိမ်းရေးနှင့် မျိုးခွဲ,ကမ္ဘာလုံးဆိုင်ရာ အကောင်ရေ,global_population
+12,ငှက်ကုလား/တုံးကလား,Black-necked Stork,Ephippiorhynchus asiaticus,03. ထိန်းသိမ်းရေးနှင့် မျိုးခွဲ,ရှင်သန်ရေး ခြိမ်းခြောက်မှုများ,threats_my
+12,ငှက်ကုလား/တုံးကလား,Black-necked Stork,Ephippiorhynchus asiaticus,03. ထိန်းသိမ်းရေးနှင့် မျိုးခွဲ,ထိန်းသိမ်းရေး လိုအပ်ချက်များ,conservation_needs_my
+12,ငှက်ကုလား/တုံးကလား,Black-necked Stork,Ephippiorhynchus asiaticus,03. ထိန်းသိမ်းရေးနှင့် မျိုးခွဲ,တွေ့ရှိရသော ကာကွယ်ထိန်းသိမ်းနယ်မြေများ,protected_areas_my
+13,ဆောက်လိပ်,Burmese Eyed Turtle,Morenia ocellata,03. ထိန်းသိမ်းရေးနှင့် မျိုးခွဲ,တွေ့ရှိရသော ကာကွယ်ထိန်းသိမ်းနယ်မြေများ,protected_areas_my
+14,စင်းချောလိပ်,Burmese Flapshell Turtle,Lissemys scutata,03. ထိန်းသိမ်းရေးနှင့် မျိုးခွဲ,တွေ့ရှိရသော ကာကွယ်ထိန်းသိမ်းနယ်မြေများ,protected_areas_my
+16,စင်းကျားလိပ်,Burmese Narrow-headed Softshell Turtle,Chitra vandijki,03. ထိန်းသိမ်းရေးနှင့် မျိုးခွဲ,ဆက်စပ် ဂေဟစနစ်များ,ecosystems_my
+17,လေးကွက်လိပ်,Burmese Peacock Softshell Turtle,Nilssonia formosa,03. ထိန်းသိမ်းရေးနှင့် မျိုးခွဲ,ဆက်စပ် ဂေဟစနစ်များ,ecosystems_my
+18,တိုက်လိပ်,Burmese Roofed Turtle,Batagur trivittata,03. ထိန်းသိမ်းရေးနှင့် မျိုးခွဲ,ဆက်စပ် ဂေဟစနစ်များ,ecosystems_my
+19,ကမ္ဘာလိပ်,Burmese Softshell Turtle,Amyda cartilaginea,03. ထိန်းသိမ်းရေးနှင့် မျိုးခွဲ,ရှင်သန်ရေး ခြိမ်းခြောက်မှုများ,threats_my
+19,ကမ္ဘာလိပ်,Burmese Softshell Turtle,Amyda cartilaginea,03. ထိန်းသိမ်းရေးနှင့် မျိုးခွဲ,ထိန်းသိမ်းရေး လုပ်ဆောင်ချက်များ,conservation_actions_my
+19,ကမ္ဘာလိပ်,Burmese Softshell Turtle,Amyda cartilaginea,03. ထိန်းသိမ်းရေးနှင့် မျိုးခွဲ,ထိန်းသိမ်းရေး လိုအပ်ချက်များ,conservation_needs_my
+19,ကမ္ဘာလိပ်,Burmese Softshell Turtle,Amyda cartilaginea,03. ထိန်းသိမ်းရေးနှင့် မျိုးခွဲ,ဆက်စပ် ဂေဟစနစ်များ,ecosystems_my
+20,ကြယ်လိပ်,Burmese Star Tortoise,Geochelone platynota,03. ထိန်းသိမ်းရေးနှင့် မျိုးခွဲ,တွေ့ရှိရသော ကာကွယ်ထိန်းသိမ်းနယ်မြေများ,protected_areas_my
+20,ကြယ်လိပ်,Burmese Star Tortoise,Geochelone platynota,03. ထိန်းသိမ်းရေးနှင့် မျိုးခွဲ,ဆက်စပ် ဂေဟစနစ်များ,ecosystems_my
+20,ကြယ်လိပ်,Burmese Star Tortoise,Geochelone platynota,03. ထိန်းသိမ်းရေးနှင့် မျိုးခွဲ,အဓိက ဇီဝမျိုးစုံမျိုးကွဲ နယ်မြေများ (KBA),kba_my
+21,အင်းကျား,Clouded Leopard,Neofelis nebulosa,03. ထိန်းသိမ်းရေးနှင့် မျိုးခွဲ,တွေ့ရှိရသော ကာကွယ်ထိန်းသိမ်းနယ်မြေများ,protected_areas_my
+21,အင်းကျား,Clouded Leopard,Neofelis nebulosa,03. ထိန်းသိမ်းရေးနှင့် မျိုးခွဲ,ဆက်စပ် ဂေဟစနစ်များ,ecosystems_my
+24,ရွှေသမင်,Eld's Deer,Rucervus eldii,03. ထိန်းသိမ်းရေးနှင့် မျိုးခွဲ,တွေ့ရှိရသော ကာကွယ်ထိန်းသိမ်းနယ်မြေများ,protected_areas_my
+24,ရွှေသမင်,Eld's Deer,Rucervus eldii,03. ထိန်းသိမ်းရေးနှင့် မျိုးခွဲ,ဆက်စပ် ဂေဟစနစ်များ,ecosystems_my
+25,"ကြောင်ဘ,ကြောင်တံငါ",Fishing Cat,Prionailurus viverrinus,02. ဖော်ပြချက်နှင့် နေထိုင်မှု,အကျဉ်းချုပ် ဖော်ပြချက်,description_my
+25,"ကြောင်ဘ,ကြောင်တံငါ",Fishing Cat,Prionailurus viverrinus,02. ဖော်ပြချက်နှင့် နေထိုင်မှု,အရွယ်အစား,size_my
+25,"ကြောင်ဘ,ကြောင်တံငါ",Fishing Cat,Prionailurus viverrinus,03. ထိန်းသိမ်းရေးနှင့် မျိုးခွဲ,ထိန်းသိမ်းရေး လုပ်ဆောင်ချက်များ,conservation_actions_my
+25,"ကြောင်ဘ,ကြောင်တံငါ",Fishing Cat,Prionailurus viverrinus,03. ထိန်းသိမ်းရေးနှင့် မျိုးခွဲ,ထိန်းသိမ်းရေး လိုအပ်ချက်များ,conservation_needs_my
+25,"ကြောင်ဘ,ကြောင်တံငါ",Fishing Cat,Prionailurus viverrinus,03. ထိန်းသိမ်းရေးနှင့် မျိုးခွဲ,တွေ့ရှိရသော ကာကွယ်ထိန်းသိမ်းနယ်မြေများ,protected_areas_my
+25,"ကြောင်ဘ,ကြောင်တံငါ",Fishing Cat,Prionailurus viverrinus,03. ထိန်းသိမ်းရေးနှင့် မျိုးခွဲ,ဆက်စပ် ဂေဟစနစ်များ,ecosystems_my
+26,သင်ပေါင်းလိပ်,Giant Asian Pond Turtle,Heosemys grandis,03. ထိန်းသိမ်းရေးနှင့် မျိုးခွဲ,ဆက်စပ် ဂေဟစနစ်များ,ecosystems_my
+27,ငှက်ကြီးဒုံးစပ်,Greater Adjutant,Leptoptilos dubius,03. ထိန်းသိမ်းရေးနှင့် မျိုးခွဲ,တွေ့ရှိရသော ကာကွယ်ထိန်းသိမ်းနယ်မြေများ,protected_areas_my
+28,လင်းဆွဲ,Greater short-nosed fruit bat,Cynopterus sphinx,03. ထိန်းသိမ်းရေးနှင့် မျိုးခွဲ,ဆက်စပ် ဂေဟစနစ်များ,ecosystems_my
+29,ဒေါင်းစိမ်း,Green Peafowl,Pavo muticus,03. ထိန်းသိမ်းရေးနှင့် မျိုးခွဲ,ရှင်သန်ရေး ခြိမ်းခြောက်မှုများ,threats_my
+29,ဒေါင်းစိမ်း,Green Peafowl,Pavo muticus,03. ထိန်းသိမ်းရေးနှင့် မျိုးခွဲ,ထိန်းသိမ်းရေး လိုအပ်ချက်များ,conservation_needs_my
+30,ပြင်သာလိပ်,Green Turtle,Chelonia mydas,03. ထိန်းသိမ်းရေးနှင့် မျိုးခွဲ,တွေ့ရှိရသော ကာကွယ်ထိန်းသိမ်းနယ်မြေများ,protected_areas_my
+30,ပြင်သာလိပ်,Green Turtle,Chelonia mydas,03. ထိန်းသိမ်းရေးနှင့် မျိုးခွဲ,ဆက်စပ် ဂေဟစနစ်များ,ecosystems_my
+31,တောင်ငုံးရင်မဲငှက်,Gurney's Pitta,Hydrornis gurneyi,03. ထိန်းသိမ်းရေးနှင့် မျိုးခွဲ,ထိန်းသိမ်းရေး လုပ်ဆောင်ချက်များ,conservation_actions_my
+31,တောင်ငုံးရင်မဲငှက်,Gurney's Pitta,Hydrornis gurneyi,03. ထိန်းသိမ်းရေးနှင့် မျိုးခွဲ,ထိန်းသိမ်းရေး လိုအပ်ချက်များ,conservation_needs_my
+31,တောင်ငုံးရင်မဲငှက်,Gurney's Pitta,Hydrornis gurneyi,03. ထိန်းသိမ်းရေးနှင့် မျိုးခွဲ,တွေ့ရှိရသော ကာကွယ်ထိန်းသိမ်းနယ်မြေများ,protected_areas_my
+31,တောင်ငုံးရင်မဲငှက်,Gurney's Pitta,Hydrornis gurneyi,03. ထိန်းသိမ်းရေးနှင့် မျိုးခွဲ,ဆက်စပ် ဂေဟစနစ်များ,ecosystems_my
+31,တောင်ငုံးရင်မဲငှက်,Gurney's Pitta,Hydrornis gurneyi,04. ဥပဒေအရ ကာကွယ်ထားမှု,ကာကွယ်မှုအဆင့် (မြန်မာ),protection_status_my
+31,တောင်ငုံးရင်မဲငှက်,Gurney's Pitta,Hydrornis gurneyi,04. ဥပဒေအရ ကာကွယ်ထားမှု,ကာကွယ်မှုအဆင့် (English),protection_status_en
+31,တောင်ငုံးရင်မဲငှက်,Gurney's Pitta,Hydrornis gurneyi,04. ဥပဒေအရ ကာကွယ်ထားမှု,ဥပဒေ / စာရင်း ကိုးကား,protection_law_my
+31,တောင်ငုံးရင်မဲငှက်,Gurney's Pitta,Hydrornis gurneyi,04. ဥပဒေအရ ကာကွယ်ထားမှု,ကာကွယ်ရသည့် အကြောင်းရင်း,protection_basis_my
+32,လိပ်ကြက်တူ‌ရွေး,Hawksbill Turtle,Eretmochelys imbricata,03. ထိန်းသိမ်းရေးနှင့် မျိုးခွဲ,တွေ့ရှိရသော ကာကွယ်ထိန်းသိမ်းနယ်မြေများ,protected_areas_my
+32,လိပ်ကြက်တူ‌ရွေး,Hawksbill Turtle,Eretmochelys imbricata,03. ထိန်းသိမ်းရေးနှင့် မျိုးခွဲ,ဆက်စပ် ဂေဟစနစ်များ,ecosystems_my
+33,အောက်ချင်းမြီးရှည်,Helmeted Hornbill,Rhinoplax vigil,03. ထိန်းသိမ်းရေးနှင့် မျိုးခွဲ,ထိန်းသိမ်းရေး လုပ်ဆောင်ချက်များ,conservation_actions_my
+33,အောက်ချင်းမြီးရှည်,Helmeted Hornbill,Rhinoplax vigil,03. ထိန်းသိမ်းရေးနှင့် မျိုးခွဲ,ထိန်းသိမ်းရေး လိုအပ်ချက်များ,conservation_needs_my
+33,အောက်ချင်းမြီးရှည်,Helmeted Hornbill,Rhinoplax vigil,03. ထိန်းသိမ်းရေးနှင့် မျိုးခွဲ,ဆက်စပ် ဂေဟစနစ်များ,ecosystems_my
+34,လိပ်တက်,Impressed Tortoise,Manouria impressa,03. ထိန်းသိမ်းရေးနှင့် မျိုးခွဲ,ဆက်စပ် ဂေဟစနစ်များ,ecosystems_my
+35,ပျောက်စင်းချောလိပ်,Indian Flapshell Turtle,Lissemys punctata,03. ထိန်းသိမ်းရေးနှင့် မျိုးခွဲ,တွေ့ရှိရသော ကာကွယ်ထိန်းသိမ်းနယ်မြေများ,protected_areas_my
+36,ကိုင်းစွေ့,Jerdon's Babbler,Chrysomma altirostre,03. ထိန်းသိမ်းရေးနှင့် မျိုးခွဲ,တောရိုင်း အကောင်ရေ အသေးစိတ်,wild_population_my
+36,ကိုင်းစွေ့,Jerdon's Babbler,Chrysomma altirostre,03. ထိန်းသိမ်းရေးနှင့် မျိုးခွဲ,ရှင်သန်ရေး ခြိမ်းခြောက်မှုများ,threats_my
+36,ကိုင်းစွေ့,Jerdon's Babbler,Chrysomma altirostre,03. ထိန်းသိမ်းရေးနှင့် မျိုးခွဲ,ထိန်းသိမ်းရေး လုပ်ဆောင်ချက်များ,conservation_actions_my
+36,ကိုင်းစွေ့,Jerdon's Babbler,Chrysomma altirostre,03. ထိန်းသိမ်းရေးနှင့် မျိုးခွဲ,ထိန်းသိမ်းရေး လိုအပ်ချက်များ,conservation_needs_my
+36,ကိုင်းစွေ့,Jerdon's Babbler,Chrysomma altirostre,03. ထိန်းသိမ်းရေးနှင့် မျိုးခွဲ,ဆက်စပ် ဂေဟစနစ်များ,ecosystems_my
+37,တောကြောင်,Jungle Cat,Felis chaus,03. ထိန်းသိမ်းရေးနှင့် မျိုးခွဲ,တွေ့ရှိရသော ကာကွယ်ထိန်းသိမ်းနယ်မြေများ,protected_areas_my
+37,တောကြောင်,Jungle Cat,Felis chaus,03. ထိန်းသိမ်းရေးနှင့် မျိုးခွဲ,ဆက်စပ် ဂေဟစနစ်များ,ecosystems_my
+39,ဝက်နှာခေါင်းလင်းနို့,Kitti's Hog-nosed Bat,Craseonycteris thonglongyai,02. ဖော်ပြချက်နှင့် နေထိုင်မှု,အစာစားနည်း,diet_my
+39,ဝက်နှာခေါင်းလင်းနို့,Kitti's Hog-nosed Bat,Craseonycteris thonglongyai,02. ဖော်ပြချက်နှင့် နေထိုင်မှု,အရွယ်အစား,size_my
+39,ဝက်နှာခေါင်းလင်းနို့,Kitti's Hog-nosed Bat,Craseonycteris thonglongyai,02. ဖော်ပြချက်နှင့် နေထိုင်မှု,သက်တမ်း,lifespan_my
+39,ဝက်နှာခေါင်းလင်းနို့,Kitti's Hog-nosed Bat,Craseonycteris thonglongyai,03. ထိန်းသိမ်းရေးနှင့် မျိုးခွဲ,ရှင်သန်ရေး ခြိမ်းခြောက်မှုများ,threats_my
+39,ဝက်နှာခေါင်းလင်းနို့,Kitti's Hog-nosed Bat,Craseonycteris thonglongyai,03. ထိန်းသိမ်းရေးနှင့် မျိုးခွဲ,ထိန်းသိမ်းရေး လိုအပ်ချက်များ,conservation_needs_my
+39,ဝက်နှာခေါင်းလင်းနို့,Kitti's Hog-nosed Bat,Craseonycteris thonglongyai,03. ထိန်းသိမ်းရေးနှင့် မျိုးခွဲ,ဆက်စပ် ဂေဟစနစ်များ,ecosystems_my
+40,မျောက်လွှဲကျော်လက်ဖြူ,"White-handed Gibbon,Lar Gibbon",Hylobates lar,02. ဖော်ပြချက်နှင့် နေထိုင်မှု,ရုပ်သွင်ပြင် ဖော်ပြချက်,physical_description_my
+40,မျောက်လွှဲကျော်လက်ဖြူ,"White-handed Gibbon,Lar Gibbon",Hylobates lar,02. ဖော်ပြချက်နှင့် နေထိုင်မှု,အစာစားနည်း,diet_my
+40,မျောက်လွှဲကျော်လက်ဖြူ,"White-handed Gibbon,Lar Gibbon",Hylobates lar,02. ဖော်ပြချက်နှင့် နေထိုင်မှု,အနေအထိုင်နှင့် အပြုအမူ,behaviour_my
+40,မျောက်လွှဲကျော်လက်ဖြူ,"White-handed Gibbon,Lar Gibbon",Hylobates lar,02. ဖော်ပြချက်နှင့် နေထိုင်မှု,ထူးခြားအချက်များ,fun_facts_my
+40,မျောက်လွှဲကျော်လက်ဖြူ,"White-handed Gibbon,Lar Gibbon",Hylobates lar,03. ထိန်းသိမ်းရေးနှင့် မျိုးခွဲ,ရှင်သန်ရေး ခြိမ်းခြောက်မှုများ,threats_my
+40,မျောက်လွှဲကျော်လက်ဖြူ,"White-handed Gibbon,Lar Gibbon",Hylobates lar,03. ထိန်းသိမ်းရေးနှင့် မျိုးခွဲ,ထိန်းသိမ်းရေး လုပ်ဆောင်ချက်များ,conservation_actions_my
+40,မျောက်လွှဲကျော်လက်ဖြူ,"White-handed Gibbon,Lar Gibbon",Hylobates lar,03. ထိန်းသိမ်းရေးနှင့် မျိုးခွဲ,ထိန်းသိမ်းရေး လိုအပ်ချက်များ,conservation_needs_my
+40,မျောက်လွှဲကျော်လက်ဖြူ,"White-handed Gibbon,Lar Gibbon",Hylobates lar,03. ထိန်းသိမ်းရေးနှင့် မျိုးခွဲ,အသုံးပြုမှုနှင့် ကုန်သွယ်မှု,use_trade_my
+40,မျောက်လွှဲကျော်လက်ဖြူ,"White-handed Gibbon,Lar Gibbon",Hylobates lar,03. ထိန်းသိမ်းရေးနှင့် မျိုးခွဲ,ဆက်စပ် ဂေဟစနစ်များ,ecosystems_my
+41,လိပ်စောင်းလျား,Leatherback Turtle,Dermochelys coriacea,03. ထိန်းသိမ်းရေးနှင့် မျိုးခွဲ,တွေ့ရှိရသော ကာကွယ်ထိန်းသိမ်းနယ်မြေများ,protected_areas_my
+41,လိပ်စောင်းလျား,Leatherback Turtle,Dermochelys coriacea,03. ထိန်းသိမ်းရေးနှင့် မျိုးခွဲ,ဆက်စပ် ဂေဟစနစ်များ,ecosystems_my
+42,ကျားသစ်,Leopard,Panthera pardus,02. ဖော်ပြချက်နှင့် နေထိုင်မှု,အရွယ်အစား,size_my
+42,ကျားသစ်,Leopard,Panthera pardus,03. ထိန်းသိမ်းရေးနှင့် မျိုးခွဲ,မြန်မာနိုင်ငံ အကောင်ရေ,myanmar_population
+42,ကျားသစ်,Leopard,Panthera pardus,03. ထိန်းသိမ်းရေးနှင့် မျိုးခွဲ,ရှင်သန်ရေး ခြိမ်းခြောက်မှုများ,threats_my
+42,ကျားသစ်,Leopard,Panthera pardus,03. ထိန်းသိမ်းရေးနှင့် မျိုးခွဲ,ထိန်းသိမ်းရေး လုပ်ဆောင်ချက်များ,conservation_actions_my
+42,ကျားသစ်,Leopard,Panthera pardus,03. ထိန်းသိမ်းရေးနှင့် မျိုးခွဲ,ထိန်းသိမ်းရေး လိုအပ်ချက်များ,conservation_needs_my
+42,ကျားသစ်,Leopard,Panthera pardus,03. ထိန်းသိမ်းရေးနှင့် မျိုးခွဲ,တွေ့ရှိရသော ကာကွယ်ထိန်းသိမ်းနယ်မြေများ,protected_areas_my
+42,ကျားသစ်,Leopard,Panthera pardus,03. ထိန်းသိမ်းရေးနှင့် မျိုးခွဲ,ဆက်စပ် ဂေဟစနစ်များ,ecosystems_my
+43,သစ်ကြောင်,Leopard Cat,Prionailurus bengalensis,03. ထိန်းသိမ်းရေးနှင့် မျိုးခွဲ,တွေ့ရှိရသော ကာကွယ်ထိန်းသိမ်းနယ်မြေများ,protected_areas_my
+43,သစ်ကြောင်,Leopard Cat,Prionailurus bengalensis,03. ထိန်းသိမ်းရေးနှင့် မျိုးခွဲ,ဆက်စပ် ဂေဟစနစ်များ,ecosystems_my
+44,လင်းဆွဲ,Lesser Short-nosed Fruit Bat,Cynopterus brachyotis,03. ထိန်းသိမ်းရေးနှင့် မျိုးခွဲ,ဆက်စပ် ဂေဟစနစ်များ,ecosystems_my
+45,လိပ်ခွေး,Loggerhead Turtle,Caretta caretta,03. ထိန်းသိမ်းရေးနှင့် မျိုးခွဲ,တွေ့ရှိရသော ကာကွယ်ထိန်းသိမ်းနယ်မြေများ,protected_areas_my
+45,လိပ်ခွေး,Loggerhead Turtle,Caretta caretta,03. ထိန်းသိမ်းရေးနှင့် မျိုးခွဲ,ဆက်စပ် ဂေဟစနစ်များ,ecosystems_my
+46,ခေါင်းကျားလိပ်,Malayan Snail-eating Turtle,Malayemys subtrijuga,03. ထိန်းသိမ်းရေးနှင့် မျိုးခွဲ,ဆက်စပ် ဂေဟစနစ်များ,ecosystems_my
+48,မလေးဝက်ဝံ,Malayan Sun Bear,Helarctos malayanus,03. ထိန်းသိမ်းရေးနှင့် မျိုးခွဲ,တွေ့ရှိရသော ကာကွယ်ထိန်းသိမ်းနယ်မြေများ,protected_areas_my
+48,မလေးဝက်ဝံ,Malayan Sun Bear,Helarctos malayanus,03. ထိန်းသိမ်းရေးနှင့် မျိုးခွဲ,ဆက်စပ် ဂေဟစနစ်များ,ecosystems_my
+49,ကြံ့သူတော်,Tapir,Tapirus indicus,02. ဖော်ပြချက်နှင့် နေထိုင်မှု,ရုပ်သွင်ပြင် ဖော်ပြချက်,physical_description_my
+49,ကြံ့သူတော်,Tapir,Tapirus indicus,02. ဖော်ပြချက်နှင့် နေထိုင်မှု,အစာစားနည်း,diet_my
+49,ကြံ့သူတော်,Tapir,Tapirus indicus,02. ဖော်ပြချက်နှင့် နေထိုင်မှု,ဖြန့်ကျက်တည်ရှိမှု,distribution_my
+49,ကြံ့သူတော်,Tapir,Tapirus indicus,02. ဖော်ပြချက်နှင့် နေထိုင်မှု,အနေအထိုင်နှင့် အပြုအမူ,behaviour_my
+49,ကြံ့သူတော်,Tapir,Tapirus indicus,02. ဖော်ပြချက်နှင့် နေထိုင်မှု,အရွယ်အစား,size_my
+49,ကြံ့သူတော်,Tapir,Tapirus indicus,02. ဖော်ပြချက်နှင့် နေထိုင်မှု,သက်တမ်း,lifespan_my
+49,ကြံ့သူတော်,Tapir,Tapirus indicus,02. ဖော်ပြချက်နှင့် နေထိုင်မှု,ထူးခြားအချက်များ,fun_facts_my
+49,ကြံ့သူတော်,Tapir,Tapirus indicus,03. ထိန်းသိမ်းရေးနှင့် မျိုးခွဲ,ရှင်သန်ရေး ခြိမ်းခြောက်မှုများ,threats_my
+49,ကြံ့သူတော်,Tapir,Tapirus indicus,03. ထိန်းသိမ်းရေးနှင့် မျိုးခွဲ,ထိန်းသိမ်းရေး လုပ်ဆောင်ချက်များ,conservation_actions_my
+49,ကြံ့သူတော်,Tapir,Tapirus indicus,03. ထိန်းသိမ်းရေးနှင့် မျိုးခွဲ,ထိန်းသိမ်းရေး လိုအပ်ချက်များ,conservation_needs_my
+49,ကြံ့သူတော်,Tapir,Tapirus indicus,03. ထိန်းသိမ်းရေးနှင့် မျိုးခွဲ,အသုံးပြုမှုနှင့် ကုန်သွယ်မှု,use_trade_my
+49,ကြံ့သူတော်,Tapir,Tapirus indicus,03. ထိန်းသိမ်းရေးနှင့် မျိုးခွဲ,တွေ့ရှိရသော ကာကွယ်ထိန်းသိမ်းနယ်မြေများ,protected_areas_my
+49,ကြံ့သူတော်,Tapir,Tapirus indicus,03. ထိန်းသိမ်းရေးနှင့် မျိုးခွဲ,ဆက်စပ် ဂေဟစနစ်များ,ecosystems_my
+53,လိပ်ပု,Myanmar Brown Leaf Turtle,Cyclemys fusca,03. ထိန်းသိမ်းရေးနှင့် မျိုးခွဲ,ဆက်စပ် ဂေဟစနစ်များ,ecosystems_my
+55,ရေံလိပ်,Northern River Terrapin,Batagur baska,03. ထိန်းသိမ်းရေးနှင့် မျိုးခွဲ,ဆက်စပ် ဂေဟစနစ်များ,ecosystems_my
+56,လိပ်ပု,Oldham's Leaf Turtle,Cyclemys oldhamii,03. ထိန်းသိမ်းရေးနှင့် မျိုးခွဲ,ဆက်စပ် ဂေဟစနစ်များ,ecosystems_my
+57,လိပ်လှောင်း,Olive Ridley Turtle,Lepidochelys olivacea,03. ထိန်းသိမ်းရေးနှင့် မျိုးခွဲ,ဆက်စပ် ဂေဟစနစ်များ,ecosystems_my
+59,မျောက်စပ်,Rhesus Macaque,Macaca mulatta,02. ဖော်ပြချက်နှင့် နေထိုင်မှု,ရုပ်သွင်ပြင် ဖော်ပြချက်,physical_description_my
+59,မျောက်စပ်,Rhesus Macaque,Macaca mulatta,02. ဖော်ပြချက်နှင့် နေထိုင်မှု,အစာစားနည်း,diet_my
+59,မျောက်စပ်,Rhesus Macaque,Macaca mulatta,02. ဖော်ပြချက်နှင့် နေထိုင်မှု,ဖြန့်ကျက်တည်ရှိမှု,distribution_my
+59,မျောက်စပ်,Rhesus Macaque,Macaca mulatta,02. ဖော်ပြချက်နှင့် နေထိုင်မှု,အနေအထိုင်နှင့် အပြုအမူ,behaviour_my
+59,မျောက်စပ်,Rhesus Macaque,Macaca mulatta,02. ဖော်ပြချက်နှင့် နေထိုင်မှု,အရွယ်အစား,size_my
+59,မျောက်စပ်,Rhesus Macaque,Macaca mulatta,02. ဖော်ပြချက်နှင့် နေထိုင်မှု,သက်တမ်း,lifespan_my
+59,မျောက်စပ်,Rhesus Macaque,Macaca mulatta,02. ဖော်ပြချက်နှင့် နေထိုင်မှု,ထူးခြားအချက်များ,fun_facts_my
+59,မျောက်စပ်,Rhesus Macaque,Macaca mulatta,03. ထိန်းသိမ်းရေးနှင့် မျိုးခွဲ,IUCN အကဲဖြတ် အကြောင်းပြချက်,iucn_justification_my
+59,မျောက်စပ်,Rhesus Macaque,Macaca mulatta,03. ထိန်းသိမ်းရေးနှင့် မျိုးခွဲ,ရှင်သန်ရေး ခြိမ်းခြောက်မှုများ,threats_my
+59,မျောက်စပ်,Rhesus Macaque,Macaca mulatta,03. ထိန်းသိမ်းရေးနှင့် မျိုးခွဲ,ထိန်းသိမ်းရေး လုပ်ဆောင်ချက်များ,conservation_actions_my
+59,မျောက်စပ်,Rhesus Macaque,Macaca mulatta,03. ထိန်းသိမ်းရေးနှင့် မျိုးခွဲ,ထိန်းသိမ်းရေး လိုအပ်ချက်များ,conservation_needs_my
+59,မျောက်စပ်,Rhesus Macaque,Macaca mulatta,03. ထိန်းသိမ်းရေးနှင့် မျိုးခွဲ,အသုံးပြုမှုနှင့် ကုန်သွယ်မှု,use_trade_my
+59,မျောက်စပ်,Rhesus Macaque,Macaca mulatta,03. ထိန်းသိမ်းရေးနှင့် မျိုးခွဲ,တွေ့ရှိရသော ကာကွယ်ထိန်းသိမ်းနယ်မြေများ,protected_areas_my
+59,မျောက်စပ်,Rhesus Macaque,Macaca mulatta,03. ထိန်းသိမ်းရေးနှင့် မျိုးခွဲ,ဆက်စပ် ဂေဟစနစ်များ,ecosystems_my
+60,မြစ်တွေး ဇင်ယော်,River Tern,Sterna aurantia,03. ထိန်းသိမ်းရေးနှင့် မျိုးခွဲ,ဆက်စပ် ဂေဟစနစ်များ,ecosystems_my
+60,မြစ်တွေး ဇင်ယော်,River Tern,Sterna aurantia,04. ဥပဒေအရ ကာကွယ်ထားမှု,ကာကွယ်မှုအဆင့် (မြန်မာ),protection_status_my
+60,မြစ်တွေး ဇင်ယော်,River Tern,Sterna aurantia,04. ဥပဒေအရ ကာကွယ်ထားမှု,ကာကွယ်မှုအဆင့် (English),protection_status_en
+60,မြစ်တွေး ဇင်ယော်,River Tern,Sterna aurantia,04. ဥပဒေအရ ကာကွယ်ထားမှု,ဥပဒေ / စာရင်း ကိုးကား,protection_law_my
+60,မြစ်တွေး ဇင်ယော်,River Tern,Sterna aurantia,04. ဥပဒေအရ ကာကွယ်ထားမှု,ကာကွယ်ရသည့် အကြောင်းရင်း,protection_basis_my
+61,အောက်ချင်းလည်ပင်းနီ,Rufous-necked Hornbill,Aceros nipalensis,03. ထိန်းသိမ်းရေးနှင့် မျိုးခွဲ,ထိန်းသိမ်းရေး လိုအပ်ချက်များ,conservation_needs_my
+61,အောက်ချင်းလည်ပင်းနီ,Rufous-necked Hornbill,Aceros nipalensis,03. ထိန်းသိမ်းရေးနှင့် မျိုးခွဲ,တွေ့ရှိရသော ကာကွယ်ထိန်းသိမ်းနယ်မြေများ,protected_areas_my
+61,အောက်ချင်းလည်ပင်းနီ,Rufous-necked Hornbill,Aceros nipalensis,03. ထိန်းသိမ်းရေးနှင့် မျိုးခွဲ,ဆက်စပ် ဂေဟစနစ်များ,ecosystems_my
+62,မိကျောင်း,Salt-water Crocodile,Crocodylus porosus,03. ထိန်းသိမ်းရေးနှင့် မျိုးခွဲ,တွေ့ရှိရသော ကာကွယ်ထိန်းသိမ်းနယ်မြေများ,protected_areas_my
+62,မိကျောင်း,Salt-water Crocodile,Crocodylus porosus,03. ထိန်းသိမ်းရေးနှင့် မျိုးခွဲ,အဓိက ဇီဝမျိုးစုံမျိုးကွဲ နယ်မြေများ (KBA),kba_my
+63,ကြိုးကြာခေါင်းနီ,Sarus Crane,Antigone antigone,03. ထိန်းသိမ်းရေးနှင့် မျိုးခွဲ,တွေ့ရှိရသော ကာကွယ်ထိန်းသိမ်းနယ်မြေများ,protected_areas_my
+63,ကြိုးကြာခေါင်းနီ,Sarus Crane,Antigone antigone,04. ဥပဒေအရ ကာကွယ်ထားမှု,ကာကွယ်မှုအဆင့် (မြန်မာ),protection_status_my
+63,ကြိုးကြာခေါင်းနီ,Sarus Crane,Antigone antigone,04. ဥပဒေအရ ကာကွယ်ထားမှု,ကာကွယ်မှုအဆင့် (English),protection_status_en
+63,ကြိုးကြာခေါင်းနီ,Sarus Crane,Antigone antigone,04. ဥပဒေအရ ကာကွယ်ထားမှု,ဥပဒေ / စာရင်း ကိုးကား,protection_law_my
+63,ကြိုးကြာခေါင်းနီ,Sarus Crane,Antigone antigone,04. ဥပဒေအရ ကာကွယ်ထားမှု,ကာကွယ်ရသည့် အကြောင်းရင်း,protection_basis_my
+64,လင်းနို့,Shield-faced Roundleaf Bat,Hipposideros lylei,03. ထိန်းသိမ်းရေးနှင့် မျိုးခွဲ,ဆက်စပ် ဂေဟစနစ်များ,ecosystems_my
+67,လင်းတ နှုတ်သီးရှည်,Slender-billed Vulture,Gyps tenuirostris,03. ထိန်းသိမ်းရေးနှင့် မျိုးခွဲ,ဆက်စပ် ဂေဟစနစ်များ,ecosystems_my
+68,နေကြာပန်းလိပ်,Spiny Turtle,Heosemys spinosa,03. ထိန်းသိမ်းရေးနှင့် မျိုးခွဲ,ဆက်စပ် ဂေဟစနစ်များ,ecosystems_my
+69,ရေညောင့်နှုတ်ဝိုင်းငှက်,Spoon-billed Sandpiper,Calidris pygmaea,03. ထိန်းသိမ်းရေးနှင့် မျိုးခွဲ,တွေ့ရှိရသော ကာကွယ်ထိန်းသိမ်းနယ်မြေများ,protected_areas_my
+69,ရေညောင့်နှုတ်ဝိုင်းငှက်,Spoon-billed Sandpiper,Calidris pygmaea,03. ထိန်းသိမ်းရေးနှင့် မျိုးခွဲ,ဆက်စပ် ဂေဟစနစ်များ,ecosystems_my
+70,ဝန်ပို,Spot-billed Pelican,Pelecanus philippensis,03. ထိန်းသိမ်းရေးနှင့် မျိုးခွဲ,တွေ့ရှိရသော ကာကွယ်ထိန်းသိမ်းနယ်မြေများ,protected_areas_my
+71,ချည်ခင်စွပ်,Storm's Stork,Ciconia stormi,03. ထိန်းသိမ်းရေးနှင့် မျိုးခွဲ,ဆက်စပ် ဂေဟစနစ်များ,ecosystems_my
+72,လင်းနို့,Tail-less Leaf-nosed Bat,Coelops frithii,03. ထိန်းသိမ်းရေးနှင့် မျိုးခွဲ,ဆက်စပ် ဂေဟစနစ်များ,ecosystems_my
+74,ကျား,Tiger,Panthera tigris,02. ဖော်ပြချက်နှင့် နေထိုင်မှု,ရုပ်သွင်ပြင် ဖော်ပြချက်,physical_description_my
+74,ကျား,Tiger,Panthera tigris,02. ဖော်ပြချက်နှင့် နေထိုင်မှု,အစာစားနည်း,diet_my
+74,ကျား,Tiger,Panthera tigris,02. ဖော်ပြချက်နှင့် နေထိုင်မှု,ဖြန့်ကျက်တည်ရှိမှု,distribution_my
+74,ကျား,Tiger,Panthera tigris,02. ဖော်ပြချက်နှင့် နေထိုင်မှု,အနေအထိုင်နှင့် အပြုအမူ,behaviour_my
+74,ကျား,Tiger,Panthera tigris,02. ဖော်ပြချက်နှင့် နေထိုင်မှု,တွေ့ရှိရသော ဒေသ,region_my
+74,ကျား,Tiger,Panthera tigris,03. ထိန်းသိမ်းရေးနှင့် မျိုးခွဲ,ရှင်သန်ရေး ခြိမ်းခြောက်မှုများ,threats_my
+74,ကျား,Tiger,Panthera tigris,03. ထိန်းသိမ်းရေးနှင့် မျိုးခွဲ,ထိန်းသိမ်းရေး လုပ်ဆောင်ချက်များ,conservation_actions_my
+74,ကျား,Tiger,Panthera tigris,03. ထိန်းသိမ်းရေးနှင့် မျိုးခွဲ,ထိန်းသိမ်းရေး လိုအပ်ချက်များ,conservation_needs_my
+74,ကျား,Tiger,Panthera tigris,03. ထိန်းသိမ်းရေးနှင့် မျိုးခွဲ,အသုံးပြုမှုနှင့် ကုန်သွယ်မှု,use_trade_my
+74,ကျား,Tiger,Panthera tigris,03. ထိန်းသိမ်းရေးနှင့် မျိုးခွဲ,တွေ့ရှိရသော ကာကွယ်ထိန်းသိမ်းနယ်မြေများ,protected_areas_my
+74,ကျား,Tiger,Panthera tigris,03. ထိန်းသိမ်းရေးနှင့် မျိုးခွဲ,ဆက်စပ် ဂေဟစနစ်များ,ecosystems_my
+76,ငဟစ်ဝမ်းဖြူ,White-bellied Heron,Ardea insignis,03. ထိန်းသိမ်းရေးနှင့် မျိုးခွဲ,တွေ့ရှိရသော ကာကွယ်ထိန်းသိမ်းနယ်မြေများ,protected_areas_my
+76,ငဟစ်ဝမ်းဖြူ,White-bellied Heron,Ardea insignis,03. ထိန်းသိမ်းရေးနှင့် မျိုးခွဲ,ဆက်စပ် ဂေဟစနစ်များ,ecosystems_my
+77,မျက်ခုံးဖြူငှက်ပြာခြောက်,White-browed Nuthatch,Sitta victoriae,03. ထိန်းသိမ်းရေးနှင့် မျိုးခွဲ,တွေ့ရှိရသော ကာကွယ်ထိန်းသိမ်းနယ်မြေများ,protected_areas_my
+77,မျက်ခုံးဖြူငှက်ပြာခြောက်,White-browed Nuthatch,Sitta victoriae,03. ထိန်းသိမ်းရေးနှင့် မျိုးခွဲ,ဆက်စပ် ဂေဟစနစ်များ,ecosystems_my
+78,အောက်ချင်းခေါင်းဖြူ,White-crowned Hornbill,Berenicornis comatus,03. ထိန်းသိမ်းရေးနှင့် မျိုးခွဲ,ရှင်သန်ရေး ခြိမ်းခြောက်မှုများ,threats_my
+78,အောက်ချင်းခေါင်းဖြူ,White-crowned Hornbill,Berenicornis comatus,03. ထိန်းသိမ်းရေးနှင့် မျိုးခွဲ,ထိန်းသိမ်းရေး လုပ်ဆောင်ချက်များ,conservation_actions_my
+78,အောက်ချင်းခေါင်းဖြူ,White-crowned Hornbill,Berenicornis comatus,03. ထိန်းသိမ်းရေးနှင့် မျိုးခွဲ,ထိန်းသိမ်းရေး လိုအပ်ချက်များ,conservation_needs_my
+78,အောက်ချင်းခေါင်းဖြူ,White-crowned Hornbill,Berenicornis comatus,03. ထိန်းသိမ်းရေးနှင့် မျိုးခွဲ,ဆက်စပ် ဂေဟစနစ်များ,ecosystems_my
+79,တောဘဲမန်ဒါလီ,White-winged Duck,Asarcornis scutulata,03. ထိန်းသိမ်းရေးနှင့် မျိုးခွဲ,တွေ့ရှိရသော ကာကွယ်ထိန်းသိမ်းနယ်မြေများ,protected_areas_my
+79,တောဘဲမန်ဒါလီ,White-winged Duck,Asarcornis scutulata,03. ထိန်းသိမ်းရေးနှင့် မျိုးခွဲ,ဆက်စပ် ဂေဟစနစ်များ,ecosystems_my
+80,လိပ်ဝါ,Yellow Elongated Tortoise,Indotestudo elongata,03. ထိန်းသိမ်းရေးနှင့် မျိုးခွဲ,တွေ့ရှိရသော ကာကွယ်ထိန်းသိမ်းနယ်မြေများ,protected_areas_my
+81,စာဝါကြား,Yellow-breasted Bunting,Emberiza aureola,03. ထိန်းသိမ်းရေးနှင့် မျိုးခွဲ,တွေ့ရှိရသော ကာကွယ်ထိန်းသိမ်းနယ်မြေများ,protected_areas_my
+82,သင်းခွေချပ်,Sunda Pangolin (Malayan Pangolin),Manis javanica,02. ဖော်ပြချက်နှင့် နေထိုင်မှု,ရုပ်သွင်ပြင် ဖော်ပြချက်,physical_description_my
+82,သင်းခွေချပ်,Sunda Pangolin (Malayan Pangolin),Manis javanica,02. ဖော်ပြချက်နှင့် နေထိုင်မှု,အနေအထိုင်နှင့် အပြုအမူ,behaviour_my
+82,သင်းခွေချပ်,Sunda Pangolin (Malayan Pangolin),Manis javanica,02. ဖော်ပြချက်နှင့် နေထိုင်မှု,တွေ့ရှိရသော ဒေသ,region_my
+82,သင်းခွေချပ်,Sunda Pangolin (Malayan Pangolin),Manis javanica,02. ဖော်ပြချက်နှင့် နေထိုင်မှု,ထူးခြားအချက်များ,fun_facts_my
+82,သင်းခွေချပ်,Sunda Pangolin (Malayan Pangolin),Manis javanica,03. ထိန်းသိမ်းရေးနှင့် မျိုးခွဲ,ထိန်းသိမ်းရေး လုပ်ဆောင်ချက်များ,conservation_actions_my
+82,သင်းခွေချပ်,Sunda Pangolin (Malayan Pangolin),Manis javanica,03. ထိန်းသိမ်းရေးနှင့် မျိုးခွဲ,အသုံးပြုမှုနှင့် ကုန်သွယ်မှု,use_trade_my
+82,သင်းခွေချပ်,Sunda Pangolin (Malayan Pangolin),Manis javanica,03. ထိန်းသိမ်းရေးနှင့် မျိုးခွဲ,ဆက်စပ် ဂေဟစနစ်များ,ecosystems_my
+82,သင်းခွေချပ်,Sunda Pangolin (Malayan Pangolin),Manis javanica,04. ဥပဒေအရ ကာကွယ်ထားမှု,ကာကွယ်မှုအဆင့် (မြန်မာ),protection_status_my
+82,သင်းခွေချပ်,Sunda Pangolin (Malayan Pangolin),Manis javanica,04. ဥပဒေအရ ကာကွယ်ထားမှု,ကာကွယ်မှုအဆင့် (English),protection_status_en
+82,သင်းခွေချပ်,Sunda Pangolin (Malayan Pangolin),Manis javanica,04. ဥပဒေအရ ကာကွယ်ထားမှု,ဥပဒေ / စာရင်း ကိုးကား,protection_law_my
+82,သင်းခွေချပ်,Sunda Pangolin (Malayan Pangolin),Manis javanica,04. ဥပဒေအရ ကာကွယ်ထားမှု,ကာကွယ်ရသည့် အကြောင်းရင်း,protection_basis_my
+83,တရုတ်သင်းခွေချပ်,Chinese Pangolin,Manis pentadactyla,02. ဖော်ပြချက်နှင့် နေထိုင်မှု,ရုပ်သွင်ပြင် ဖော်ပြချက်,physical_description_my
+83,တရုတ်သင်းခွေချပ်,Chinese Pangolin,Manis pentadactyla,02. ဖော်ပြချက်နှင့် နေထိုင်မှု,အစာစားနည်း,diet_my
+83,တရုတ်သင်းခွေချပ်,Chinese Pangolin,Manis pentadactyla,02. ဖော်ပြချက်နှင့် နေထိုင်မှု,အနေအထိုင်နှင့် အပြုအမူ,behaviour_my
+83,တရုတ်သင်းခွေချပ်,Chinese Pangolin,Manis pentadactyla,03. ထိန်းသိမ်းရေးနှင့် မျိုးခွဲ,ရှင်သန်ရေး ခြိမ်းခြောက်မှုများ,threats_my
+83,တရုတ်သင်းခွေချပ်,Chinese Pangolin,Manis pentadactyla,03. ထိန်းသိမ်းရေးနှင့် မျိုးခွဲ,ထိန်းသိမ်းရေး လုပ်ဆောင်ချက်များ,conservation_actions_my
+83,တရုတ်သင်းခွေချပ်,Chinese Pangolin,Manis pentadactyla,03. ထိန်းသိမ်းရေးနှင့် မျိုးခွဲ,ဆက်စပ် ဂေဟစနစ်များ,ecosystems_my
+83,တရုတ်သင်းခွေချပ်,Chinese Pangolin,Manis pentadactyla,04. ဥပဒေအရ ကာကွယ်ထားမှု,ကာကွယ်မှုအဆင့် (မြန်မာ),protection_status_my
+83,တရုတ်သင်းခွေချပ်,Chinese Pangolin,Manis pentadactyla,04. ဥပဒေအရ ကာကွယ်ထားမှု,ကာကွယ်မှုအဆင့် (English),protection_status_en
+83,တရုတ်သင်းခွေချပ်,Chinese Pangolin,Manis pentadactyla,04. ဥပဒေအရ ကာကွယ်ထားမှု,ဥပဒေ / စာရင်း ကိုးကား,protection_law_my
+83,တရုတ်သင်းခွေချပ်,Chinese Pangolin,Manis pentadactyla,04. ဥပဒေအရ ကာကွယ်ထားမှု,ကာကွယ်ရသည့် အကြောင်းရင်း,protection_basis_my
+85,"မျောက်လေပွေ,မျောက်မောင်းမ",Bengal Slow Loris,Nycticebus bengalensis,02. ဖော်ပြချက်နှင့် နေထိုင်မှု,ရုပ်သွင်ပြင် ဖော်ပြချက်,physical_description_my
+85,"မျောက်လေပွေ,မျောက်မောင်းမ",Bengal Slow Loris,Nycticebus bengalensis,02. ဖော်ပြချက်နှင့် နေထိုင်မှု,အစာစားနည်း,diet_my
+85,"မျောက်လေပွေ,မျောက်မောင်းမ",Bengal Slow Loris,Nycticebus bengalensis,02. ဖော်ပြချက်နှင့် နေထိုင်မှု,ဖြန့်ကျက်တည်ရှိမှု,distribution_my
+85,"မျောက်လေပွေ,မျောက်မောင်းမ",Bengal Slow Loris,Nycticebus bengalensis,02. ဖော်ပြချက်နှင့် နေထိုင်မှု,အနေအထိုင်နှင့် အပြုအမူ,behaviour_my
+85,"မျောက်လေပွေ,မျောက်မောင်းမ",Bengal Slow Loris,Nycticebus bengalensis,02. ဖော်ပြချက်နှင့် နေထိုင်မှု,တွေ့ရှိရသော ဒေသ,region_my
+85,"မျောက်လေပွေ,မျောက်မောင်းမ",Bengal Slow Loris,Nycticebus bengalensis,02. ဖော်ပြချက်နှင့် နေထိုင်မှု,ထူးခြားအချက်များ,fun_facts_my
+85,"မျောက်လေပွေ,မျောက်မောင်းမ",Bengal Slow Loris,Nycticebus bengalensis,03. ထိန်းသိမ်းရေးနှင့် မျိုးခွဲ,မြန်မာ IUCN အဆင့်,conservation_status
+85,"မျောက်လေပွေ,မျောက်မောင်းမ",Bengal Slow Loris,Nycticebus bengalensis,03. ထိန်းသိမ်းရေးနှင့် မျိုးခွဲ,IUCN အကဲဖြတ် အကြောင်းပြချက်,iucn_justification_my
+85,"မျောက်လေပွေ,မျောက်မောင်းမ",Bengal Slow Loris,Nycticebus bengalensis,03. ထိန်းသိမ်းရေးနှင့် မျိုးခွဲ,ရှင်သန်ရေး ခြိမ်းခြောက်မှုများ,threats_my
+85,"မျောက်လေပွေ,မျောက်မောင်းမ",Bengal Slow Loris,Nycticebus bengalensis,03. ထိန်းသိမ်းရေးနှင့် မျိုးခွဲ,ထိန်းသိမ်းရေး လုပ်ဆောင်ချက်များ,conservation_actions_my
+85,"မျောက်လေပွေ,မျောက်မောင်းမ",Bengal Slow Loris,Nycticebus bengalensis,03. ထိန်းသိမ်းရေးနှင့် မျိုးခွဲ,ထိန်းသိမ်းရေး လိုအပ်ချက်များ,conservation_needs_my
+85,"မျောက်လေပွေ,မျောက်မောင်းမ",Bengal Slow Loris,Nycticebus bengalensis,03. ထိန်းသိမ်းရေးနှင့် မျိုးခွဲ,အသုံးပြုမှုနှင့် ကုန်သွယ်မှု,use_trade_my
+85,"မျောက်လေပွေ,မျောက်မောင်းမ",Bengal Slow Loris,Nycticebus bengalensis,03. ထိန်းသိမ်းရေးနှင့် မျိုးခွဲ,ဆက်စပ် ဂေဟစနစ်များ,ecosystems_my
+85,"မျောက်လေပွေ,မျောက်မောင်းမ",Bengal Slow Loris,Nycticebus bengalensis,04. ဥပဒေအရ ကာကွယ်ထားမှု,ကာကွယ်မှုအဆင့် (မြန်မာ),protection_status_my
+85,"မျောက်လေပွေ,မျောက်မောင်းမ",Bengal Slow Loris,Nycticebus bengalensis,04. ဥပဒေအရ ကာကွယ်ထားမှု,ကာကွယ်မှုအဆင့် (English),protection_status_en
+85,"မျောက်လေပွေ,မျောက်မောင်းမ",Bengal Slow Loris,Nycticebus bengalensis,04. ဥပဒေအရ ကာကွယ်ထားမှု,ဥပဒေ / စာရင်း ကိုးကား,protection_law_my
+85,"မျောက်လေပွေ,မျောက်မောင်းမ",Bengal Slow Loris,Nycticebus bengalensis,04. ဥပဒေအရ ကာကွယ်ထားမှု,ကာကွယ်ရသည့် အကြောင်းရင်း,protection_basis_my
+88,မျောက်မြီးတို,Stump-tailed Macaque,Macaca arctoides,02. ဖော်ပြချက်နှင့် နေထိုင်မှု,ရုပ်သွင်ပြင် ဖော်ပြချက်,physical_description_my
+88,မျောက်မြီးတို,Stump-tailed Macaque,Macaca arctoides,02. ဖော်ပြချက်နှင့် နေထိုင်မှု,အစာစားနည်း,diet_my
+88,မျောက်မြီးတို,Stump-tailed Macaque,Macaca arctoides,02. ဖော်ပြချက်နှင့် နေထိုင်မှု,ဖြန့်ကျက်တည်ရှိမှု,distribution_my
+88,မျောက်မြီးတို,Stump-tailed Macaque,Macaca arctoides,02. ဖော်ပြချက်နှင့် နေထိုင်မှု,အနေအထိုင်နှင့် အပြုအမူ,behaviour_my
+88,မျောက်မြီးတို,Stump-tailed Macaque,Macaca arctoides,02. ဖော်ပြချက်နှင့် နေထိုင်မှု,တွေ့ရှိရသော ဒေသ,region_my
+88,မျောက်မြီးတို,Stump-tailed Macaque,Macaca arctoides,02. ဖော်ပြချက်နှင့် နေထိုင်မှု,ထူးခြားအချက်များ,fun_facts_my
+88,မျောက်မြီးတို,Stump-tailed Macaque,Macaca arctoides,03. ထိန်းသိမ်းရေးနှင့် မျိုးခွဲ,မြန်မာ IUCN အဆင့်,conservation_status
+88,မျောက်မြီးတို,Stump-tailed Macaque,Macaca arctoides,03. ထိန်းသိမ်းရေးနှင့် မျိုးခွဲ,IUCN အကဲဖြတ် အကြောင်းပြချက်,iucn_justification_my
+88,မျောက်မြီးတို,Stump-tailed Macaque,Macaca arctoides,03. ထိန်းသိမ်းရေးနှင့် မျိုးခွဲ,ရှင်သန်ရေး ခြိမ်းခြောက်မှုများ,threats_my
+88,မျောက်မြီးတို,Stump-tailed Macaque,Macaca arctoides,03. ထိန်းသိမ်းရေးနှင့် မျိုးခွဲ,ထိန်းသိမ်းရေး လုပ်ဆောင်ချက်များ,conservation_actions_my
+88,မျောက်မြီးတို,Stump-tailed Macaque,Macaca arctoides,03. ထိန်းသိမ်းရေးနှင့် မျိုးခွဲ,ထိန်းသိမ်းရေး လိုအပ်ချက်များ,conservation_needs_my
+88,မျောက်မြီးတို,Stump-tailed Macaque,Macaca arctoides,03. ထိန်းသိမ်းရေးနှင့် မျိုးခွဲ,အသုံးပြုမှုနှင့် ကုန်သွယ်မှု,use_trade_my
+88,မျောက်မြီးတို,Stump-tailed Macaque,Macaca arctoides,03. ထိန်းသိမ်းရေးနှင့် မျိုးခွဲ,ဆက်စပ် ဂေဟစနစ်များ,ecosystems_my
+88,မျောက်မြီးတို,Stump-tailed Macaque,Macaca arctoides,04. ဥပဒေအရ ကာကွယ်ထားမှု,ကာကွယ်မှုအဆင့် (မြန်မာ),protection_status_my
+88,မျောက်မြီးတို,Stump-tailed Macaque,Macaca arctoides,04. ဥပဒေအရ ကာကွယ်ထားမှု,ကာကွယ်မှုအဆင့် (English),protection_status_en
+88,မျောက်မြီးတို,Stump-tailed Macaque,Macaca arctoides,04. ဥပဒေအရ ကာကွယ်ထားမှု,ဥပဒေ / စာရင်း ကိုးကား,protection_law_my
+88,မျောက်မြီးတို,Stump-tailed Macaque,Macaca arctoides,04. ဥပဒေအရ ကာကွယ်ထားမှု,ကာကွယ်ရသည့် အကြောင်းရင်း,protection_basis_my
+92,မျောက်မြီးရှည်,Banded Langur,Presbytis femoralis,02. ဖော်ပြချက်နှင့် နေထိုင်မှု,ရုပ်သွင်ပြင် ဖော်ပြချက်,physical_description_my
+92,မျောက်မြီးရှည်,Banded Langur,Presbytis femoralis,02. ဖော်ပြချက်နှင့် နေထိုင်မှု,အစာစားနည်း,diet_my
+92,မျောက်မြီးရှည်,Banded Langur,Presbytis femoralis,02. ဖော်ပြချက်နှင့် နေထိုင်မှု,ဖြန့်ကျက်တည်ရှိမှု,distribution_my
+92,မျောက်မြီးရှည်,Banded Langur,Presbytis femoralis,02. ဖော်ပြချက်နှင့် နေထိုင်မှု,အနေအထိုင်နှင့် အပြုအမူ,behaviour_my
+92,မျောက်မြီးရှည်,Banded Langur,Presbytis femoralis,02. ဖော်ပြချက်နှင့် နေထိုင်မှု,ထူးခြားအချက်များ,fun_facts_my
+92,မျောက်မြီးရှည်,Banded Langur,Presbytis femoralis,03. ထိန်းသိမ်းရေးနှင့် မျိုးခွဲ,မြန်မာ IUCN အဆင့်,conservation_status
+92,မျောက်မြီးရှည်,Banded Langur,Presbytis femoralis,03. ထိန်းသိမ်းရေးနှင့် မျိုးခွဲ,IUCN အကဲဖြတ် အကြောင်းပြချက်,iucn_justification_my
+92,မျောက်မြီးရှည်,Banded Langur,Presbytis femoralis,03. ထိန်းသိမ်းရေးနှင့် မျိုးခွဲ,ရှင်သန်ရေး ခြိမ်းခြောက်မှုများ,threats_my
+92,မျောက်မြီးရှည်,Banded Langur,Presbytis femoralis,03. ထိန်းသိမ်းရေးနှင့် မျိုးခွဲ,ထိန်းသိမ်းရေး လိုအပ်ချက်များ,conservation_needs_my
+92,မျောက်မြီးရှည်,Banded Langur,Presbytis femoralis,03. ထိန်းသိမ်းရေးနှင့် မျိုးခွဲ,အသုံးပြုမှုနှင့် ကုန်သွယ်မှု,use_trade_my
+92,မျောက်မြီးရှည်,Banded Langur,Presbytis femoralis,03. ထိန်းသိမ်းရေးနှင့် မျိုးခွဲ,ဆက်စပ် ဂေဟစနစ်များ,ecosystems_my
+92,မျောက်မြီးရှည်,Banded Langur,Presbytis femoralis,04. ဥပဒေအရ ကာကွယ်ထားမှု,ကာကွယ်မှုအဆင့် (မြန်မာ),protection_status_my
+92,မျောက်မြီးရှည်,Banded Langur,Presbytis femoralis,04. ဥပဒေအရ ကာကွယ်ထားမှု,ကာကွယ်မှုအဆင့် (English),protection_status_en
+92,မျောက်မြီးရှည်,Banded Langur,Presbytis femoralis,04. ဥပဒေအရ ကာကွယ်ထားမှု,ဥပဒေ / စာရင်း ကိုးကား,protection_law_my
+92,မျောက်မြီးရှည်,Banded Langur,Presbytis femoralis,04. ဥပဒေအရ ကာကွယ်ထားမှု,ကာကွယ်ရသည့် အကြောင်းရင်း,protection_basis_my
+93,တောခွေး,Dhole,Cuon alpinus,02. ဖော်ပြချက်နှင့် နေထိုင်မှု,ရုပ်သွင်ပြင် ဖော်ပြချက်,physical_description_my
+93,တောခွေး,Dhole,Cuon alpinus,02. ဖော်ပြချက်နှင့် နေထိုင်မှု,အစာစားနည်း,diet_my
+93,တောခွေး,Dhole,Cuon alpinus,02. ဖော်ပြချက်နှင့် နေထိုင်မှု,အနေအထိုင်နှင့် အပြုအမူ,behaviour_my
+93,တောခွေး,Dhole,Cuon alpinus,03. ထိန်းသိမ်းရေးနှင့် မျိုးခွဲ,ရှင်သန်ရေး ခြိမ်းခြောက်မှုများ,threats_my
+93,တောခွေး,Dhole,Cuon alpinus,03. ထိန်းသိမ်းရေးနှင့် မျိုးခွဲ,ထိန်းသိမ်းရေး လုပ်ဆောင်ချက်များ,conservation_actions_my
+93,တောခွေး,Dhole,Cuon alpinus,03. ထိန်းသိမ်းရေးနှင့် မျိုးခွဲ,အသုံးပြုမှုနှင့် ကုန်သွယ်မှု,use_trade_my
+93,တောခွေး,Dhole,Cuon alpinus,03. ထိန်းသိမ်းရေးနှင့် မျိုးခွဲ,ဆက်စပ် ဂေဟစနစ်များ,ecosystems_my
+94,"ပန်ဒါနီ,ကြောင်နီ",Red Panda,Ailurus fulgens,02. ဖော်ပြချက်နှင့် နေထိုင်မှု,ရုပ်သွင်ပြင် ဖော်ပြချက်,physical_description_my
+94,"ပန်ဒါနီ,ကြောင်နီ",Red Panda,Ailurus fulgens,02. ဖော်ပြချက်နှင့် နေထိုင်မှု,အစာစားနည်း,diet_my
+94,"ပန်ဒါနီ,ကြောင်နီ",Red Panda,Ailurus fulgens,02. ဖော်ပြချက်နှင့် နေထိုင်မှု,အနေအထိုင်နှင့် အပြုအမူ,behaviour_my
+94,"ပန်ဒါနီ,ကြောင်နီ",Red Panda,Ailurus fulgens,03. ထိန်းသိမ်းရေးနှင့် မျိုးခွဲ,ရှင်သန်ရေး ခြိမ်းခြောက်မှုများ,threats_my
+94,"ပန်ဒါနီ,ကြောင်နီ",Red Panda,Ailurus fulgens,03. ထိန်းသိမ်းရေးနှင့် မျိုးခွဲ,ထိန်းသိမ်းရေး လုပ်ဆောင်ချက်များ,conservation_actions_my
+94,"ပန်ဒါနီ,ကြောင်နီ",Red Panda,Ailurus fulgens,03. ထိန်းသိမ်းရေးနှင့် မျိုးခွဲ,အသုံးပြုမှုနှင့် ကုန်သွယ်မှု,use_trade_my
+94,"ပန်ဒါနီ,ကြောင်နီ",Red Panda,Ailurus fulgens,03. ထိန်းသိမ်းရေးနှင့် မျိုးခွဲ,ဆက်စပ် ဂေဟစနစ်များ,ecosystems_my
+95,သစ်တက်ကျား,Sunda Clouded Leopard,Neofelis diardi,02. ဖော်ပြချက်နှင့် နေထိုင်မှု,အကျဉ်းချုပ် ဖော်ပြချက်,description_my
+95,သစ်တက်ကျား,Sunda Clouded Leopard,Neofelis diardi,02. ဖော်ပြချက်နှင့် နေထိုင်မှု,ရုပ်သွင်ပြင် ဖော်ပြချက်,physical_description_my
+95,သစ်တက်ကျား,Sunda Clouded Leopard,Neofelis diardi,02. ဖော်ပြချက်နှင့် နေထိုင်မှု,နေထိုင်ရာ,habitat_my
+95,သစ်တက်ကျား,Sunda Clouded Leopard,Neofelis diardi,02. ဖော်ပြချက်နှင့် နေထိုင်မှု,အစာစားနည်း,diet_my
+95,သစ်တက်ကျား,Sunda Clouded Leopard,Neofelis diardi,02. ဖော်ပြချက်နှင့် နေထိုင်မှု,အနေအထိုင်နှင့် အပြုအမူ,behaviour_my
+95,သစ်တက်ကျား,Sunda Clouded Leopard,Neofelis diardi,03. ထိန်းသိမ်းရေးနှင့် မျိုးခွဲ,တွေ့ရှိမှု အခြေအနေ,population_trend
+95,သစ်တက်ကျား,Sunda Clouded Leopard,Neofelis diardi,03. ထိန်းသိမ်းရေးနှင့် မျိုးခွဲ,ရှင်သန်ရေး ခြိမ်းခြောက်မှုများ,threats_my
+95,သစ်တက်ကျား,Sunda Clouded Leopard,Neofelis diardi,03. ထိန်းသိမ်းရေးနှင့် မျိုးခွဲ,ထိန်းသိမ်းရေး လုပ်ဆောင်ချက်များ,conservation_actions_my
+95,သစ်တက်ကျား,Sunda Clouded Leopard,Neofelis diardi,03. ထိန်းသိမ်းရေးနှင့် မျိုးခွဲ,ဆက်စပ် ဂေဟစနစ်များ,ecosystems_my
+95,သစ်တက်ကျား,Sunda Clouded Leopard,Neofelis diardi,04. ဥပဒေအရ ကာကွယ်ထားမှု,ကာကွယ်မှုအဆင့် (မြန်မာ),protection_status_my
+95,သစ်တက်ကျား,Sunda Clouded Leopard,Neofelis diardi,04. ဥပဒေအရ ကာကွယ်ထားမှု,ကာကွယ်မှုအဆင့် (English),protection_status_en
+95,သစ်တက်ကျား,Sunda Clouded Leopard,Neofelis diardi,04. ဥပဒေအရ ကာကွယ်ထားမှု,ဥပဒေ / စာရင်း ကိုးကား,protection_law_my
+95,သစ်တက်ကျား,Sunda Clouded Leopard,Neofelis diardi,04. ဥပဒေအရ ကာကွယ်ထားမှု,ကာကွယ်ရသည့် အကြောင်းရင်း,protection_basis_my
+97,ဖျံအမွေးနု/ဖျံမွေးချော,Smooth-coated Otter,Lutrogale perspicillata,02. ဖော်ပြချက်နှင့် နေထိုင်မှု,ရုပ်သွင်ပြင် ဖော်ပြချက်,physical_description_my
+97,ဖျံအမွေးနု/ဖျံမွေးချော,Smooth-coated Otter,Lutrogale perspicillata,02. ဖော်ပြချက်နှင့် နေထိုင်မှု,အစာစားနည်း,diet_my
+97,ဖျံအမွေးနု/ဖျံမွေးချော,Smooth-coated Otter,Lutrogale perspicillata,02. ဖော်ပြချက်နှင့် နေထိုင်မှု,ဖြန့်ကျက်တည်ရှိမှု,distribution_my
+97,ဖျံအမွေးနု/ဖျံမွေးချော,Smooth-coated Otter,Lutrogale perspicillata,02. ဖော်ပြချက်နှင့် နေထိုင်မှု,အနေအထိုင်နှင့် အပြုအမူ,behaviour_my
+97,ဖျံအမွေးနု/ဖျံမွေးချော,Smooth-coated Otter,Lutrogale perspicillata,02. ဖော်ပြချက်နှင့် နေထိုင်မှု,တွေ့ရှိရသော ဒေသ,region_my
+97,ဖျံအမွေးနု/ဖျံမွေးချော,Smooth-coated Otter,Lutrogale perspicillata,03. ထိန်းသိမ်းရေးနှင့် မျိုးခွဲ,IUCN အကဲဖြတ် အကြောင်းပြချက်,iucn_justification_my
+97,ဖျံအမွေးနု/ဖျံမွေးချော,Smooth-coated Otter,Lutrogale perspicillata,03. ထိန်းသိမ်းရေးနှင့် မျိုးခွဲ,ထိန်းသိမ်းရေး လုပ်ဆောင်ချက်များ,conservation_actions_my
+97,ဖျံအမွေးနု/ဖျံမွေးချော,Smooth-coated Otter,Lutrogale perspicillata,03. ထိန်းသိမ်းရေးနှင့် မျိုးခွဲ,အသုံးပြုမှုနှင့် ကုန်သွယ်မှု,use_trade_my
+97,ဖျံအမွေးနု/ဖျံမွေးချော,Smooth-coated Otter,Lutrogale perspicillata,03. ထိန်းသိမ်းရေးနှင့် မျိုးခွဲ,ဆက်စပ် ဂေဟစနစ်များ,ecosystems_my
+98,ဖျံ/ချောင်းဖျားဖျံ,"European Otter, Common Otter, Old World Otter",Lutra lutra,02. ဖော်ပြချက်နှင့် နေထိုင်မှု,ရုပ်သွင်ပြင် ဖော်ပြချက်,physical_description_my
+98,ဖျံ/ချောင်းဖျားဖျံ,"European Otter, Common Otter, Old World Otter",Lutra lutra,02. ဖော်ပြချက်နှင့် နေထိုင်မှု,အစာစားနည်း,diet_my
+98,ဖျံ/ချောင်းဖျားဖျံ,"European Otter, Common Otter, Old World Otter",Lutra lutra,02. ဖော်ပြချက်နှင့် နေထိုင်မှု,ဖြန့်ကျက်တည်ရှိမှု,distribution_my
+98,ဖျံ/ချောင်းဖျားဖျံ,"European Otter, Common Otter, Old World Otter",Lutra lutra,02. ဖော်ပြချက်နှင့် နေထိုင်မှု,အနေအထိုင်နှင့် အပြုအမူ,behaviour_my
+98,ဖျံ/ချောင်းဖျားဖျံ,"European Otter, Common Otter, Old World Otter",Lutra lutra,02. ဖော်ပြချက်နှင့် နေထိုင်မှု,တွေ့ရှိရသော ဒေသ,region_my
+98,ဖျံ/ချောင်းဖျားဖျံ,"European Otter, Common Otter, Old World Otter",Lutra lutra,03. ထိန်းသိမ်းရေးနှင့် မျိုးခွဲ,IUCN အကဲဖြတ် အကြောင်းပြချက်,iucn_justification_my
+98,ဖျံ/ချောင်းဖျားဖျံ,"European Otter, Common Otter, Old World Otter",Lutra lutra,03. ထိန်းသိမ်းရေးနှင့် မျိုးခွဲ,ထိန်းသိမ်းရေး လုပ်ဆောင်ချက်များ,conservation_actions_my
+98,ဖျံ/ချောင်းဖျားဖျံ,"European Otter, Common Otter, Old World Otter",Lutra lutra,03. ထိန်းသိမ်းရေးနှင့် မျိုးခွဲ,ဆက်စပ် ဂေဟစနစ်များ,ecosystems_my
+99,ဖျံ/ဆူမားတြားဖျံ,Hairy-nosed Otter,Lutra sumatrana,02. ဖော်ပြချက်နှင့် နေထိုင်မှု,ရုပ်သွင်ပြင် ဖော်ပြချက်,physical_description_my
+99,ဖျံ/ဆူမားတြားဖျံ,Hairy-nosed Otter,Lutra sumatrana,02. ဖော်ပြချက်နှင့် နေထိုင်မှု,အစာစားနည်း,diet_my
+99,ဖျံ/ဆူမားတြားဖျံ,Hairy-nosed Otter,Lutra sumatrana,02. ဖော်ပြချက်နှင့် နေထိုင်မှု,အနေအထိုင်နှင့် အပြုအမူ,behaviour_my
+99,ဖျံ/ဆူမားတြားဖျံ,Hairy-nosed Otter,Lutra sumatrana,02. ဖော်ပြချက်နှင့် နေထိုင်မှု,တွေ့ရှိရသော ဒေသ,region_my
+99,ဖျံ/ဆူမားတြားဖျံ,Hairy-nosed Otter,Lutra sumatrana,02. ဖော်ပြချက်နှင့် နေထိုင်မှု,ထူးခြားအချက်များ,fun_facts_my
+99,ဖျံ/ဆူမားတြားဖျံ,Hairy-nosed Otter,Lutra sumatrana,03. ထိန်းသိမ်းရေးနှင့် မျိုးခွဲ,IUCN အကဲဖြတ် အကြောင်းပြချက်,iucn_justification_my
+99,ဖျံ/ဆူမားတြားဖျံ,Hairy-nosed Otter,Lutra sumatrana,03. ထိန်းသိမ်းရေးနှင့် မျိုးခွဲ,ရှင်သန်ရေး ခြိမ်းခြောက်မှုများ,threats_my
+99,ဖျံ/ဆူမားတြားဖျံ,Hairy-nosed Otter,Lutra sumatrana,03. ထိန်းသိမ်းရေးနှင့် မျိုးခွဲ,ထိန်းသိမ်းရေး လုပ်ဆောင်ချက်များ,conservation_actions_my
+99,ဖျံ/ဆူမားတြားဖျံ,Hairy-nosed Otter,Lutra sumatrana,03. ထိန်းသိမ်းရေးနှင့် မျိုးခွဲ,အသုံးပြုမှုနှင့် ကုန်သွယ်မှု,use_trade_my
+99,ဖျံ/ဆူမားတြားဖျံ,Hairy-nosed Otter,Lutra sumatrana,03. ထိန်းသိမ်းရေးနှင့် မျိုးခွဲ,ဆက်စပ် ဂေဟစနစ်များ,ecosystems_my
+103,ကြံ့/ဝက်ကြံ့,Asian Two-horned Rhinoceros,Dicerorhinus sumatrensis,02. ဖော်ပြချက်နှင့် နေထိုင်မှု,အကျဉ်းချုပ် ဖော်ပြချက်,description_my
+103,ကြံ့/ဝက်ကြံ့,Asian Two-horned Rhinoceros,Dicerorhinus sumatrensis,02. ဖော်ပြချက်နှင့် နေထိုင်မှု,ရုပ်သွင်ပြင် ဖော်ပြချက်,physical_description_my
+103,ကြံ့/ဝက်ကြံ့,Asian Two-horned Rhinoceros,Dicerorhinus sumatrensis,02. ဖော်ပြချက်နှင့် နေထိုင်မှု,အစာစားနည်း,diet_my
+103,ကြံ့/ဝက်ကြံ့,Asian Two-horned Rhinoceros,Dicerorhinus sumatrensis,02. ဖော်ပြချက်နှင့် နေထိုင်မှု,ဖြန့်ကျက်တည်ရှိမှု,distribution_my
+103,ကြံ့/ဝက်ကြံ့,Asian Two-horned Rhinoceros,Dicerorhinus sumatrensis,02. ဖော်ပြချက်နှင့် နေထိုင်မှု,အနေအထိုင်နှင့် အပြုအမူ,behaviour_my
+103,ကြံ့/ဝက်ကြံ့,Asian Two-horned Rhinoceros,Dicerorhinus sumatrensis,02. ဖော်ပြချက်နှင့် နေထိုင်မှု,အရွယ်အစား,size_my
+103,ကြံ့/ဝက်ကြံ့,Asian Two-horned Rhinoceros,Dicerorhinus sumatrensis,02. ဖော်ပြချက်နှင့် နေထိုင်မှု,သက်တမ်း,lifespan_my
+103,ကြံ့/ဝက်ကြံ့,Asian Two-horned Rhinoceros,Dicerorhinus sumatrensis,02. ဖော်ပြချက်နှင့် နေထိုင်မှု,တွေ့ရှိရသော ဒေသ,region_my
+103,ကြံ့/ဝက်ကြံ့,Asian Two-horned Rhinoceros,Dicerorhinus sumatrensis,02. ဖော်ပြချက်နှင့် နေထိုင်မှု,ထူးခြားအချက်များ,fun_facts_my
+103,ကြံ့/ဝက်ကြံ့,Asian Two-horned Rhinoceros,Dicerorhinus sumatrensis,03. ထိန်းသိမ်းရေးနှင့် မျိုးခွဲ,မြန်မာ IUCN အဆင့်,conservation_status
+103,ကြံ့/ဝက်ကြံ့,Asian Two-horned Rhinoceros,Dicerorhinus sumatrensis,03. ထိန်းသိမ်းရေးနှင့် မျိုးခွဲ,ရှင်သန်ရေး ခြိမ်းခြောက်မှုများ,threats_my
+103,ကြံ့/ဝက်ကြံ့,Asian Two-horned Rhinoceros,Dicerorhinus sumatrensis,03. ထိန်းသိမ်းရေးနှင့် မျိုးခွဲ,ထိန်းသိမ်းရေး လုပ်ဆောင်ချက်များ,conservation_actions_my
+103,ကြံ့/ဝက်ကြံ့,Asian Two-horned Rhinoceros,Dicerorhinus sumatrensis,03. ထိန်းသိမ်းရေးနှင့် မျိုးခွဲ,ထိန်းသိမ်းရေး လိုအပ်ချက်များ,conservation_needs_my
+103,ကြံ့/ဝက်ကြံ့,Asian Two-horned Rhinoceros,Dicerorhinus sumatrensis,03. ထိန်းသိမ်းရေးနှင့် မျိုးခွဲ,အသုံးပြုမှုနှင့် ကုန်သွယ်မှု,use_trade_my
+103,ကြံ့/ဝက်ကြံ့,Asian Two-horned Rhinoceros,Dicerorhinus sumatrensis,03. ထိန်းသိမ်းရေးနှင့် မျိုးခွဲ,ဆက်စပ် ဂေဟစနစ်များ,ecosystems_my
+105,ပြောင်,Gaur / Indian Bison,Bos gaurus,02. ဖော်ပြချက်နှင့် နေထိုင်မှု,ရုပ်သွင်ပြင် ဖော်ပြချက်,physical_description_my
+105,ပြောင်,Gaur / Indian Bison,Bos gaurus,02. ဖော်ပြချက်နှင့် နေထိုင်မှု,အစာစားနည်း,diet_my
+105,ပြောင်,Gaur / Indian Bison,Bos gaurus,02. ဖော်ပြချက်နှင့် နေထိုင်မှု,အနေအထိုင်နှင့် အပြုအမူ,behaviour_my
+105,ပြောင်,Gaur / Indian Bison,Bos gaurus,02. ဖော်ပြချက်နှင့် နေထိုင်မှု,တွေ့ရှိရသော ဒေသ,region_my
+105,ပြောင်,Gaur / Indian Bison,Bos gaurus,02. ဖော်ပြချက်နှင့် နေထိုင်မှု,ထူးခြားအချက်များ,fun_facts_my
+105,ပြောင်,Gaur / Indian Bison,Bos gaurus,03. ထိန်းသိမ်းရေးနှင့် မျိုးခွဲ,ရှင်သန်ရေး ခြိမ်းခြောက်မှုများ,threats_my
+105,ပြောင်,Gaur / Indian Bison,Bos gaurus,03. ထိန်းသိမ်းရေးနှင့် မျိုးခွဲ,ထိန်းသိမ်းရေး လုပ်ဆောင်ချက်များ,conservation_actions_my
+105,ပြောင်,Gaur / Indian Bison,Bos gaurus,03. ထိန်းသိမ်းရေးနှင့် မျိုးခွဲ,အသုံးပြုမှုနှင့် ကုန်သွယ်မှု,use_trade_my
+105,ပြောင်,Gaur / Indian Bison,Bos gaurus,03. ထိန်းသိမ်းရေးနှင့် မျိုးခွဲ,ဆက်စပ် ဂေဟစနစ်များ,ecosystems_my
+105,ပြောင်,Gaur / Indian Bison,Bos gaurus,04. ဥပဒေအရ ကာကွယ်ထားမှု,ကာကွယ်မှုအဆင့် (မြန်မာ),protection_status_my
+105,ပြောင်,Gaur / Indian Bison,Bos gaurus,04. ဥပဒေအရ ကာကွယ်ထားမှု,ကာကွယ်မှုအဆင့် (English),protection_status_en
+105,ပြောင်,Gaur / Indian Bison,Bos gaurus,04. ဥပဒေအရ ကာကွယ်ထားမှု,ဥပဒေ / စာရင်း ကိုးကား,protection_law_my
+105,ပြောင်,Gaur / Indian Bison,Bos gaurus,04. ဥပဒေအရ ကာကွယ်ထားမှု,ကာကွယ်ရသည့် အကြောင်းရင်း,protection_basis_my
+106,ကတိုး,Musk Deer,"Moschus leucogaster (Himalayan Musk Deer), Moschus fuscus (Black Musk Deer)",02. ဖော်ပြချက်နှင့် နေထိုင်မှု,အကျဉ်းချုပ် ဖော်ပြချက်,description_my
+106,ကတိုး,Musk Deer,"Moschus leucogaster (Himalayan Musk Deer), Moschus fuscus (Black Musk Deer)",02. ဖော်ပြချက်နှင့် နေထိုင်မှု,ရုပ်သွင်ပြင် ဖော်ပြချက်,physical_description_my
+106,ကတိုး,Musk Deer,"Moschus leucogaster (Himalayan Musk Deer), Moschus fuscus (Black Musk Deer)",02. ဖော်ပြချက်နှင့် နေထိုင်မှု,နေထိုင်ရာ,habitat_my
+106,ကတိုး,Musk Deer,"Moschus leucogaster (Himalayan Musk Deer), Moschus fuscus (Black Musk Deer)",02. ဖော်ပြချက်နှင့် နေထိုင်မှု,အစာစားနည်း,diet_my
+106,ကတိုး,Musk Deer,"Moschus leucogaster (Himalayan Musk Deer), Moschus fuscus (Black Musk Deer)",02. ဖော်ပြချက်နှင့် နေထိုင်မှု,အနေအထိုင်နှင့် အပြုအမူ,behaviour_my
+106,ကတိုး,Musk Deer,"Moschus leucogaster (Himalayan Musk Deer), Moschus fuscus (Black Musk Deer)",02. ဖော်ပြချက်နှင့် နေထိုင်မှု,အရွယ်အစား,size_my
+106,ကတိုး,Musk Deer,"Moschus leucogaster (Himalayan Musk Deer), Moschus fuscus (Black Musk Deer)",02. ဖော်ပြချက်နှင့် နေထိုင်မှု,တွေ့ရှိရသော ဒေသ,region_my
+106,ကတိုး,Musk Deer,"Moschus leucogaster (Himalayan Musk Deer), Moschus fuscus (Black Musk Deer)",02. ဖော်ပြချက်နှင့် နေထိုင်မှု,ထူးခြားအချက်များ,fun_facts_my
+106,ကတိုး,Musk Deer,"Moschus leucogaster (Himalayan Musk Deer), Moschus fuscus (Black Musk Deer)",03. ထိန်းသိမ်းရေးနှင့် မျိုးခွဲ,တွေ့ရှိရသော ကာကွယ်ထိန်းသိမ်းနယ်မြေများ,protected_areas_my
+106,ကတိုး,Musk Deer,"Moschus leucogaster (Himalayan Musk Deer), Moschus fuscus (Black Musk Deer)",03. ထိန်းသိမ်းရေးနှင့် မျိုးခွဲ,ဆက်စပ် ဂေဟစနစ်များ,ecosystems_my
+108,ချေနက်/ဂျီနက်,Gongshan Muntjac,Muntiacus gongshanensis,02. ဖော်ပြချက်နှင့် နေထိုင်မှု,ရုပ်သွင်ပြင် ဖော်ပြချက်,physical_description_my
+108,ချေနက်/ဂျီနက်,Gongshan Muntjac,Muntiacus gongshanensis,02. ဖော်ပြချက်နှင့် နေထိုင်မှု,အစာစားနည်း,diet_my
+108,ချေနက်/ဂျီနက်,Gongshan Muntjac,Muntiacus gongshanensis,02. ဖော်ပြချက်နှင့် နေထိုင်မှု,ဖြန့်ကျက်တည်ရှိမှု,distribution_my
+108,ချေနက်/ဂျီနက်,Gongshan Muntjac,Muntiacus gongshanensis,02. ဖော်ပြချက်နှင့် နေထိုင်မှု,အနေအထိုင်နှင့် အပြုအမူ,behaviour_my
+108,ချေနက်/ဂျီနက်,Gongshan Muntjac,Muntiacus gongshanensis,02. ဖော်ပြချက်နှင့် နေထိုင်မှု,အရွယ်အစား,size_my
+108,ချေနက်/ဂျီနက်,Gongshan Muntjac,Muntiacus gongshanensis,02. ဖော်ပြချက်နှင့် နေထိုင်မှု,တွေ့ရှိရသော ဒေသ,region_my
+108,ချေနက်/ဂျီနက်,Gongshan Muntjac,Muntiacus gongshanensis,02. ဖော်ပြချက်နှင့် နေထိုင်မှု,ထူးခြားအချက်များ,fun_facts_my
+108,ချေနက်/ဂျီနက်,Gongshan Muntjac,Muntiacus gongshanensis,03. ထိန်းသိမ်းရေးနှင့် မျိုးခွဲ,ကမ္ဘာလုံးဆိုင်ရာ IUCN အဆင့်,global_iucn_status
+108,ချေနက်/ဂျီနက်,Gongshan Muntjac,Muntiacus gongshanensis,03. ထိန်းသိမ်းရေးနှင့် မျိုးခွဲ,တွေ့ရှိရသော ကာကွယ်ထိန်းသိမ်းနယ်မြေများ,protected_areas_my
+108,ချေနက်/ဂျီနက်,Gongshan Muntjac,Muntiacus gongshanensis,03. ထိန်းသိမ်းရေးနှင့် မျိုးခွဲ,ဆက်စပ် ဂေဟစနစ်များ,ecosystems_my
+109,"တောဆိတ်,ဆူမတြားတောဆိတ်",Mainland Serow,Capricornis sumatraensis,02. ဖော်ပြချက်နှင့် နေထိုင်မှု,ရုပ်သွင်ပြင် ဖော်ပြချက်,physical_description_my
+109,"တောဆိတ်,ဆူမတြားတောဆိတ်",Mainland Serow,Capricornis sumatraensis,02. ဖော်ပြချက်နှင့် နေထိုင်မှု,နေထိုင်ရာ,habitat_my
+109,"တောဆိတ်,ဆူမတြားတောဆိတ်",Mainland Serow,Capricornis sumatraensis,02. ဖော်ပြချက်နှင့် နေထိုင်မှု,အရွယ်အစား,size_my
+109,"တောဆိတ်,ဆူမတြားတောဆိတ်",Mainland Serow,Capricornis sumatraensis,02. ဖော်ပြချက်နှင့် နေထိုင်မှု,ထူးခြားအချက်များ,fun_facts_my
+109,"တောဆိတ်,ဆူမတြားတောဆိတ်",Mainland Serow,Capricornis sumatraensis,03. ထိန်းသိမ်းရေးနှင့် မျိုးခွဲ,ဆက်စပ် ဂေဟစနစ်များ,ecosystems_my
+111,တောင်ဆိတ်,Chinese Goral,Naemorhedus griseus,02. ဖော်ပြချက်နှင့် နေထိုင်မှု,အကျဉ်းချုပ် ဖော်ပြချက်,description_my
+111,တောင်ဆိတ်,Chinese Goral,Naemorhedus griseus,02. ဖော်ပြချက်နှင့် နေထိုင်မှု,ရုပ်သွင်ပြင် ဖော်ပြချက်,physical_description_my
+111,တောင်ဆိတ်,Chinese Goral,Naemorhedus griseus,02. ဖော်ပြချက်နှင့် နေထိုင်မှု,နေထိုင်ရာ,habitat_my
+111,တောင်ဆိတ်,Chinese Goral,Naemorhedus griseus,02. ဖော်ပြချက်နှင့် နေထိုင်မှု,အစာစားနည်း,diet_my
+111,တောင်ဆိတ်,Chinese Goral,Naemorhedus griseus,02. ဖော်ပြချက်နှင့် နေထိုင်မှု,အနေအထိုင်နှင့် အပြုအမူ,behaviour_my
+111,တောင်ဆိတ်,Chinese Goral,Naemorhedus griseus,02. ဖော်ပြချက်နှင့် နေထိုင်မှု,ထူးခြားအချက်များ,fun_facts_my
+111,တောင်ဆိတ်,Chinese Goral,Naemorhedus griseus,03. ထိန်းသိမ်းရေးနှင့် မျိုးခွဲ,ဆက်စပ် ဂေဟစနစ်များ,ecosystems_my
+111,တောင်ဆိတ်,Chinese Goral,Naemorhedus griseus,04. ဥပဒေအရ ကာကွယ်ထားမှု,ကာကွယ်မှုအဆင့် (မြန်မာ),protection_status_my
+111,တောင်ဆိတ်,Chinese Goral,Naemorhedus griseus,04. ဥပဒေအရ ကာကွယ်ထားမှု,ကာကွယ်မှုအဆင့် (English),protection_status_en
+111,တောင်ဆိတ်,Chinese Goral,Naemorhedus griseus,04. ဥပဒေအရ ကာကွယ်ထားမှု,ဥပဒေ / စာရင်း ကိုးကား,protection_law_my
+111,တောင်ဆိတ်,Chinese Goral,Naemorhedus griseus,04. ဥပဒေအရ ကာကွယ်ထားမှု,ကာကွယ်ရသည့် အကြောင်းရင်း,protection_basis_my
+112,သားမင်း/တောင်ဆိတ်ကြီး,Takin,Budorcas taxicolor,02. ဖော်ပြချက်နှင့် နေထိုင်မှု,ရုပ်သွင်ပြင် ဖော်ပြချက်,physical_description_my
+112,သားမင်း/တောင်ဆိတ်ကြီး,Takin,Budorcas taxicolor,02. ဖော်ပြချက်နှင့် နေထိုင်မှု,နေထိုင်ရာ,habitat_my
+112,သားမင်း/တောင်ဆိတ်ကြီး,Takin,Budorcas taxicolor,02. ဖော်ပြချက်နှင့် နေထိုင်မှု,အနေအထိုင်နှင့် အပြုအမူ,behaviour_my
+112,သားမင်း/တောင်ဆိတ်ကြီး,Takin,Budorcas taxicolor,02. ဖော်ပြချက်နှင့် နေထိုင်မှု,တွေ့ရှိရသော ဒေသ,region_my
+112,သားမင်း/တောင်ဆိတ်ကြီး,Takin,Budorcas taxicolor,03. ထိန်းသိမ်းရေးနှင့် မျိုးခွဲ,ရှင်သန်ရေး ခြိမ်းခြောက်မှုများ,threats_my
+112,သားမင်း/တောင်ဆိတ်ကြီး,Takin,Budorcas taxicolor,03. ထိန်းသိမ်းရေးနှင့် မျိုးခွဲ,ဆက်စပ် ဂေဟစနစ်များ,ecosystems_my
+131,ဧရာဝတီလင်းပိုင်,Irrawaddy Dolphin,Orcaella brevirostris,02. ဖော်ပြချက်နှင့် နေထိုင်မှု,အကျဉ်းချုပ် ဖော်ပြချက်,description_my
+131,ဧရာဝတီလင်းပိုင်,Irrawaddy Dolphin,Orcaella brevirostris,02. ဖော်ပြချက်နှင့် နေထိုင်မှု,ရုပ်သွင်ပြင် ဖော်ပြချက်,physical_description_my
+131,ဧရာဝတီလင်းပိုင်,Irrawaddy Dolphin,Orcaella brevirostris,02. ဖော်ပြချက်နှင့် နေထိုင်မှု,နေထိုင်ရာ,habitat_my
+131,ဧရာဝတီလင်းပိုင်,Irrawaddy Dolphin,Orcaella brevirostris,02. ဖော်ပြချက်နှင့် နေထိုင်မှု,အစာစားနည်း,diet_my
+131,ဧရာဝတီလင်းပိုင်,Irrawaddy Dolphin,Orcaella brevirostris,02. ဖော်ပြချက်နှင့် နေထိုင်မှု,ဖြန့်ကျက်တည်ရှိမှု,distribution_my
+131,ဧရာဝတီလင်းပိုင်,Irrawaddy Dolphin,Orcaella brevirostris,02. ဖော်ပြချက်နှင့် နေထိုင်မှု,အနေအထိုင်နှင့် အပြုအမူ,behaviour_my
+131,ဧရာဝတီလင်းပိုင်,Irrawaddy Dolphin,Orcaella brevirostris,03. ထိန်းသိမ်းရေးနှင့် မျိုးခွဲ,ရှင်သန်ရေး ခြိမ်းခြောက်မှုများ,threats_my
+131,ဧရာဝတီလင်းပိုင်,Irrawaddy Dolphin,Orcaella brevirostris,03. ထိန်းသိမ်းရေးနှင့် မျိုးခွဲ,ထိန်းသိမ်းရေး လုပ်ဆောင်ချက်များ,conservation_actions_my
+131,ဧရာဝတီလင်းပိုင်,Irrawaddy Dolphin,Orcaella brevirostris,03. ထိန်းသိမ်းရေးနှင့် မျိုးခွဲ,အသုံးပြုမှုနှင့် ကုန်သွယ်မှု,use_trade_my
+131,ဧရာဝတီလင်းပိုင်,Irrawaddy Dolphin,Orcaella brevirostris,03. ထိန်းသိမ်းရေးနှင့် မျိုးခွဲ,ဆက်စပ် ဂေဟစနစ်များ,ecosystems_my
+132,အင်ဒိုပစိဖိတ် လင်းပိုင်ဝက်(ကျောဆူးမဲ့),Indo-Pacific Finless Porpoise,Neophocaena phocaenoides,02. ဖော်ပြချက်နှင့် နေထိုင်မှု,ရုပ်သွင်ပြင် ဖော်ပြချက်,physical_description_my
+132,အင်ဒိုပစိဖိတ် လင်းပိုင်ဝက်(ကျောဆူးမဲ့),Indo-Pacific Finless Porpoise,Neophocaena phocaenoides,02. ဖော်ပြချက်နှင့် နေထိုင်မှု,အစာစားနည်း,diet_my
+132,အင်ဒိုပစိဖိတ် လင်းပိုင်ဝက်(ကျောဆူးမဲ့),Indo-Pacific Finless Porpoise,Neophocaena phocaenoides,02. ဖော်ပြချက်နှင့် နေထိုင်မှု,ဖြန့်ကျက်တည်ရှိမှု,distribution_my
+132,အင်ဒိုပစိဖိတ် လင်းပိုင်ဝက်(ကျောဆူးမဲ့),Indo-Pacific Finless Porpoise,Neophocaena phocaenoides,02. ဖော်ပြချက်နှင့် နေထိုင်မှု,အနေအထိုင်နှင့် အပြုအမူ,behaviour_my
+132,အင်ဒိုပစိဖိတ် လင်းပိုင်ဝက်(ကျောဆူးမဲ့),Indo-Pacific Finless Porpoise,Neophocaena phocaenoides,02. ဖော်ပြချက်နှင့် နေထိုင်မှု,အရွယ်အစား,size_my
+132,အင်ဒိုပစိဖိတ် လင်းပိုင်ဝက်(ကျောဆူးမဲ့),Indo-Pacific Finless Porpoise,Neophocaena phocaenoides,02. ဖော်ပြချက်နှင့် နေထိုင်မှု,သက်တမ်း,lifespan_my
+132,အင်ဒိုပစိဖိတ် လင်းပိုင်ဝက်(ကျောဆူးမဲ့),Indo-Pacific Finless Porpoise,Neophocaena phocaenoides,03. ထိန်းသိမ်းရေးနှင့် မျိုးခွဲ,မြန်မာ IUCN အဆင့်,conservation_status
+132,အင်ဒိုပစိဖိတ် လင်းပိုင်ဝက်(ကျောဆူးမဲ့),Indo-Pacific Finless Porpoise,Neophocaena phocaenoides,03. ထိန်းသိမ်းရေးနှင့် မျိုးခွဲ,IUCN အကဲဖြတ် အကြောင်းပြချက်,iucn_justification_my
+132,အင်ဒိုပစိဖိတ် လင်းပိုင်ဝက်(ကျောဆူးမဲ့),Indo-Pacific Finless Porpoise,Neophocaena phocaenoides,03. ထိန်းသိမ်းရေးနှင့် မျိုးခွဲ,ရှင်သန်ရေး ခြိမ်းခြောက်မှုများ,threats_my
+132,အင်ဒိုပစိဖိတ် လင်းပိုင်ဝက်(ကျောဆူးမဲ့),Indo-Pacific Finless Porpoise,Neophocaena phocaenoides,03. ထိန်းသိမ်းရေးနှင့် မျိုးခွဲ,ထိန်းသိမ်းရေး လုပ်ဆောင်ချက်များ,conservation_actions_my
+132,အင်ဒိုပစိဖိတ် လင်းပိုင်ဝက်(ကျောဆူးမဲ့),Indo-Pacific Finless Porpoise,Neophocaena phocaenoides,03. ထိန်းသိမ်းရေးနှင့် မျိုးခွဲ,တွေ့ရှိရသော ကာကွယ်ထိန်းသိမ်းနယ်မြေများ,protected_areas_my
+132,အင်ဒိုပစိဖိတ် လင်းပိုင်ဝက်(ကျောဆူးမဲ့),Indo-Pacific Finless Porpoise,Neophocaena phocaenoides,03. ထိန်းသိမ်းရေးနှင့် မျိုးခွဲ,ဆက်စပ် ဂေဟစနစ်များ,ecosystems_my
+134,လင်းပိုင် (နှုတ်သီးရှည်),Long-beaked Common Dolphin,Delphinus capensis,02. ဖော်ပြချက်နှင့် နေထိုင်မှု,အကျဉ်းချုပ် ဖော်ပြချက်,description_my
+134,လင်းပိုင် (နှုတ်သီးရှည်),Long-beaked Common Dolphin,Delphinus capensis,02. ဖော်ပြချက်နှင့် နေထိုင်မှု,ရုပ်သွင်ပြင် ဖော်ပြချက်,physical_description_my
+134,လင်းပိုင် (နှုတ်သီးရှည်),Long-beaked Common Dolphin,Delphinus capensis,02. ဖော်ပြချက်နှင့် နေထိုင်မှု,အနေအထိုင်နှင့် အပြုအမူ,behaviour_my
+134,လင်းပိုင် (နှုတ်သီးရှည်),Long-beaked Common Dolphin,Delphinus capensis,03. ထိန်းသိမ်းရေးနှင့် မျိုးခွဲ,ထိန်းသိမ်းရေး လုပ်ဆောင်ချက်များ,conservation_actions_my
+134,လင်းပိုင် (နှုတ်သီးရှည်),Long-beaked Common Dolphin,Delphinus capensis,03. ထိန်းသိမ်းရေးနှင့် မျိုးခွဲ,ဆက်စပ် ဂေဟစနစ်များ,ecosystems_my
+134,လင်းပိုင် (နှုတ်သီးရှည်),Long-beaked Common Dolphin,Delphinus capensis,04. ဥပဒေအရ ကာကွယ်ထားမှု,ကာကွယ်မှုအဆင့် (မြန်မာ),protection_status_my
+134,လင်းပိုင် (နှုတ်သီးရှည်),Long-beaked Common Dolphin,Delphinus capensis,04. ဥပဒေအရ ကာကွယ်ထားမှု,ကာကွယ်မှုအဆင့် (English),protection_status_en
+134,လင်းပိုင် (နှုတ်သီးရှည်),Long-beaked Common Dolphin,Delphinus capensis,04. ဥပဒေအရ ကာကွယ်ထားမှု,ဥပဒေ / စာရင်း ကိုးကား,protection_law_my
+134,လင်းပိုင် (နှုတ်သီးရှည်),Long-beaked Common Dolphin,Delphinus capensis,04. ဥပဒေအရ ကာကွယ်ထားမှု,ကာကွယ်ရသည့် အကြောင်းရင်း,protection_basis_my
+139,ဘဲခေါင်းပန်းရောင်,Pink-headed Duck,Rhodonessa caryophyllacea,02. ဖော်ပြချက်နှင့် နေထိုင်မှု,ရုပ်သွင်ပြင် ဖော်ပြချက်,physical_description_my
+139,ဘဲခေါင်းပန်းရောင်,Pink-headed Duck,Rhodonessa caryophyllacea,02. ဖော်ပြချက်နှင့် နေထိုင်မှု,အစာစားနည်း,diet_my
+139,ဘဲခေါင်းပန်းရောင်,Pink-headed Duck,Rhodonessa caryophyllacea,02. ဖော်ပြချက်နှင့် နေထိုင်မှု,ဖြန့်ကျက်တည်ရှိမှု,distribution_my
+139,ဘဲခေါင်းပန်းရောင်,Pink-headed Duck,Rhodonessa caryophyllacea,02. ဖော်ပြချက်နှင့် နေထိုင်မှု,အနေအထိုင်နှင့် အပြုအမူ,behaviour_my
+139,ဘဲခေါင်းပန်းရောင်,Pink-headed Duck,Rhodonessa caryophyllacea,02. ဖော်ပြချက်နှင့် နေထိုင်မှု,တွေ့ရှိရသော ဒေသ,region_my
+139,ဘဲခေါင်းပန်းရောင်,Pink-headed Duck,Rhodonessa caryophyllacea,02. ဖော်ပြချက်နှင့် နေထိုင်မှု,ထူးခြားအချက်များ,fun_facts_my
+139,ဘဲခေါင်းပန်းရောင်,Pink-headed Duck,Rhodonessa caryophyllacea,03. ထိန်းသိမ်းရေးနှင့် မျိုးခွဲ,ကမ္ဘာလုံးဆိုင်ရာ IUCN အဆင့်,global_iucn_status
+139,ဘဲခေါင်းပန်းရောင်,Pink-headed Duck,Rhodonessa caryophyllacea,03. ထိန်းသိမ်းရေးနှင့် မျိုးခွဲ,IUCN အကဲဖြတ် အကြောင်းပြချက်,iucn_justification_my
+139,ဘဲခေါင်းပန်းရောင်,Pink-headed Duck,Rhodonessa caryophyllacea,03. ထိန်းသိမ်းရေးနှင့် မျိုးခွဲ,ရှင်သန်ရေး ခြိမ်းခြောက်မှုများ,threats_my
+139,ဘဲခေါင်းပန်းရောင်,Pink-headed Duck,Rhodonessa caryophyllacea,03. ထိန်းသိမ်းရေးနှင့် မျိုးခွဲ,ထိန်းသိမ်းရေး လိုအပ်ချက်များ,conservation_needs_my
+139,ဘဲခေါင်းပန်းရောင်,Pink-headed Duck,Rhodonessa caryophyllacea,03. ထိန်းသိမ်းရေးနှင့် မျိုးခွဲ,အသုံးပြုမှုနှင့် ကုန်သွယ်မှု,use_trade_my
+139,ဘဲခေါင်းပန်းရောင်,Pink-headed Duck,Rhodonessa caryophyllacea,03. ထိန်းသိမ်းရေးနှင့် မျိုးခွဲ,ဆက်စပ် ဂေဟစနစ်များ,ecosystems_my
+143,နီကိုဘာခို,Nicobar Pigeon,Caloenas nicobarica,02. ဖော်ပြချက်နှင့် နေထိုင်မှု,ရုပ်သွင်ပြင် ဖော်ပြချက်,physical_description_my
+143,နီကိုဘာခို,Nicobar Pigeon,Caloenas nicobarica,02. ဖော်ပြချက်နှင့် နေထိုင်မှု,အနေအထိုင်နှင့် အပြုအမူ,behaviour_my
+143,နီကိုဘာခို,Nicobar Pigeon,Caloenas nicobarica,02. ဖော်ပြချက်နှင့် နေထိုင်မှု,တွေ့ရှိရသော ဒေသ,region_my
+143,နီကိုဘာခို,Nicobar Pigeon,Caloenas nicobarica,02. ဖော်ပြချက်နှင့် နေထိုင်မှု,ထူးခြားအချက်များ,fun_facts_my
+143,နီကိုဘာခို,Nicobar Pigeon,Caloenas nicobarica,03. ထိန်းသိမ်းရေးနှင့် မျိုးခွဲ,ထိန်းသိမ်းရေး လုပ်ဆောင်ချက်များ,conservation_actions_my
+143,နီကိုဘာခို,Nicobar Pigeon,Caloenas nicobarica,03. ထိန်းသိမ်းရေးနှင့် မျိုးခွဲ,ဆက်စပ် ဂေဟစနစ်များ,ecosystems_my
+144,ကြိုးကြာခေါင်းမဲ,Black-necked Crane,Grus nigricollis,02. ဖော်ပြချက်နှင့် နေထိုင်မှု,ရုပ်သွင်ပြင် ဖော်ပြချက်,physical_description_my
+144,ကြိုးကြာခေါင်းမဲ,Black-necked Crane,Grus nigricollis,02. ဖော်ပြချက်နှင့် နေထိုင်မှု,အစာစားနည်း,diet_my
+144,ကြိုးကြာခေါင်းမဲ,Black-necked Crane,Grus nigricollis,02. ဖော်ပြချက်နှင့် နေထိုင်မှု,ဖြန့်ကျက်တည်ရှိမှု,distribution_my
+144,ကြိုးကြာခေါင်းမဲ,Black-necked Crane,Grus nigricollis,02. ဖော်ပြချက်နှင့် နေထိုင်မှု,အနေအထိုင်နှင့် အပြုအမူ,behaviour_my
+144,ကြိုးကြာခေါင်းမဲ,Black-necked Crane,Grus nigricollis,02. ဖော်ပြချက်နှင့် နေထိုင်မှု,အရွယ်အစား,size_my
+144,ကြိုးကြာခေါင်းမဲ,Black-necked Crane,Grus nigricollis,02. ဖော်ပြချက်နှင့် နေထိုင်မှု,သက်တမ်း,lifespan_my
+144,ကြိုးကြာခေါင်းမဲ,Black-necked Crane,Grus nigricollis,02. ဖော်ပြချက်နှင့် နေထိုင်မှု,တွေ့ရှိရသော ဒေသ,region_my
+144,ကြိုးကြာခေါင်းမဲ,Black-necked Crane,Grus nigricollis,02. ဖော်ပြချက်နှင့် နေထိုင်မှု,ထူးခြားအချက်များ,fun_facts_my
+144,ကြိုးကြာခေါင်းမဲ,Black-necked Crane,Grus nigricollis,03. ထိန်းသိမ်းရေးနှင့် မျိုးခွဲ,IUCN အကဲဖြတ် အကြောင်းပြချက်,iucn_justification_my
+144,ကြိုးကြာခေါင်းမဲ,Black-necked Crane,Grus nigricollis,03. ထိန်းသိမ်းရေးနှင့် မျိုးခွဲ,ရှင်သန်ရေး ခြိမ်းခြောက်မှုများ,threats_my
+144,ကြိုးကြာခေါင်းမဲ,Black-necked Crane,Grus nigricollis,03. ထိန်းသိမ်းရေးနှင့် မျိုးခွဲ,ထိန်းသိမ်းရေး လုပ်ဆောင်ချက်များ,conservation_actions_my
+144,ကြိုးကြာခေါင်းမဲ,Black-necked Crane,Grus nigricollis,03. ထိန်းသိမ်းရေးနှင့် မျိုးခွဲ,ထိန်းသိမ်းရေး လိုအပ်ချက်များ,conservation_needs_my
+144,ကြိုးကြာခေါင်းမဲ,Black-necked Crane,Grus nigricollis,03. ထိန်းသိမ်းရေးနှင့် မျိုးခွဲ,ဆက်စပ် ဂေဟစနစ်များ,ecosystems_my
+144,ကြိုးကြာခေါင်းမဲ,Black-necked Crane,Grus nigricollis,04. ဥပဒေအရ ကာကွယ်ထားမှု,ကာကွယ်မှုအဆင့် (မြန်မာ),protection_status_my
+144,ကြိုးကြာခေါင်းမဲ,Black-necked Crane,Grus nigricollis,04. ဥပဒေအရ ကာကွယ်ထားမှု,ကာကွယ်မှုအဆင့် (English),protection_status_en
+144,ကြိုးကြာခေါင်းမဲ,Black-necked Crane,Grus nigricollis,04. ဥပဒေအရ ကာကွယ်ထားမှု,ဥပဒေ / စာရင်း ကိုးကား,protection_law_my
+144,ကြိုးကြာခေါင်းမဲ,Black-necked Crane,Grus nigricollis,04. ဥပဒေအရ ကာကွယ်ထားမှု,ကာကွယ်ရသည့် အကြောင်းရင်း,protection_basis_my
+145,ငှက်မင်းသား (ကျောပြာ),Black-naped Monarch,Hypothymis azurea,02. ဖော်ပြချက်နှင့် နေထိုင်မှု,ရုပ်သွင်ပြင် ဖော်ပြချက်,physical_description_my
+145,ငှက်မင်းသား (ကျောပြာ),Black-naped Monarch,Hypothymis azurea,02. ဖော်ပြချက်နှင့် နေထိုင်မှု,အစာစားနည်း,diet_my
+145,ငှက်မင်းသား (ကျောပြာ),Black-naped Monarch,Hypothymis azurea,02. ဖော်ပြချက်နှင့် နေထိုင်မှု,အနေအထိုင်နှင့် အပြုအမူ,behaviour_my
+145,ငှက်မင်းသား (ကျောပြာ),Black-naped Monarch,Hypothymis azurea,02. ဖော်ပြချက်နှင့် နေထိုင်မှု,ထူးခြားအချက်များ,fun_facts_my
+145,ငှက်မင်းသား (ကျောပြာ),Black-naped Monarch,Hypothymis azurea,03. ထိန်းသိမ်းရေးနှင့် မျိုးခွဲ,ကမ္ဘာလုံးဆိုင်ရာ IUCN အဆင့်,global_iucn_status
+145,ငှက်မင်းသား (ကျောပြာ),Black-naped Monarch,Hypothymis azurea,03. ထိန်းသိမ်းရေးနှင့် မျိုးခွဲ,ဆက်စပ် ဂေဟစနစ်များ,ecosystems_my
+146,စွန်,Black Kite,Milvus migrans,02. ဖော်ပြချက်နှင့် နေထိုင်မှု,ရုပ်သွင်ပြင် ဖော်ပြချက်,physical_description_my
+146,စွန်,Black Kite,Milvus migrans,02. ဖော်ပြချက်နှင့် နေထိုင်မှု,အစာစားနည်း,diet_my
+146,စွန်,Black Kite,Milvus migrans,02. ဖော်ပြချက်နှင့် နေထိုင်မှု,အနေအထိုင်နှင့် အပြုအမူ,behaviour_my
+146,စွန်,Black Kite,Milvus migrans,03. ထိန်းသိမ်းရေးနှင့် မျိုးခွဲ,ကမ္ဘာလုံးဆိုင်ရာ IUCN အဆင့်,global_iucn_status
+146,စွန်,Black Kite,Milvus migrans,03. ထိန်းသိမ်းရေးနှင့် မျိုးခွဲ,Order,species_order
+146,စွန်,Black Kite,Milvus migrans,03. ထိန်းသိမ်းရေးနှင့် မျိုးခွဲ,Family,species_family
+146,စွန်,Black Kite,Milvus migrans,03. ထိန်းသိမ်းရေးနှင့် မျိုးခွဲ,ရှင်သန်ရေး ခြိမ်းခြောက်မှုများ,threats_my
+146,စွန်,Black Kite,Milvus migrans,03. ထိန်းသိမ်းရေးနှင့် မျိုးခွဲ,ထိန်းသိမ်းရေး လုပ်ဆောင်ချက်များ,conservation_actions_my
+146,စွန်,Black Kite,Milvus migrans,03. ထိန်းသိမ်းရေးနှင့် မျိုးခွဲ,ထိန်းသိမ်းရေး လိုအပ်ချက်များ,conservation_needs_my
+146,စွန်,Black Kite,Milvus migrans,03. ထိန်းသိမ်းရေးနှင့် မျိုးခွဲ,အသုံးပြုမှုနှင့် ကုန်သွယ်မှု,use_trade_my
+146,စွန်,Black Kite,Milvus migrans,03. ထိန်းသိမ်းရေးနှင့် မျိုးခွဲ,ဆက်စပ် ဂေဟစနစ်များ,ecosystems_my
+147,လင်းယုန်မျိုးများ,Eagles,Aquila,03. ထိန်းသိမ်းရေးနှင့် မျိုးခွဲ,ဆက်စပ် ဂေဟစနစ်များ,ecosystems_my
+147,လင်းယုန်မျိုးများ,Eagles,Aquila,04. ဥပဒေအရ ကာကွယ်ထားမှု,ကာကွယ်မှုအဆင့် (မြန်မာ),protection_status_my
+147,လင်းယုန်မျိုးများ,Eagles,Aquila,04. ဥပဒေအရ ကာကွယ်ထားမှု,ကာကွယ်မှုအဆင့် (English),protection_status_en
+147,လင်းယုန်မျိုးများ,Eagles,Aquila,04. ဥပဒေအရ ကာကွယ်ထားမှု,ဥပဒေ / စာရင်း ကိုးကား,protection_law_my
+147,လင်းယုန်မျိုးများ,Eagles,Aquila,04. ဥပဒေအရ ကာကွယ်ထားမှု,ကာကွယ်ရသည့် အကြောင်းရင်း,protection_basis_my
+150,ဇီးကွက်,Spotted Owlet,Athene brama,02. ဖော်ပြချက်နှင့် နေထိုင်မှု,ရုပ်သွင်ပြင် ဖော်ပြချက်,physical_description_my
+150,ဇီးကွက်,Spotted Owlet,Athene brama,02. ဖော်ပြချက်နှင့် နေထိုင်မှု,ဖြန့်ကျက်တည်ရှိမှု,distribution_my
+150,ဇီးကွက်,Spotted Owlet,Athene brama,02. ဖော်ပြချက်နှင့် နေထိုင်မှု,အနေအထိုင်နှင့် အပြုအမူ,behaviour_my
+150,ဇီးကွက်,Spotted Owlet,Athene brama,03. ထိန်းသိမ်းရေးနှင့် မျိုးခွဲ,ကမ္ဘာလုံးဆိုင်ရာ IUCN အဆင့်,global_iucn_status
+150,ဇီးကွက်,Spotted Owlet,Athene brama,03. ထိန်းသိမ်းရေးနှင့် မျိုးခွဲ,Order,species_order
+150,ဇီးကွက်,Spotted Owlet,Athene brama,03. ထိန်းသိမ်းရေးနှင့် မျိုးခွဲ,Family,species_family
+150,ဇီးကွက်,Spotted Owlet,Athene brama,03. ထိန်းသိမ်းရေးနှင့် မျိုးခွဲ,ထိန်းသိမ်းရေး လုပ်ဆောင်ချက်များ,conservation_actions_my
+150,ဇီးကွက်,Spotted Owlet,Athene brama,03. ထိန်းသိမ်းရေးနှင့် မျိုးခွဲ,ဆက်စပ် ဂေဟစနစ်များ,ecosystems_my
+157,ငှက်ခါး,Indian Roller,Coracias benghalensis,02. ဖော်ပြချက်နှင့် နေထိုင်မှု,ရုပ်သွင်ပြင် ဖော်ပြချက်,physical_description_my
+157,ငှက်ခါး,Indian Roller,Coracias benghalensis,02. ဖော်ပြချက်နှင့် နေထိုင်မှု,အစာစားနည်း,diet_my
+157,ငှက်ခါး,Indian Roller,Coracias benghalensis,02. ဖော်ပြချက်နှင့် နေထိုင်မှု,အနေအထိုင်နှင့် အပြုအမူ,behaviour_my
+157,ငှက်ခါး,Indian Roller,Coracias benghalensis,02. ဖော်ပြချက်နှင့် နေထိုင်မှု,ထူးခြားအချက်များ,fun_facts_my
+157,ငှက်ခါး,Indian Roller,Coracias benghalensis,03. ထိန်းသိမ်းရေးနှင့် မျိုးခွဲ,ရှင်သန်ရေး ခြိမ်းခြောက်မှုများ,threats_my
+157,ငှက်ခါး,Indian Roller,Coracias benghalensis,03. ထိန်းသိမ်းရေးနှင့် မျိုးခွဲ,ထိန်းသိမ်းရေး လုပ်ဆောင်ချက်များ,conservation_actions_my
+157,ငှက်ခါး,Indian Roller,Coracias benghalensis,03. ထိန်းသိမ်းရေးနှင့် မျိုးခွဲ,အသုံးပြုမှုနှင့် ကုန်သွယ်မှု,use_trade_my
+157,ငှက်ခါး,Indian Roller,Coracias benghalensis,03. ထိန်းသိမ်းရေးနှင့် မျိုးခွဲ,ဆက်စပ် ဂေဟစနစ်များ,ecosystems_my
+158,ဖိုးခေါင်ငှက်မျိုးရင်း / ဘိုတဲမျိုးရင်း,Asian Barbets,Megalaimidae,02. ဖော်ပြချက်နှင့် နေထိုင်မှု,အကျဉ်းချုပ် ဖော်ပြချက်,description_my
+158,ဖိုးခေါင်ငှက်မျိုးရင်း / ဘိုတဲမျိုးရင်း,Asian Barbets,Megalaimidae,02. ဖော်ပြချက်နှင့် နေထိုင်မှု,နေထိုင်ရာ,habitat_my
+158,ဖိုးခေါင်ငှက်မျိုးရင်း / ဘိုတဲမျိုးရင်း,Asian Barbets,Megalaimidae,02. ဖော်ပြချက်နှင့် နေထိုင်မှု,အစာစားနည်း,diet_my
+158,ဖိုးခေါင်ငှက်မျိုးရင်း / ဘိုတဲမျိုးရင်း,Asian Barbets,Megalaimidae,02. ဖော်ပြချက်နှင့် နေထိုင်မှု,ဖြန့်ကျက်တည်ရှိမှု,distribution_my
+158,ဖိုးခေါင်ငှက်မျိုးရင်း / ဘိုတဲမျိုးရင်း,Asian Barbets,Megalaimidae,02. ဖော်ပြချက်နှင့် နေထိုင်မှု,အရွယ်အစား,size_my
+158,ဖိုးခေါင်ငှက်မျိုးရင်း / ဘိုတဲမျိုးရင်း,Asian Barbets,Megalaimidae,02. ဖော်ပြချက်နှင့် နေထိုင်မှု,သက်တမ်း,lifespan_my
+158,ဖိုးခေါင်ငှက်မျိုးရင်း / ဘိုတဲမျိုးရင်း,Asian Barbets,Megalaimidae,02. ဖော်ပြချက်နှင့် နေထိုင်မှု,တွေ့ရှိရသော ဒေသ,region_my
+158,ဖိုးခေါင်ငှက်မျိုးရင်း / ဘိုတဲမျိုးရင်း,Asian Barbets,Megalaimidae,03. ထိန်းသိမ်းရေးနှင့် မျိုးခွဲ,မြန်မာ IUCN အဆင့်,conservation_status
+158,ဖိုးခေါင်ငှက်မျိုးရင်း / ဘိုတဲမျိုးရင်း,Asian Barbets,Megalaimidae,03. ထိန်းသိမ်းရေးနှင့် မျိုးခွဲ,ကမ္ဘာလုံးဆိုင်ရာ IUCN အဆင့်,global_iucn_status
+158,ဖိုးခေါင်ငှက်မျိုးရင်း / ဘိုတဲမျိုးရင်း,Asian Barbets,Megalaimidae,03. ထိန်းသိမ်းရေးနှင့် မျိုးခွဲ,Family,species_family
+158,ဖိုးခေါင်ငှက်မျိုးရင်း / ဘိုတဲမျိုးရင်း,Asian Barbets,Megalaimidae,03. ထိန်းသိမ်းရေးနှင့် မျိုးခွဲ,IUCN အကဲဖြတ် အကြောင်းပြချက်,iucn_justification_my
+158,ဖိုးခေါင်ငှက်မျိုးရင်း / ဘိုတဲမျိုးရင်း,Asian Barbets,Megalaimidae,03. ထိန်းသိမ်းရေးနှင့် မျိုးခွဲ,ဆက်စပ် ဂေဟစနစ်များ,ecosystems_my
+158,ဖိုးခေါင်ငှက်မျိုးရင်း / ဘိုတဲမျိုးရင်း,Asian Barbets,Megalaimidae,04. ဥပဒေအရ ကာကွယ်ထားမှု,ကာကွယ်မှုအဆင့် (မြန်မာ),protection_status_my
+158,ဖိုးခေါင်ငှက်မျိုးရင်း / ဘိုတဲမျိုးရင်း,Asian Barbets,Megalaimidae,04. ဥပဒေအရ ကာကွယ်ထားမှု,ကာကွယ်မှုအဆင့် (English),protection_status_en
+158,ဖိုးခေါင်ငှက်မျိုးရင်း / ဘိုတဲမျိုးရင်း,Asian Barbets,Megalaimidae,04. ဥပဒေအရ ကာကွယ်ထားမှု,ဥပဒေ / စာရင်း ကိုးကား,protection_law_my
+158,ဖိုးခေါင်ငှက်မျိုးရင်း / ဘိုတဲမျိုးရင်း,Asian Barbets,Megalaimidae,04. ဥပဒေအရ ကာကွယ်ထားမှု,ကာကွယ်ရသည့် အကြောင်းရင်း,protection_basis_my
+160,သစ်တောက်ငှက်,Woodpeckers,Picidae,03. ထိန်းသိမ်းရေးနှင့် မျိုးခွဲ,ဆက်စပ် ဂေဟစနစ်များ,ecosystems_my
+160,သစ်တောက်ငှက်,Woodpeckers,Picidae,04. ဥပဒေအရ ကာကွယ်ထားမှု,ကာကွယ်မှုအဆင့် (မြန်မာ),protection_status_my
+160,သစ်တောက်ငှက်,Woodpeckers,Picidae,04. ဥပဒေအရ ကာကွယ်ထားမှု,ကာကွယ်မှုအဆင့် (English),protection_status_en
+160,သစ်တောက်ငှက်,Woodpeckers,Picidae,04. ဥပဒေအရ ကာကွယ်ထားမှု,ဥပဒေ / စာရင်း ကိုးကား,protection_law_my
+160,သစ်တောက်ငှက်,Woodpeckers,Picidae,04. ဥပဒေအရ ကာကွယ်ထားမှု,ကာကွယ်ရသည့် အကြောင်းရင်း,protection_basis_my
+162,ဆက်ရက်,Common Myna,Acridotheres tristis,02. ဖော်ပြချက်နှင့် နေထိုင်မှု,ရုပ်သွင်ပြင် ဖော်ပြချက်,physical_description_my
+162,ဆက်ရက်,Common Myna,Acridotheres tristis,02. ဖော်ပြချက်နှင့် နေထိုင်မှု,အစာစားနည်း,diet_my
+162,ဆက်ရက်,Common Myna,Acridotheres tristis,02. ဖော်ပြချက်နှင့် နေထိုင်မှု,အနေအထိုင်နှင့် အပြုအမူ,behaviour_my
+162,ဆက်ရက်,Common Myna,Acridotheres tristis,02. ဖော်ပြချက်နှင့် နေထိုင်မှု,တွေ့ရှိရသော ဒေသ,region_my
+162,ဆက်ရက်,Common Myna,Acridotheres tristis,02. ဖော်ပြချက်နှင့် နေထိုင်မှု,ထူးခြားအချက်များ,fun_facts_my
+162,ဆက်ရက်,Common Myna,Acridotheres tristis,03. ထိန်းသိမ်းရေးနှင့် မျိုးခွဲ,ကမ္ဘာလုံးဆိုင်ရာ IUCN အဆင့်,global_iucn_status
+162,ဆက်ရက်,Common Myna,Acridotheres tristis,03. ထိန်းသိမ်းရေးနှင့် မျိုးခွဲ,Order,species_order
+162,ဆက်ရက်,Common Myna,Acridotheres tristis,03. ထိန်းသိမ်းရေးနှင့် မျိုးခွဲ,Family,species_family
+162,ဆက်ရက်,Common Myna,Acridotheres tristis,03. ထိန်းသိမ်းရေးနှင့် မျိုးခွဲ,IUCN အကဲဖြတ် အကြောင်းပြချက်,iucn_justification_my
+162,ဆက်ရက်,Common Myna,Acridotheres tristis,03. ထိန်းသိမ်းရေးနှင့် မျိုးခွဲ,ဆက်စပ် ဂေဟစနစ်များ,ecosystems_my
+162,ဆက်ရက်,Common Myna,Acridotheres tristis,04. ဥပဒေအရ ကာကွယ်ထားမှု,ကာကွယ်မှုအဆင့် (မြန်မာ),protection_status_my
+162,ဆက်ရက်,Common Myna,Acridotheres tristis,04. ဥပဒေအရ ကာကွယ်ထားမှု,ကာကွယ်မှုအဆင့် (English),protection_status_en
+162,ဆက်ရက်,Common Myna,Acridotheres tristis,04. ဥပဒေအရ ကာကွယ်ထားမှု,ဥပဒေ / စာရင်း ကိုးကား,protection_law_my
+162,ဆက်ရက်,Common Myna,Acridotheres tristis,04. ဥပဒေအရ ကာကွယ်ထားမှု,ကာကွယ်ရသည့် အကြောင်းရင်း,protection_basis_my
+165,ခြုံတိုးငှက်,Chevron-breasted Babbler ,Sphenocichla roberti,02. ဖော်ပြချက်နှင့် နေထိုင်မှု,အကျဉ်းချုပ် ဖော်ပြချက်,description_my
+165,ခြုံတိုးငှက်,Chevron-breasted Babbler ,Sphenocichla roberti,02. ဖော်ပြချက်နှင့် နေထိုင်မှု,ရုပ်သွင်ပြင် ဖော်ပြချက်,physical_description_my
+165,ခြုံတိုးငှက်,Chevron-breasted Babbler ,Sphenocichla roberti,02. ဖော်ပြချက်နှင့် နေထိုင်မှု,ဖြန့်ကျက်တည်ရှိမှု,distribution_my
+165,ခြုံတိုးငှက်,Chevron-breasted Babbler ,Sphenocichla roberti,02. ဖော်ပြချက်နှင့် နေထိုင်မှု,အရွယ်အစား,size_my
+165,ခြုံတိုးငှက်,Chevron-breasted Babbler ,Sphenocichla roberti,02. ဖော်ပြချက်နှင့် နေထိုင်မှု,သက်တမ်း,lifespan_my
+165,ခြုံတိုးငှက်,Chevron-breasted Babbler ,Sphenocichla roberti,02. ဖော်ပြချက်နှင့် နေထိုင်မှု,တွေ့ရှိရသော ဒေသ,region_my
+165,ခြုံတိုးငှက်,Chevron-breasted Babbler ,Sphenocichla roberti,03. ထိန်းသိမ်းရေးနှင့် မျိုးခွဲ,ကမ္ဘာလုံးဆိုင်ရာ IUCN အဆင့်,global_iucn_status
+165,ခြုံတိုးငှက်,Chevron-breasted Babbler ,Sphenocichla roberti,03. ထိန်းသိမ်းရေးနှင့် မျိုးခွဲ,Order,species_order
+165,ခြုံတိုးငှက်,Chevron-breasted Babbler ,Sphenocichla roberti,03. ထိန်းသိမ်းရေးနှင့် မျိုးခွဲ,Family,species_family
+165,ခြုံတိုးငှက်,Chevron-breasted Babbler ,Sphenocichla roberti,03. ထိန်းသိမ်းရေးနှင့် မျိုးခွဲ,IUCN အကဲဖြတ် အကြောင်းပြချက်,iucn_justification_my
+165,ခြုံတိုးငှက်,Chevron-breasted Babbler ,Sphenocichla roberti,03. ထိန်းသိမ်းရေးနှင့် မျိုးခွဲ,ဆက်စပ် ဂေဟစနစ်များ,ecosystems_my
+169,တောကြက်/တညင်ကြက်,Red Junglefowl,Gallus gallus,02. ဖော်ပြချက်နှင့် နေထိုင်မှု,အကျဉ်းချုပ် ဖော်ပြချက်,description_my
+169,တောကြက်/တညင်ကြက်,Red Junglefowl,Gallus gallus,02. ဖော်ပြချက်နှင့် နေထိုင်မှု,ရုပ်သွင်ပြင် ဖော်ပြချက်,physical_description_my
+169,တောကြက်/တညင်ကြက်,Red Junglefowl,Gallus gallus,02. ဖော်ပြချက်နှင့် နေထိုင်မှု,အစာစားနည်း,diet_my
+169,တောကြက်/တညင်ကြက်,Red Junglefowl,Gallus gallus,02. ဖော်ပြချက်နှင့် နေထိုင်မှု,ဖြန့်ကျက်တည်ရှိမှု,distribution_my
+169,တောကြက်/တညင်ကြက်,Red Junglefowl,Gallus gallus,02. ဖော်ပြချက်နှင့် နေထိုင်မှု,အနေအထိုင်နှင့် အပြုအမူ,behaviour_my
+169,တောကြက်/တညင်ကြက်,Red Junglefowl,Gallus gallus,02. ဖော်ပြချက်နှင့် နေထိုင်မှု,တွေ့ရှိရသော ဒေသ,region_my
+169,တောကြက်/တညင်ကြက်,Red Junglefowl,Gallus gallus,02. ဖော်ပြချက်နှင့် နေထိုင်မှု,ထူးခြားအချက်များ,fun_facts_my
+169,တောကြက်/တညင်ကြက်,Red Junglefowl,Gallus gallus,03. ထိန်းသိမ်းရေးနှင့် မျိုးခွဲ,ထိန်းသိမ်းရေး လုပ်ဆောင်ချက်များ,conservation_actions_my
+169,တောကြက်/တညင်ကြက်,Red Junglefowl,Gallus gallus,03. ထိန်းသိမ်းရေးနှင့် မျိုးခွဲ,ဆက်စပ် ဂေဟစနစ်များ,ecosystems_my
+169,တောကြက်/တညင်ကြက်,Red Junglefowl,Gallus gallus,04. ဥပဒေအရ ကာကွယ်ထားမှု,ကာကွယ်မှုအဆင့် (မြန်မာ),protection_status_my
+169,တောကြက်/တညင်ကြက်,Red Junglefowl,Gallus gallus,04. ဥပဒေအရ ကာကွယ်ထားမှု,ကာကွယ်မှုအဆင့် (English),protection_status_en
+169,တောကြက်/တညင်ကြက်,Red Junglefowl,Gallus gallus,04. ဥပဒေအရ ကာကွယ်ထားမှု,ဥပဒေ / စာရင်း ကိုးကား,protection_law_my
+169,တောကြက်/တညင်ကြက်,Red Junglefowl,Gallus gallus,04. ဥပဒေအရ ကာကွယ်ထားမှု,ကာကွယ်ရသည့် အကြောင်းရင်း,protection_basis_my
+172,ဥဩစိမ်း,Asian Emerald Cuckoo,Chrysococcyx maculatus,02. ဖော်ပြချက်နှင့် နေထိုင်မှု,အကျဉ်းချုပ် ဖော်ပြချက်,description_my
+172,ဥဩစိမ်း,Asian Emerald Cuckoo,Chrysococcyx maculatus,02. ဖော်ပြချက်နှင့် နေထိုင်မှု,ရုပ်သွင်ပြင် ဖော်ပြချက်,physical_description_my
+172,ဥဩစိမ်း,Asian Emerald Cuckoo,Chrysococcyx maculatus,02. ဖော်ပြချက်နှင့် နေထိုင်မှု,ဖြန့်ကျက်တည်ရှိမှု,distribution_my
+172,ဥဩစိမ်း,Asian Emerald Cuckoo,Chrysococcyx maculatus,02. ဖော်ပြချက်နှင့် နေထိုင်မှု,အနေအထိုင်နှင့် အပြုအမူ,behaviour_my
+172,ဥဩစိမ်း,Asian Emerald Cuckoo,Chrysococcyx maculatus,02. ဖော်ပြချက်နှင့် နေထိုင်မှု,တွေ့ရှိရသော ဒေသ,region_my
+172,ဥဩစိမ်း,Asian Emerald Cuckoo,Chrysococcyx maculatus,03. ထိန်းသိမ်းရေးနှင့် မျိုးခွဲ,ဆက်စပ် ဂေဟစနစ်များ,ecosystems_my
+174,မိုးဆွေငှက်,Plaintive Cuckoo,Cacomantis merulinus,02. ဖော်ပြချက်နှင့် နေထိုင်မှု,ရုပ်သွင်ပြင် ဖော်ပြချက်,physical_description_my
+174,မိုးဆွေငှက်,Plaintive Cuckoo,Cacomantis merulinus,02. ဖော်ပြချက်နှင့် နေထိုင်မှု,အစာစားနည်း,diet_my
+174,မိုးဆွေငှက်,Plaintive Cuckoo,Cacomantis merulinus,02. ဖော်ပြချက်နှင့် နေထိုင်မှု,ဖြန့်ကျက်တည်ရှိမှု,distribution_my
+174,မိုးဆွေငှက်,Plaintive Cuckoo,Cacomantis merulinus,02. ဖော်ပြချက်နှင့် နေထိုင်မှု,အနေအထိုင်နှင့် အပြုအမူ,behaviour_my
+174,မိုးဆွေငှက်,Plaintive Cuckoo,Cacomantis merulinus,02. ဖော်ပြချက်နှင့် နေထိုင်မှု,တွေ့ရှိရသော ဒေသ,region_my
+174,မိုးဆွေငှက်,Plaintive Cuckoo,Cacomantis merulinus,02. ဖော်ပြချက်နှင့် နေထိုင်မှု,ထူးခြားအချက်များ,fun_facts_my
+174,မိုးဆွေငှက်,Plaintive Cuckoo,Cacomantis merulinus,03. ထိန်းသိမ်းရေးနှင့် မျိုးခွဲ,ကမ္ဘာလုံးဆိုင်ရာ IUCN အဆင့်,global_iucn_status
+174,မိုးဆွေငှက်,Plaintive Cuckoo,Cacomantis merulinus,03. ထိန်းသိမ်းရေးနှင့် မျိုးခွဲ,IUCN အကဲဖြတ် အကြောင်းပြချက်,iucn_justification_my
+174,မိုးဆွေငှက်,Plaintive Cuckoo,Cacomantis merulinus,03. ထိန်းသိမ်းရေးနှင့် မျိုးခွဲ,ထိန်းသိမ်းရေး လုပ်ဆောင်ချက်များ,conservation_actions_my
+174,မိုးဆွေငှက်,Plaintive Cuckoo,Cacomantis merulinus,03. ထိန်းသိမ်းရေးနှင့် မျိုးခွဲ,ထိန်းသိမ်းရေး လိုအပ်ချက်များ,conservation_needs_my
+174,မိုးဆွေငှက်,Plaintive Cuckoo,Cacomantis merulinus,03. ထိန်းသိမ်းရေးနှင့် မျိုးခွဲ,အသုံးပြုမှုနှင့် ကုန်သွယ်မှု,use_trade_my
+174,မိုးဆွေငှက်,Plaintive Cuckoo,Cacomantis merulinus,03. ထိန်းသိမ်းရေးနှင့် မျိုးခွဲ,ဆက်စပ် ဂေဟစနစ်များ,ecosystems_my
+175,ငှက်ပန်းထိမ်,Coppersmith Barbet,Megalaima haemacephala,02. ဖော်ပြချက်နှင့် နေထိုင်မှု,အကျဉ်းချုပ် ဖော်ပြချက်,description_my
+175,ငှက်ပန်းထိမ်,Coppersmith Barbet,Megalaima haemacephala,02. ဖော်ပြချက်နှင့် နေထိုင်မှု,ရုပ်သွင်ပြင် ဖော်ပြချက်,physical_description_my
+175,ငှက်ပန်းထိမ်,Coppersmith Barbet,Megalaima haemacephala,02. ဖော်ပြချက်နှင့် နေထိုင်မှု,ဖြန့်ကျက်တည်ရှိမှု,distribution_my
+175,ငှက်ပန်းထိမ်,Coppersmith Barbet,Megalaima haemacephala,02. ဖော်ပြချက်နှင့် နေထိုင်မှု,တွေ့ရှိရသော ဒေသ,region_my
+175,ငှက်ပန်းထိမ်,Coppersmith Barbet,Megalaima haemacephala,03. ထိန်းသိမ်းရေးနှင့် မျိုးခွဲ,ကမ္ဘာလုံးဆိုင်ရာ IUCN အဆင့်,global_iucn_status
+175,ငှက်ပန်းထိမ်,Coppersmith Barbet,Megalaima haemacephala,03. ထိန်းသိမ်းရေးနှင့် မျိုးခွဲ,Order,species_order
+175,ငှက်ပန်းထိမ်,Coppersmith Barbet,Megalaima haemacephala,03. ထိန်းသိမ်းရေးနှင့် မျိုးခွဲ,Family,species_family
+175,ငှက်ပန်းထိမ်,Coppersmith Barbet,Megalaima haemacephala,03. ထိန်းသိမ်းရေးနှင့် မျိုးခွဲ,ဆက်စပ် ဂေဟစနစ်များ,ecosystems_my
+177,ချိုး/ခို,Doves/Pigeons,Columbidae,02. ဖော်ပြချက်နှင့် နေထိုင်မှု,ရုပ်သွင်ပြင် ဖော်ပြချက်,physical_description_my
+177,ချိုး/ခို,Doves/Pigeons,Columbidae,02. ဖော်ပြချက်နှင့် နေထိုင်မှု,အစာစားနည်း,diet_my
+177,ချိုး/ခို,Doves/Pigeons,Columbidae,02. ဖော်ပြချက်နှင့် နေထိုင်မှု,ဖြန့်ကျက်တည်ရှိမှု,distribution_my
+177,ချိုး/ခို,Doves/Pigeons,Columbidae,02. ဖော်ပြချက်နှင့် နေထိုင်မှု,အနေအထိုင်နှင့် အပြုအမူ,behaviour_my
+177,ချိုး/ခို,Doves/Pigeons,Columbidae,02. ဖော်ပြချက်နှင့် နေထိုင်မှု,အရွယ်အစား,size_my
+177,ချိုး/ခို,Doves/Pigeons,Columbidae,02. ဖော်ပြချက်နှင့် နေထိုင်မှု,သက်တမ်း,lifespan_my
+177,ချိုး/ခို,Doves/Pigeons,Columbidae,02. ဖော်ပြချက်နှင့် နေထိုင်မှု,တွေ့ရှိရသော ဒေသ,region_my
+177,ချိုး/ခို,Doves/Pigeons,Columbidae,02. ဖော်ပြချက်နှင့် နေထိုင်မှု,ထူးခြားအချက်များ,fun_facts_my
+177,ချိုး/ခို,Doves/Pigeons,Columbidae,03. ထိန်းသိမ်းရေးနှင့် မျိုးခွဲ,ဆက်စပ် ဂေဟစနစ်များ,ecosystems_my
+177,ချိုး/ခို,Doves/Pigeons,Columbidae,04. ဥပဒေအရ ကာကွယ်ထားမှု,ကာကွယ်မှုအဆင့် (မြန်မာ),protection_status_my
+177,ချိုး/ခို,Doves/Pigeons,Columbidae,04. ဥပဒေအရ ကာကွယ်ထားမှု,ကာကွယ်မှုအဆင့် (English),protection_status_en
+177,ချိုး/ခို,Doves/Pigeons,Columbidae,04. ဥပဒေအရ ကာကွယ်ထားမှု,ဥပဒေ / စာရင်း ကိုးကား,protection_law_my
+177,ချိုး/ခို,Doves/Pigeons,Columbidae,04. ဥပဒေအရ ကာကွယ်ထားမှု,ကာကွယ်ရသည့် အကြောင်းရင်း,protection_basis_my
+179,ငှက်စိမ်း,Leafbirds,Chloropseidae,02. ဖော်ပြချက်နှင့် နေထိုင်မှု,အကျဉ်းချုပ် ဖော်ပြချက်,description_my
+179,ငှက်စိမ်း,Leafbirds,Chloropseidae,02. ဖော်ပြချက်နှင့် နေထိုင်မှု,ရုပ်သွင်ပြင် ဖော်ပြချက်,physical_description_my
+179,ငှက်စိမ်း,Leafbirds,Chloropseidae,02. ဖော်ပြချက်နှင့် နေထိုင်မှု,နေထိုင်ရာ,habitat_my
+179,ငှက်စိမ်း,Leafbirds,Chloropseidae,02. ဖော်ပြချက်နှင့် နေထိုင်မှု,အစာစားနည်း,diet_my
+179,ငှက်စိမ်း,Leafbirds,Chloropseidae,02. ဖော်ပြချက်နှင့် နေထိုင်မှု,အနေအထိုင်နှင့် အပြုအမူ,behaviour_my
+179,ငှက်စိမ်း,Leafbirds,Chloropseidae,02. ဖော်ပြချက်နှင့် နေထိုင်မှု,တွေ့ရှိရသော ဒေသ,region_my
+179,ငှက်စိမ်း,Leafbirds,Chloropseidae,02. ဖော်ပြချက်နှင့် နေထိုင်မှု,ထူးခြားအချက်များ,fun_facts_my
+179,ငှက်စိမ်း,Leafbirds,Chloropseidae,03. ထိန်းသိမ်းရေးနှင့် မျိုးခွဲ,မြန်မာ IUCN အဆင့်,conservation_status
+179,ငှက်စိမ်း,Leafbirds,Chloropseidae,03. ထိန်းသိမ်းရေးနှင့် မျိုးခွဲ,IUCN အကဲဖြတ် အကြောင်းပြချက်,iucn_justification_my
+179,ငှက်စိမ်း,Leafbirds,Chloropseidae,03. ထိန်းသိမ်းရေးနှင့် မျိုးခွဲ,ဆက်စပ် ဂေဟစနစ်များ,ecosystems_my
+179,ငှက်စိမ်း,Leafbirds,Chloropseidae,04. ဥပဒေအရ ကာကွယ်ထားမှု,ကာကွယ်မှုအဆင့် (မြန်မာ),protection_status_my
+179,ငှက်စိမ်း,Leafbirds,Chloropseidae,04. ဥပဒေအရ ကာကွယ်ထားမှု,ကာကွယ်မှုအဆင့် (English),protection_status_en
+179,ငှက်စိမ်း,Leafbirds,Chloropseidae,04. ဥပဒေအရ ကာကွယ်ထားမှု,ဥပဒေ / စာရင်း ကိုးကား,protection_law_my
+179,ငှက်စိမ်း,Leafbirds,Chloropseidae,04. ဥပဒေအရ ကာကွယ်ထားမှု,ကာကွယ်ရသည့် အကြောင်းရင်း,protection_basis_my
+180,ငှက်ဘီလူး,Long-tailed Shrike,Lanius schach,02. ဖော်ပြချက်နှင့် နေထိုင်မှု,ရုပ်သွင်ပြင် ဖော်ပြချက်,physical_description_my
+180,ငှက်ဘီလူး,Long-tailed Shrike,Lanius schach,02. ဖော်ပြချက်နှင့် နေထိုင်မှု,အနေအထိုင်နှင့် အပြုအမူ,behaviour_my
+180,ငှက်ဘီလူး,Long-tailed Shrike,Lanius schach,02. ဖော်ပြချက်နှင့် နေထိုင်မှု,ထူးခြားအချက်များ,fun_facts_my
+180,ငှက်ဘီလူး,Long-tailed Shrike,Lanius schach,03. ထိန်းသိမ်းရေးနှင့် မျိုးခွဲ,ကမ္ဘာလုံးဆိုင်ရာ IUCN အဆင့်,global_iucn_status
+180,ငှက်ဘီလူး,Long-tailed Shrike,Lanius schach,03. ထိန်းသိမ်းရေးနှင့် မျိုးခွဲ,Order,species_order
+180,ငှက်ဘီလူး,Long-tailed Shrike,Lanius schach,03. ထိန်းသိမ်းရေးနှင့် မျိုးခွဲ,Family,species_family
+180,ငှက်ဘီလူး,Long-tailed Shrike,Lanius schach,03. ထိန်းသိမ်းရေးနှင့် မျိုးခွဲ,IUCN အကဲဖြတ် အကြောင်းပြချက်,iucn_justification_my
+180,ငှက်ဘီလူး,Long-tailed Shrike,Lanius schach,03. ထိန်းသိမ်းရေးနှင့် မျိုးခွဲ,ဆက်စပ် ဂေဟစနစ်များ,ecosystems_my
+181,မိုးကောင်းငှက်,Dollarbird,Eurystomus orientalis,02. ဖော်ပြချက်နှင့် နေထိုင်မှု,အကျဉ်းချုပ် ဖော်ပြချက်,description_my
+181,မိုးကောင်းငှက်,Dollarbird,Eurystomus orientalis,02. ဖော်ပြချက်နှင့် နေထိုင်မှု,ရုပ်သွင်ပြင် ဖော်ပြချက်,physical_description_my
+181,မိုးကောင်းငှက်,Dollarbird,Eurystomus orientalis,02. ဖော်ပြချက်နှင့် နေထိုင်မှု,ဖြန့်ကျက်တည်ရှိမှု,distribution_my
+181,မိုးကောင်းငှက်,Dollarbird,Eurystomus orientalis,02. ဖော်ပြချက်နှင့် နေထိုင်မှု,အရွယ်အစား,size_my
+181,မိုးကောင်းငှက်,Dollarbird,Eurystomus orientalis,02. ဖော်ပြချက်နှင့် နေထိုင်မှု,သက်တမ်း,lifespan_my
+181,မိုးကောင်းငှက်,Dollarbird,Eurystomus orientalis,02. ဖော်ပြချက်နှင့် နေထိုင်မှု,တွေ့ရှိရသော ဒေသ,region_my
+181,မိုးကောင်းငှက်,Dollarbird,Eurystomus orientalis,03. ထိန်းသိမ်းရေးနှင့် မျိုးခွဲ,ဆက်စပ် ဂေဟစနစ်များ,ecosystems_my
+183,"ဂျီ,ချေ",Leaf Muntjac,Muntiacus putaoensis,02. ဖော်ပြချက်နှင့် နေထိုင်မှု,ရုပ်သွင်ပြင် ဖော်ပြချက်,physical_description_my
+183,"ဂျီ,ချေ",Leaf Muntjac,Muntiacus putaoensis,02. ဖော်ပြချက်နှင့် နေထိုင်မှု,အစာစားနည်း,diet_my
+183,"ဂျီ,ချေ",Leaf Muntjac,Muntiacus putaoensis,02. ဖော်ပြချက်နှင့် နေထိုင်မှု,ဖြန့်ကျက်တည်ရှိမှု,distribution_my
+183,"ဂျီ,ချေ",Leaf Muntjac,Muntiacus putaoensis,02. ဖော်ပြချက်နှင့် နေထိုင်မှု,အနေအထိုင်နှင့် အပြုအမူ,behaviour_my
+183,"ဂျီ,ချေ",Leaf Muntjac,Muntiacus putaoensis,02. ဖော်ပြချက်နှင့် နေထိုင်မှု,အရွယ်အစား,size_my
+183,"ဂျီ,ချေ",Leaf Muntjac,Muntiacus putaoensis,02. ဖော်ပြချက်နှင့် နေထိုင်မှု,တွေ့ရှိရသော ဒေသ,region_my
+183,"ဂျီ,ချေ",Leaf Muntjac,Muntiacus putaoensis,02. ဖော်ပြချက်နှင့် နေထိုင်မှု,ထူးခြားအချက်များ,fun_facts_my
+183,"ဂျီ,ချေ",Leaf Muntjac,Muntiacus putaoensis,03. ထိန်းသိမ်းရေးနှင့် မျိုးခွဲ,ကမ္ဘာလုံးဆိုင်ရာ IUCN အဆင့်,global_iucn_status
+183,"ဂျီ,ချေ",Leaf Muntjac,Muntiacus putaoensis,03. ထိန်းသိမ်းရေးနှင့် မျိုးခွဲ,Order,species_order
+183,"ဂျီ,ချေ",Leaf Muntjac,Muntiacus putaoensis,03. ထိန်းသိမ်းရေးနှင့် မျိုးခွဲ,Family,species_family
+183,"ဂျီ,ချေ",Leaf Muntjac,Muntiacus putaoensis,03. ထိန်းသိမ်းရေးနှင့် မျိုးခွဲ,ဆက်စပ် ဂေဟစနစ်များ,ecosystems_my
+184,ဆတ်,Sambar,Rusa unicolor,02. ဖော်ပြချက်နှင့် နေထိုင်မှု,ရုပ်သွင်ပြင် ဖော်ပြချက်,physical_description_my
+184,ဆတ်,Sambar,Rusa unicolor,02. ဖော်ပြချက်နှင့် နေထိုင်မှု,နေထိုင်ရာ,habitat_my
+184,ဆတ်,Sambar,Rusa unicolor,02. ဖော်ပြချက်နှင့် နေထိုင်မှု,အနေအထိုင်နှင့် အပြုအမူ,behaviour_my
+184,ဆတ်,Sambar,Rusa unicolor,02. ဖော်ပြချက်နှင့် နေထိုင်မှု,အရွယ်အစား,size_my
+184,ဆတ်,Sambar,Rusa unicolor,02. ဖော်ပြချက်နှင့် နေထိုင်မှု,သက်တမ်း,lifespan_my
+184,ဆတ်,Sambar,Rusa unicolor,02. ဖော်ပြချက်နှင့် နေထိုင်မှု,တွေ့ရှိရသော ဒေသ,region_my
+184,ဆတ်,Sambar,Rusa unicolor,02. ဖော်ပြချက်နှင့် နေထိုင်မှု,ထူးခြားအချက်များ,fun_facts_my
+184,ဆတ်,Sambar,Rusa unicolor,03. ထိန်းသိမ်းရေးနှင့် မျိုးခွဲ,တွေ့ရှိမှု အခြေအနေ,population_trend
+184,ဆတ်,Sambar,Rusa unicolor,03. ထိန်းသိမ်းရေးနှင့် မျိုးခွဲ,ဆက်စပ် ဂေဟစနစ်များ,ecosystems_my
+185,ကျွဲရိုင်း,Wild Water Buffalo,Bubalus arnee,02. ဖော်ပြချက်နှင့် နေထိုင်မှု,ရုပ်သွင်ပြင် ဖော်ပြချက်,physical_description_my
+185,ကျွဲရိုင်း,Wild Water Buffalo,Bubalus arnee,02. ဖော်ပြချက်နှင့် နေထိုင်မှု,အနေအထိုင်နှင့် အပြုအမူ,behaviour_my
+185,ကျွဲရိုင်း,Wild Water Buffalo,Bubalus arnee,02. ဖော်ပြချက်နှင့် နေထိုင်မှု,တွေ့ရှိရသော ဒေသ,region_my
+185,ကျွဲရိုင်း,Wild Water Buffalo,Bubalus arnee,03. ထိန်းသိမ်းရေးနှင့် မျိုးခွဲ,ရှင်သန်ရေး ခြိမ်းခြောက်မှုများ,threats_my
+185,ကျွဲရိုင်း,Wild Water Buffalo,Bubalus arnee,03. ထိန်းသိမ်းရေးနှင့် မျိုးခွဲ,ထိန်းသိမ်းရေး လုပ်ဆောင်ချက်များ,conservation_actions_my
+185,ကျွဲရိုင်း,Wild Water Buffalo,Bubalus arnee,03. ထိန်းသိမ်းရေးနှင့် မျိုးခွဲ,ဆက်စပ် ဂေဟစနစ်များ,ecosystems_my
+186,ချေလှောင်,Mouse-deer / Chevrotain,Tragulus,02. ဖော်ပြချက်နှင့် နေထိုင်မှု,အကျဉ်းချုပ် ဖော်ပြချက်,description_my
+186,ချေလှောင်,Mouse-deer / Chevrotain,Tragulus,02. ဖော်ပြချက်နှင့် နေထိုင်မှု,ရုပ်သွင်ပြင် ဖော်ပြချက်,physical_description_my
+186,ချေလှောင်,Mouse-deer / Chevrotain,Tragulus,02. ဖော်ပြချက်နှင့် နေထိုင်မှု,နေထိုင်ရာ,habitat_my
+186,ချေလှောင်,Mouse-deer / Chevrotain,Tragulus,02. ဖော်ပြချက်နှင့် နေထိုင်မှု,အနေအထိုင်နှင့် အပြုအမူ,behaviour_my
+186,ချေလှောင်,Mouse-deer / Chevrotain,Tragulus,02. ဖော်ပြချက်နှင့် နေထိုင်မှု,တွေ့ရှိရသော ဒေသ,region_my
+186,ချေလှောင်,Mouse-deer / Chevrotain,Tragulus,02. ဖော်ပြချက်နှင့် နေထိုင်မှု,ထူးခြားအချက်များ,fun_facts_my
+186,ချေလှောင်,Mouse-deer / Chevrotain,Tragulus,03. ထိန်းသိမ်းရေးနှင့် မျိုးခွဲ,ကမ္ဘာလုံးဆိုင်ရာ IUCN အဆင့်,global_iucn_status
+186,ချေလှောင်,Mouse-deer / Chevrotain,Tragulus,03. ထိန်းသိမ်းရေးနှင့် မျိုးခွဲ,ရှင်သန်ရေး ခြိမ်းခြောက်မှုများ,threats_my
+186,ချေလှောင်,Mouse-deer / Chevrotain,Tragulus,03. ထိန်းသိမ်းရေးနှင့် မျိုးခွဲ,ထိန်းသိမ်းရေး လုပ်ဆောင်ချက်များ,conservation_actions_my
+186,ချေလှောင်,Mouse-deer / Chevrotain,Tragulus,03. ထိန်းသိမ်းရေးနှင့် မျိုးခွဲ,ထိန်းသိမ်းရေး လိုအပ်ချက်များ,conservation_needs_my
+186,ချေလှောင်,Mouse-deer / Chevrotain,Tragulus,03. ထိန်းသိမ်းရေးနှင့် မျိုးခွဲ,အသုံးပြုမှုနှင့် ကုန်သွယ်မှု,use_trade_my
+186,ချေလှောင်,Mouse-deer / Chevrotain,Tragulus,03. ထိန်းသိမ်းရေးနှင့် မျိုးခွဲ,ဆက်စပ် ဂေဟစနစ်များ,ecosystems_my
+190,တောဝက်,Wild Boar,Sus scrofa,02. ဖော်ပြချက်နှင့် နေထိုင်မှု,ရုပ်သွင်ပြင် ဖော်ပြချက်,physical_description_my
+190,တောဝက်,Wild Boar,Sus scrofa,02. ဖော်ပြချက်နှင့် နေထိုင်မှု,အစာစားနည်း,diet_my
+190,တောဝက်,Wild Boar,Sus scrofa,02. ဖော်ပြချက်နှင့် နေထိုင်မှု,အနေအထိုင်နှင့် အပြုအမူ,behaviour_my
+190,တောဝက်,Wild Boar,Sus scrofa,02. ဖော်ပြချက်နှင့် နေထိုင်မှု,တွေ့ရှိရသော ဒေသ,region_my
+190,တောဝက်,Wild Boar,Sus scrofa,03. ထိန်းသိမ်းရေးနှင့် မျိုးခွဲ,ကမ္ဘာလုံးဆိုင်ရာ IUCN အဆင့်,global_iucn_status
+190,တောဝက်,Wild Boar,Sus scrofa,03. ထိန်းသိမ်းရေးနှင့် မျိုးခွဲ,Order,species_order
+190,တောဝက်,Wild Boar,Sus scrofa,03. ထိန်းသိမ်းရေးနှင့် မျိုးခွဲ,Family,species_family
+190,တောဝက်,Wild Boar,Sus scrofa,03. ထိန်းသိမ်းရေးနှင့် မျိုးခွဲ,IUCN အကဲဖြတ် အကြောင်းပြချက်,iucn_justification_my
+190,တောဝက်,Wild Boar,Sus scrofa,03. ထိန်းသိမ်းရေးနှင့် မျိုးခွဲ,ထိန်းသိမ်းရေး လိုအပ်ချက်များ,conservation_needs_my
+190,တောဝက်,Wild Boar,Sus scrofa,03. ထိန်းသိမ်းရေးနှင့် မျိုးခွဲ,အသုံးပြုမှုနှင့် ကုန်သွယ်မှု,use_trade_my
+190,တောဝက်,Wild Boar,Sus scrofa,03. ထိန်းသိမ်းရေးနှင့် မျိုးခွဲ,ဆက်စပ် ဂေဟစနစ်များ,ecosystems_my
+192,မြေခွေးနီ,red Fox,Vulpes vulpes,02. ဖော်ပြချက်နှင့် နေထိုင်မှု,ရုပ်သွင်ပြင် ဖော်ပြချက်,physical_description_my
+192,မြေခွေးနီ,red Fox,Vulpes vulpes,02. ဖော်ပြချက်နှင့် နေထိုင်မှု,နေထိုင်ရာ,habitat_my
+192,မြေခွေးနီ,red Fox,Vulpes vulpes,02. ဖော်ပြချက်နှင့် နေထိုင်မှု,အစာစားနည်း,diet_my
+192,မြေခွေးနီ,red Fox,Vulpes vulpes,02. ဖော်ပြချက်နှင့် နေထိုင်မှု,ဖြန့်ကျက်တည်ရှိမှု,distribution_my
+192,မြေခွေးနီ,red Fox,Vulpes vulpes,02. ဖော်ပြချက်နှင့် နေထိုင်မှု,အနေအထိုင်နှင့် အပြုအမူ,behaviour_my
+192,မြေခွေးနီ,red Fox,Vulpes vulpes,03. ထိန်းသိမ်းရေးနှင့် မျိုးခွဲ,Order,species_order
+192,မြေခွေးနီ,red Fox,Vulpes vulpes,03. ထိန်းသိမ်းရေးနှင့် မျိုးခွဲ,Family,species_family
+192,မြေခွေးနီ,red Fox,Vulpes vulpes,03. ထိန်းသိမ်းရေးနှင့် မျိုးခွဲ,ဆက်စပ် ဂေဟစနစ်များ,ecosystems_my
+193,ခွေးတူဝက်တူ,Hog Badger,Arctonyx spp,02. ဖော်ပြချက်နှင့် နေထိုင်မှု,အကျဉ်းချုပ် ဖော်ပြချက်,description_my
+193,ခွေးတူဝက်တူ,Hog Badger,Arctonyx spp,02. ဖော်ပြချက်နှင့် နေထိုင်မှု,ရုပ်သွင်ပြင် ဖော်ပြချက်,physical_description_my
+193,ခွေးတူဝက်တူ,Hog Badger,Arctonyx spp,02. ဖော်ပြချက်နှင့် နေထိုင်မှု,နေထိုင်ရာ,habitat_my
+193,ခွေးတူဝက်တူ,Hog Badger,Arctonyx spp,02. ဖော်ပြချက်နှင့် နေထိုင်မှု,အစာစားနည်း,diet_my
+193,ခွေးတူဝက်တူ,Hog Badger,Arctonyx spp,02. ဖော်ပြချက်နှင့် နေထိုင်မှု,အနေအထိုင်နှင့် အပြုအမူ,behaviour_my
+193,ခွေးတူဝက်တူ,Hog Badger,Arctonyx spp,02. ဖော်ပြချက်နှင့် နေထိုင်မှု,တွေ့ရှိရသော ဒေသ,region_my
+193,ခွေးတူဝက်တူ,Hog Badger,Arctonyx spp,02. ဖော်ပြချက်နှင့် နေထိုင်မှု,ထူးခြားအချက်များ,fun_facts_my
+193,ခွေးတူဝက်တူ,Hog Badger,Arctonyx spp,03. ထိန်းသိမ်းရေးနှင့် မျိုးခွဲ,ကမ္ဘာလုံးဆိုင်ရာ IUCN အဆင့်,global_iucn_status
+193,ခွေးတူဝက်တူ,Hog Badger,Arctonyx spp,03. ထိန်းသိမ်းရေးနှင့် မျိုးခွဲ,Order,species_order
+193,ခွေးတူဝက်တူ,Hog Badger,Arctonyx spp,03. ထိန်းသိမ်းရေးနှင့် မျိုးခွဲ,Family,species_family
+193,ခွေးတူဝက်တူ,Hog Badger,Arctonyx spp,03. ထိန်းသိမ်းရေးနှင့် မျိုးခွဲ,ထိန်းသိမ်းရေး လုပ်ဆောင်ချက်များ,conservation_actions_my
+193,ခွေးတူဝက်တူ,Hog Badger,Arctonyx spp,03. ထိန်းသိမ်းရေးနှင့် မျိုးခွဲ,ဆက်စပ် ဂေဟစနစ်များ,ecosystems_my
+194,ကြံ့/ကြံ့ဆင်,Lesser One-horned Rhinoceros,Rhinoceros sondaicus,02. ဖော်ပြချက်နှင့် နေထိုင်မှု,ရုပ်သွင်ပြင် ဖော်ပြချက်,physical_description_my
+194,ကြံ့/ကြံ့ဆင်,Lesser One-horned Rhinoceros,Rhinoceros sondaicus,02. ဖော်ပြချက်နှင့် နေထိုင်မှု,နေထိုင်ရာ,habitat_my
+194,ကြံ့/ကြံ့ဆင်,Lesser One-horned Rhinoceros,Rhinoceros sondaicus,02. ဖော်ပြချက်နှင့် နေထိုင်မှု,အစာစားနည်း,diet_my
+194,ကြံ့/ကြံ့ဆင်,Lesser One-horned Rhinoceros,Rhinoceros sondaicus,02. ဖော်ပြချက်နှင့် နေထိုင်မှု,ဖြန့်ကျက်တည်ရှိမှု,distribution_my
+194,ကြံ့/ကြံ့ဆင်,Lesser One-horned Rhinoceros,Rhinoceros sondaicus,02. ဖော်ပြချက်နှင့် နေထိုင်မှု,အနေအထိုင်နှင့် အပြုအမူ,behaviour_my
+194,ကြံ့/ကြံ့ဆင်,Lesser One-horned Rhinoceros,Rhinoceros sondaicus,02. ဖော်ပြချက်နှင့် နေထိုင်မှု,အရွယ်အစား,size_my
+194,ကြံ့/ကြံ့ဆင်,Lesser One-horned Rhinoceros,Rhinoceros sondaicus,02. ဖော်ပြချက်နှင့် နေထိုင်မှု,သက်တမ်း,lifespan_my
+194,ကြံ့/ကြံ့ဆင်,Lesser One-horned Rhinoceros,Rhinoceros sondaicus,02. ဖော်ပြချက်နှင့် နေထိုင်မှု,တွေ့ရှိရသော ဒေသ,region_my
+194,ကြံ့/ကြံ့ဆင်,Lesser One-horned Rhinoceros,Rhinoceros sondaicus,02. ဖော်ပြချက်နှင့် နေထိုင်မှု,ထူးခြားအချက်များ,fun_facts_my
+194,ကြံ့/ကြံ့ဆင်,Lesser One-horned Rhinoceros,Rhinoceros sondaicus,03. ထိန်းသိမ်းရေးနှင့် မျိုးခွဲ,ကမ္ဘာလုံးဆိုင်ရာ IUCN အဆင့်,global_iucn_status
+194,ကြံ့/ကြံ့ဆင်,Lesser One-horned Rhinoceros,Rhinoceros sondaicus,03. ထိန်းသိမ်းရေးနှင့် မျိုးခွဲ,Order,species_order
+194,ကြံ့/ကြံ့ဆင်,Lesser One-horned Rhinoceros,Rhinoceros sondaicus,03. ထိန်းသိမ်းရေးနှင့် မျိုးခွဲ,Family,species_family
+194,ကြံ့/ကြံ့ဆင်,Lesser One-horned Rhinoceros,Rhinoceros sondaicus,03. ထိန်းသိမ်းရေးနှင့် မျိုးခွဲ,IUCN အကဲဖြတ် အကြောင်းပြချက်,iucn_justification_my
+194,ကြံ့/ကြံ့ဆင်,Lesser One-horned Rhinoceros,Rhinoceros sondaicus,03. ထိန်းသိမ်းရေးနှင့် မျိုးခွဲ,ရှင်သန်ရေး ခြိမ်းခြောက်မှုများ,threats_my
+194,ကြံ့/ကြံ့ဆင်,Lesser One-horned Rhinoceros,Rhinoceros sondaicus,03. ထိန်းသိမ်းရေးနှင့် မျိုးခွဲ,ထိန်းသိမ်းရေး လုပ်ဆောင်ချက်များ,conservation_actions_my
+194,ကြံ့/ကြံ့ဆင်,Lesser One-horned Rhinoceros,Rhinoceros sondaicus,03. ထိန်းသိမ်းရေးနှင့် မျိုးခွဲ,ထိန်းသိမ်းရေး လိုအပ်ချက်များ,conservation_needs_my
+194,ကြံ့/ကြံ့ဆင်,Lesser One-horned Rhinoceros,Rhinoceros sondaicus,03. ထိန်းသိမ်းရေးနှင့် မျိုးခွဲ,အသုံးပြုမှုနှင့် ကုန်သွယ်မှု,use_trade_my
+194,ကြံ့/ကြံ့ဆင်,Lesser One-horned Rhinoceros,Rhinoceros sondaicus,03. ထိန်းသိမ်းရေးနှင့် မျိုးခွဲ,ဆက်စပ် ဂေဟစနစ်များ,ecosystems_my
+204,ဖြူကောင်,"Malayan Porcupine,Himalayan Crestless Porcupine, Hodgson's Porcupine",Hystrix brachyura,02. ဖော်ပြချက်နှင့် နေထိုင်မှု,ရုပ်သွင်ပြင် ဖော်ပြချက်,physical_description_my
+204,ဖြူကောင်,"Malayan Porcupine,Himalayan Crestless Porcupine, Hodgson's Porcupine",Hystrix brachyura,02. ဖော်ပြချက်နှင့် နေထိုင်မှု,အစာစားနည်း,diet_my
+204,ဖြူကောင်,"Malayan Porcupine,Himalayan Crestless Porcupine, Hodgson's Porcupine",Hystrix brachyura,02. ဖော်ပြချက်နှင့် နေထိုင်မှု,ဖြန့်ကျက်တည်ရှိမှု,distribution_my
+204,ဖြူကောင်,"Malayan Porcupine,Himalayan Crestless Porcupine, Hodgson's Porcupine",Hystrix brachyura,02. ဖော်ပြချက်နှင့် နေထိုင်မှု,အနေအထိုင်နှင့် အပြုအမူ,behaviour_my
+204,ဖြူကောင်,"Malayan Porcupine,Himalayan Crestless Porcupine, Hodgson's Porcupine",Hystrix brachyura,02. ဖော်ပြချက်နှင့် နေထိုင်မှု,တွေ့ရှိရသော ဒေသ,region_my
+204,ဖြူကောင်,"Malayan Porcupine,Himalayan Crestless Porcupine, Hodgson's Porcupine",Hystrix brachyura,02. ဖော်ပြချက်နှင့် နေထိုင်မှု,ထူးခြားအချက်များ,fun_facts_my
+204,ဖြူကောင်,"Malayan Porcupine,Himalayan Crestless Porcupine, Hodgson's Porcupine",Hystrix brachyura,03. ထိန်းသိမ်းရေးနှင့် မျိုးခွဲ,ကမ္ဘာလုံးဆိုင်ရာ IUCN အဆင့်,global_iucn_status
+204,ဖြူကောင်,"Malayan Porcupine,Himalayan Crestless Porcupine, Hodgson's Porcupine",Hystrix brachyura,03. ထိန်းသိမ်းရေးနှင့် မျိုးခွဲ,Order,species_order
+204,ဖြူကောင်,"Malayan Porcupine,Himalayan Crestless Porcupine, Hodgson's Porcupine",Hystrix brachyura,03. ထိန်းသိမ်းရေးနှင့် မျိုးခွဲ,Family,species_family
+204,ဖြူကောင်,"Malayan Porcupine,Himalayan Crestless Porcupine, Hodgson's Porcupine",Hystrix brachyura,03. ထိန်းသိမ်းရေးနှင့် မျိုးခွဲ,IUCN အကဲဖြတ် အကြောင်းပြချက်,iucn_justification_my
+204,ဖြူကောင်,"Malayan Porcupine,Himalayan Crestless Porcupine, Hodgson's Porcupine",Hystrix brachyura,03. ထိန်းသိမ်းရေးနှင့် မျိုးခွဲ,ရှင်သန်ရေး ခြိမ်းခြောက်မှုများ,threats_my
+204,ဖြူကောင်,"Malayan Porcupine,Himalayan Crestless Porcupine, Hodgson's Porcupine",Hystrix brachyura,03. ထိန်းသိမ်းရေးနှင့် မျိုးခွဲ,ထိန်းသိမ်းရေး လုပ်ဆောင်ချက်များ,conservation_actions_my
+204,ဖြူကောင်,"Malayan Porcupine,Himalayan Crestless Porcupine, Hodgson's Porcupine",Hystrix brachyura,03. ထိန်းသိမ်းရေးနှင့် မျိုးခွဲ,ထိန်းသိမ်းရေး လိုအပ်ချက်များ,conservation_needs_my
+204,ဖြူကောင်,"Malayan Porcupine,Himalayan Crestless Porcupine, Hodgson's Porcupine",Hystrix brachyura,03. ထိန်းသိမ်းရေးနှင့် မျိုးခွဲ,အသုံးပြုမှုနှင့် ကုန်သွယ်မှု,use_trade_my
+204,ဖြူကောင်,"Malayan Porcupine,Himalayan Crestless Porcupine, Hodgson's Porcupine",Hystrix brachyura,03. ထိန်းသိမ်းရေးနှင့် မျိုးခွဲ,ဆက်စပ် ဂေဟစနစ်များ,ecosystems_my
+207,ကြောင်ကတိုး/ကြောင်နံ့သာ,Small Indian civet,Viverricula indica,02. ဖော်ပြချက်နှင့် နေထိုင်မှု,ရုပ်သွင်ပြင် ဖော်ပြချက်,physical_description_my
+207,ကြောင်ကတိုး/ကြောင်နံ့သာ,Small Indian civet,Viverricula indica,02. ဖော်ပြချက်နှင့် နေထိုင်မှု,နေထိုင်ရာ,habitat_my
+207,ကြောင်ကတိုး/ကြောင်နံ့သာ,Small Indian civet,Viverricula indica,02. ဖော်ပြချက်နှင့် နေထိုင်မှု,အစာစားနည်း,diet_my
+207,ကြောင်ကတိုး/ကြောင်နံ့သာ,Small Indian civet,Viverricula indica,02. ဖော်ပြချက်နှင့် နေထိုင်မှု,ဖြန့်ကျက်တည်ရှိမှု,distribution_my
+207,ကြောင်ကတိုး/ကြောင်နံ့သာ,Small Indian civet,Viverricula indica,02. ဖော်ပြချက်နှင့် နေထိုင်မှု,အရွယ်အစား,size_my
+207,ကြောင်ကတိုး/ကြောင်နံ့သာ,Small Indian civet,Viverricula indica,02. ဖော်ပြချက်နှင့် နေထိုင်မှု,သက်တမ်း,lifespan_my
+207,ကြောင်ကတိုး/ကြောင်နံ့သာ,Small Indian civet,Viverricula indica,02. ဖော်ပြချက်နှင့် နေထိုင်မှု,တွေ့ရှိရသော ဒေသ,region_my
+207,ကြောင်ကတိုး/ကြောင်နံ့သာ,Small Indian civet,Viverricula indica,02. ဖော်ပြချက်နှင့် နေထိုင်မှု,ထူးခြားအချက်များ,fun_facts_my
+207,ကြောင်ကတိုး/ကြောင်နံ့သာ,Small Indian civet,Viverricula indica,03. ထိန်းသိမ်းရေးနှင့် မျိုးခွဲ,မြန်မာ IUCN အဆင့်,conservation_status
+207,ကြောင်ကတိုး/ကြောင်နံ့သာ,Small Indian civet,Viverricula indica,03. ထိန်းသိမ်းရေးနှင့် မျိုးခွဲ,ကမ္ဘာလုံးဆိုင်ရာ IUCN အဆင့်,global_iucn_status
+207,ကြောင်ကတိုး/ကြောင်နံ့သာ,Small Indian civet,Viverricula indica,03. ထိန်းသိမ်းရေးနှင့် မျိုးခွဲ,တွေ့ရှိမှု အခြေအနေ,population_trend
+207,ကြောင်ကတိုး/ကြောင်နံ့သာ,Small Indian civet,Viverricula indica,03. ထိန်းသိမ်းရေးနှင့် မျိုးခွဲ,ရှင်သန်ရေး ခြိမ်းခြောက်မှုများ,threats_my
+207,ကြောင်ကတိုး/ကြောင်နံ့သာ,Small Indian civet,Viverricula indica,03. ထိန်းသိမ်းရေးနှင့် မျိုးခွဲ,ထိန်းသိမ်းရေး လုပ်ဆောင်ချက်များ,conservation_actions_my
+207,ကြောင်ကတိုး/ကြောင်နံ့သာ,Small Indian civet,Viverricula indica,03. ထိန်းသိမ်းရေးနှင့် မျိုးခွဲ,ဆက်စပ် ဂေဟစနစ်များ,ecosystems_my
+208,စပါးကြီးမြွေ,Reticulated Python,Malayopython reticulatus,02. ဖော်ပြချက်နှင့် နေထိုင်မှု,ရုပ်သွင်ပြင် ဖော်ပြချက်,physical_description_my
+208,စပါးကြီးမြွေ,Reticulated Python,Malayopython reticulatus,02. ဖော်ပြချက်နှင့် နေထိုင်မှု,အစာစားနည်း,diet_my
+208,စပါးကြီးမြွေ,Reticulated Python,Malayopython reticulatus,02. ဖော်ပြချက်နှင့် နေထိုင်မှု,ဖြန့်ကျက်တည်ရှိမှု,distribution_my
+208,စပါးကြီးမြွေ,Reticulated Python,Malayopython reticulatus,02. ဖော်ပြချက်နှင့် နေထိုင်မှု,အနေအထိုင်နှင့် အပြုအမူ,behaviour_my
+208,စပါးကြီးမြွေ,Reticulated Python,Malayopython reticulatus,02. ဖော်ပြချက်နှင့် နေထိုင်မှု,အရွယ်အစား,size_my
+208,စပါးကြီးမြွေ,Reticulated Python,Malayopython reticulatus,02. ဖော်ပြချက်နှင့် နေထိုင်မှု,တွေ့ရှိရသော ဒေသ,region_my
+208,စပါးကြီးမြွေ,Reticulated Python,Malayopython reticulatus,02. ဖော်ပြချက်နှင့် နေထိုင်မှု,ထူးခြားအချက်များ,fun_facts_my
+208,စပါးကြီးမြွေ,Reticulated Python,Malayopython reticulatus,03. ထိန်းသိမ်းရေးနှင့် မျိုးခွဲ,မြန်မာ IUCN အဆင့်,conservation_status
+208,စပါးကြီးမြွေ,Reticulated Python,Malayopython reticulatus,03. ထိန်းသိမ်းရေးနှင့် မျိုးခွဲ,ကမ္ဘာလုံးဆိုင်ရာ IUCN အဆင့်,global_iucn_status
+208,စပါးကြီးမြွေ,Reticulated Python,Malayopython reticulatus,03. ထိန်းသိမ်းရေးနှင့် မျိုးခွဲ,Order,species_order
+208,စပါးကြီးမြွေ,Reticulated Python,Malayopython reticulatus,03. ထိန်းသိမ်းရေးနှင့် မျိုးခွဲ,Family,species_family
+208,စပါးကြီးမြွေ,Reticulated Python,Malayopython reticulatus,03. ထိန်းသိမ်းရေးနှင့် မျိုးခွဲ,IUCN အကဲဖြတ် အကြောင်းပြချက်,iucn_justification_my
+208,စပါးကြီးမြွေ,Reticulated Python,Malayopython reticulatus,03. ထိန်းသိမ်းရေးနှင့် မျိုးခွဲ,ရှင်သန်ရေး ခြိမ်းခြောက်မှုများ,threats_my
+208,စပါးကြီးမြွေ,Reticulated Python,Malayopython reticulatus,03. ထိန်းသိမ်းရေးနှင့် မျိုးခွဲ,ထိန်းသိမ်းရေး လုပ်ဆောင်ချက်များ,conservation_actions_my
+208,စပါးကြီးမြွေ,Reticulated Python,Malayopython reticulatus,03. ထိန်းသိမ်းရေးနှင့် မျိုးခွဲ,ထိန်းသိမ်းရေး လိုအပ်ချက်များ,conservation_needs_my
+208,စပါးကြီးမြွေ,Reticulated Python,Malayopython reticulatus,03. ထိန်းသိမ်းရေးနှင့် မျိုးခွဲ,အသုံးပြုမှုနှင့် ကုန်သွယ်မှု,use_trade_my
+208,စပါးကြီးမြွေ,Reticulated Python,Malayopython reticulatus,03. ထိန်းသိမ်းရေးနှင့် မျိုးခွဲ,ဆက်စပ် ဂေဟစနစ်များ,ecosystems_my
+208,စပါးကြီးမြွေ,Reticulated Python,Malayopython reticulatus,04. ဥပဒေအရ ကာကွယ်ထားမှု,ကာကွယ်မှုအဆင့် (မြန်မာ),protection_status_my
+208,စပါးကြီးမြွေ,Reticulated Python,Malayopython reticulatus,04. ဥပဒေအရ ကာကွယ်ထားမှု,ကာကွယ်မှုအဆင့် (English),protection_status_en
+208,စပါးကြီးမြွေ,Reticulated Python,Malayopython reticulatus,04. ဥပဒေအရ ကာကွယ်ထားမှု,ဥပဒေ / စာရင်း ကိုးကား,protection_law_my
+208,စပါးကြီးမြွေ,Reticulated Python,Malayopython reticulatus,04. ဥပဒေအရ ကာကွယ်ထားမှု,ကာကွယ်ရသည့် အကြောင်းရင်း,protection_basis_my
+209,ငန်းတော်ကြားမြွေ,Banded Krait,Bungarus fasciatus,02. ဖော်ပြချက်နှင့် နေထိုင်မှု,ရုပ်သွင်ပြင် ဖော်ပြချက်,physical_description_my
+209,ငန်းတော်ကြားမြွေ,Banded Krait,Bungarus fasciatus,02. ဖော်ပြချက်နှင့် နေထိုင်မှု,အစာစားနည်း,diet_my
+209,ငန်းတော်ကြားမြွေ,Banded Krait,Bungarus fasciatus,02. ဖော်ပြချက်နှင့် နေထိုင်မှု,ဖြန့်ကျက်တည်ရှိမှု,distribution_my
+209,ငန်းတော်ကြားမြွေ,Banded Krait,Bungarus fasciatus,02. ဖော်ပြချက်နှင့် နေထိုင်မှု,အနေအထိုင်နှင့် အပြုအမူ,behaviour_my
+209,ငန်းတော်ကြားမြွေ,Banded Krait,Bungarus fasciatus,02. ဖော်ပြချက်နှင့် နေထိုင်မှု,အရွယ်အစား,size_my
+209,ငန်းတော်ကြားမြွေ,Banded Krait,Bungarus fasciatus,02. ဖော်ပြချက်နှင့် နေထိုင်မှု,တွေ့ရှိရသော ဒေသ,region_my
+209,ငန်းတော်ကြားမြွေ,Banded Krait,Bungarus fasciatus,02. ဖော်ပြချက်နှင့် နေထိုင်မှု,ထူးခြားအချက်များ,fun_facts_my
+209,ငန်းတော်ကြားမြွေ,Banded Krait,Bungarus fasciatus,03. ထိန်းသိမ်းရေးနှင့် မျိုးခွဲ,မြန်မာ IUCN အဆင့်,conservation_status
+209,ငန်းတော်ကြားမြွေ,Banded Krait,Bungarus fasciatus,03. ထိန်းသိမ်းရေးနှင့် မျိုးခွဲ,ကမ္ဘာလုံးဆိုင်ရာ IUCN အဆင့်,global_iucn_status
+209,ငန်းတော်ကြားမြွေ,Banded Krait,Bungarus fasciatus,03. ထိန်းသိမ်းရေးနှင့် မျိုးခွဲ,Order,species_order
+209,ငန်းတော်ကြားမြွေ,Banded Krait,Bungarus fasciatus,03. ထိန်းသိမ်းရေးနှင့် မျိုးခွဲ,Family,species_family
+209,ငန်းတော်ကြားမြွေ,Banded Krait,Bungarus fasciatus,03. ထိန်းသိမ်းရေးနှင့် မျိုးခွဲ,IUCN အကဲဖြတ် အကြောင်းပြချက်,iucn_justification_my
+209,ငန်းတော်ကြားမြွေ,Banded Krait,Bungarus fasciatus,03. ထိန်းသိမ်းရေးနှင့် မျိုးခွဲ,ရှင်သန်ရေး ခြိမ်းခြောက်မှုများ,threats_my
+209,ငန်းတော်ကြားမြွေ,Banded Krait,Bungarus fasciatus,03. ထိန်းသိမ်းရေးနှင့် မျိုးခွဲ,ထိန်းသိမ်းရေး လုပ်ဆောင်ချက်များ,conservation_actions_my
+209,ငန်းတော်ကြားမြွေ,Banded Krait,Bungarus fasciatus,03. ထိန်းသိမ်းရေးနှင့် မျိုးခွဲ,ထိန်းသိမ်းရေး လိုအပ်ချက်များ,conservation_needs_my
+209,ငန်းတော်ကြားမြွေ,Banded Krait,Bungarus fasciatus,03. ထိန်းသိမ်းရေးနှင့် မျိုးခွဲ,အသုံးပြုမှုနှင့် ကုန်သွယ်မှု,use_trade_my
+209,ငန်းတော်ကြားမြွေ,Banded Krait,Bungarus fasciatus,03. ထိန်းသိမ်းရေးနှင့် မျိုးခွဲ,ဆက်စပ် ဂေဟစနစ်များ,ecosystems_my
+210,မြွေပွေး,Eastern Russell's Viper,Daboia siamensis,02. ဖော်ပြချက်နှင့် နေထိုင်မှု,ရုပ်သွင်ပြင် ဖော်ပြချက်,physical_description_my
+210,မြွေပွေး,Eastern Russell's Viper,Daboia siamensis,02. ဖော်ပြချက်နှင့် နေထိုင်မှု,နေထိုင်ရာ,habitat_my
+210,မြွေပွေး,Eastern Russell's Viper,Daboia siamensis,02. ဖော်ပြချက်နှင့် နေထိုင်မှု,အစာစားနည်း,diet_my
+210,မြွေပွေး,Eastern Russell's Viper,Daboia siamensis,02. ဖော်ပြချက်နှင့် နေထိုင်မှု,ဖြန့်ကျက်တည်ရှိမှု,distribution_my
+210,မြွေပွေး,Eastern Russell's Viper,Daboia siamensis,02. ဖော်ပြချက်နှင့် နေထိုင်မှု,အနေအထိုင်နှင့် အပြုအမူ,behaviour_my
+210,မြွေပွေး,Eastern Russell's Viper,Daboia siamensis,02. ဖော်ပြချက်နှင့် နေထိုင်မှု,အရွယ်အစား,size_my
+210,မြွေပွေး,Eastern Russell's Viper,Daboia siamensis,02. ဖော်ပြချက်နှင့် နေထိုင်မှု,တွေ့ရှိရသော ဒေသ,region_my
+210,မြွေပွေး,Eastern Russell's Viper,Daboia siamensis,02. ဖော်ပြချက်နှင့် နေထိုင်မှု,ထူးခြားအချက်များ,fun_facts_my
+210,မြွေပွေး,Eastern Russell's Viper,Daboia siamensis,03. ထိန်းသိမ်းရေးနှင့် မျိုးခွဲ,မြန်မာ IUCN အဆင့်,conservation_status
+210,မြွေပွေး,Eastern Russell's Viper,Daboia siamensis,03. ထိန်းသိမ်းရေးနှင့် မျိုးခွဲ,ကမ္ဘာလုံးဆိုင်ရာ IUCN အဆင့်,global_iucn_status
+210,မြွေပွေး,Eastern Russell's Viper,Daboia siamensis,03. ထိန်းသိမ်းရေးနှင့် မျိုးခွဲ,Order,species_order
+210,မြွေပွေး,Eastern Russell's Viper,Daboia siamensis,03. ထိန်းသိမ်းရေးနှင့် မျိုးခွဲ,Family,species_family
+210,မြွေပွေး,Eastern Russell's Viper,Daboia siamensis,03. ထိန်းသိမ်းရေးနှင့် မျိုးခွဲ,IUCN အကဲဖြတ် အကြောင်းပြချက်,iucn_justification_my
+210,မြွေပွေး,Eastern Russell's Viper,Daboia siamensis,03. ထိန်းသိမ်းရေးနှင့် မျိုးခွဲ,ရှင်သန်ရေး ခြိမ်းခြောက်မှုများ,threats_my
+210,မြွေပွေး,Eastern Russell's Viper,Daboia siamensis,03. ထိန်းသိမ်းရေးနှင့် မျိုးခွဲ,ထိန်းသိမ်းရေး လုပ်ဆောင်ချက်များ,conservation_actions_my
+210,မြွေပွေး,Eastern Russell's Viper,Daboia siamensis,03. ထိန်းသိမ်းရေးနှင့် မျိုးခွဲ,ထိန်းသိမ်းရေး လိုအပ်ချက်များ,conservation_needs_my
+210,မြွေပွေး,Eastern Russell's Viper,Daboia siamensis,03. ထိန်းသိမ်းရေးနှင့် မျိုးခွဲ,အသုံးပြုမှုနှင့် ကုန်သွယ်မှု,use_trade_my
+210,မြွေပွေး,Eastern Russell's Viper,Daboia siamensis,03. ထိန်းသိမ်းရေးနှင့် မျိုးခွဲ,ဆက်စပ် ဂေဟစနစ်များ,ecosystems_my
+211,မြွေဟောက်,Monocled Cobra,Naja kaouthia,02. ဖော်ပြချက်နှင့် နေထိုင်မှု,ရုပ်သွင်ပြင် ဖော်ပြချက်,physical_description_my
+211,မြွေဟောက်,Monocled Cobra,Naja kaouthia,02. ဖော်ပြချက်နှင့် နေထိုင်မှု,အစာစားနည်း,diet_my
+211,မြွေဟောက်,Monocled Cobra,Naja kaouthia,02. ဖော်ပြချက်နှင့် နေထိုင်မှု,ဖြန့်ကျက်တည်ရှိမှု,distribution_my
+211,မြွေဟောက်,Monocled Cobra,Naja kaouthia,02. ဖော်ပြချက်နှင့် နေထိုင်မှု,အနေအထိုင်နှင့် အပြုအမူ,behaviour_my
+211,မြွေဟောက်,Monocled Cobra,Naja kaouthia,02. ဖော်ပြချက်နှင့် နေထိုင်မှု,အရွယ်အစား,size_my
+211,မြွေဟောက်,Monocled Cobra,Naja kaouthia,02. ဖော်ပြချက်နှင့် နေထိုင်မှု,တွေ့ရှိရသော ဒေသ,region_my
+211,မြွေဟောက်,Monocled Cobra,Naja kaouthia,02. ဖော်ပြချက်နှင့် နေထိုင်မှု,ထူးခြားအချက်များ,fun_facts_my
+211,မြွေဟောက်,Monocled Cobra,Naja kaouthia,03. ထိန်းသိမ်းရေးနှင့် မျိုးခွဲ,မြန်မာ IUCN အဆင့်,conservation_status
+211,မြွေဟောက်,Monocled Cobra,Naja kaouthia,03. ထိန်းသိမ်းရေးနှင့် မျိုးခွဲ,ကမ္ဘာလုံးဆိုင်ရာ IUCN အဆင့်,global_iucn_status
+211,မြွေဟောက်,Monocled Cobra,Naja kaouthia,03. ထိန်းသိမ်းရေးနှင့် မျိုးခွဲ,Order,species_order
+211,မြွေဟောက်,Monocled Cobra,Naja kaouthia,03. ထိန်းသိမ်းရေးနှင့် မျိုးခွဲ,Family,species_family
+211,မြွေဟောက်,Monocled Cobra,Naja kaouthia,03. ထိန်းသိမ်းရေးနှင့် မျိုးခွဲ,IUCN အကဲဖြတ် အကြောင်းပြချက်,iucn_justification_my
+211,မြွေဟောက်,Monocled Cobra,Naja kaouthia,03. ထိန်းသိမ်းရေးနှင့် မျိုးခွဲ,ရှင်သန်ရေး ခြိမ်းခြောက်မှုများ,threats_my
+211,မြွေဟောက်,Monocled Cobra,Naja kaouthia,03. ထိန်းသိမ်းရေးနှင့် မျိုးခွဲ,ထိန်းသိမ်းရေး လုပ်ဆောင်ချက်များ,conservation_actions_my
+211,မြွေဟောက်,Monocled Cobra,Naja kaouthia,03. ထိန်းသိမ်းရေးနှင့် မျိုးခွဲ,ထိန်းသိမ်းရေး လိုအပ်ချက်များ,conservation_needs_my
+211,မြွေဟောက်,Monocled Cobra,Naja kaouthia,03. ထိန်းသိမ်းရေးနှင့် မျိုးခွဲ,အသုံးပြုမှုနှင့် ကုန်သွယ်မှု,use_trade_my
+211,မြွေဟောက်,Monocled Cobra,Naja kaouthia,03. ထိန်းသိမ်းရေးနှင့် မျိုးခွဲ,ဆက်စပ် ဂေဟစနစ်များ,ecosystems_my
+212,ဖွတ်,Asian Water Monitor,Varanus salvator,02. ဖော်ပြချက်နှင့် နေထိုင်မှု,ရုပ်သွင်ပြင် ဖော်ပြချက်,physical_description_my
+212,ဖွတ်,Asian Water Monitor,Varanus salvator,02. ဖော်ပြချက်နှင့် နေထိုင်မှု,နေထိုင်ရာ,habitat_my
+212,ဖွတ်,Asian Water Monitor,Varanus salvator,02. ဖော်ပြချက်နှင့် နေထိုင်မှု,အစာစားနည်း,diet_my
+212,ဖွတ်,Asian Water Monitor,Varanus salvator,02. ဖော်ပြချက်နှင့် နေထိုင်မှု,ဖြန့်ကျက်တည်ရှိမှု,distribution_my
+212,ဖွတ်,Asian Water Monitor,Varanus salvator,02. ဖော်ပြချက်နှင့် နေထိုင်မှု,အနေအထိုင်နှင့် အပြုအမူ,behaviour_my
+212,ဖွတ်,Asian Water Monitor,Varanus salvator,02. ဖော်ပြချက်နှင့် နေထိုင်မှု,အရွယ်အစား,size_my
+212,ဖွတ်,Asian Water Monitor,Varanus salvator,02. ဖော်ပြချက်နှင့် နေထိုင်မှု,တွေ့ရှိရသော ဒေသ,region_my
+212,ဖွတ်,Asian Water Monitor,Varanus salvator,02. ဖော်ပြချက်နှင့် နေထိုင်မှု,ထူးခြားအချက်များ,fun_facts_my
+212,ဖွတ်,Asian Water Monitor,Varanus salvator,03. ထိန်းသိမ်းရေးနှင့် မျိုးခွဲ,မြန်မာ IUCN အဆင့်,conservation_status
+212,ဖွတ်,Asian Water Monitor,Varanus salvator,03. ထိန်းသိမ်းရေးနှင့် မျိုးခွဲ,ကမ္ဘာလုံးဆိုင်ရာ IUCN အဆင့်,global_iucn_status
+212,ဖွတ်,Asian Water Monitor,Varanus salvator,03. ထိန်းသိမ်းရေးနှင့် မျိုးခွဲ,Order,species_order
+212,ဖွတ်,Asian Water Monitor,Varanus salvator,03. ထိန်းသိမ်းရေးနှင့် မျိုးခွဲ,Family,species_family
+212,ဖွတ်,Asian Water Monitor,Varanus salvator,03. ထိန်းသိမ်းရေးနှင့် မျိုးခွဲ,IUCN အကဲဖြတ် အကြောင်းပြချက်,iucn_justification_my
+212,ဖွတ်,Asian Water Monitor,Varanus salvator,03. ထိန်းသိမ်းရေးနှင့် မျိုးခွဲ,ရှင်သန်ရေး ခြိမ်းခြောက်မှုများ,threats_my
+212,ဖွတ်,Asian Water Monitor,Varanus salvator,03. ထိန်းသိမ်းရေးနှင့် မျိုးခွဲ,ထိန်းသိမ်းရေး လုပ်ဆောင်ချက်များ,conservation_actions_my
+212,ဖွတ်,Asian Water Monitor,Varanus salvator,03. ထိန်းသိမ်းရေးနှင့် မျိုးခွဲ,ထိန်းသိမ်းရေး လိုအပ်ချက်များ,conservation_needs_my
+212,ဖွတ်,Asian Water Monitor,Varanus salvator,03. ထိန်းသိမ်းရေးနှင့် မျိုးခွဲ,အသုံးပြုမှုနှင့် ကုန်သွယ်မှု,use_trade_my
+212,ဖွတ်,Asian Water Monitor,Varanus salvator,03. ထိန်းသိမ်းရေးနှင့် မျိုးခွဲ,ဆက်စပ် ဂေဟစနစ်များ,ecosystems_my

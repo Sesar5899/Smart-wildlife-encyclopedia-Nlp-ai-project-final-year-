@@ -1,0 +1,14 @@
+{
+  "version": "0.0.1",
+  "configurations": [
+    {
+      "name": "wildlife",
+      "runtimeExecutable": "sh",
+      "runtimeArgs": [
+        "-c",
+        "cd myanmar_wildlife && exec venv/bin/flask --app app run --host 127.0.0.1 --port 2000"
+      ],
+      "port": 2000
+    }
+  ]
+}

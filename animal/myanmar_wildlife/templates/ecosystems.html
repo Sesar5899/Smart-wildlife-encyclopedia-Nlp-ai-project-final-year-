@@ -1,0 +1,114 @@
+{% extends "base.html" %}
+{% from "_iucn.html" import iucn_badge, iucn_legend_panel %}
+{% block title %}ဂေဟစနစ်များ - Myanmar Wildlife{% endblock %}
+
+{% block content %}
+<header class="catalog-hero ecosystem-hero">
+  <div class="container catalog-hero-inner">
+    <div>
+      <span class="catalog-eyebrow">မြန်မာ့ သဘာဝပတ်ဝန်းကျင်</span>
+      <h1>ဂေဟစနစ်များ</h1>
+      <p>သစ်တောများမှ ရေဝပ်ဒေသနှင့် ကမ်းရိုးတန်းများအထိ မြန်မာနိုင်ငံ၏ ဂေဟစနစ်များ၊ အခြေအနေနှင့် ခြိမ်းခြောက်မှုများကို လေ့လာပါ။</p>
+    </div>
+    <div class="catalog-total" aria-label="စုစုပေါင်း ဂေဟစနစ် {{ catalog_total }} ခု">
+      <strong>{{ catalog_total|mm_number }}</strong>
+      <span>ဂေဟစနစ်</span>
+    </div>
+  </div>
+</header>
+
+<div class="container catalog-page">
+  <nav class="breadcrumb catalog-breadcrumb" aria-label="Breadcrumb">
+    <a href="{{ url_for('home') }}">ပင်မ</a>
+    <span class="breadcrumb-sep">›</span>
+    <span class="breadcrumb-current">ဂေဟစနစ်များ</span>
+  </nav>
+
+  <form class="catalog-filters" method="get" action="{{ url_for('ecosystems') }}" data-catalog-auto-filter>
+    <div class="catalog-search-field catalog-name-search-field">
+      <label for="ecosystemSearchInput">အမည် သို့မဟုတ် သိထားသည့်စကားလုံး</label>
+      <input id="ecosystemSearchInput" name="q" value="{{ query }}" placeholder="ဥပမာ — ဒီရေတော၊ တောင်တန်း၊ ရေကန်" autocomplete="off" role="combobox" aria-autocomplete="list" aria-controls="ecosystemSearchSuggestions" aria-expanded="false" data-auto-filter-query>
+      <div class="search-suggestions catalog-name-search-suggestions" id="ecosystemSearchSuggestions" role="listbox"></div>
+    </div>
+    <label>
+      <span>ဘယ်လိုသဘာဝနေရာမျိုးလဲ?</span>
+      <select name="biome" data-auto-filter-field="biome">
+        <option value="">သဘာဝနေရာအားလုံး</option>
+        {% for value, label in biomes %}<option value="{{ value }}" {{ 'selected' if value == selected_biome }}>{{ label }}</option>{% endfor %}
+      </select>
+    </label>
+    <label>
+      <span>ပျက်စီးနိုင်မှု ဘယ်လောက်ရှိသလဲ?</span>
+      <select name="status" data-auto-filter-field="status">
+        <option value="">အန္တရာယ်အဆင့်အားလုံး</option>
+        {% for value, label in statuses %}<option value="{{ value }}" {{ 'selected' if value == selected_status }}>{{ label }}</option>{% endfor %}
+      </select>
+    </label>
+    <button class="btn btn-primary catalog-filter-button" type="submit">ရလဒ်များ ကြည့်ရန်</button>
+    {% if query or selected_biome or selected_status %}
+    <div class="active-filter-row" aria-label="ရွေးထားသော စစ်ထုတ်မှုများ">
+      <span>ရွေးထားသည်</span>
+      {% if query %}<button type="submit" name="clear_filter" value="q">“{{ query }}” <b aria-hidden="true">×</b></button>{% endif %}
+      {% for value, label in biomes %}{% if value == selected_biome %}<button type="submit" name="clear_filter" value="biome">{{ label }} <b aria-hidden="true">×</b></button>{% endif %}{% endfor %}
+      {% for value, label in statuses %}{% if value == selected_status %}<button type="submit" name="clear_filter" value="status">{{ label }} <b aria-hidden="true">×</b></button>{% endif %}{% endfor %}
+      <a href="{{ url_for('ecosystems') }}">အားလုံးရှင်းရန်</a>
+    </div>
+    {% endif %}
+    <script type="application/json" data-auto-filter-profiles>{{ filter_profiles|tojson }}</script>
+  </form>
+
+  <div class="catalog-results-head">
+    <h2>ဂေဟစနစ် မှတ်တမ်းများ</h2>
+    <span>{{ total|mm_number }} ခု တွေ့ရှိသည်</span>
+  </div>
+
+  {{ iucn_legend_panel('ecosystem') }}
+
+  {% if ecosystems %}
+  <div class="catalog-grid ecosystem-grid">
+    {% for ecosystem in ecosystems %}
+    <a href="{{ url_for('ecosystem_detail', slug=ecosystem.slug) }}" class="catalog-card ecosystem-card">
+      <div class="catalog-card-art {{ 'catalog-card-photo' if ecosystem.image_url }}">
+        {% if ecosystem.image_url %}
+        <img src="{{ ecosystem.image_url }}" alt="{{ ecosystem.name_mm or ecosystem.name }}" loading="lazy" decoding="async">
+        {% else %}
+        <span class="landform landform-back"></span>
+        <span class="landform landform-front"></span>
+        <span class="photo-unavailable-label">မူရင်းဓာတ်ပုံ မရှိသေးပါ</span>
+        {% endif %}
+      </div>
+      <div class="catalog-card-body">
+        <div class="catalog-card-badges">
+          {{ iucn_badge(ecosystem.national_iucn_status, scale='ecosystem', classes='status-pill') }}
+          {% if ecosystem.code %}<span class="code-pill">{{ ecosystem.code }}</span>{% endif %}
+        </div>
+        <h3>{{ ecosystem.name_mm or ecosystem.name }}</h3>
+        {# Always rendered, so a record without a separate English name still
+           reserves the line and its card matches the rest of the row. #}
+        <p class="catalog-english-name">{{ ecosystem.name if ecosystem.name_mm }}</p>
+        <div class="catalog-card-meta">
+          <span>{{ ecosystem.in_biome_mm or ecosystem.in_biome or 'ဇီဝဒေသ မဖော်ပြထားပါ' }}</span>
+          <span class="catalog-arrow" aria-hidden="true">→</span>
+        </div>
+      </div>
+    </a>
+    {% endfor %}
+  </div>
+  {% else %}
+  <div class="empty-state catalog-empty">
+    <div class="icon">⌕</div>
+    <h3>ကိုက်ညီသော ဂေဟစနစ် မတွေ့ပါ</h3>
+    <p>ရှာဖွေမှု သို့မဟုတ် စစ်ထုတ်မှုကို ပြောင်းပြီး ထပ်မံကြည့်ပါ။</p>
+    <a href="{{ url_for('ecosystems') }}" class="btn btn-secondary">စစ်ထုတ်မှု ရှင်းရန်</a>
+  </div>
+  {% endif %}
+
+  {% if total_pages > 1 %}
+  <nav class="catalog-pagination" aria-label="စာမျက်နှာများ">
+    {% if page > 1 %}<a href="{{ url_for('ecosystems', q=query, biome=selected_biome, status=selected_status, page=page-1) }}">← ရှေ့စာမျက်နှာ</a>{% else %}<span></span>{% endif %}
+    <strong>{{ page|mm_number }} / {{ total_pages|mm_number }}</strong>
+    {% if page < total_pages %}<a href="{{ url_for('ecosystems', q=query, biome=selected_biome, status=selected_status, page=page+1) }}">နောက်စာမျက်နှာ →</a>{% else %}<span></span>{% endif %}
+  </nav>
+  {% endif %}
+</div>
+{% endblock %}

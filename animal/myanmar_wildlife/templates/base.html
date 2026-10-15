@@ -1,0 +1,114 @@
+<!doctype html>
+<html lang="my">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>
+      {% block title %}မြန်မာ့တောရိုင်းတိရစ္ဆာန် စွယ်စုံကျမ်း{% endblock %}
+    </title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Noto+Sans+Myanmar:wght@300;400;500;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="{{ url_for('static', filename='css/style.css', v='20260917-4') }}"
+    />
+  </head>
+  <body class="{% block body_class %}{% endblock %}">
+    <nav class="navbar" aria-label="ပင်မလမ်းညွှန်">
+      <div class="navbar-inner">
+        <a href="{{ url_for('home') if current_user else url_for('index') }}" class="navbar-brand">
+          <span class="navbar-brand-copy"><strong>Myanmar Wildlife</strong><small>BIODIVERSITY ENCYCLOPEDIA</small></span>
+        </a>
+        <button type="button" class="nav-toggle" id="navMenuButton" aria-controls="navMenu" aria-expanded="false"><span></span><span></span><span></span><b class="sr-only">Menu</b></button>
+        <div class="navbar-menu" id="navMenu">
+          {% if current_user %}
+          {% set animal_search_visible = request.endpoint in ('home', 'category_page', 'animal_detail', 'animal_chat', 'search') %}
+          <ul class="navbar-links">
+            <li><a href="{{ url_for('home') }}" class="{% if request.endpoint in ('home','category_page','animal_detail','animal_chat') %}active{% endif %}"><span>တိရစ္ဆာန်များ</span><small>Species</small></a></li>
+            <li><a href="{{ url_for('ecosystems') }}" class="{% if request.endpoint in ('ecosystems','ecosystem_detail') %}active{% endif %}"><span>ဂေဟစနစ်များ</span><small>Ecosystems</small></a></li>
+            <li><a href="{{ url_for('protected_areas') }}" class="{% if request.endpoint in ('protected_areas','protected_area_detail') %}active{% endif %}"><span>ထိန်းသိမ်းနယ်မြေများ</span><small>Protected areas</small></a></li>
+          </ul>
+          {% if animal_search_visible %}
+          <div class="navbar-search"><svg class="search-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="8"></circle><path d="m21 21-4.35-4.35"></path></svg><input type="text" id="searchInput" value="{{ request.args.get('q', '') if request.endpoint == 'search' else '' }}" placeholder="တိရစ္ဆာန် ရှာရန်..." autocomplete="off" aria-label="တိရစ္ဆာန် ရှာရန်" role="combobox" aria-autocomplete="list" aria-controls="searchSuggestions" aria-expanded="false"><kbd>⌘ K</kbd><div class="search-suggestions" id="searchSuggestions" role="listbox"></div></div>
+          {% endif %}
+          <div class="navbar-auth{{ ' navbar-auth-right' if not animal_search_visible else '' }}">
+            {% if current_user_is_admin %}<a href="{{ url_for('admin.dashboard') }}" class="nav-admin-link {{ 'active' if request.blueprint == 'admin' }}"><span>✦</span> Content Studio</a>{% endif %}
+            <span class="user-chip" title="{{ current_user.email }}"><span class="user-avatar">{{ current_user.name[:1]|upper }}</span><span class="user-profile-copy"><strong>{{ current_user.name }}</strong><small>{{ 'Administrator' if current_user_is_admin else 'Member' }}</small></span></span>
+            <a href="{{ url_for('logout') }}" class="nav-logout" aria-label="ထွက်ရန်" title="ထွက်ရန်"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 21H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h4"></path><path d="m16 17 5-5-5-5M21 12H9"></path></svg></a>
+          </div>
+          {% else %}
+          <div class="navbar-guest-copy"><span>Myanmar biodiversity</span><p>တောရိုင်းသဘာဝကို သိရှိထိန်းသိမ်းရန်</p></div>
+          <div class="navbar-auth navbar-auth-guest"><a href="{{ url_for('login') }}" class="btn btn-outline-sm">ဝင်ရန်</a><a href="{{ url_for('register') }}" class="btn btn-primary-sm">စာရင်းသွင်းရန်</a></div>
+          {% endif %}
+        </div>
+      </div>
+    </nav>
+
+    {% with messages = get_flashed_messages(with_categories=true) %} {% if
+    messages %}
+    <div class="flash-messages">
+      {% for category, message in messages %}
+      <div class="flash flash-{{ category }}">
+        {{ message }}
+        <button class="flash-close" onclick="this.parentElement.remove()">
+          &times;
+        </button>
+      </div>
+      {% endfor %}
+    </div>
+    {% endif %} {% endwith %}
+
+    <main>{% block content %}{% endblock %}</main>
+
+    <footer class="footer">
+      <div class="container">
+        <div class="footer-grid">
+          <div>
+            <div class="footer-brand">Myanmar Wildlife</div>
+            <p class="footer-desc">
+              မြန်မာနိုင်ငံရှိ တောရိုင်းတိရစ္ဆာန်များ အကြောင်း သိရှိနိုင်ရန်
+              ရည်ရွယ်ထားသည့် အွန်လိုင်း စွယ်စုံကျမ်းဖြစ်သည်။
+            </p>
+          </div>
+          <div class="footer-col">
+            <h4>လမ်းညွှန်</h4>
+            <ul>
+              {% if current_user %}
+              <li><a href="{{ url_for('home') }}">တိရစ္ဆာန်များ</a></li>
+              <li><a href="{{ url_for('ecosystems') }}">ဂေဟစနစ်များ</a></li>
+              <li><a href="{{ url_for('protected_areas') }}">ထိန်းသိမ်းနယ်မြေများ</a></li>
+              {% if current_user_is_admin %}<li><a href="{{ url_for('admin.dashboard') }}">Content Studio</a></li>{% endif %}
+              <li><a href="{{ url_for('logout') }}">ထွက်ရန်</a></li>
+              {% else %}
+              <li><a href="{{ url_for('index') }}">ပင်မစာမျက်နှာ</a></li>
+              <li><a href="{{ url_for('login') }}">အကောင့်ဝင်ရန်</a></li>
+              <li><a href="{{ url_for('register') }}">စာရင်းသွင်းရန်</a></li>
+              {% endif %}
+            </ul>
+          </div>
+          <div class="footer-col">
+            <h4>အမျိုးအစားများ</h4>
+            <ul>
+              {% if current_user %} {% for cat in nav_categories %}
+              <li>
+                <a href="{{ url_for('category_page', category_id=cat.id) }}"
+                  >{{ cat.name_my }}</a
+                >
+              </li>
+              {% endfor %} {% else %}
+              <li class="footer-locked">အကောင့်ဝင်ပြီးမှ ကြည့်နိုင်သည်</li>
+              {% endif %}
+            </ul>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <script src="{{ url_for('static', filename='js/markdown.js') }}"></script>
+    <script src="{{ url_for('static', filename='js/app.js', v='20260917-2') }}"></script>
+    {% block scripts %}{% endblock %}
+  </body>
+</html>
